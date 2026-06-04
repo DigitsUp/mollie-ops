@@ -1977,28 +1977,30 @@ const OPS_DATA = {
       name: "Riversol",
       color: "#1098AD",
       dot: "amber",
-      health: "Waiting on Client",
-      tagline: "Winback strategy locked. Waiting on Una for codes + PNGs. Owe them an email.",
-      lastTouched: "2026-06-02",
+      health: "In Progress",
+      tagline: "Win-back assets received from Una. Progress update email due to Arnaud Thu Jun 5. Build begins.",
+      lastTouched: "2026-06-04",
       tasks: [
-        { text: "Send client update email — acknowledge delay, set expectations", complexity: "quick", owner: "Michael", urgent: true },
-        { text: "Update discount codes in all flows once Una delivers (15% + 30%)", complexity: "medium", owner: "Michael", urgent: false },
-        { text: "Swap free shipping threshold to $69 in all emails", complexity: "medium", owner: "Michael", urgent: false },
-        { text: "Swap product images when PNGs arrive from Una", complexity: "quick", owner: "Michael", urgent: false },
-        { text: "Update flow triggers with new segments once ready", complexity: "medium", owner: "Michael", urgent: false }
+        { text: "Draft + send progress update email to Riversol team (Arnaud requested by Thu Jun 5)", complexity: "quick", owner: "Michael", urgent: true },
+        { text: "Build win-back flows using Una's discount codes + segments", complexity: "heavy", owner: "Mollie", urgent: false },
+        { text: "Swap free shipping threshold to $69 in all emails", complexity: "medium", owner: "Mollie", urgent: false },
+        { text: "Swap product images when PNGs arrive from Una", complexity: "quick", owner: "Mollie", urgent: false },
+        { text: "Update flow triggers with Klaviyo segments from Una", complexity: "medium", owner: "Mollie", urgent: false }
       ],
       waitingOn: [
-        { party: "Una", item: "Confirm 'sample not converted' event name in Klaviyo", since: "2026-06-01" },
         { party: "Una", item: "New product PNGs for email image swaps", since: "2026-06-01" }
       ],
       promises: [
-        { text: "Winback flow built and live once Una delivers assets", dueDate: null, madeOn: "2026-06-01" }
+        { text: "Winback flow built and live", dueDate: null, madeOn: "2026-06-01" },
+        { text: "Progress update email to Arnaud by Thu Jun 5", dueDate: "2026-06-05", madeOn: "2026-06-03" }
       ],
-      nextMilestone: "Waiting on Una — then build begins",
+      nextMilestone: "Send progress update Thu Jun 5 → sync with Arnaud Monday",
       flags: [
-        "✅ Discount codes + segments delivered by Una June 2",
-        "Winback decisions locked June 1 call",
-        "Sample winback: trigger = 'sample not converted' event (Una to confirm name)",
+        "✅ Discount codes delivered by Una June 2: WB-A7G5QJ-CA (15% CA) / WB-A7G5QJ-US (15% US) / WE30-SMPL-KP62 (30%)",
+        "✅ Klaviyo segments delivered: UC5c3u (new+returning) / UbfUaU (sample not converted)",
+        "Redirect template: riversol.com/discount/INSERTCODE?redirect=/collections/all",
+        "Arnaud cannot meet Thu/Fri — email update Thu, call Monday",
+        "Sample winback trigger = 'Sample Not Converted' event",
         "Return customer: merged with One Hit Wonders, trigger = orders >= 1",
         "Turn off gift card flow. Free shipping threshold → $69."
       ]
