@@ -1,0 +1,2668 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mollie Ops — DigitsUp</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+/* ============================
+   RESET + BASE
+   ============================ */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bg: #F5F4F2;
+  --surface: #FFFFFF;
+  --surface-2: #F0EFED;
+  --text-primary: #1A1A1A;
+  --text-secondary: #6B6B6B;
+  --text-tertiary: #9B9B9B;
+  --border: #E8E6E2;
+  --shadow-sm: 0 1px 3px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.04);
+  --shadow-md: 0 4px 12px rgba(0,0,0,0.08), 0 2px 4px rgba(0,0,0,0.04);
+  --shadow-lg: 0 8px 32px rgba(0,0,0,0.12), 0 4px 8px rgba(0,0,0,0.06);
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 20px;
+  --nav-height: 72px;
+  --sidebar-width: 220px;
+  --transition: 0.2s ease;
+  --transition-slow: 0.35s ease;
+  --green: #2F9E44;
+  --amber: #F08C00;
+  --red: #E03131;
+  --grey: #9B9B9B;
+  --dot-green: #40C057;
+  --dot-amber: #FAB005;
+  --dot-red: #FA5252;
+  --dot-grey: #CED4DA;
+}
+
+html, body {
+  height: 100%;
+  font-family: 'DM Sans', system-ui, sans-serif;
+  background: var(--bg);
+  color: var(--text-primary);
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+/* ============================
+   PASSWORD GATE
+   ============================ */
+#password-gate {
+  position: fixed;
+  inset: 0;
+  background: var(--bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  padding: 24px;
+}
+
+#password-gate.hidden {
+  display: none;
+}
+
+.gate-card {
+  background: var(--surface);
+  border-radius: var(--radius-xl);
+  padding: 40px 32px;
+  max-width: 360px;
+  width: 100%;
+  box-shadow: var(--shadow-lg);
+  animation: fadeUp 0.4s ease both;
+}
+
+.gate-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 28px;
+}
+
+.gate-logo-mark {
+  width: 36px;
+  height: 36px;
+  background: linear-gradient(135deg, #1A1A1A 0%, #444 100%);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-family: 'DM Mono', monospace;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: -0.5px;
+}
+
+.gate-logo-text {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--text-primary);
+  letter-spacing: -0.3px;
+}
+
+.gate-logo-sub {
+  font-size: 12px;
+  color: var(--text-tertiary);
+  font-family: 'DM Mono', monospace;
+  margin-top: 2px;
+}
+
+.gate-title {
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  color: var(--text-primary);
+  margin-bottom: 6px;
+}
+
+.gate-subtitle {
+  font-size: 14px;
+  color: var(--text-secondary);
+  margin-bottom: 24px;
+  line-height: 1.5;
+}
+
+.gate-input-wrap {
+  position: relative;
+  margin-bottom: 12px;
+}
+
+.gate-input {
+  width: 100%;
+  padding: 14px 16px;
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius-md);
+  font-family: 'DM Mono', monospace;
+  font-size: 15px;
+  letter-spacing: 2px;
+  background: var(--surface);
+  color: var(--text-primary);
+  outline: none;
+  transition: border-color var(--transition);
+}
+
+.gate-input:focus {
+  border-color: #1A1A1A;
+}
+
+.gate-input.error {
+  border-color: var(--red);
+  animation: shake 0.3s ease;
+}
+
+.gate-error {
+  font-size: 12px;
+  color: var(--red);
+  margin-bottom: 12px;
+  display: none;
+  font-family: 'DM Mono', monospace;
+}
+
+.gate-error.visible {
+  display: block;
+}
+
+.gate-btn {
+  width: 100%;
+  padding: 14px;
+  background: #1A1A1A;
+  color: #fff;
+  border: none;
+  border-radius: var(--radius-md);
+  font-family: 'DM Sans', sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background var(--transition), transform var(--transition);
+  letter-spacing: -0.2px;
+}
+
+.gate-btn:hover {
+  background: #333;
+}
+
+.gate-btn:active {
+  transform: scale(0.98);
+}
+
+/* ============================
+   APP SHELL
+   ============================ */
+#app {
+  display: flex;
+  height: 100dvh;
+  overflow: hidden;
+}
+
+#app.hidden {
+  display: none;
+}
+
+/* ============================
+   SIDEBAR (desktop)
+   ============================ */
+.sidebar {
+  width: var(--sidebar-width);
+  background: var(--surface);
+  border-right: 1px solid var(--border);
+  display: none;
+  flex-direction: column;
+  padding: 24px 16px;
+  flex-shrink: 0;
+}
+
+@media (min-width: 768px) {
+  .sidebar {
+    display: flex;
+  }
+}
+
+.sidebar-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0 8px;
+  margin-bottom: 32px;
+}
+
+.sidebar-logo-mark {
+  width: 32px;
+  height: 32px;
+  background: linear-gradient(135deg, #1A1A1A 0%, #444 100%);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-family: 'DM Mono', monospace;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.sidebar-brand {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--text-primary);
+  letter-spacing: -0.3px;
+}
+
+.sidebar-sub {
+  font-size: 10px;
+  color: var(--text-tertiary);
+  font-family: 'DM Mono', monospace;
+  margin-top: 1px;
+}
+
+.sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  flex: 1;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 12px;
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  transition: background var(--transition), color var(--transition);
+  color: var(--text-secondary);
+  font-size: 14px;
+  font-weight: 500;
+  border: none;
+  background: transparent;
+  text-align: left;
+  width: 100%;
+  letter-spacing: -0.2px;
+}
+
+.nav-item:hover {
+  background: var(--surface-2);
+  color: var(--text-primary);
+}
+
+.nav-item.active {
+  background: #1A1A1A;
+  color: #fff;
+}
+
+.nav-icon {
+  font-size: 16px;
+  width: 20px;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.sidebar-footer {
+  border-top: 1px solid var(--border);
+  padding-top: 16px;
+  margin-top: 16px;
+}
+
+.sidebar-meta {
+  font-size: 11px;
+  color: var(--text-tertiary);
+  font-family: 'DM Mono', monospace;
+  line-height: 1.6;
+  padding: 0 8px;
+}
+
+/* ============================
+   MAIN CONTENT
+   ============================ */
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.content {
+  flex: 1;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
+  padding-bottom: calc(var(--nav-height) + 16px);
+}
+
+@media (min-width: 768px) {
+  .content {
+    padding-bottom: 24px;
+  }
+}
+
+.content-inner {
+  padding: 20px 16px;
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .content-inner {
+    padding: 28px 24px;
+  }
+}
+
+/* ============================
+   TABS
+   ============================ */
+.tab-panel {
+  display: none;
+}
+
+.tab-panel.active {
+  display: block;
+  animation: tabFade 0.25s ease both;
+}
+
+/* ============================
+   BOTTOM NAV (mobile)
+   ============================ */
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: var(--nav-height);
+  background: var(--surface);
+  border-top: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  padding: 0 4px;
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+  z-index: 100;
+  box-shadow: 0 -4px 20px rgba(0,0,0,0.06);
+}
+
+@media (min-width: 768px) {
+  .bottom-nav {
+    display: none;
+  }
+}
+
+.bottom-nav-item {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+  padding: 8px 2px;
+  cursor: pointer;
+  border: none;
+  background: transparent;
+  border-radius: var(--radius-sm);
+  transition: all var(--transition);
+  color: var(--text-tertiary);
+  min-height: 52px;
+}
+
+.bottom-nav-item.active {
+  color: #1A1A1A;
+}
+
+.bottom-nav-icon {
+  font-size: 20px;
+  line-height: 1;
+  transition: transform var(--transition);
+}
+
+.bottom-nav-item.active .bottom-nav-icon {
+  transform: translateY(-1px);
+}
+
+.bottom-nav-label {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+  line-height: 1;
+}
+
+/* ============================
+   PAGE HEADERS
+   ============================ */
+.page-header {
+  margin-bottom: 24px;
+}
+
+.page-title {
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: -0.8px;
+  color: var(--text-primary);
+  line-height: 1.1;
+}
+
+.page-sub {
+  font-size: 13px;
+  color: var(--text-secondary);
+  margin-top: 4px;
+  font-family: 'DM Mono', monospace;
+}
+
+/* ============================
+   SECTION HEADERS
+   ============================ */
+.section {
+  margin-bottom: 28px;
+}
+
+.section-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.section-title {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  color: var(--text-tertiary);
+  font-family: 'DM Mono', monospace;
+}
+
+.section-count {
+  font-size: 11px;
+  color: var(--text-tertiary);
+  font-family: 'DM Mono', monospace;
+  background: var(--surface-2);
+  padding: 2px 8px;
+  border-radius: 20px;
+}
+
+/* ============================
+   CARDS
+   ============================ */
+.card {
+  background: var(--surface);
+  border-radius: var(--radius-lg);
+  padding: 16px;
+  box-shadow: var(--shadow-sm);
+  margin-bottom: 10px;
+  opacity: 0;
+  transform: translateY(12px);
+  animation: slideUp 0.35s ease both;
+  position: relative;
+  overflow: hidden;
+}
+
+.card:last-child {
+  margin-bottom: 0;
+}
+
+/* Staggered animation delays */
+.card:nth-child(1) { animation-delay: 0.04s; }
+.card:nth-child(2) { animation-delay: 0.08s; }
+.card:nth-child(3) { animation-delay: 0.12s; }
+.card:nth-child(4) { animation-delay: 0.16s; }
+.card:nth-child(5) { animation-delay: 0.20s; }
+.card:nth-child(6) { animation-delay: 0.24s; }
+.card:nth-child(7) { animation-delay: 0.28s; }
+.card:nth-child(8) { animation-delay: 0.32s; }
+.card:nth-child(9) { animation-delay: 0.36s; }
+.card:nth-child(10) { animation-delay: 0.40s; }
+
+/* ============================
+   DO THIS NOW CARDS
+   ============================ */
+.priority-card {
+  background: var(--surface);
+  border-radius: var(--radius-lg);
+  padding: 16px;
+  box-shadow: var(--shadow-sm);
+  margin-bottom: 10px;
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  opacity: 0;
+  transform: translateY(12px);
+  animation: slideUp 0.35s ease both;
+}
+
+.priority-card:nth-child(1) { animation-delay: 0.05s; }
+.priority-card:nth-child(2) { animation-delay: 0.12s; }
+.priority-card:nth-child(3) { animation-delay: 0.19s; }
+
+.priority-icon {
+  font-size: 22px;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+.priority-body {
+  flex: 1;
+  min-width: 0;
+}
+
+.priority-client-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-family: 'DM Mono', monospace;
+  font-size: 10px;
+  font-weight: 500;
+  padding: 3px 8px;
+  border-radius: 20px;
+  margin-bottom: 6px;
+  color: #fff;
+  letter-spacing: 0.3px;
+}
+
+.priority-text {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-primary);
+  line-height: 1.4;
+  margin-bottom: 8px;
+  letter-spacing: -0.2px;
+}
+
+.priority-meta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.complexity-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-family: 'DM Mono', monospace;
+  font-size: 10px;
+  font-weight: 500;
+  padding: 3px 8px;
+  border-radius: 20px;
+  letter-spacing: 0.2px;
+  white-space: nowrap;
+}
+
+.complexity-quick {
+  background: #EBFBEE;
+  color: #2F9E44;
+}
+
+.complexity-medium {
+  background: #FFF9DB;
+  color: #E67700;
+}
+
+.complexity-heavy {
+  background: #FFF5F5;
+  color: #E03131;
+}
+
+.deadline-chip {
+  font-family: 'DM Mono', monospace;
+  font-size: 10px;
+  color: var(--text-tertiary);
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+
+.deadline-chip.urgent {
+  color: var(--red);
+  font-weight: 500;
+}
+
+/* ============================
+   CLIENT HEALTH GRID
+   ============================ */
+.client-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+@media (min-width: 540px) {
+  .client-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.health-card {
+  background: var(--surface);
+  border-radius: var(--radius-lg);
+  padding: 14px;
+  box-shadow: var(--shadow-sm);
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  opacity: 0;
+  transform: translateY(10px);
+  animation: slideUp 0.35s ease both;
+  transition: box-shadow var(--transition), transform var(--transition);
+}
+
+.health-card:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-1px) !important;
+}
+
+.health-card::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  border-radius: 4px 0 0 4px;
+}
+
+.health-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 6px;
+}
+
+.client-dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.dot-green { background: var(--dot-green); box-shadow: 0 0 0 3px rgba(64, 192, 87, 0.15); }
+.dot-amber { background: var(--dot-amber); box-shadow: 0 0 0 3px rgba(250, 176, 5, 0.15); }
+.dot-red { background: var(--dot-red); box-shadow: 0 0 0 3px rgba(250, 82, 82, 0.15); animation: pulse 2s ease infinite; }
+.dot-grey { background: var(--dot-grey); }
+
+.health-card-name {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--text-primary);
+  letter-spacing: -0.3px;
+  margin-bottom: 4px;
+  line-height: 1.2;
+}
+
+.health-card-status {
+  font-family: 'DM Mono', monospace;
+  font-size: 9px;
+  font-weight: 500;
+  padding: 2px 7px;
+  border-radius: 20px;
+  display: inline-block;
+  margin-bottom: 6px;
+}
+
+.health-card-tagline {
+  font-size: 11px;
+  color: var(--text-secondary);
+  line-height: 1.4;
+}
+
+.health-card-flag {
+  font-size: 11px;
+  color: var(--red);
+  margin-top: 6px;
+  font-weight: 500;
+  line-height: 1.3;
+}
+
+/* ============================
+   GONE QUIET CARDS
+   ============================ */
+.quiet-card {
+  background: var(--surface);
+  border-radius: var(--radius-lg);
+  padding: 16px;
+  box-shadow: var(--shadow-sm);
+  margin-bottom: 10px;
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  border-left: 4px solid var(--amber);
+  opacity: 0;
+  transform: translateY(12px);
+  animation: slideUp 0.35s ease both;
+}
+
+.quiet-card:nth-child(1) { animation-delay: 0.05s; }
+.quiet-card:nth-child(2) { animation-delay: 0.12s; }
+.quiet-card:nth-child(3) { animation-delay: 0.19s; }
+
+.quiet-icon {
+  font-size: 20px;
+  flex-shrink: 0;
+}
+
+.quiet-body { flex: 1; }
+
+.quiet-client {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--text-primary);
+  letter-spacing: -0.3px;
+  margin-bottom: 3px;
+}
+
+.quiet-age {
+  font-family: 'DM Mono', monospace;
+  font-size: 11px;
+  color: var(--amber);
+  font-weight: 500;
+  margin-bottom: 6px;
+}
+
+.quiet-task {
+  font-size: 13px;
+  color: var(--text-secondary);
+  line-height: 1.4;
+}
+
+.quiet-ping {
+  flex-shrink: 0;
+  padding: 6px 12px;
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--text-secondary);
+  cursor: pointer;
+  font-family: 'DM Sans', sans-serif;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  transition: background var(--transition);
+  margin-top: 4px;
+}
+
+.quiet-ping:hover {
+  background: var(--border);
+}
+
+/* ============================
+   CLIENTS TAB
+   ============================ */
+.clients-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+@media (min-width: 480px) {
+  .clients-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.client-card {
+  background: var(--surface);
+  border-radius: var(--radius-lg);
+  padding: 16px 14px;
+  box-shadow: var(--shadow-sm);
+  cursor: pointer;
+  transition: box-shadow var(--transition), transform var(--transition);
+  position: relative;
+  overflow: hidden;
+  opacity: 0;
+  transform: translateY(10px);
+  animation: slideUp 0.35s ease both;
+}
+
+.client-card:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px) !important;
+}
+
+.client-card::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  border-radius: 4px 0 0 4px;
+}
+
+.client-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.client-card-name {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: -0.3px;
+  color: var(--text-primary);
+  line-height: 1.2;
+}
+
+.client-card-tagline {
+  font-size: 11px;
+  color: var(--text-secondary);
+  line-height: 1.4;
+  margin-bottom: 10px;
+}
+
+.client-card-stats {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.stat-chip {
+  font-family: 'DM Mono', monospace;
+  font-size: 9px;
+  font-weight: 500;
+  padding: 2px 7px;
+  border-radius: 20px;
+  background: var(--surface-2);
+  color: var(--text-secondary);
+  white-space: nowrap;
+}
+
+/* ============================
+   CLIENT SHEET (detail view)
+   ============================ */
+.client-sheet-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.3);
+  z-index: 200;
+  display: none;
+  align-items: flex-end;
+  backdrop-filter: blur(2px);
+}
+
+@media (min-width: 768px) {
+  .client-sheet-overlay {
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+  }
+}
+
+.client-sheet-overlay.open {
+  display: flex;
+  animation: overlayFade 0.25s ease both;
+}
+
+.client-sheet {
+  background: var(--surface);
+  border-radius: var(--radius-xl) var(--radius-xl) 0 0;
+  width: 100%;
+  max-height: 92dvh;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  padding: 0 0 40px;
+  animation: sheetUp 0.3s cubic-bezier(0.34, 1.56, 0.64, 1) both;
+}
+
+@media (min-width: 768px) {
+  .client-sheet {
+    border-radius: var(--radius-xl);
+    max-width: 560px;
+    max-height: 85vh;
+    animation: sheetFadeIn 0.25s ease both;
+  }
+}
+
+.sheet-handle-row {
+  display: flex;
+  justify-content: center;
+  padding: 12px 0 4px;
+}
+
+@media (min-width: 768px) {
+  .sheet-handle-row { display: none; }
+}
+
+.sheet-handle {
+  width: 36px;
+  height: 4px;
+  background: var(--border);
+  border-radius: 2px;
+}
+
+.sheet-header {
+  padding: 16px 20px 16px;
+  border-bottom: 1px solid var(--border);
+  position: relative;
+}
+
+.sheet-header-top {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 4px;
+}
+
+.sheet-accent-bar {
+  width: 6px;
+  height: 36px;
+  border-radius: 3px;
+  flex-shrink: 0;
+}
+
+.sheet-title {
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: -0.6px;
+  color: var(--text-primary);
+}
+
+.sheet-tagline {
+  font-size: 13px;
+  color: var(--text-secondary);
+  line-height: 1.5;
+  margin-top: 4px;
+  padding-left: 18px;
+}
+
+.sheet-close {
+  position: absolute;
+  top: 14px;
+  right: 16px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: var(--surface-2);
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  color: var(--text-secondary);
+  transition: background var(--transition);
+}
+
+.sheet-close:hover {
+  background: var(--border);
+}
+
+.sheet-body {
+  padding: 16px 20px;
+}
+
+.sheet-section {
+  margin-bottom: 24px;
+}
+
+.sheet-section-title {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--text-tertiary);
+  font-family: 'DM Mono', monospace;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.sheet-section-icon {
+  font-size: 13px;
+}
+
+/* Task rows in sheet */
+.task-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 10px 12px;
+  background: var(--surface-2);
+  border-radius: var(--radius-sm);
+  margin-bottom: 6px;
+  transition: background var(--transition);
+}
+
+.task-row:hover {
+  background: #E8E6E2;
+}
+
+.task-checkbox {
+  width: 18px;
+  height: 18px;
+  border: 1.5px solid var(--border);
+  border-radius: 5px;
+  flex-shrink: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1px;
+  transition: all var(--transition);
+  background: var(--surface);
+}
+
+.task-checkbox.checked {
+  background: var(--green);
+  border-color: var(--green);
+  color: white;
+}
+
+.task-checkbox.checked::after {
+  content: '✓';
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.task-row.done .task-text {
+  text-decoration: line-through;
+  color: var(--text-tertiary);
+}
+
+.task-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.task-text {
+  font-size: 13px;
+  color: var(--text-primary);
+  line-height: 1.4;
+  margin-bottom: 5px;
+  letter-spacing: -0.1px;
+}
+
+.task-pills {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.urgent-pill {
+  font-family: 'DM Mono', monospace;
+  font-size: 9px;
+  font-weight: 600;
+  padding: 2px 7px;
+  border-radius: 20px;
+  background: #FFF5F5;
+  color: var(--red);
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+}
+
+/* Waiting items */
+.waiting-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 10px 12px;
+  background: var(--surface-2);
+  border-radius: var(--radius-sm);
+  margin-bottom: 6px;
+  opacity: 0.8;
+}
+
+.waiting-clock {
+  font-size: 14px;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+.waiting-content {
+  flex: 1;
+}
+
+.waiting-party {
+  font-family: 'DM Mono', monospace;
+  font-size: 10px;
+  font-weight: 600;
+  color: var(--text-tertiary);
+  margin-bottom: 3px;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+}
+
+.waiting-text {
+  font-size: 13px;
+  color: var(--text-secondary);
+  line-height: 1.4;
+}
+
+.waiting-age {
+  font-family: 'DM Mono', monospace;
+  font-size: 10px;
+  color: var(--text-tertiary);
+  margin-top: 3px;
+}
+
+/* Promises */
+.promise-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 10px 12px;
+  border-radius: var(--radius-sm);
+  margin-bottom: 6px;
+  border: 1.5px solid var(--border);
+}
+
+.promise-item.overdue {
+  border-color: #FFCDD2;
+  background: #FFF5F5;
+}
+
+.promise-text {
+  font-size: 13px;
+  color: var(--text-primary);
+  line-height: 1.4;
+  flex: 1;
+  letter-spacing: -0.1px;
+}
+
+.promise-due {
+  font-family: 'DM Mono', monospace;
+  font-size: 10px;
+  color: var(--text-tertiary);
+  margin-top: 4px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.promise-due.overdue {
+  color: var(--red);
+  font-weight: 600;
+}
+
+/* Milestone */
+.milestone-box {
+  background: linear-gradient(135deg, #F8F9FA 0%, #F0EFED 100%);
+  border-radius: var(--radius-md);
+  padding: 14px;
+  border-left: 4px solid var(--border);
+}
+
+.milestone-label {
+  font-family: 'DM Mono', monospace;
+  font-size: 10px;
+  color: var(--text-tertiary);
+  margin-bottom: 4px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.milestone-text {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-primary);
+  letter-spacing: -0.3px;
+  line-height: 1.4;
+}
+
+/* Flags */
+.flag-item {
+  font-size: 12px;
+  color: var(--text-secondary);
+  line-height: 1.5;
+  padding: 8px 12px;
+  background: var(--surface-2);
+  border-radius: var(--radius-sm);
+  margin-bottom: 5px;
+}
+
+/* ============================
+   WAITING TAB
+   ============================ */
+.waiting-group {
+  margin-bottom: 20px;
+}
+
+.waiting-group-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.waiting-group-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.waiting-group-name {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--text-primary);
+  letter-spacing: -0.3px;
+}
+
+.waiting-flat-item {
+  background: var(--surface);
+  border-radius: var(--radius-md);
+  padding: 12px 14px;
+  box-shadow: var(--shadow-sm);
+  margin-bottom: 8px;
+  opacity: 0;
+  transform: translateY(8px);
+  animation: slideUp 0.3s ease both;
+}
+
+.waiting-flat-party {
+  font-family: 'DM Mono', monospace;
+  font-size: 10px;
+  font-weight: 600;
+  color: var(--text-tertiary);
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  margin-bottom: 4px;
+}
+
+.waiting-flat-text {
+  font-size: 13px;
+  color: var(--text-primary);
+  line-height: 1.4;
+  letter-spacing: -0.1px;
+}
+
+.waiting-flat-age {
+  font-family: 'DM Mono', monospace;
+  font-size: 10px;
+  color: var(--text-tertiary);
+  margin-top: 6px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.waiting-flat-age.old {
+  color: var(--amber);
+  font-weight: 500;
+}
+
+/* ============================
+   GONE QUIET TAB
+   ============================ */
+.gq-card {
+  background: var(--surface);
+  border-radius: var(--radius-lg);
+  padding: 16px;
+  box-shadow: var(--shadow-sm);
+  margin-bottom: 10px;
+  border-left: 4px solid var(--amber);
+  opacity: 0;
+  transform: translateY(10px);
+  animation: slideUp 0.35s ease both;
+}
+
+.gq-card:nth-child(1) { animation-delay: 0.05s; }
+.gq-card:nth-child(2) { animation-delay: 0.12s; }
+.gq-card:nth-child(3) { animation-delay: 0.19s; }
+.gq-card:nth-child(4) { animation-delay: 0.26s; }
+.gq-card:nth-child(5) { animation-delay: 0.33s; }
+
+.gq-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 6px;
+}
+
+.gq-client {
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: -0.4px;
+  color: var(--text-primary);
+}
+
+.gq-age {
+  font-family: 'DM Mono', monospace;
+  font-size: 11px;
+  color: var(--amber);
+  font-weight: 600;
+  background: #FFF9EB;
+  padding: 3px 8px;
+  border-radius: 20px;
+}
+
+.gq-status {
+  font-size: 12px;
+  color: var(--text-secondary);
+  margin-bottom: 10px;
+  line-height: 1.4;
+}
+
+.gq-open {
+  font-family: 'DM Mono', monospace;
+  font-size: 10px;
+  color: var(--text-tertiary);
+  margin-bottom: 10px;
+}
+
+.gq-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.ping-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 7px 14px;
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-secondary);
+  cursor: pointer;
+  font-family: 'DM Sans', sans-serif;
+  text-decoration: none;
+  transition: background var(--transition);
+}
+
+.ping-btn:hover {
+  background: var(--border);
+}
+
+/* ============================
+   PIPELINE TAB
+   ============================ */
+.pipeline-item {
+  background: var(--surface);
+  border-radius: var(--radius-lg);
+  padding: 14px 16px;
+  box-shadow: var(--shadow-sm);
+  margin-bottom: 10px;
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  opacity: 0;
+  transform: translateY(8px);
+  animation: slideUp 0.3s ease both;
+  position: relative;
+  overflow: hidden;
+}
+
+.pipeline-urgency-bar {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+}
+
+.pipeline-urgency-bar.overdue { background: var(--red); }
+.pipeline-urgency-bar.soon { background: var(--amber); }
+.pipeline-urgency-bar.ok { background: var(--green); }
+
+.pipeline-left {
+  flex-shrink: 0;
+  padding-left: 6px;
+}
+
+.pipeline-date-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 36px;
+}
+
+.pipeline-month {
+  font-family: 'DM Mono', monospace;
+  font-size: 9px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--text-tertiary);
+  line-height: 1;
+}
+
+.pipeline-day {
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: -1px;
+  line-height: 1.1;
+  color: var(--text-primary);
+}
+
+.pipeline-day.overdue { color: var(--red); }
+.pipeline-day.soon { color: var(--amber); }
+.pipeline-day.ok { color: var(--green); }
+
+.pipeline-body {
+  flex: 1;
+  min-width: 0;
+}
+
+.pipeline-item-text {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-primary);
+  margin-bottom: 6px;
+  line-height: 1.4;
+  letter-spacing: -0.2px;
+}
+
+.pipeline-meta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.owner-chip {
+  font-family: 'DM Mono', monospace;
+  font-size: 10px;
+  font-weight: 500;
+  padding: 2px 8px;
+  border-radius: 20px;
+  white-space: nowrap;
+}
+
+.owner-michael { background: #EEF2FF; color: #3B5BDB; }
+.owner-team { background: #F3F0FF; color: #7950F2; }
+.owner-client { background: #FFF9DB; color: #E67700; }
+.owner-waiting { background: #F8F9FA; color: var(--text-tertiary); }
+
+.pipeline-status-chip {
+  font-family: 'DM Mono', monospace;
+  font-size: 10px;
+  font-weight: 600;
+  padding: 2px 8px;
+  border-radius: 20px;
+  white-space: nowrap;
+}
+
+.pipeline-status-chip.overdue { background: #FFF5F5; color: var(--red); }
+.pipeline-status-chip.soon { background: #FFF9EB; color: var(--amber); }
+.pipeline-status-chip.ok { background: #EBFBEE; color: var(--green); }
+
+/* ============================
+   EMPTY STATES
+   ============================ */
+.empty-state {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.empty-icon {
+  font-size: 36px;
+  margin-bottom: 12px;
+}
+
+.empty-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 6px;
+  letter-spacing: -0.3px;
+}
+
+.empty-sub {
+  font-size: 13px;
+  color: var(--text-tertiary);
+  line-height: 1.5;
+}
+
+/* ============================
+   STATUS BADGE
+   ============================ */
+.status-badge {
+  font-family: 'DM Mono', monospace;
+  font-size: 9px;
+  font-weight: 600;
+  padding: 3px 8px;
+  border-radius: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+  white-space: nowrap;
+}
+
+.status-red { background: #FFF5F5; color: var(--red); }
+.status-amber { background: #FFF9EB; color: var(--amber); }
+.status-green { background: #EBFBEE; color: var(--green); }
+.status-grey { background: var(--surface-2); color: var(--text-tertiary); }
+
+/* ============================
+   ANIMATIONS
+   ============================ */
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes tabFade {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes overlayFade {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes sheetUp {
+  from {
+    opacity: 0;
+    transform: translateY(60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes sheetFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px) scale(0.97);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% { box-shadow: 0 0 0 3px rgba(250, 82, 82, 0.15); }
+  50% { box-shadow: 0 0 0 5px rgba(250, 82, 82, 0.25); }
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-6px); }
+  75% { transform: translateX(6px); }
+}
+
+/* ============================
+   SCROLLBAR
+   ============================ */
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-tertiary);
+}
+</style>
+</head>
+<body>
+
+<!-- PASSWORD GATE -->
+<div id="password-gate">
+  <div class="gate-card">
+    <div class="gate-logo">
+      <div class="gate-logo-mark">DU</div>
+      <div>
+        <div class="gate-logo-text">DigitsUp</div>
+        <div class="gate-logo-sub">Mollie Ops</div>
+      </div>
+    </div>
+    <div class="gate-title">Good morning, Michael.</div>
+    <div class="gate-subtitle">Enter your access code to open today's command center.</div>
+    <div class="gate-input-wrap">
+      <input type="password" id="gate-input" class="gate-input" placeholder="Access code" autocomplete="off" />
+    </div>
+    <div id="gate-error" class="gate-error">Wrong code. Try again.</div>
+    <button class="gate-btn" onclick="checkPassword()">Enter →</button>
+  </div>
+</div>
+
+<!-- APP -->
+<div id="app" class="hidden">
+  <!-- Sidebar (desktop) -->
+  <nav class="sidebar">
+    <div class="sidebar-logo">
+      <div class="sidebar-logo-mark">DU</div>
+      <div>
+        <div class="sidebar-brand">DigitsUp</div>
+        <div class="sidebar-sub">Mollie Ops</div>
+      </div>
+    </div>
+    <div class="sidebar-nav">
+      <button class="nav-item active" onclick="switchTab('today', this)">
+        <span class="nav-icon">🏠</span> Today
+      </button>
+      <button class="nav-item" onclick="switchTab('clients', this)">
+        <span class="nav-icon">👥</span> Clients
+      </button>
+      <button class="nav-item" onclick="switchTab('waiting', this)">
+        <span class="nav-icon">⏳</span> Waiting
+      </button>
+      <button class="nav-item" onclick="switchTab('quiet', this)">
+        <span class="nav-icon">🔕</span> Gone Quiet
+      </button>
+      <button class="nav-item" onclick="switchTab('pipeline', this)">
+        <span class="nav-icon">📋</span> Pipeline
+      </button>
+    </div>
+    <div class="sidebar-footer">
+      <div class="sidebar-meta">
+        Updated Jun 3, 2026<br>
+        By Mollie
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main -->
+  <div class="main">
+    <div class="content">
+      <div class="content-inner">
+
+        <!-- TODAY TAB -->
+        <div id="tab-today" class="tab-panel active">
+          <div class="page-header">
+            <div class="page-title">Today 🏠</div>
+            <div class="page-sub">Tuesday, June 3, 2026</div>
+          </div>
+
+          <!-- Do This Now -->
+          <div class="section">
+            <div class="section-header">
+              <div class="section-title">Do This Now</div>
+              <div class="section-count">3 tasks</div>
+            </div>
+            <div id="priority-list"></div>
+          </div>
+
+          <!-- Client Health Grid -->
+          <div class="section">
+            <div class="section-header">
+              <div class="section-title">Client Health</div>
+              <div class="section-count" id="client-health-count"></div>
+            </div>
+            <div class="client-grid" id="health-grid"></div>
+          </div>
+
+          <!-- Gone Quiet -->
+          <div class="section">
+            <div class="section-header">
+              <div class="section-title">You Went Quiet On This</div>
+              <div class="section-count" id="today-quiet-count"></div>
+            </div>
+            <div id="today-quiet-list"></div>
+          </div>
+        </div>
+
+        <!-- CLIENTS TAB -->
+        <div id="tab-clients" class="tab-panel">
+          <div class="page-header">
+            <div class="page-title">Clients 👥</div>
+            <div class="page-sub">Tap any client to drill in</div>
+          </div>
+          <div class="clients-grid" id="clients-grid"></div>
+        </div>
+
+        <!-- WAITING TAB -->
+        <div id="tab-waiting" class="tab-panel">
+          <div class="page-header">
+            <div class="page-title">Waiting ⏳</div>
+            <div class="page-sub">Blocked on client or third party — sorted oldest first</div>
+          </div>
+          <div id="waiting-list"></div>
+        </div>
+
+        <!-- GONE QUIET TAB -->
+        <div id="tab-quiet" class="tab-panel">
+          <div class="page-header">
+            <div class="page-title">Gone Quiet 🔕</div>
+            <div class="page-sub">Things you started but haven't touched in 4+ days</div>
+          </div>
+          <div id="quiet-list"></div>
+        </div>
+
+        <!-- PIPELINE TAB -->
+        <div id="tab-pipeline" class="tab-panel">
+          <div class="page-header">
+            <div class="page-title">Pipeline 📋</div>
+            <div class="page-sub">Upcoming deadlines + promises — sorted by date</div>
+          </div>
+          <div id="pipeline-list"></div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Bottom Nav (mobile) -->
+    <nav class="bottom-nav">
+      <button class="bottom-nav-item active" onclick="switchTab('today', null, this)">
+        <span class="bottom-nav-icon">🏠</span>
+        <span class="bottom-nav-label">Today</span>
+      </button>
+      <button class="bottom-nav-item" onclick="switchTab('clients', null, this)">
+        <span class="bottom-nav-icon">👥</span>
+        <span class="bottom-nav-label">Clients</span>
+      </button>
+      <button class="bottom-nav-item" onclick="switchTab('waiting', null, this)">
+        <span class="bottom-nav-icon">⏳</span>
+        <span class="bottom-nav-label">Waiting</span>
+      </button>
+      <button class="bottom-nav-item" onclick="switchTab('quiet', null, this)">
+        <span class="bottom-nav-icon">🔕</span>
+        <span class="bottom-nav-label">Quiet</span>
+      </button>
+      <button class="bottom-nav-item" onclick="switchTab('pipeline', null, this)">
+        <span class="bottom-nav-icon">📋</span>
+        <span class="bottom-nav-label">Pipeline</span>
+      </button>
+    </nav>
+  </div>
+</div>
+
+<!-- Client Sheet -->
+<div id="client-sheet-overlay" class="client-sheet-overlay" onclick="closeSheet(event)">
+  <div class="client-sheet" id="client-sheet">
+    <div class="sheet-handle-row"><div class="sheet-handle"></div></div>
+    <div class="sheet-header" id="sheet-header"></div>
+    <div class="sheet-body" id="sheet-body"></div>
+  </div>
+</div>
+
+<script>
+// ============================
+// DATA
+// ============================
+const TODAY = new Date('2026-06-03T21:00:00-07:00');
+
+const OPS_DATA = {
+  meta: {
+    lastUpdated: "2026-06-03T21:00:00-07:00",
+    updatedBy: "Mollie"
+  },
+  clients: [
+    {
+      id: "frnk",
+      name: "FRNK Boutique",
+      color: "#E8845C",
+      dot: "red",
+      health: "At Risk",
+      tagline: "Signup form + welcome series due Thursday. Not started.",
+      lastTouched: "2026-05-29",
+      tasks: [
+        { text: "Build signup form in Klaviyo", complexity: "quick", owner: "Michael", urgent: true },
+        { text: "Write welcome series — 3 emails (brief Callie)", complexity: "heavy", owner: "Michael", urgent: true },
+        { text: "Fix Stamped reviews integration", complexity: "medium", owner: "Michael", urgent: false }
+      ],
+      waitingOn: [],
+      promises: [
+        { text: "Signup form + welcome series delivered by Thu Jun 5", dueDate: "2026-06-05", madeOn: "2026-05-29" }
+      ],
+      nextMilestone: "Thu Jun 5 — Welcome series + signup form delivered to Steph",
+      flags: [
+        "🔴 DUE THURSDAY — nothing built yet",
+        "Steph meeting done May 29 — Shopify site live ✅"
+      ]
+    },
+    {
+      id: "rvca",
+      name: "RVCA",
+      color: "#3B5BDB",
+      dot: "amber",
+      health: "In Progress",
+      tagline: "Post-purchase launching June 15. Welcome series ready to go live.",
+      lastTouched: "2026-06-03",
+      tasks: [
+        { text: "Push Welcome Series live (built + ready — just needs your approval)", complexity: "quick", owner: "Michael", urgent: true },
+        { text: "Roll AC_exclude tag to Add to Cart + Browse flows", complexity: "quick", owner: "Michael", urgent: false },
+        { text: "Ask Wunderman about partial fulfillment email", complexity: "quick", owner: "Michael", urgent: false },
+        { text: "Schedule SI Swimsuit runway email for June 9", complexity: "quick", owner: "Michael", urgent: true },
+        { text: "Get OuterSignal pricing from Dove (for gender sync)", complexity: "quick", owner: "Michael", urgent: true },
+        { text: "Send post-purchase flow Figma link to Clayton for feedback", complexity: "quick", owner: "Michael", urgent: false },
+        { text: "Build post-purchase flow in Klaviyo (shell, pending Clayton feedback)", complexity: "heavy", owner: "Michael", urgent: false },
+        { text: "Build win-back flow — A/B test: free ship vs 10% vs $10 off", complexity: "heavy", owner: "Michael", urgent: false },
+        { text: "Set up Canada Attentive signup unit for team testing", complexity: "medium", owner: "Michael", urgent: false }
+      ],
+      waitingOn: [
+        { party: "Clayton Dahl", item: "Post-purchase Figma feedback — due end of week", since: "2026-06-03" },
+        { party: "Clayton Dahl", item: "Create Full Price Product Shopify collection for Klaviyo AI feeds", since: "2026-06-03" },
+        { party: "Clayton Dahl", item: "Grant GA access to Michael", since: "2026-06-03" },
+        { party: "Kieran", item: "Update transactional emails with Wunderman templates", since: "2026-06-03" },
+        { party: "Victoria", item: "Update Baha Women's Summer Dress Figma — swap Slip Dress to top", since: "2026-06-03" }
+      ],
+      promises: [
+        { text: "Post-purchase flow live by June 15", dueDate: "2026-06-15", madeOn: "2026-06-03" },
+        { text: "SI Swimsuit runway email scheduled for June 9", dueDate: "2026-06-09", madeOn: "2026-06-03" }
+      ],
+      nextMilestone: "Jun 9 — SI Swimsuit email. Jun 15 — Post-purchase flow live.",
+      flags: [
+        "⚠️ READ ONLY on RVCA-External Slack — never post",
+        "✅ Bryce Baker campaign sent June 3",
+        "✅ AC_exclude tag fix live and confirmed",
+        "May: business up 6% YoY, flows up ~4%, campaigns down 11% (66% lower volume)"
+      ]
+    },
+    {
+      id: "salehe",
+      name: "Salehe Bembury",
+      color: "#2F9E44",
+      dot: "green",
+      health: "On Track",
+      tagline: "Launch done ✅. Warmup A/B/C running. Welcome series needs to be filed.",
+      lastTouched: "2026-06-03",
+      tasks: [
+        { text: "File welcome series copy into client docs (4 emails — approved)", complexity: "quick", owner: "Michael", urgent: false },
+        { text: "File fallback / sold-out email brief into client docs", complexity: "quick", owner: "Michael", urgent: false },
+        { text: "Confirm 10-day warmup schedule with Fardad (30 groups, A–AD)", complexity: "quick", owner: "Michael", urgent: false },
+        { text: "Build abandoned suite in Klaviyo (v9 copy approved, pending Shopify sync)", complexity: "heavy", owner: "Michael", urgent: false }
+      ],
+      waitingOn: [
+        { party: "Kevin (Shopify admin)", item: "Shopify admin access for Klaviyo app install", since: "2026-06-01" },
+        { party: "Fardad", item: "Confirm warmup schedule + group sizes for Days 4–10", since: "2026-06-03" }
+      ],
+      promises: [
+        { text: "Warmup running daily through ~June 12", dueDate: "2026-06-12", madeOn: "2026-06-01" }
+      ],
+      nextMilestone: "Warmup Day 2 — Group B send",
+      flags: [
+        "✅ Launch done — Vellum 2 drop June 3",
+        "✅ Warmup Groups A/B/C sent",
+        "Klaviyo account: VwAij6",
+        "Abandoned suite blocked on Shopify sync (Kevin granting admin)"
+      ]
+    },
+    {
+      id: "the-lab",
+      name: "The Lab Life",
+      color: "#F08C00",
+      dot: "amber",
+      health: "Moving Fast",
+      tagline: "Kickoff done. Miro draft due Friday 7am. June 19 deadline.",
+      lastTouched: "2026-06-03",
+      tasks: [
+        { text: "Send Miro board invite to Ally + Travis", complexity: "quick", owner: "Michael", urgent: true },
+        { text: "Send Friday 7am PST calendar invite to Ally", complexity: "quick", owner: "Michael", urgent: true },
+        { text: "Map Trial Pass flow in Miro (unbooked leads + no-shows)", complexity: "medium", owner: "Michael", urgent: true },
+        { text: "Map Summer Camp abandoned cart flow in Miro", complexity: "medium", owner: "Michael", urgent: true },
+        { text: "Map 33k Legacy Lead re-engagement campaign in Miro", complexity: "medium", owner: "Michael", urgent: true },
+        { text: "Plan Spark → GHL one-way sync (tag as Sold on membership purchase)", complexity: "heavy", owner: "Michael", urgent: false },
+        { text: "GHL data cleanup — dedupe current member tags (654 tags vs ~300 actual accounts)", complexity: "heavy", owner: "Michael", urgent: false }
+      ],
+      waitingOn: [
+        { party: "Ally", item: "Attend Friday 7am PST flow review", since: "2026-06-03" },
+        { party: "Travis", item: "Attend Monday June 8 final review", since: "2026-06-03" }
+      ],
+      promises: [
+        { text: "First draft of all flows ready for Friday 7am review", dueDate: "2026-06-05", madeOn: "2026-06-03" },
+        { text: "All builds locked by June 12", dueDate: "2026-06-12", madeOn: "2026-06-03" },
+        { text: "Project complete by June 19", dueDate: "2026-06-19", madeOn: "2026-06-03" }
+      ],
+      nextMilestone: "Fri Jun 5 @ 7am PST — First draft flow review with Ally",
+      flags: [
+        "✅ SIGNED May 29 — $5k in, $2.5k July",
+        "GHL = pre-member marketing. Spark = post-member operations. Keep separate.",
+        "Month 2: Klaviyo layer + Constant Contact migration",
+        "⚠️ Summer camp only has ~6 weeks left — time sensitive"
+      ]
+    },
+    {
+      id: "epicure",
+      name: "Epicure",
+      color: "#862E9C",
+      dot: "red",
+      health: "Needs Attention",
+      tagline: "Vitorn images urgent June 8. Not enough time spent here this week.",
+      lastTouched: "2026-06-01",
+      tasks: [
+        { text: "Chase Vitorn packaging images — June 8 launch is hard deadline", complexity: "quick", owner: "Michael", urgent: true },
+        { text: "Fix Klaviyo locale bug — 46k US users getting CA emails (1 import fix)", complexity: "medium", owner: "Michael", urgent: true },
+        { text: "Scope regional product catalog split with Will (developer)", complexity: "medium", owner: "Michael", urgent: false },
+        { text: "Brief Geoff on affiliate flow requirements", complexity: "quick", owner: "Michael", urgent: false },
+        { text: "Review Meaghan's BBQ giveaway proposals", complexity: "quick", owner: "Michael", urgent: false },
+        { text: "Plan Yotpo vs Klaviyo decision (Sept 1 license expiry)", complexity: "medium", owner: "Michael", urgent: false }
+      ],
+      waitingOn: [
+        { party: "Epicure / Vitorn", item: "Packaging images for June 8 launch — URGENT", since: "2026-06-01" },
+        { party: "Geoff", item: "Affiliate flow brief", since: "2026-06-01" },
+        { party: "Meaghan", item: "BBQ giveaway proposals", since: "2026-06-01" }
+      ],
+      promises: [
+        { text: "Flow audit + refresh (abandoned suite, product feeds, UTM settings)", dueDate: "2026-06-15", madeOn: "2026-06-01" }
+      ],
+      nextMilestone: "Jun 8 — Vitorn packaging launch",
+      flags: [
+        "✅ Contract started June 1 — first onboarding meeting done",
+        "🔴 Vitorn June 8 deadline at risk if images not received",
+        "Wednesday 'Summer Meals' email built by Kieran — Meaghan to forward to Geoff"
+      ]
+    },
+    {
+      id: "riversol",
+      name: "Riversol",
+      color: "#1098AD",
+      dot: "amber",
+      health: "Waiting on Client",
+      tagline: "Winback strategy locked. Waiting on Una for codes + PNGs. Owe them an email.",
+      lastTouched: "2026-06-02",
+      tasks: [
+        { text: "Send client update email — acknowledge delay, set expectations", complexity: "quick", owner: "Michael", urgent: true },
+        { text: "Update discount codes in all flows once Una delivers (15% + 30%)", complexity: "medium", owner: "Michael", urgent: false },
+        { text: "Swap free shipping threshold to $69 in all emails", complexity: "medium", owner: "Michael", urgent: false },
+        { text: "Swap product images when PNGs arrive from Una", complexity: "quick", owner: "Michael", urgent: false },
+        { text: "Update flow triggers with new segments once ready", complexity: "medium", owner: "Michael", urgent: false }
+      ],
+      waitingOn: [
+        { party: "Una", item: "Confirm 'sample not converted' event name in Klaviyo", since: "2026-06-01" },
+        { party: "Una", item: "New product PNGs for email image swaps", since: "2026-06-01" }
+      ],
+      promises: [
+        { text: "Winback flow built and live once Una delivers assets", dueDate: null, madeOn: "2026-06-01" }
+      ],
+      nextMilestone: "Waiting on Una — then build begins",
+      flags: [
+        "✅ Discount codes + segments delivered by Una June 2",
+        "Winback decisions locked June 1 call",
+        "Sample winback: trigger = 'sample not converted' event (Una to confirm name)",
+        "Return customer: merged with One Hit Wonders, trigger = orders >= 1",
+        "Turn off gift card flow. Free shipping threshold → $69."
+      ]
+    },
+    {
+      id: "hiba",
+      name: "Hiba Academy",
+      color: "#E64980",
+      dot: "green",
+      health: "On Track",
+      tagline: "May report live and sent ✅. Campaign calendar regroup is next.",
+      lastTouched: "2026-06-03",
+      tasks: [
+        { text: "Send validation email to Hiba team confirming report delivery", complexity: "quick", owner: "Michael", urgent: false },
+        { text: "Schedule campaign calendar regroup with client", complexity: "quick", owner: "Michael", urgent: false }
+      ],
+      waitingOn: [],
+      promises: [],
+      nextMilestone: "Campaign calendar regroup — date TBD",
+      flags: [
+        "✅ May 2026 report live: digitsup.github.io/hiba/may-2026.html — Password: HIBA2026",
+        "✅ Sent to client by Michael",
+        "All signup forms working. Pop-up offline."
+      ]
+    },
+    {
+      id: "outersignal",
+      name: "OuterSignal",
+      color: "#5C7CFA",
+      dot: "grey",
+      health: "Waiting on Client",
+      tagline: "Kickoff done. Waiting on Dropbox (Sam) and persona report (Dov).",
+      lastTouched: "2026-06-01",
+      tasks: [
+        { text: "Follow up with Sam on Dropbox creative folder + brand guidelines", complexity: "quick", owner: "Michael", urgent: false },
+        { text: "Follow up with Dov on persona report", complexity: "quick", owner: "Michael", urgent: false },
+        { text: "Build post-purchase strategy + creative concepts in Figma (once assets arrive)", complexity: "heavy", owner: "Michael", urgent: false }
+      ],
+      waitingOn: [
+        { party: "Sam", item: "Dropbox creative folder + brand guidelines", since: "2026-06-01" },
+        { party: "Dov", item: "Persona report (6 persona-specific app download emails)", since: "2026-06-01" }
+      ],
+      promises: [],
+      nextMilestone: "Creative concepts in Figma — once assets received from Sam + Dov",
+      flags: [
+        "✅ Kickoff done June 1",
+        "Scope: 6 persona-specific post-purchase emails → drive app adoption (20k users)",
+        "OuterSignal backfilled to Sep 9, 2025 ✅",
+        "Timeline: ~10 days creative, 1 week Klaviyo build once assets received"
+      ]
+    },
+    {
+      id: "sfr",
+      name: "SFR Distillery",
+      color: "#845EF7",
+      dot: "grey",
+      health: "Prospect — Waiting",
+      tagline: "Proposal v3 sent May 28. Waiting on Will.",
+      lastTouched: "2026-05-28",
+      tasks: [
+        { text: "Follow up with Will if no response by end of week", complexity: "quick", owner: "Michael", urgent: false }
+      ],
+      waitingOn: [
+        { party: "Will (client)", item: "Response to proposal v3", since: "2026-05-28" }
+      ],
+      promises: [],
+      nextMilestone: "Awaiting Will's decision on proposal v3",
+      flags: [
+        "Prospect — not yet signed",
+        "Proposal v3 sent May 28"
+      ]
+    }
+  ]
+};
+
+const PIPELINE = [
+  { date: "2026-06-04", client: "RVCA", clientId: "rvca", item: "Bryce Baker SMS send", owner: "Team" },
+  { date: "2026-06-05", client: "FRNK", clientId: "frnk", item: "Signup form + welcome series DUE", owner: "Michael", urgent: true },
+  { date: "2026-06-05", client: "The Lab", clientId: "the-lab", item: "First draft flows — Miro review with Ally @ 7am PST", owner: "Michael", urgent: true },
+  { date: "2026-06-06", client: "RVCA", clientId: "rvca", item: "Baha Women's Summer Dress email sends", owner: "Team" },
+  { date: "2026-06-08", client: "The Lab", clientId: "the-lab", item: "Final flow review with Travis", owner: "Michael" },
+  { date: "2026-06-08", client: "Epicure", clientId: "epicure", item: "Vitorn packaging launch — images must be in by today", owner: "Client", urgent: true },
+  { date: "2026-06-09", client: "RVCA", clientId: "rvca", item: "SI Swimsuit runway email", owner: "Team" },
+  { date: "2026-06-12", client: "The Lab", clientId: "the-lab", item: "All GHL builds locked", owner: "Michael" },
+  { date: "2026-06-15", client: "RVCA", clientId: "rvca", item: "Post-purchase flow goes live", owner: "Michael" },
+  { date: "2026-06-19", client: "The Lab", clientId: "the-lab", item: "Full project complete", owner: "Michael" }
+];
+
+const DO_THIS_NOW = [
+  {
+    icon: "🟢",
+    clientId: "frnk",
+    clientName: "FRNK Boutique",
+    text: "Start the signup form in Klaviyo",
+    complexity: "quick",
+    deadline: "Due Thursday",
+    urgent: true
+  },
+  {
+    icon: "🟢",
+    clientId: "rvca",
+    clientName: "RVCA",
+    text: "Push Welcome Series live — built and waiting for approval",
+    complexity: "quick",
+    deadline: null,
+    urgent: true
+  },
+  {
+    icon: "🟢",
+    clientId: "the-lab",
+    clientName: "The Lab Life",
+    text: "Send Miro invite to Ally + Travis + calendar invite for Friday 7am",
+    complexity: "quick",
+    deadline: "Due tomorrow",
+    urgent: true
+  }
+];
+
+// ============================
+// HELPERS
+// ============================
+function daysSince(dateStr) {
+  const d = new Date(dateStr + 'T12:00:00-07:00');
+  const diff = TODAY - d;
+  return Math.floor(diff / (1000 * 60 * 60 * 24));
+}
+
+function daysUntil(dateStr) {
+  const d = new Date(dateStr + 'T12:00:00-07:00');
+  const diff = d - TODAY;
+  return Math.floor(diff / (1000 * 60 * 60 * 24));
+}
+
+function formatDate(dateStr) {
+  if (!dateStr) return null;
+  const d = new Date(dateStr + 'T12:00:00-07:00');
+  return d.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+}
+
+function complexityPill(c) {
+  const map = {
+    quick: { label: '⚡ Quick', cls: 'complexity-quick' },
+    medium: { label: '🔧 Medium', cls: 'complexity-medium' },
+    heavy: { label: '🏗️ Heavy', cls: 'complexity-heavy' }
+  };
+  const p = map[c] || map.quick;
+  return `<span class="complexity-pill ${p.cls}">${p.label}</span>`;
+}
+
+function getClientById(id) {
+  return OPS_DATA.clients.find(c => c.id === id);
+}
+
+function healthStatusClass(dot) {
+  return { green: 'status-green', amber: 'status-amber', red: 'status-red', grey: 'status-grey' }[dot] || 'status-grey';
+}
+
+function dotClass(dot) {
+  return `dot-${dot}`;
+}
+
+function pipelineUrgency(dateStr) {
+  const days = daysUntil(dateStr);
+  if (days < 0) return 'overdue';
+  if (days <= 2) return 'soon';
+  return 'ok';
+}
+
+function escapeSub(str) {
+  return encodeURIComponent(str);
+}
+
+// ============================
+// PASSWORD
+// ============================
+const CORRECT_PASSWORD = 'Ops2026';
+
+function checkPassword() {
+  const input = document.getElementById('gate-input');
+  const error = document.getElementById('gate-error');
+  const val = input.value.trim();
+
+  if (val === CORRECT_PASSWORD) {
+    localStorage.setItem('mollie-ops-auth', '1');
+    document.getElementById('password-gate').classList.add('hidden');
+    document.getElementById('app').classList.remove('hidden');
+    initApp();
+  } else {
+    input.classList.add('error');
+    error.classList.add('visible');
+    setTimeout(() => input.classList.remove('error'), 400);
+    input.value = '';
+    input.focus();
+  }
+}
+
+document.getElementById('gate-input').addEventListener('keydown', function(e) {
+  if (e.key === 'Enter') checkPassword();
+  document.getElementById('gate-error').classList.remove('visible');
+});
+
+// Auto-unlock if previously authenticated
+if (localStorage.getItem('mollie-ops-auth') === '1') {
+  document.getElementById('password-gate').classList.add('hidden');
+  document.getElementById('app').classList.remove('hidden');
+  window.addEventListener('DOMContentLoaded', initApp);
+}
+
+// ============================
+// TAB SWITCHING
+// ============================
+let currentTab = 'today';
+
+function switchTab(tab, sidebarBtn, bottomBtn) {
+  // Hide all panels
+  document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+  document.getElementById('tab-' + tab).classList.add('active');
+
+  // Update sidebar
+  document.querySelectorAll('.sidebar .nav-item').forEach(b => b.classList.remove('active'));
+  if (sidebarBtn) sidebarBtn.classList.add('active');
+  else {
+    const sidebarItems = document.querySelectorAll('.sidebar .nav-item');
+    const tabOrder = ['today', 'clients', 'waiting', 'quiet', 'pipeline'];
+    const idx = tabOrder.indexOf(tab);
+    if (sidebarItems[idx]) sidebarItems[idx].classList.add('active');
+  }
+
+  // Update bottom nav
+  document.querySelectorAll('.bottom-nav .bottom-nav-item').forEach(b => b.classList.remove('active'));
+  if (bottomBtn) bottomBtn.classList.add('active');
+  else {
+    const bottomItems = document.querySelectorAll('.bottom-nav .bottom-nav-item');
+    const tabOrder = ['today', 'clients', 'waiting', 'quiet', 'pipeline'];
+    const idx = tabOrder.indexOf(tab);
+    if (bottomItems[idx]) bottomItems[idx].classList.add('active');
+  }
+
+  currentTab = tab;
+
+  // Scroll to top
+  document.querySelector('.content').scrollTop = 0;
+}
+
+// ============================
+// RENDER TODAY
+// ============================
+function renderToday() {
+  // Priority list
+  const pl = document.getElementById('priority-list');
+  pl.innerHTML = DO_THIS_NOW.map(t => {
+    const client = getClientById(t.clientId);
+    const color = client ? client.color : '#999';
+    return `
+      <div class="priority-card">
+        <div class="priority-icon">${t.icon}</div>
+        <div class="priority-body">
+          <div class="priority-client-chip" style="background:${color}">${t.clientName}</div>
+          <div class="priority-text">${t.text}</div>
+          <div class="priority-meta">
+            ${complexityPill(t.complexity)}
+            ${t.deadline ? `<span class="deadline-chip urgent">📅 ${t.deadline}</span>` : ''}
+          </div>
+        </div>
+      </div>
+    `;
+  }).join('');
+
+  // Health grid
+  const hg = document.getElementById('health-grid');
+  document.getElementById('client-health-count').textContent = `${OPS_DATA.clients.length} clients`;
+  hg.innerHTML = OPS_DATA.clients.map((c, i) => {
+    const stickingFlag = c.flags.find(f => f.includes('🔴') || f.includes('⚠️'));
+    return `
+      <div class="health-card" style="animation-delay:${0.04 + i * 0.04}s" onclick="openSheet('${c.id}')">
+        <div style="position:absolute;left:0;top:0;bottom:0;width:4px;background:${c.color};border-radius:4px 0 0 4px;"></div>
+        <div class="health-card-top">
+          <div></div>
+          <div class="client-dot ${dotClass(c.dot)}"></div>
+        </div>
+        <div class="health-card-name">${c.name}</div>
+        <div class="health-card-status ${healthStatusClass(c.dot)}">${c.health}</div>
+        <div class="health-card-tagline">${c.tagline}</div>
+        ${stickingFlag ? `<div class="health-card-flag">${stickingFlag}</div>` : ''}
+      </div>
+    `;
+  }).join('');
+
+  // Gone quiet (Today section)
+  const quietClients = getGoneQuietClients();
+  const tql = document.getElementById('today-quiet-list');
+  document.getElementById('today-quiet-count').textContent = `${Math.min(quietClients.length, 3)} flagged`;
+
+  tql.innerHTML = quietClients.slice(0, 3).map(c => {
+    const days = daysSince(c.lastTouched);
+    const openTasks = c.tasks.length;
+    return `
+      <div class="quiet-card">
+        <div class="quiet-icon">⏱️</div>
+        <div class="quiet-body">
+          <div class="quiet-client">${c.name}</div>
+          <div class="quiet-age">Started ${days} day${days !== 1 ? 's' : ''} ago — no update</div>
+          <div class="quiet-task">${c.tagline}</div>
+          <div style="margin-top:8px;">
+            <a href="mailto:mollie@digitsup.com?subject=${escapeSub('Ping: ' + c.name + ' — check in needed')}" class="quiet-ping">📣 Ping Mollie</a>
+          </div>
+        </div>
+      </div>
+    `;
+  }).join('');
+
+  if (quietClients.length === 0) {
+    tql.innerHTML = `<div class="empty-state"><div class="empty-icon">🎉</div><div class="empty-title">All caught up</div><div class="empty-sub">Nothing has gone quiet. Keep moving.</div></div>`;
+  }
+}
+
+// ============================
+// RENDER CLIENTS
+// ============================
+function renderClients() {
+  const cg = document.getElementById('clients-grid');
+  cg.innerHTML = OPS_DATA.clients.map((c, i) => {
+    const openTasks = c.tasks.length;
+    const urgentCount = c.tasks.filter(t => t.urgent).length;
+    const waitingCount = c.waitingOn.length;
+    return `
+      <div class="client-card" style="animation-delay:${0.04 + i * 0.04}s" onclick="openSheet('${c.id}')">
+        <div style="position:absolute;left:0;top:0;bottom:0;width:4px;background:${c.color};border-radius:4px 0 0 4px;"></div>
+        <div class="client-card-top">
+          <div class="client-dot ${dotClass(c.dot)}"></div>
+        </div>
+        <div class="client-card-name">${c.name}</div>
+        <div class="client-card-tagline">${c.tagline}</div>
+        <div class="client-card-stats">
+          <span class="stat-chip">${openTasks} tasks</span>
+          ${urgentCount > 0 ? `<span class="stat-chip" style="background:#FFF5F5;color:#E03131;">${urgentCount} urgent</span>` : ''}
+          ${waitingCount > 0 ? `<span class="stat-chip" style="background:#F8F9FA;color:#6B6B6B;">${waitingCount} waiting</span>` : ''}
+        </div>
+      </div>
+    `;
+  }).join('');
+}
+
+// ============================
+// RENDER WAITING
+// ============================
+function renderWaiting() {
+  const wl = document.getElementById('waiting-list');
+
+  // Collect all waiting items with client info
+  let allWaiting = [];
+  OPS_DATA.clients.forEach(c => {
+    c.waitingOn.forEach(w => {
+      allWaiting.push({ ...w, clientId: c.id, clientName: c.name, clientColor: c.color, clientDot: c.dot });
+    });
+  });
+
+  // Sort oldest first
+  allWaiting.sort((a, b) => new Date(a.since) - new Date(b.since));
+
+  if (allWaiting.length === 0) {
+    wl.innerHTML = `<div class="empty-state"><div class="empty-icon">✅</div><div class="empty-title">Nothing waiting</div><div class="empty-sub">No open items blocked on clients or third parties.</div></div>`;
+    return;
+  }
+
+  // Group by client
+  const byClient = {};
+  allWaiting.forEach(w => {
+    if (!byClient[w.clientId]) byClient[w.clientId] = { name: w.clientName, color: w.clientColor, dot: w.clientDot, items: [] };
+    byClient[w.clientId].items.push(w);
+  });
+
+  let html = '';
+  let delay = 0.04;
+  Object.values(byClient).forEach(group => {
+    html += `
+      <div class="waiting-group">
+        <div class="waiting-group-header">
+          <div class="waiting-group-dot" style="background:${group.color}"></div>
+          <div class="waiting-group-name">${group.name}</div>
+        </div>
+    `;
+    group.items.forEach(item => {
+      const age = daysSince(item.since);
+      const isOld = age >= 3;
+      html += `
+        <div class="waiting-flat-item" style="animation-delay:${delay}s;border-left:3px solid ${group.color}">
+          <div class="waiting-flat-party">→ ${item.party}</div>
+          <div class="waiting-flat-text">${item.item}</div>
+          <div class="waiting-flat-age ${isOld ? 'old' : ''}">⏰ ${age === 0 ? 'Today' : age + ' day' + (age !== 1 ? 's' : '') + ' waiting'}</div>
+        </div>
+      `;
+      delay += 0.04;
+    });
+    html += '</div>';
+  });
+
+  wl.innerHTML = html;
+}
+
+// ============================
+// GONE QUIET LOGIC
+// ============================
+function getGoneQuietClients() {
+  return OPS_DATA.clients.filter(c => {
+    const days = daysSince(c.lastTouched);
+    const hasOpenTasks = c.tasks.length > 0;
+    // Flag: 4+ days ago, or specifically called out in brief
+    return (days >= 4 || c.id === 'epicure' || c.id === 'outersignal') && hasOpenTasks;
+  }).sort((a, b) => daysSince(b.lastTouched) - daysSince(a.lastTouched));
+}
+
+function renderQuiet() {
+  const ql = document.getElementById('quiet-list');
+  const quietClients = getGoneQuietClients();
+
+  if (quietClients.length === 0) {
+    ql.innerHTML = `<div class="empty-state"><div class="empty-icon">🎉</div><div class="empty-title">All active</div><div class="empty-sub">Nothing has fallen off your radar.</div></div>`;
+    return;
+  }
+
+  ql.innerHTML = quietClients.slice(0, 5).map((c, i) => {
+    const days = daysSince(c.lastTouched);
+    const openTasks = c.tasks.length;
+    const urgentTasks = c.tasks.filter(t => t.urgent);
+    const noteText = c.id === 'outersignal' ? 'Waiting on assets from Sam + Dov' : (urgentTasks.length > 0 ? urgentTasks[0].text : c.tagline);
+    return `
+      <div class="gq-card">
+        <div class="gq-top">
+          <div class="gq-client" style="color:${c.color}">${c.name}</div>
+          <div class="gq-age">${days} day${days !== 1 ? 's' : ''} ago</div>
+        </div>
+        <div class="gq-status">${c.tagline}</div>
+        <div class="gq-open">${openTasks} open task${openTasks !== 1 ? 's' : ''}</div>
+        <div class="gq-actions">
+          <a href="mailto:mollie@digitsup.com?subject=${escapeSub('Ping: ' + c.name + ' — needs attention, last touched ' + days + ' days ago')}" class="ping-btn">📣 Ping Mollie</a>
+        </div>
+      </div>
+    `;
+  }).join('');
+}
+
+// ============================
+// RENDER PIPELINE
+// ============================
+function renderPipeline() {
+  const pl = document.getElementById('pipeline-list');
+  const sorted = [...PIPELINE].sort((a, b) => new Date(a.date) - new Date(b.date));
+
+  pl.innerHTML = sorted.map((item, i) => {
+    const urgency = pipelineUrgency(item.date);
+    const d = new Date(item.date + 'T12:00:00-07:00');
+    const month = d.toLocaleDateString('en-US', { month: 'short' }).toUpperCase();
+    const day = d.getDate();
+    const client = getClientById(item.clientId);
+    const color = client ? client.color : '#999';
+
+    const ownerMap = {
+      'Michael': 'owner-michael',
+      'Team': 'owner-team',
+      'Client': 'owner-client',
+      'Waiting': 'owner-waiting'
+    };
+    const ownerCls = ownerMap[item.owner] || 'owner-waiting';
+
+    const urgencyLabel = urgency === 'overdue' ? 'Past Due' : urgency === 'soon' ? 'This Week' : 'Upcoming';
+
+    return `
+      <div class="pipeline-item" style="animation-delay:${0.04 + i * 0.04}s">
+        <div class="pipeline-urgency-bar ${urgency}"></div>
+        <div class="pipeline-left">
+          <div class="pipeline-date-block">
+            <div class="pipeline-month">${month}</div>
+            <div class="pipeline-day ${urgency}">${day}</div>
+          </div>
+        </div>
+        <div class="pipeline-body">
+          <div class="pipeline-item-text">${item.item}</div>
+          <div class="pipeline-meta">
+            <span class="priority-client-chip" style="background:${color};font-family:'DM Mono',monospace;font-size:10px;padding:3px 8px;">${item.client}</span>
+            <span class="owner-chip ${ownerCls}">${item.owner}</span>
+            <span class="pipeline-status-chip ${urgency}">${urgencyLabel}</span>
+          </div>
+        </div>
+      </div>
+    `;
+  }).join('');
+}
+
+// ============================
+// CLIENT SHEET
+// ============================
+function openSheet(clientId) {
+  const client = getClientById(clientId);
+  if (!client) return;
+
+  const overlay = document.getElementById('client-sheet-overlay');
+  const header = document.getElementById('sheet-header');
+  const body = document.getElementById('sheet-body');
+
+  // Header
+  header.innerHTML = `
+    <div class="sheet-header-top">
+      <div class="sheet-accent-bar" style="background:${client.color}"></div>
+      <div>
+        <div class="sheet-title">${client.name}</div>
+        <div style="display:flex;align-items:center;gap:8px;margin-top:4px;">
+          <div class="client-dot ${dotClass(client.dot)}"></div>
+          <span class="status-badge ${healthStatusClass(client.dot)}">${client.health}</span>
+        </div>
+      </div>
+    </div>
+    <div class="sheet-tagline">${client.tagline}</div>
+    <button class="sheet-close" onclick="closeSheet()">✕</button>
+  `;
+
+  // Body
+  let html = '';
+
+  // Tasks
+  html += `<div class="sheet-section">
+    <div class="sheet-section-title"><span class="sheet-section-icon">✅</span> Do First</div>`;
+
+  const sortedTasks = [...client.tasks].sort((a, b) => {
+    const order = { quick: 0, medium: 1, heavy: 2 };
+    return order[a.complexity] - order[b.complexity];
+  });
+
+  sortedTasks.forEach((task, idx) => {
+    const key = `task-${clientId}-${idx}`;
+    const isDone = localStorage.getItem(key) === '1';
+    html += `
+      <div class="task-row ${isDone ? 'done' : ''}" id="row-${key}">
+        <div class="task-checkbox ${isDone ? 'checked' : ''}" onclick="toggleTask('${key}')"></div>
+        <div class="task-content">
+          <div class="task-text">${task.text}</div>
+          <div class="task-pills">
+            ${complexityPill(task.complexity)}
+            ${task.urgent ? '<span class="urgent-pill">Urgent</span>' : ''}
+          </div>
+        </div>
+      </div>
+    `;
+  });
+
+  html += `</div>`;
+
+  // Waiting On
+  if (client.waitingOn.length > 0) {
+    html += `<div class="sheet-section">
+      <div class="sheet-section-title"><span class="sheet-section-icon">⏳</span> Waiting On Them</div>`;
+    client.waitingOn.forEach(w => {
+      const age = daysSince(w.since);
+      html += `
+        <div class="waiting-item">
+          <div class="waiting-clock">🕐</div>
+          <div class="waiting-content">
+            <div class="waiting-party">${w.party}</div>
+            <div class="waiting-text">${w.item}</div>
+            <div class="waiting-age">${age === 0 ? 'Since today' : age + ' day' + (age !== 1 ? 's' : '') + ' waiting'}</div>
+          </div>
+        </div>
+      `;
+    });
+    html += `</div>`;
+  }
+
+  // Promises
+  if (client.promises.length > 0) {
+    html += `<div class="sheet-section">
+      <div class="sheet-section-title"><span class="sheet-section-icon">🤝</span> Promises Made</div>`;
+    client.promises.forEach(p => {
+      const isOverdue = p.dueDate && daysUntil(p.dueDate) < 0;
+      html += `
+        <div class="promise-item ${isOverdue ? 'overdue' : ''}">
+          <div style="flex:1">
+            <div class="promise-text">${p.text}</div>
+            ${p.dueDate ? `<div class="promise-due ${isOverdue ? 'overdue' : ''}">📅 Due ${formatDate(p.dueDate)}${isOverdue ? ' — PAST DUE' : ''}</div>` : '<div class="promise-due">No hard deadline</div>'}
+          </div>
+        </div>
+      `;
+    });
+    html += `</div>`;
+  }
+
+  // Next Milestone
+  if (client.nextMilestone) {
+    html += `<div class="sheet-section">
+      <div class="sheet-section-title"><span class="sheet-section-icon">🎯</span> Next Milestone</div>
+      <div class="milestone-box" style="border-left-color:${client.color}">
+        <div class="milestone-label">Coming up</div>
+        <div class="milestone-text">${client.nextMilestone}</div>
+      </div>
+    </div>`;
+  }
+
+  // Flags
+  if (client.flags.length > 0) {
+    html += `<div class="sheet-section">
+      <div class="sheet-section-title"><span class="sheet-section-icon">🚩</span> Flags</div>`;
+    client.flags.forEach(f => {
+      html += `<div class="flag-item">${f}</div>`;
+    });
+    html += `</div>`;
+  }
+
+  body.innerHTML = html;
+  overlay.classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeSheet(e) {
+  if (e && e.target !== document.getElementById('client-sheet-overlay')) return;
+  document.getElementById('client-sheet-overlay').classList.remove('open');
+  document.body.style.overflow = '';
+}
+
+// ============================
+// TASK CHECKBOX
+// ============================
+function toggleTask(key) {
+  const isDone = localStorage.getItem(key) === '1';
+  const newState = isDone ? '0' : '1';
+  localStorage.setItem(key, newState);
+
+  const row = document.getElementById('row-' + key);
+  const box = row.querySelector('.task-checkbox');
+
+  if (newState === '1') {
+    row.classList.add('done');
+    box.classList.add('checked');
+  } else {
+    row.classList.remove('done');
+    box.classList.remove('checked');
+  }
+}
+
+// ============================
+// INIT
+// ============================
+function initApp() {
+  renderToday();
+  renderClients();
+  renderWaiting();
+  renderQuiet();
+  renderPipeline();
+}
+
+// If already authenticated (page already visible), init on DOMContentLoaded
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', () => {
+    if (localStorage.getItem('mollie-ops-auth') === '1') {
+      document.getElementById('password-gate').classList.add('hidden');
+      document.getElementById('app').classList.remove('hidden');
+      initApp();
+    }
+  });
+} else {
+  if (localStorage.getItem('mollie-ops-auth') === '1') {
+    document.getElementById('password-gate').classList.add('hidden');
+    document.getElementById('app').classList.remove('hidden');
+    initApp();
+  }
+}
+</script>
+</body>
+</html>
