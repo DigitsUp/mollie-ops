@@ -1813,7 +1813,7 @@ const TODAY = new Date('2026-06-04T23:00:00-07:00');
 
 const OPS_DATA = {
   meta: {
-    lastUpdated: "2026-06-04T23:00:00-07:00",
+    lastUpdated: "2026-06-05T13:10:00-07:00",
     updatedBy: "Mollie"
   },
   clients: [
@@ -1821,32 +1821,35 @@ const OPS_DATA = {
       id: "riversol",
       name: "Riversol",
       color: "#1098AD",
-      dot: "red",
-      health: "Needs Work",
-      tagline: "🔴 Winback must go live today. Nothing built yet. Biggest focus.",
-      lastTouched: "2026-06-04",
+      dot: "amber",
+      health: "In Progress",
+      tagline: "✅ Both winback flows LIVE. Replenishment audit done — designs due Jun 15.",
+      lastTouched: "2026-06-05",
       tasks: [
-        { text: "Build plain-text winback flow — Michael owns this", complexity: "heavy", owner: "Michael", urgent: true },
-        { text: "Working session with Victoria on replenishment flow → wireframe to client Monday", complexity: "heavy", owner: "Michael", urgent: true },
-        { text: "Update discount codes in all flows (15% off >$69 standard, 30% last chance)", complexity: "medium", owner: "Michael", urgent: false },
-        { text: "Swap free shipping threshold to $69 in all emails", complexity: "medium", owner: "Michael", urgent: false },
-        { text: "Swap product images when PNGs arrive from Una", complexity: "quick", owner: "Michael", urgent: false },
-        { text: "Update flow triggers with new segments once ready", complexity: "medium", owner: "Michael", urgent: false }
+        { text: "Write replenishment flow brief (2-track redesign) — Michael to confirm direction", complexity: "heavy", owner: "Michael", urgent: true },
+        { text: "Replenishment wireframe ready for Monday Jun 9 client call", complexity: "heavy", owner: "Michael", urgent: true },
+        { text: "5-Star Review flow — finalize today, share with client Monday", complexity: "quick", owner: "Michael", urgent: true },
+        { text: "Brief to Ali on referral program (updates + design placement)", complexity: "medium", owner: "Michael", urgent: true },
+        { text: "Email designs for referral — due Tuesday Jun 9", complexity: "medium", owner: "Team", urgent: false },
+        { text: "Skin Quiz Onboarding flow — share strategy on Monday's call", complexity: "heavy", owner: "Michael", urgent: false },
+        { text: "Swap product images when PNGs arrive from Una", complexity: "quick", owner: "Michael", urgent: false }
       ],
       waitingOn: [
-        { party: "Una", item: "Confirm 'sample not converted' event name in Klaviyo", since: "2026-06-01" },
-        { party: "Una", item: "New product PNGs for email image swaps", since: "2026-06-01" }
+        { party: "Una / IT", item: "Selfie data mapped to Klaviyo (skin quiz analyzer event)", since: "2026-05-27" }
       ],
       promises: [
-        { text: "Winback flow live — no hard date but long overdue", dueDate: null, madeOn: "2026-06-01" },
-        { text: "Replenishment flow wireframe to client by Monday Jun 9", dueDate: "2026-06-09", madeOn: "2026-06-04" }
+        { text: "Replenishment strategy + copy on Monday call", dueDate: "2026-06-09", madeOn: "2026-06-05" },
+        { text: "Replenishment designs complete (full series)", dueDate: "2026-06-15", madeOn: "2026-06-05" },
+        { text: "5-Star Review flow shared Monday", dueDate: "2026-06-09", madeOn: "2026-06-05" },
+        { text: "Referral email designs done", dueDate: "2026-06-09", madeOn: "2026-06-05" }
       ],
-      nextMilestone: "Today — build winback flow. Mon Jun 9 — replenishment wireframe to client.",
+      nextMilestone: "Mon Jun 9 — replenishment strategy walk + 5-star review flow share. Jun 15 — replenishment designs done.",
       flags: [
-        "🔴 Nothing built yet — this is the biggest focus of Jun 5",
-        "Winback decisions locked Jun 1: sample trigger, return customer merged with One Hit Wonders, 15%/30% offers",
-        "Gift card flow: turn off. Free shipping → $69.",
-        "Smart Sending: enable. 'Made in Canada' logic: hide for US."
+        "✅ Win-Back Samplers (Se4AWY) — LIVE Jun 5",
+        "✅ Win-Back Return Customers (RwZy3j) — LIVE Jun 5 (One Hit Wonders merged in, ~7.5k profiles)",
+        "✅ Gift card flow archived. Free shipping → $69. 'Made in Canada' logic + Smile Points CTA dynamic.",
+        "Replenishment: 4-track → 2-track redesign (New customer vs Repeat). Samplers excluded.",
+        "Update email sent to Arnaud Jun 5 ✅"
       ]
     },
     {
