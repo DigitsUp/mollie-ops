@@ -1896,7 +1896,7 @@ const OPS_DATA = {
         { text: "Campaign: Men's Workout → Tue Jun 9 (copy ready)", complexity: "quick", owner: "Team", urgent: false },
         { text: "Campaign: SI Swimsuit Runway → Wed Jun 10 (women's). Victoria to brief.", complexity: "medium", owner: "Victoria", urgent: false },
         { text: "Campaign: Father's Day (Jun 15) — full base, men's + women's. Victoria to brief.", complexity: "medium", owner: "Victoria", urgent: false },
-        { text: "OuterSignal backfill (~48k customers, ~$1,440) — waiting on Clay confirmation", complexity: "medium", owner: "Michael", urgent: false }
+        { text: "OuterSignal backfill: 44,850 customers × $0.03 = $1,345.50, plan → $399/mo. Pricing sent to Clay — waiting on confirmation before proceeding.", complexity: "medium", owner: "Michael", urgent: false }
       ],
       waitingOn: [
         { party: "Clayton Dahl", item: "Post-purchase offer strategy feedback", since: "2026-06-03" },
@@ -1912,6 +1912,7 @@ const OPS_DATA = {
       flags: [
         "⚠️ READ ONLY on RVCA-External Slack — never post",
         "✅ Welcome series live on 50/50 split",
+        "✅ Summer Dresses email approved by Clay — scheduled Sat Jun 7 @ 9am recipient time",
         "✅ AC_exclude tag fix added to AC + Browse flows",
         "Win back: 4 emails, generalized. NOT split by gender or new/returning. A/B offer test.",
         "Post-purchase on hold — needs Clay feedback before Marl builds",
@@ -1922,27 +1923,23 @@ const OPS_DATA = {
       id: "salehe",
       name: "Salehe Bembury",
       color: "#2F9E44",
-      dot: "amber",
+      dot: "green",
       health: "Warmup Active",
-      tagline: "Vellum ends 2pm today. Giveaway sends Sat–Mon. Pending Fardad approval.",
+      tagline: "✅ Giveaway approved by Fardad. Weekend sends scheduled.",
       lastTouched: "2026-06-05",
       tasks: [
-        { text: "Get Fardad approval on giveaway email before scheduling", complexity: "quick", owner: "Michael", urgent: true },
-        { text: "Kieran: clone giveaway email, schedule Sat–Mon (3 groups/day, 4hr apart from 6am). Exclude prior send groups.", complexity: "quick", owner: "Kieran", urgent: true },
-        { text: "Marl: update giveaway GIF to white background", complexity: "quick", owner: "Marl", urgent: true },
+        { text: "Monitor weekend giveaway sends (Sat–Mon, 3 groups/day)", complexity: "quick", owner: "Michael", urgent: false },
         { text: "Kieran: fix mobile layout bug in browse email (table pushing template)", complexity: "medium", owner: "Kieran", urgent: false },
         { text: "Welcome series: needs a bigger check-in (deprioritized)", complexity: "medium", owner: "Michael", urgent: false }
       ],
-      waitingOn: [
-        { party: "Fardad", item: "Approval on giveaway email before scheduling weekend sends", since: "2026-06-05" }
-      ],
+      waitingOn: [],
       promises: [
         { text: "Warmup running daily through ~June 12", dueDate: "2026-06-12", madeOn: "2026-06-01" }
       ],
-      nextMilestone: "Fardad approval → Kieran schedules Sat–Mon giveaway sends",
+      nextMilestone: "Weekend warmup sends running. Check in Monday.",
       flags: [
-        "✅ Vellum send: last group (H) goes at 2pm PST today",
-        "Giveaway: I-J-K Saturday, L-M-N Sunday, continue Monday. 3 groups/day, 4hr apart from 6am.",
+        "✅ Giveaway approved by Fardad. Scheduled Sat–Mon.",
+        "✅ Vellum sends complete.",
         "✅ Abandoned suite live. Fardad's Figma comments all incorporated.",
         "Klaviyo account: VwAij6"
       ]
@@ -2050,7 +2047,7 @@ const OPS_DATA = {
       color: "#5C7CFA",
       dot: "red",
       health: "TOP PRIORITY",
-      tagline: "🔴 Brief done ✅. Copy due Mon Jun 8 (Meaghan). Design Mon → build done Thu Jun 11.",
+      tagline: "🔴 Brief done ✅. Copy due Mon Jun 8. Design Mon/Tue. OuterSignal backfill pricing sent to Clay — awaiting confirmation.",
       lastTouched: "2026-06-05",
       tasks: [
         { text: "Meaghan: Finalize copy by Mon Jun 8 (check brief in Notion, posted in Slack)", complexity: "heavy", owner: "Meaghan", urgent: true },
