@@ -1685,7 +1685,7 @@ html, body {
     </div>
     <div class="sidebar-footer">
       <div class="sidebar-meta">
-        Updated Jun 4, 2026<br>
+        Updated Jun 3, 2026<br>
         By Mollie
       </div>
     </div>
@@ -1700,7 +1700,7 @@ html, body {
         <div id="tab-today" class="tab-panel active">
           <div class="page-header">
             <div class="page-title">Today 🏠</div>
-            <div class="page-sub">Thursday, June 4, 2026</div>
+            <div class="page-sub">Tuesday, June 3, 2026</div>
           </div>
 
           <!-- Do This Now -->
@@ -1809,74 +1809,35 @@ html, body {
 // ============================
 // DATA
 // ============================
-const TODAY = new Date('2026-06-04T23:00:00-07:00');
+const TODAY = new Date('2026-06-03T21:00:00-07:00');
 
 const OPS_DATA = {
   meta: {
-    lastUpdated: "2026-06-05T14:30:00-07:00",
+    lastUpdated: "2026-06-08T08:30:00-07:00",
     updatedBy: "Mollie"
   },
   clients: [
-    {
-      id: "riversol",
-      name: "Riversol",
-      color: "#1098AD",
-      dot: "amber",
-      health: "In Progress",
-      tagline: "✅ Both winback flows LIVE. Replenishment audit done — designs due Jun 15.",
-      lastTouched: "2026-06-05",
-      tasks: [
-        { text: "Write replenishment flow brief (2-track redesign) — Michael to confirm direction", complexity: "heavy", owner: "Michael", urgent: true },
-        { text: "Replenishment wireframe ready for Monday Jun 9 client call", complexity: "heavy", owner: "Michael", urgent: true },
-        { text: "5-Star Review flow — finalize today, share with client Monday", complexity: "quick", owner: "Michael", urgent: true },
-        { text: "Brief to Ali on referral program (updates + design placement)", complexity: "medium", owner: "Michael", urgent: true },
-        { text: "Email designs for referral — due Tuesday Jun 9", complexity: "medium", owner: "Team", urgent: false },
-        { text: "Skin Quiz Onboarding flow — share strategy on Monday's call", complexity: "heavy", owner: "Michael", urgent: false },
-        { text: "Swap product images when PNGs arrive from Una", complexity: "quick", owner: "Michael", urgent: false }
-      ],
-      waitingOn: [
-        { party: "Una / IT", item: "Selfie data mapped to Klaviyo (skin quiz analyzer event)", since: "2026-05-27" }
-      ],
-      promises: [
-        { text: "Replenishment strategy + copy on Monday call", dueDate: "2026-06-09", madeOn: "2026-06-05" },
-        { text: "Replenishment designs complete (full series)", dueDate: "2026-06-15", madeOn: "2026-06-05" },
-        { text: "5-Star Review flow shared Monday", dueDate: "2026-06-09", madeOn: "2026-06-05" },
-        { text: "Referral email designs done", dueDate: "2026-06-09", madeOn: "2026-06-05" }
-      ],
-      nextMilestone: "Mon Jun 9 — replenishment strategy + design preview to client. Jun 18 — designs complete.",
-      flags: [
-        "✅ Win-Back Samplers (Se4AWY) — LIVE Jun 5",
-        "✅ Win-Back Return Customers (RwZy3j) — LIVE Jun 5 (One Hit Wonders merged in, ~7.5k profiles)",
-        "✅ Gift card flow archived. Free shipping → $69. 'Made in Canada' logic + Smile Points CTA dynamic.",
-        "Replenishment redesign: 2 segments (1 order vs 2+ orders). 'Spotify Wrapped' dynamic email concept. Riversol Plus / credit balance / Smile points all conditional in one email. Samplers excluded.",
-        "Victoria briefing Marl. Michael writing copy over weekend. Strategy to client Mon, design preview Wed, full designs Jun 18.",
-        "Update email sent to Arnaud Jun 5 ✅ (note: email said Jun 15 for designs — actual is Jun 18)"
-      ]
-    },
     {
       id: "frnk",
       name: "FRNK Boutique",
       color: "#E8845C",
       dot: "amber",
       health: "In Progress",
-      tagline: "New website launching today ✅. New site launch email + giveaway in progress.",
-      lastTouched: "2026-06-05",
+      tagline: "New site live Saturday ✅. Launch email next. Welcome series + cart abandon before Thursday.",
+      lastTouched: "2026-06-08",
       tasks: [
-        { text: "Launch new website today — Michael owns this", complexity: "quick", owner: "Michael", urgent: true },
-        { text: "Build 'New Website Launch + Giveaway' email (replace Euro Summer)", complexity: "medium", owner: "Team", urgent: true },
-        { text: "Euro Summer campaign — save for next week", complexity: "quick", owner: "Team", urgent: false },
-        { text: "Next client meeting: welcome series + signup form + abandoned suite review", complexity: "medium", owner: "Michael", urgent: false },
+        { text: "Write + send new website launch email", complexity: "medium", owner: "Michael", urgent: true },
+        { text: "Check in on welcome series + abandoned cart build — must be ready for Thursday review", complexity: "medium", owner: "Michael", urgent: true },
         { text: "Fix Stamped reviews integration", complexity: "medium", owner: "Michael", urgent: false }
       ],
       waitingOn: [],
       promises: [
-        { text: "Signup form + welcome series live for Thursday client review", dueDate: "2026-06-12", madeOn: "2026-06-04" }
+        { text: "Welcome series + signup form ready for Thursday client meeting", dueDate: "2026-06-12", madeOn: "2026-06-08" }
       ],
-      nextMilestone: "Launch site today. New website email built + sent before Thursday client meeting.",
+      nextMilestone: "Thu Jun 12 — Client meeting. Welcome series + launch email must be live.",
       flags: [
-        "✅ Signup form copy ready (Megan done). Welcome series built.",
-        "Campaign change: New Site Launch + Giveaway email replaces Euro Summer (pushed to next week)",
-        "Thursday 1pm client meeting — welcome series + abandoned suite on agenda"
+        "✅ New Shopify site went live Saturday Jun 7",
+        "Thursday 1pm PST — client meeting with Megan"
       ]
     },
     {
@@ -1885,38 +1846,30 @@ const OPS_DATA = {
       color: "#3B5BDB",
       dot: "amber",
       health: "In Progress",
-      tagline: "Welcome series 50/50 live ✅. Win back in copy. Cart abandonment fix in progress.",
-      lastTouched: "2026-06-05",
+      tagline: "Welcome series LIVE ✅. Post-purchase first email needs edits. Reviews ticket needed.",
+      lastTouched: "2026-06-08",
       tasks: [
-        { text: "Kieran: Cart abandonment fix — Authentic Pass exclusion block. End A/B test, replace block in all 6 checkout abandonment emails. Research if needed for browse/cart too.", complexity: "medium", owner: "Kieran", urgent: true },
-        { text: "Kieran: Verify RVCA pop-up via VPN", complexity: "quick", owner: "Kieran", urgent: true },
-        { text: "Kieran: Build Klaviyo reviews fresh test send for Clay", complexity: "quick", owner: "Kieran", urgent: true },
-        { text: "Win back: Meaghan finalizing copy — 4 emails, generalized (3 designed, 1 PT). A/B test: 10% / $20 off / free ship.", complexity: "heavy", owner: "Meaghan", urgent: true },
-        { text: "Post-purchase: on hold pending Clay feedback. Victoria updating copy, Marl builds after.", complexity: "heavy", owner: "Team", urgent: false },
-        { text: "Campaign: Men's Workout → Tue Jun 9 (copy ready)", complexity: "quick", owner: "Team", urgent: false },
-        { text: "Campaign: SI Swimsuit Runway → Wed Jun 10 (women's). Victoria to brief.", complexity: "medium", owner: "Victoria", urgent: false },
-        { text: "Campaign: Father's Day (Jun 15) — full base, men's + women's. Victoria to brief.", complexity: "medium", owner: "Victoria", urgent: false },
-        { text: "OuterSignal backfill: 44,850 customers × $0.03 = $1,345.50, plan → $399/mo. Pricing sent to Clay — waiting on confirmation before proceeding.", complexity: "medium", owner: "Michael", urgent: false }
+        { text: "Fix first email of post-purchase flow (couple edits needed) then push live", complexity: "medium", owner: "Michael", urgent: true },
+        { text: "Submit Klaviyo support ticket — customer reviews issue (Clay requested)", complexity: "quick", owner: "Michael", urgent: true },
+        { text: "Approve + action OuterSignal persona backfill (Clay requested)", complexity: "quick", owner: "Michael", urgent: true },
+        { text: "Check welcome series stats today", complexity: "quick", owner: "Michael", urgent: false },
+        { text: "Roll AC_exclude tag to Add to Cart + Browse flows", complexity: "quick", owner: "Kieran", urgent: false },
+        { text: "Set up Canada Attentive signup unit for team testing", complexity: "medium", owner: "Michael", urgent: false }
       ],
       waitingOn: [
-        { party: "Clayton Dahl", item: "Post-purchase offer strategy feedback", since: "2026-06-03" },
-        { party: "Clayton Dahl", item: "OuterSignal backfill confirmation (~$1,440)", since: "2026-06-05" },
-        { party: "Victoria", item: "Father's Day + SI Swimsuit campaign briefs", since: "2026-06-05" }
+        { party: "Clayton Dahl", item: "Confirmation on OuterSignal backfill approval", since: "2026-06-03" },
+        { party: "Clayton Dahl", item: "Create Full Price Product Shopify collection for Klaviyo AI feeds", since: "2026-06-03" },
+        { party: "Clayton Dahl", item: "GA access for Michael", since: "2026-06-03" }
       ],
       promises: [
-        { text: "Post-purchase flow live by June 15", dueDate: "2026-06-15", madeOn: "2026-06-03" },
-        { text: "Men's Workout email Jun 9", dueDate: "2026-06-09", madeOn: "2026-06-05" },
-        { text: "SI Swimsuit email Jun 10", dueDate: "2026-06-10", madeOn: "2026-06-05" }
+        { text: "Post-purchase flow live by June 15", dueDate: "2026-06-15", madeOn: "2026-06-03" }
       ],
-      nextMilestone: "Cart abandonment fix today (Kieran). Win back copy done today. Jun 9 Men's Workout send.",
+      nextMilestone: "Post-purchase first email edits → live. Reviews ticket submitted.",
       flags: [
+        "✅ Welcome series LIVE — checking stats today",
+        "✅ AC_exclude tag fix live and confirmed",
         "⚠️ READ ONLY on RVCA-External Slack — never post",
-        "✅ Welcome series live on 50/50 split",
-        "✅ Summer Dresses email: edits handled Sat Jun 6, now sending ✅",
-        "✅ AC_exclude tag fix added to AC + Browse flows",
-        "Win back: 4 emails, generalized. NOT split by gender or new/returning. A/B offer test.",
-        "Post-purchase on hold — needs Clay feedback before Marl builds",
-        "OuterSignal backfill: do NOT proceed until Clay confirms via Slack"
+        "May: business up 6% YoY, flows up ~4%, campaigns down 11% (66% lower volume)"
       ]
     },
     {
@@ -1924,24 +1877,28 @@ const OPS_DATA = {
       name: "Salehe Bembury",
       color: "#2F9E44",
       dot: "green",
-      health: "Warmup Active",
-      tagline: "✅ Giveaway approved by Fardad. Weekend sends scheduled.",
-      lastTouched: "2026-06-05",
+      health: "On Track",
+      tagline: "Launch done ✅. Warmup A/B/C running. Welcome series needs to be filed.",
+      lastTouched: "2026-06-03",
       tasks: [
-        { text: "Monitor weekend giveaway sends (Sat–Mon, 3 groups/day)", complexity: "quick", owner: "Michael", urgent: false },
-        { text: "Kieran: fix mobile layout bug in browse email (table pushing template)", complexity: "medium", owner: "Kieran", urgent: false },
-        { text: "Welcome series: needs a bigger check-in (deprioritized)", complexity: "medium", owner: "Michael", urgent: false }
+        { text: "File welcome series copy into client docs (4 emails — approved)", complexity: "quick", owner: "Michael", urgent: false },
+        { text: "File fallback / sold-out email brief into client docs", complexity: "quick", owner: "Michael", urgent: false },
+        { text: "Confirm 10-day warmup schedule with Fardad (30 groups, A–AD)", complexity: "quick", owner: "Michael", urgent: false },
+        { text: "Build abandoned suite in Klaviyo (v9 copy approved, pending Shopify sync)", complexity: "heavy", owner: "Michael", urgent: false }
       ],
-      waitingOn: [],
+      waitingOn: [
+        { party: "Kevin (Shopify admin)", item: "Shopify admin access for Klaviyo app install", since: "2026-06-01" },
+        { party: "Fardad", item: "Confirm warmup schedule + group sizes for Days 4–10", since: "2026-06-03" }
+      ],
       promises: [
         { text: "Warmup running daily through ~June 12", dueDate: "2026-06-12", madeOn: "2026-06-01" }
       ],
-      nextMilestone: "Weekend warmup sends running. Check in Monday.",
+      nextMilestone: "Warmup Day 2 — Group B send",
       flags: [
-        "✅ Giveaway approved by Fardad. Scheduled Sat–Mon.",
-        "✅ Vellum sends complete.",
-        "✅ Abandoned suite live. Fardad's Figma comments all incorporated.",
-        "Klaviyo account: VwAij6"
+        "✅ Launch done — Vellum 2 drop June 3",
+        "✅ Warmup Groups A/B/C sent",
+        "Klaviyo account: VwAij6",
+        "Abandoned suite blocked on Shopify sync (Kevin granting admin)"
       ]
     },
     {
@@ -1949,35 +1906,31 @@ const OPS_DATA = {
       name: "The Lab Life",
       color: "#F08C00",
       dot: "amber",
-      health: "In Progress",
-      tagline: "Scoping done ✅. Summer camp email priority. Mon 8am PST review with Ally + Travis.",
-      lastTouched: "2026-06-05",
+      health: "Moving Fast",
+      tagline: "RV building. Second Miro review tomorrow. Summer camp brief needed ASAP.",
+      lastTouched: "2026-06-08",
       tasks: [
-        { text: "Build summer camp email in Constant Contact — 50% off camp with new membership. Audience: ~150 leads tagged 'summer camp opt-in'. Due Wed.", complexity: "medium", owner: "Team", urgent: true },
-        { text: "Manually export summer camp leads from GHL, import to Constant Contact", complexity: "quick", owner: "RV", urgent: true },
-        { text: "Monday 8am PST review with Ally + Travis — review summer camp email draft", complexity: "quick", owner: "Michael", urgent: true },
-        { text: "RV: Scope RingCentral → GHL port (current gap: inbound calls not logged in GHL)", complexity: "medium", owner: "RV", urgent: false },
-        { text: "RV: Scope GHL → Klaviyo integration (priority for month 2)", complexity: "medium", owner: "RV", urgent: false },
-        { text: "Build Trial Pass + Trial-to-Member Conversion flows in GHL (core foundation)", complexity: "heavy", owner: "RV", urgent: false },
-        { text: "Month 2: Klaviyo + Constant Contact migration", complexity: "heavy", owner: "Michael", urgent: false }
+        { text: "Review RV's GHL build work before tomorrow's meeting", complexity: "medium", owner: "Michael", urgent: true },
+        { text: "Brief summer camp campaign for design — ASAP this week", complexity: "medium", owner: "Michael", urgent: true },
+        { text: "Second round Miro workflow review with Ally + Travis — Tuesday", complexity: "medium", owner: "Michael", urgent: true },
+        { text: "Plan Spark → GHL one-way sync (tag as Sold on membership purchase)", complexity: "heavy", owner: "RV", urgent: false },
+        { text: "GHL data cleanup — dedupe current member tags (654 tags vs ~300 actual accounts)", complexity: "heavy", owner: "RV", urgent: false }
       ],
       waitingOn: [
-        { party: "Ally", item: "Summer camp campaign brief + audience targeting details", since: "2026-06-05" },
-        { party: "Ally", item: "Breakdance Form Builder access (for reschedule link fix)", since: "2026-06-05" }
+        { party: "Ally + Travis", item: "Tuesday second Miro review meeting", since: "2026-06-08" }
       ],
       promises: [
-        { text: "Summer camp email sent by Wed Jun 10", dueDate: "2026-06-10", madeOn: "2026-06-05" },
-        { text: "All GHL builds locked by June 12", dueDate: "2026-06-12", madeOn: "2026-06-03" },
+        { text: "All builds locked by June 12", dueDate: "2026-06-12", madeOn: "2026-06-03" },
         { text: "Project complete by June 19", dueDate: "2026-06-19", madeOn: "2026-06-03" }
       ],
-      nextMilestone: "Mon Jun 8 @ 8am PST — Review summer camp email with Ally + Travis",
+      nextMilestone: "Tue Jun 9 — Second Miro review with Ally + Travis",
       flags: [
-        "✅ SIGNED May 29 — $5k in, $2.5k July",
-        "✅ Scoping session done Jun 5. Core flows: Trial Pass + Trial-to-Member Conversion.",
-        "Key gaps found: RingCentral not syncing back to GHL, Breakdance calendar breaks automations on manual bookings, AI bot pulled (misinformation)",
-        "Campaign platform: Constant Contact (temp bandaid). GHL → Klaviyo integration = month 2 priority.",
-        "Summer camp offer: 50% off ($250) when new membership purchased. Business collects full $500 value.",
-        "⚠️ Do NOT mention Finan Chill"
+        "✅ SIGNED May 29",
+        "✅ Kickoff Jun 3 done",
+        "✅ First draft review Jun 5 done",
+        "GHL = pre-member marketing. Spark = post-member operations.",
+        "⚠️ Summer camp time sensitive — brief to design ASAP",
+        "Month 2: Klaviyo + Constant Contact migration"
       ]
     },
     {
@@ -1986,32 +1939,56 @@ const OPS_DATA = {
       color: "#862E9C",
       dot: "amber",
       health: "In Progress",
-      tagline: "Campaigns under review. First Meal Free pop-up 72% net new, $91 AOV 🔥. Bug: showing to existing customers.",
-      lastTouched: "2026-06-06",
+      tagline: "Onboarding done ✅. Abandoned cart split-test plan due today. Affiliate strategy sent.",
+      lastTouched: "2026-06-08",
       tasks: [
-        { text: "Investigate 'First Meal Free' pop-up showing to existing customers — get screenshot + timestamp from Meaghan", complexity: "quick", owner: "Michael", urgent: true },
-        { text: "Build abandoned cart split-test plan — due Monday Jun 9", complexity: "medium", owner: "Michael", urgent: true },
-        { text: "Re-upload 46k contact list to fix locale bug", complexity: "quick", owner: "Michael", urgent: true },
-        { text: "Kieran: Build Epicure campaigns once approved by Geoff + Amelia", complexity: "medium", owner: "Kieran", urgent: false },
-        { text: "Debbie: Add Epicure campaigns to Notion calendar", complexity: "quick", owner: "Debbie", urgent: false },
-        { text: "Analyze LTV of 291 CA 'First Meal Free' participants to prove incrementality", complexity: "medium", owner: "Michael", urgent: false },
+        { text: "Present abandoned cart split-test plan to Geoff (Michael's deliverable — due today)", complexity: "medium", owner: "Michael", urgent: true },
+        { text: "Re-upload 46k US contacts to fix locale bug (flow already corrected)", complexity: "quick", owner: "Michael", urgent: true },
+        { text: "Scope GoAffPro → Klaviyo integration", complexity: "medium", owner: "Michael", urgent: false },
+        { text: "Analyze LTV of 291 First Meal Free CA participants", complexity: "medium", owner: "Michael", urgent: false },
         { text: "Plan Yotpo vs Klaviyo decision (Sept 1 license expiry)", complexity: "medium", owner: "Michael", urgent: false }
       ],
       waitingOn: [
-        { party: "Geoff + Amelia", item: "Campaign approval — Kieran builds once approved", since: "2026-06-05" }
+        { party: "Geoff", item: "Direction on existing flow optimizations", since: "2026-06-04" },
+        { party: "Amelia", item: "Affiliate call brief", since: "2026-06-04" }
       ],
       promises: [
-        { text: "Abandoned cart split-test plan due Monday Jun 9", dueDate: "2026-06-09", madeOn: "2026-06-04" },
-        { text: "Flow audit + refresh (abandoned suite, product feeds, UTM settings)", dueDate: "2026-06-15", madeOn: "2026-06-01" }
+        { text: "Abandoned cart split-test plan presented Monday Jun 9", dueDate: "2026-06-09", madeOn: "2026-06-04" },
+        { text: "Affiliate strategy delivered to Geoff before Friday call", dueDate: "2026-06-06", madeOn: "2026-06-04" }
       ],
-      nextMilestone: "Monday Jun 9 — abandoned cart plan.",
+      nextMilestone: "Today — abandoned cart split-test plan to Geoff",
       flags: [
-        "✅ 2nd onboarding done. Shopify sync fixed. Locale bug fixed.",
-        "✅ Affiliate strategy live: digitsup.github.io/epicure/affiliate-strategy.html · pw: EPIC",
-        "🔥 First Meal Free pop-up: 72% net new customers, $91 AOV",
-        "🐛 Bug: pop-up appearing for existing customers — investigating",
-        "Active customer segment: Purchased 90 days OR engaged 30 days",
-        "Note: Vitorn = Epicure's internal product/creative team. Not on DigitsUp to manage."
+        "✅ Second onboarding call done Jun 4 with Geoff",
+        "✅ Klaviyo fixed: Shopify sync re-enabled, locale flow corrected",
+        "✅ Affiliate strategy doc live: digitsup.github.io/epicure/affiliate-strategy.html (pw: EPIC)",
+        "Active segment defined: purchased 90d OR engaged 30d (removes 77k dead weight)",
+        "First Meal Free launching in US — 6-7% lead form submit rate CA"
+      ]
+    },
+    {
+      id: "riversol",
+      name: "Riversol",
+      color: "#1098AD",
+      dot: "green",
+      health: "Active",
+      tagline: "Winback LIVE ✅. Big meeting 2pm today — replenishment, quiz onboarding, 5-star review, referral brief.",
+      lastTouched: "2026-06-08",
+      tasks: [
+        { text: "Send referral program brief to Ali before 2pm call today (Victoria writing)", complexity: "medium", owner: "Victoria", urgent: true },
+        { text: "Prep replenishment strategy for 2pm meeting", complexity: "medium", owner: "Michael", urgent: true },
+        { text: "Prep quiz onboarding strategy for 2pm meeting", complexity: "medium", owner: "Michael", urgent: true },
+        { text: "Finalize 5-star review flow for 2pm meeting", complexity: "medium", owner: "Michael", urgent: true }
+      ],
+      waitingOn: [],
+      promises: [
+        { text: "Referral brief to Ali before 2pm Jun 8 meeting", dueDate: "2026-06-08", madeOn: "2026-06-08" }
+      ],
+      nextMilestone: "2pm today — Riversol strategy meeting",
+      flags: [
+        "✅ Winback flow LIVE — Una delivered everything",
+        "✅ Sample winback live. Return customer flow live.",
+        "Free shipping threshold updated to $69 across all flows",
+        "Gift card flow turned off"
       ]
     },
     {
@@ -2020,55 +1997,45 @@ const OPS_DATA = {
       color: "#E64980",
       dot: "green",
       health: "On Track",
-      tagline: "May report live ✅. Beyond the Classroom email due Jun 11.",
-      lastTouched: "2026-06-04",
+      tagline: "May report live and sent ✅. Campaign calendar regroup is next.",
+      lastTouched: "2026-06-03",
       tasks: [
-        { text: "Write 'Beyond the Classroom' email — due Jun 11", complexity: "medium", owner: "Michael", urgent: false },
-        { text: "Update Welcome Series with top-performing content from last 90 days", complexity: "medium", owner: "Michael", urgent: false },
-        { text: "Generalize Long-Term Nurture flow — remove seasonal text", complexity: "quick", owner: "Michael", urgent: false }
+        { text: "Send validation email to Hiba team confirming report delivery", complexity: "quick", owner: "Michael", urgent: false },
+        { text: "Schedule campaign calendar regroup with client", complexity: "quick", owner: "Michael", urgent: false }
       ],
       waitingOn: [],
-      promises: [
-        { text: "Beyond the Classroom email delivered Jun 11", dueDate: "2026-06-11", madeOn: "2026-06-04" }
-      ],
-      nextMilestone: "Jun 11 — Beyond the Classroom email",
+      promises: [],
+      nextMilestone: "Campaign calendar regroup — date TBD",
       flags: [
-        "✅ May 2026 report live and sent to client",
-        "Hiba weekly call Jun 4 — educational content strategy confirmed ✅",
-        "Teacher Spotlight: 60% OR, 4.7% CTR (record high) — replicate this approach",
-        "Melrick out until Monday"
+        "✅ May 2026 report live: digitsup.github.io/hiba/may-2026.html — Password: HIBA2026",
+        "✅ Sent to client by Michael",
+        "All signup forms working. Pop-up offline."
       ]
     },
     {
       id: "outersignal",
       name: "OuterSignal",
       color: "#5C7CFA",
-      dot: "red",
-      health: "TOP PRIORITY",
-      tagline: "🔴 Brief done ✅. Copy due Mon Jun 8. Design Mon/Tue. OuterSignal backfill pricing sent to Clay — awaiting confirmation.",
-      lastTouched: "2026-06-05",
+      dot: "grey",
+      health: "Waiting on Client",
+      tagline: "Kickoff done. Waiting on Dropbox (Sam) and persona report (Dov).",
+      lastTouched: "2026-06-01",
       tasks: [
-        { text: "Meaghan: Finalize copy by Mon Jun 8 (check brief in Notion, posted in Slack)", complexity: "heavy", owner: "Meaghan", urgent: true },
-        { text: "Marl: Begin design Monday Jun 8 — brief from Victoria. Build done by Thu Jun 11.", complexity: "heavy", owner: "Marl", urgent: true },
-        { text: "Client review: following week after Jun 11 build", complexity: "medium", owner: "Michael", urgent: false },
-        { text: "Follow up with Sam on Dropbox creative folder + brand guidelines (no images confirmed yet)", complexity: "quick", owner: "Michael", urgent: true },
-        { text: "Follow up with Dov on persona report", complexity: "quick", owner: "Michael", urgent: true }
+        { text: "Follow up with Sam on Dropbox creative folder + brand guidelines", complexity: "quick", owner: "Michael", urgent: false },
+        { text: "Follow up with Dov on persona report", complexity: "quick", owner: "Michael", urgent: false },
+        { text: "Build post-purchase strategy + creative concepts in Figma (once assets arrive)", complexity: "heavy", owner: "Michael", urgent: false }
       ],
       waitingOn: [
         { party: "Sam", item: "Dropbox creative folder + brand guidelines", since: "2026-06-01" },
-        { party: "Dov", item: "Persona report (6 persona-specific emails)", since: "2026-06-01" }
+        { party: "Dov", item: "Persona report (6 persona-specific app download emails)", since: "2026-06-01" }
       ],
-      promises: [
-        { text: "Copy done by Monday Jun 8", dueDate: "2026-06-08", madeOn: "2026-06-05" },
-        { text: "Build complete by Thursday Jun 11", dueDate: "2026-06-11", madeOn: "2026-06-05" }
-      ],
-      nextMilestone: "Mon Jun 8 — copy done + design starts. Thu Jun 11 — build complete.",
+      promises: [],
+      nextMilestone: "Creative concepts in Figma — once assets received from Sam + Dov",
       flags: [
-        "✅ Kickoff done Jun 1. Brief done Jun 5 (Victoria).",
-        "7 emails: 6 persona-specific + 1 generic. Goal: drive app downloads post-purchase.",
-        "Welcome offer: ~20% or $20 off — confirm with client",
-        "Creative inspo: Mild (look them up). Lifestyle imagery, text on images (like RVCA). Loyalty program exists.",
-        "10 business days from Wed Jun 4 = Wed Jun 18 client deadline"
+        "✅ Kickoff done June 1",
+        "Scope: 6 persona-specific post-purchase emails → drive app adoption (20k users)",
+        "OuterSignal backfilled to Sep 9, 2025 ✅",
+        "Timeline: ~10 days creative, 1 week Klaviyo build once assets received"
       ]
     },
     {
@@ -2077,7 +2044,7 @@ const OPS_DATA = {
       color: "#845EF7",
       dot: "grey",
       health: "Prospect — Waiting",
-      tagline: "Proposal v3 sent May 28. Waiting on Will. Going silent.",
+      tagline: "Proposal v3 sent May 28. Waiting on Will.",
       lastTouched: "2026-05-28",
       tasks: [
         { text: "Follow up with Will if no response by end of week", complexity: "quick", owner: "Michael", urgent: false }
@@ -2096,63 +2063,61 @@ const OPS_DATA = {
 };
 
 const PIPELINE = [
-  { date: "2026-06-05", client: "Salehe", clientId: "salehe", item: "Fardad approval → Kieran schedules Sat–Mon giveaway. Vellum last send at 2pm.", owner: "Michael", urgent: true },
-  { date: "2026-06-05", client: "RVCA", clientId: "rvca", item: "Kieran: cart abandonment fix (Authentic Pass exclusion). Win back copy done (Meaghan).", owner: "Team" },
-  { date: "2026-06-07", client: "Riversol", clientId: "riversol", item: "Michael writing replenishment copy over weekend. Share wireframe with Victoria Sat morning.", owner: "Michael" },
-  { date: "2026-06-08", client: "OuterSignal", clientId: "outersignal", item: "Copy due (Meaghan). Design starts (Marl).", owner: "Team", urgent: true },
-  { date: "2026-06-08", client: "Epicure", clientId: "epicure", item: "Vitorn packaging launch — images must be received", owner: "Client", urgent: true },
-  { date: "2026-06-08", client: "The Lab", clientId: "the-lab", item: "8am PST review with Ally + Travis — summer camp email draft", owner: "Michael", urgent: true },
-  { date: "2026-06-09", client: "Riversol", clientId: "riversol", item: "Replenishment strategy walk + 5-star review flow share to client", owner: "Michael" },
-  { date: "2026-06-09", client: "RVCA", clientId: "rvca", item: "Men's Workout email sends", owner: "Team" },
-  { date: "2026-06-09", client: "Epicure", clientId: "epicure", item: "Abandoned cart split-test plan due", owner: "Michael" },
-  { date: "2026-06-09", client: "Riversol", clientId: "riversol", item: "Referral email designs due (Ali brief)", owner: "Team" },
-  { date: "2026-06-10", client: "RVCA", clientId: "rvca", item: "SI Swimsuit Runway email sends (women's)", owner: "Team" },
-  { date: "2026-06-10", client: "The Lab", clientId: "the-lab", item: "Summer camp email sends via Constant Contact", owner: "Team" },
+  { date: "2026-06-08", client: "Riversol", clientId: "riversol", item: "2pm meeting — replenishment, quiz onboarding, 5-star review, referral brief", owner: "Michael", urgent: true },
+  { date: "2026-06-08", client: "Epicure", clientId: "epicure", item: "Abandoned cart split-test plan to Geoff", owner: "Michael", urgent: true },
+  { date: "2026-06-09", client: "The Lab", clientId: "the-lab", item: "Second Miro review with Ally + Travis", owner: "Michael", urgent: true },
+  { date: "2026-06-09", client: "Riversol", clientId: "riversol", item: "Referral brief to Ali", owner: "Victoria", urgent: true },
   { date: "2026-06-11", client: "Hiba", clientId: "hiba", item: "Beyond the Classroom email due", owner: "Michael" },
-  { date: "2026-06-11", client: "OuterSignal", clientId: "outersignal", item: "Build complete — Marl done", owner: "Marl" },
+  { date: "2026-06-12", client: "FRNK", clientId: "frnk", item: "Thursday client meeting — welcome series + launch email ready", owner: "Michael", urgent: true },
   { date: "2026-06-12", client: "The Lab", clientId: "the-lab", item: "All GHL builds locked", owner: "Michael" },
-  { date: "2026-06-12", client: "Riversol", clientId: "riversol", item: "Replenishment design preview to client (Wednesday call)", owner: "Team" },
   { date: "2026-06-15", client: "RVCA", clientId: "rvca", item: "Post-purchase flow goes live", owner: "Michael" },
-  { date: "2026-06-18", client: "Riversol", clientId: "riversol", item: "Replenishment full designs complete", owner: "Team" },
-  { date: "2026-06-18", client: "OuterSignal", clientId: "outersignal", item: "Client review deadline (10 business days from Jun 4)", owner: "Team" },
   { date: "2026-06-19", client: "The Lab", clientId: "the-lab", item: "Full project complete", owner: "Michael" }
 ];
 
 const DO_THIS_NOW = [
   {
     icon: "🔴",
-    clientId: "outersignal",
-    clientName: "OuterSignal",
-    text: "Copy due Mon Jun 8. Design starts Mon. Build done Thu Jun 11. Still waiting on Sam (assets) + Dov (persona report).",
-    complexity: "heavy",
-    deadline: "Mon Jun 8 — copy. Thu Jun 11 — build.",
+    clientId: "riversol",
+    clientName: "Riversol",
+    text: "Prep for 2pm meeting — replenishment strategy + quiz onboarding + 5-star review flow",
+    complexity: "medium",
+    deadline: "Today 2pm",
     urgent: true
   },
   {
-    icon: "🟡",
-    clientId: "salehe",
-    clientName: "Salehe",
-    text: "Get Fardad approval on giveaway email → Kieran schedules Sat–Mon sends (3 groups/day from 6am). Marl: GIF to white bg.",
-    complexity: "quick",
+    icon: "🔴",
+    clientId: "epicure",
+    clientName: "Epicure",
+    text: "Send abandoned cart split-test plan to Geoff",
+    complexity: "medium",
     deadline: "Today",
     urgent: true
   },
   {
     icon: "🟡",
-    clientId: "riversol",
-    clientName: "Riversol",
-    text: "Michael writing replenishment copy this weekend. Strategy to client Mon. Design preview Wed. Victoria briefing Marl.",
-    complexity: "heavy",
-    deadline: "Mon Jun 9 — strategy call",
+    clientId: "rvca",
+    clientName: "RVCA",
+    text: "Fix post-purchase first email edits + submit Klaviyo reviews ticket",
+    complexity: "quick",
+    deadline: "This week",
     urgent: true
   },
   {
     icon: "🟡",
     clientId: "the-lab",
-    clientName: "The Lab",
-    text: "Summer camp email build in Constant Contact — target ~150 leads. Send by Wed Jun 10. Monday 8am review with Ally + Travis.",
+    clientName: "The Lab Life",
+    text: "Brief summer camp campaign for design — time sensitive",
     complexity: "medium",
-    deadline: "Mon 8am review → send Wed Jun 10",
+    deadline: "ASAP",
+    urgent: true
+  },
+  {
+    icon: "🟡",
+    clientId: "frnk",
+    clientName: "FRNK Boutique",
+    text: "Write new site launch email + check welcome series + cart abandon",
+    complexity: "medium",
+    deadline: "Before Thu",
     urgent: true
   }
 ];
