@@ -1,6 +1,6 @@
 {
   "meta": {
-    "lastUpdated": "2026-06-08T23:41:32.431798-07:00",
+    "lastUpdated": "2026-06-09T07:01:45.051067-07:00",
     "updatedBy": "Mollie (auto)"
   },
   "clients": [
@@ -261,7 +261,7 @@
       "dot": "green",
       "health": "In Progress",
       "tagline": "Strong Revenue: Last week hit $88k, driven by new product launches and email. The month is tracking at $378k against...",
-      "lastTouched": "2026-06-08",
+      "lastTouched": "2026-06-09",
       "tasks": [
         {
           "text": "Push post-purchase Email 2 live",
@@ -331,7 +331,7 @@
       "dot": "green",
       "health": "Active",
       "tagline": "Replenishment Strategy: A new 60-day replenishment flow will launch, starting with the Daily Moisturizing Cream...",
-      "lastTouched": "2026-06-08",
+      "lastTouched": "2026-06-09",
       "tasks": [
         {
           "text": "Add pause logic to Winback flow (paused members)",
@@ -588,6 +588,18 @@
     }
   ],
   "activity": [
+    {
+      "ts": "2026-06-09T07:01:45.050551-07:00",
+      "text": "Epicure — Root Cause: A \"hacky\" Klaviyo flow (built by RV) incorrectly assigned locales, causing US customers "
+    },
+    {
+      "ts": "2026-06-09T07:01:45.050938-07:00",
+      "text": "Epicure — Strong Revenue: Last week hit $88k, driven by new product launches and email. The month is tracking "
+    },
+    {
+      "ts": "2026-06-09T07:01:45.051063-07:00",
+      "text": "Riversol — Replenishment Strategy: A new 60-day replenishment flow will launch, starting with the Daily Moistur"
+    },
     {
       "ts": "2026-06-08T23:41:32.431313-07:00",
       "text": "Epicure — Root Cause: A \"hacky\" Klaviyo flow (built by RV) incorrectly assigned locales, causing US customers "
