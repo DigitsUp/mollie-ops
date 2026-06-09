@@ -1684,10 +1684,7 @@ html, body {
       </button>
     </div>
     <div class="sidebar-footer">
-      <div class="sidebar-meta">
-        Updated Jun 3, 2026<br>
-        By Mollie
-      </div>
+      <div class="sidebar-meta"></div>
     </div>
   </nav>
 
@@ -1700,7 +1697,7 @@ html, body {
         <div id="tab-today" class="tab-panel active">
           <div class="page-header">
             <div class="page-title">Today 🏠</div>
-            <div class="page-sub">Tuesday, June 3, 2026</div>
+            <div class="page-sub"></div>
           </div>
 
           <!-- Do This Now -->
@@ -1807,320 +1804,29 @@ html, body {
 
 <script>
 // ============================
-// DATA
+// DATA (loaded from ops-data.json)
 // ============================
-const TODAY = new Date('2026-06-03T21:00:00-07:00');
+const TODAY = new Date();
 
-const OPS_DATA = {
-  meta: {
-    lastUpdated: "2026-06-08T08:30:00-07:00",
-    updatedBy: "Mollie"
-  },
-  clients: [
-    {
-      id: "frnk",
-      name: "FRNK Boutique",
-      color: "#E8845C",
-      dot: "amber",
-      health: "In Progress",
-      tagline: "New site live Saturday ✅. Launch email next. Welcome series + cart abandon before Thursday.",
-      lastTouched: "2026-06-08",
-      tasks: [
-        { text: "Write + send new website launch email", complexity: "medium", owner: "Michael", urgent: true },
-        { text: "Check in on welcome series + abandoned cart build — must be ready for Thursday review", complexity: "medium", owner: "Michael", urgent: true },
-        { text: "Fix Stamped reviews integration", complexity: "medium", owner: "Michael", urgent: false }
-      ],
-      waitingOn: [],
-      promises: [
-        { text: "Welcome series + signup form ready for Thursday client meeting", dueDate: "2026-06-12", madeOn: "2026-06-08" }
-      ],
-      nextMilestone: "Thu Jun 12 — Client meeting. Welcome series + launch email must be live.",
-      flags: [
-        "✅ New Shopify site went live Saturday Jun 7",
-        "Thursday 1pm PST — client meeting with Megan"
-      ]
-    },
-    {
-      id: "rvca",
-      name: "RVCA",
-      color: "#3B5BDB",
-      dot: "amber",
-      health: "In Progress",
-      tagline: "Welcome series LIVE ✅. Post-purchase first email needs edits. Reviews ticket needed.",
-      lastTouched: "2026-06-08",
-      tasks: [
-        { text: "Fix first email of post-purchase flow (couple edits needed) then push live", complexity: "medium", owner: "Michael", urgent: true },
-        { text: "Submit Klaviyo support ticket — customer reviews issue (Clay requested)", complexity: "quick", owner: "Michael", urgent: true },
-        { text: "Approve + action OuterSignal persona backfill (Clay requested)", complexity: "quick", owner: "Michael", urgent: true },
-        { text: "Check welcome series stats today", complexity: "quick", owner: "Michael", urgent: false },
-        { text: "Roll AC_exclude tag to Add to Cart + Browse flows", complexity: "quick", owner: "Kieran", urgent: false },
-        { text: "Set up Canada Attentive signup unit for team testing", complexity: "medium", owner: "Michael", urgent: false }
-      ],
-      waitingOn: [
-        { party: "Clayton Dahl", item: "Confirmation on OuterSignal backfill approval", since: "2026-06-03" },
-        { party: "Clayton Dahl", item: "Create Full Price Product Shopify collection for Klaviyo AI feeds", since: "2026-06-03" },
-        { party: "Clayton Dahl", item: "GA access for Michael", since: "2026-06-03" }
-      ],
-      promises: [
-        { text: "Post-purchase flow live by June 15", dueDate: "2026-06-15", madeOn: "2026-06-03" }
-      ],
-      nextMilestone: "Post-purchase first email edits → live. Reviews ticket submitted.",
-      flags: [
-        "✅ Welcome series LIVE — checking stats today",
-        "✅ AC_exclude tag fix live and confirmed",
-        "⚠️ READ ONLY on RVCA-External Slack — never post",
-        "May: business up 6% YoY, flows up ~4%, campaigns down 11% (66% lower volume)"
-      ]
-    },
-    {
-      id: "salehe",
-      name: "Salehe Bembury",
-      color: "#2F9E44",
-      dot: "green",
-      health: "On Track",
-      tagline: "Launch done ✅. Warmup A/B/C running. Welcome series needs to be filed.",
-      lastTouched: "2026-06-03",
-      tasks: [
-        { text: "File welcome series copy into client docs (4 emails — approved)", complexity: "quick", owner: "Michael", urgent: false },
-        { text: "File fallback / sold-out email brief into client docs", complexity: "quick", owner: "Michael", urgent: false },
-        { text: "Confirm 10-day warmup schedule with Fardad (30 groups, A–AD)", complexity: "quick", owner: "Michael", urgent: false },
-        { text: "Build abandoned suite in Klaviyo (v9 copy approved, pending Shopify sync)", complexity: "heavy", owner: "Michael", urgent: false }
-      ],
-      waitingOn: [
-        { party: "Kevin (Shopify admin)", item: "Shopify admin access for Klaviyo app install", since: "2026-06-01" },
-        { party: "Fardad", item: "Confirm warmup schedule + group sizes for Days 4–10", since: "2026-06-03" }
-      ],
-      promises: [
-        { text: "Warmup running daily through ~June 12", dueDate: "2026-06-12", madeOn: "2026-06-01" }
-      ],
-      nextMilestone: "Warmup Day 2 — Group B send",
-      flags: [
-        "✅ Launch done — Vellum 2 drop June 3",
-        "✅ Warmup Groups A/B/C sent",
-        "Klaviyo account: VwAij6",
-        "Abandoned suite blocked on Shopify sync (Kevin granting admin)"
-      ]
-    },
-    {
-      id: "the-lab",
-      name: "The Lab Life",
-      color: "#F08C00",
-      dot: "amber",
-      health: "Moving Fast",
-      tagline: "RV building. Second Miro review tomorrow. Summer camp brief needed ASAP.",
-      lastTouched: "2026-06-08",
-      tasks: [
-        { text: "Review RV's GHL build work before tomorrow's meeting", complexity: "medium", owner: "Michael", urgent: true },
-        { text: "Brief summer camp campaign for design — ASAP this week", complexity: "medium", owner: "Michael", urgent: true },
-        { text: "Second round Miro workflow review with Ally + Travis — Tuesday", complexity: "medium", owner: "Michael", urgent: true },
-        { text: "Plan Spark → GHL one-way sync (tag as Sold on membership purchase)", complexity: "heavy", owner: "RV", urgent: false },
-        { text: "GHL data cleanup — dedupe current member tags (654 tags vs ~300 actual accounts)", complexity: "heavy", owner: "RV", urgent: false }
-      ],
-      waitingOn: [
-        { party: "Ally + Travis", item: "Tuesday second Miro review meeting", since: "2026-06-08" }
-      ],
-      promises: [
-        { text: "All builds locked by June 12", dueDate: "2026-06-12", madeOn: "2026-06-03" },
-        { text: "Project complete by June 19", dueDate: "2026-06-19", madeOn: "2026-06-03" }
-      ],
-      nextMilestone: "Tue Jun 9 — Second Miro review with Ally + Travis",
-      flags: [
-        "✅ SIGNED May 29",
-        "✅ Kickoff Jun 3 done",
-        "✅ First draft review Jun 5 done",
-        "GHL = pre-member marketing. Spark = post-member operations.",
-        "⚠️ Summer camp time sensitive — brief to design ASAP",
-        "Month 2: Klaviyo + Constant Contact migration"
-      ]
-    },
-    {
-      id: "epicure",
-      name: "Epicure",
-      color: "#862E9C",
-      dot: "amber",
-      health: "In Progress",
-      tagline: "Onboarding done ✅. Abandoned cart split-test plan due today. Affiliate strategy sent.",
-      lastTouched: "2026-06-08",
-      tasks: [
-        { text: "Present abandoned cart split-test plan to Geoff (Michael's deliverable — due today)", complexity: "medium", owner: "Michael", urgent: true },
-        { text: "Re-upload 46k US contacts to fix locale bug (flow already corrected)", complexity: "quick", owner: "Michael", urgent: true },
-        { text: "Scope GoAffPro → Klaviyo integration", complexity: "medium", owner: "Michael", urgent: false },
-        { text: "Analyze LTV of 291 First Meal Free CA participants", complexity: "medium", owner: "Michael", urgent: false },
-        { text: "Plan Yotpo vs Klaviyo decision (Sept 1 license expiry)", complexity: "medium", owner: "Michael", urgent: false }
-      ],
-      waitingOn: [
-        { party: "Geoff", item: "Direction on existing flow optimizations", since: "2026-06-04" },
-        { party: "Amelia", item: "Affiliate call brief", since: "2026-06-04" }
-      ],
-      promises: [
-        { text: "Abandoned cart split-test plan presented Monday Jun 9", dueDate: "2026-06-09", madeOn: "2026-06-04" },
-        { text: "Affiliate strategy delivered to Geoff before Friday call", dueDate: "2026-06-06", madeOn: "2026-06-04" }
-      ],
-      nextMilestone: "Today — abandoned cart split-test plan to Geoff",
-      flags: [
-        "✅ Second onboarding call done Jun 4 with Geoff",
-        "✅ Klaviyo fixed: Shopify sync re-enabled, locale flow corrected",
-        "✅ Affiliate strategy doc live: digitsup.github.io/epicure/affiliate-strategy.html (pw: EPIC)",
-        "Active segment defined: purchased 90d OR engaged 30d (removes 77k dead weight)",
-        "First Meal Free launching in US — 6-7% lead form submit rate CA"
-      ]
-    },
-    {
-      id: "riversol",
-      name: "Riversol",
-      color: "#1098AD",
-      dot: "green",
-      health: "Active",
-      tagline: "Winback LIVE ✅. Big meeting 2pm today — replenishment, quiz onboarding, 5-star review, referral brief.",
-      lastTouched: "2026-06-08",
-      tasks: [
-        { text: "Send referral program brief to Ali before 2pm call today (Victoria writing)", complexity: "medium", owner: "Victoria", urgent: true },
-        { text: "Prep replenishment strategy for 2pm meeting", complexity: "medium", owner: "Michael", urgent: true },
-        { text: "Prep quiz onboarding strategy for 2pm meeting", complexity: "medium", owner: "Michael", urgent: true },
-        { text: "Finalize 5-star review flow for 2pm meeting", complexity: "medium", owner: "Michael", urgent: true }
-      ],
-      waitingOn: [],
-      promises: [
-        { text: "Referral brief to Ali before 2pm Jun 8 meeting", dueDate: "2026-06-08", madeOn: "2026-06-08" }
-      ],
-      nextMilestone: "2pm today — Riversol strategy meeting",
-      flags: [
-        "✅ Winback flow LIVE — Una delivered everything",
-        "✅ Sample winback live. Return customer flow live.",
-        "Free shipping threshold updated to $69 across all flows",
-        "Gift card flow turned off"
-      ]
-    },
-    {
-      id: "hiba",
-      name: "Hiba Academy",
-      color: "#E64980",
-      dot: "green",
-      health: "On Track",
-      tagline: "May report live and sent ✅. Campaign calendar regroup is next.",
-      lastTouched: "2026-06-03",
-      tasks: [
-        { text: "Send validation email to Hiba team confirming report delivery", complexity: "quick", owner: "Michael", urgent: false },
-        { text: "Schedule campaign calendar regroup with client", complexity: "quick", owner: "Michael", urgent: false }
-      ],
-      waitingOn: [],
-      promises: [],
-      nextMilestone: "Campaign calendar regroup — date TBD",
-      flags: [
-        "✅ May 2026 report live: digitsup.github.io/hiba/may-2026.html — Password: HIBA2026",
-        "✅ Sent to client by Michael",
-        "All signup forms working. Pop-up offline."
-      ]
-    },
-    {
-      id: "outersignal",
-      name: "OuterSignal",
-      color: "#5C7CFA",
-      dot: "grey",
-      health: "Waiting on Client",
-      tagline: "Kickoff done. Waiting on Dropbox (Sam) and persona report (Dov).",
-      lastTouched: "2026-06-01",
-      tasks: [
-        { text: "Follow up with Sam on Dropbox creative folder + brand guidelines", complexity: "quick", owner: "Michael", urgent: false },
-        { text: "Follow up with Dov on persona report", complexity: "quick", owner: "Michael", urgent: false },
-        { text: "Build post-purchase strategy + creative concepts in Figma (once assets arrive)", complexity: "heavy", owner: "Michael", urgent: false }
-      ],
-      waitingOn: [
-        { party: "Sam", item: "Dropbox creative folder + brand guidelines", since: "2026-06-01" },
-        { party: "Dov", item: "Persona report (6 persona-specific app download emails)", since: "2026-06-01" }
-      ],
-      promises: [],
-      nextMilestone: "Creative concepts in Figma — once assets received from Sam + Dov",
-      flags: [
-        "✅ Kickoff done June 1",
-        "Scope: 6 persona-specific post-purchase emails → drive app adoption (20k users)",
-        "OuterSignal backfilled to Sep 9, 2025 ✅",
-        "Timeline: ~10 days creative, 1 week Klaviyo build once assets received"
-      ]
-    },
-    {
-      id: "sfr",
-      name: "SFR Distillery",
-      color: "#845EF7",
-      dot: "grey",
-      health: "Prospect — Waiting",
-      tagline: "Proposal v3 sent May 28. Waiting on Will.",
-      lastTouched: "2026-05-28",
-      tasks: [
-        { text: "Follow up with Will if no response by end of week", complexity: "quick", owner: "Michael", urgent: false }
-      ],
-      waitingOn: [
-        { party: "Will (client)", item: "Response to proposal v3", since: "2026-05-28" }
-      ],
-      promises: [],
-      nextMilestone: "Awaiting Will's decision on proposal v3",
-      flags: [
-        "Prospect — not yet signed",
-        "Proposal v3 sent May 28"
-      ]
+let OPS_DATA, PIPELINE, DO_THIS_NOW;
+
+fetch('ops-data.json')
+  .then(r => r.json())
+  .then(data => {
+    OPS_DATA = data;
+    PIPELINE = data.pipeline;
+    DO_THIS_NOW = data.doThisNow;
+    // Update sidebar meta from data
+    document.querySelector('.sidebar-meta').innerHTML = `Updated ${new Date(data.meta.lastUpdated).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}<br>By ${data.meta.updatedBy}`;
+    // Auto-unlock if previously authenticated
+    if (localStorage.getItem('mollie-ops-auth') === '1') {
+      document.getElementById('password-gate').classList.add('hidden');
+      document.getElementById('app').classList.remove('hidden');
+      initApp();
     }
-  ]
-};
+  })
+  .catch(err => console.error('Failed to load ops-data.json:', err));
 
-const PIPELINE = [
-  { date: "2026-06-08", client: "Riversol", clientId: "riversol", item: "2pm meeting — replenishment, quiz onboarding, 5-star review, referral brief", owner: "Michael", urgent: true },
-  { date: "2026-06-08", client: "Epicure", clientId: "epicure", item: "Abandoned cart split-test plan to Geoff", owner: "Michael", urgent: true },
-  { date: "2026-06-09", client: "The Lab", clientId: "the-lab", item: "Second Miro review with Ally + Travis", owner: "Michael", urgent: true },
-  { date: "2026-06-09", client: "Riversol", clientId: "riversol", item: "Referral brief to Ali", owner: "Victoria", urgent: true },
-  { date: "2026-06-11", client: "Hiba", clientId: "hiba", item: "Beyond the Classroom email due", owner: "Michael" },
-  { date: "2026-06-12", client: "FRNK", clientId: "frnk", item: "Thursday client meeting — welcome series + launch email ready", owner: "Michael", urgent: true },
-  { date: "2026-06-12", client: "The Lab", clientId: "the-lab", item: "All GHL builds locked", owner: "Michael" },
-  { date: "2026-06-15", client: "RVCA", clientId: "rvca", item: "Post-purchase flow goes live", owner: "Michael" },
-  { date: "2026-06-19", client: "The Lab", clientId: "the-lab", item: "Full project complete", owner: "Michael" }
-];
-
-const DO_THIS_NOW = [
-  {
-    icon: "🔴",
-    clientId: "riversol",
-    clientName: "Riversol",
-    text: "Prep for 2pm meeting — replenishment strategy + quiz onboarding + 5-star review flow",
-    complexity: "medium",
-    deadline: "Today 2pm",
-    urgent: true
-  },
-  {
-    icon: "🔴",
-    clientId: "epicure",
-    clientName: "Epicure",
-    text: "Send abandoned cart split-test plan to Geoff",
-    complexity: "medium",
-    deadline: "Today",
-    urgent: true
-  },
-  {
-    icon: "🟡",
-    clientId: "rvca",
-    clientName: "RVCA",
-    text: "Fix post-purchase first email edits + submit Klaviyo reviews ticket",
-    complexity: "quick",
-    deadline: "This week",
-    urgent: true
-  },
-  {
-    icon: "🟡",
-    clientId: "the-lab",
-    clientName: "The Lab Life",
-    text: "Brief summer camp campaign for design — time sensitive",
-    complexity: "medium",
-    deadline: "ASAP",
-    urgent: true
-  },
-  {
-    icon: "🟡",
-    clientId: "frnk",
-    clientName: "FRNK Boutique",
-    text: "Write new site launch email + check welcome series + cart abandon",
-    complexity: "medium",
-    deadline: "Before Thu",
-    urgent: true
-  }
-];
 
 // ============================
 // HELPERS
@@ -2205,12 +1911,7 @@ document.getElementById('gate-input').addEventListener('keydown', function(e) {
   document.getElementById('gate-error').classList.remove('visible');
 });
 
-// Auto-unlock if previously authenticated
-if (localStorage.getItem('mollie-ops-auth') === '1') {
-  document.getElementById('password-gate').classList.add('hidden');
-  document.getElementById('app').classList.remove('hidden');
-  window.addEventListener('DOMContentLoaded', initApp);
-}
+// (Auto-unlock is handled in the fetch() callback above)
 
 // ============================
 // TAB SWITCHING
@@ -2645,28 +2346,14 @@ function toggleTask(key) {
 // INIT
 // ============================
 function initApp() {
+  // Set dynamic date in Today tab header
+  const sub = document.querySelector('#tab-today .page-sub');
+  if (sub) sub.textContent = new Date().toLocaleDateString('en-US', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
   renderToday();
   renderClients();
   renderWaiting();
   renderQuiet();
   renderPipeline();
-}
-
-// If already authenticated (page already visible), init on DOMContentLoaded
-if (document.readyState === 'loading') {
-  document.addEventListener('DOMContentLoaded', () => {
-    if (localStorage.getItem('mollie-ops-auth') === '1') {
-      document.getElementById('password-gate').classList.add('hidden');
-      document.getElementById('app').classList.remove('hidden');
-      initApp();
-    }
-  });
-} else {
-  if (localStorage.getItem('mollie-ops-auth') === '1') {
-    document.getElementById('password-gate').classList.add('hidden');
-    document.getElementById('app').classList.remove('hidden');
-    initApp();
-  }
 }
 </script>
 </body>
