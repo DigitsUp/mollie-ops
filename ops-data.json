@@ -1,6 +1,6 @@
 {
   "meta": {
-    "lastUpdated": "2026-06-10T07:01:03.194352-07:00",
+    "lastUpdated": "2026-06-10T10:30:17.933185-07:00",
     "updatedBy": "Mollie (auto-v2)"
   },
   "clients": [
@@ -176,9 +176,9 @@
       "id": "salehe",
       "name": "Salehe Bembury",
       "color": "#2F9E44",
-      "dot": "amber",
+      "dot": "green",
       "health": "On Track",
-      "tagline": "Rug & Pillow drop moved to July 16. Email performing strong at 40% of sales; Welcome Series finalizing by Thursday.",
+      "tagline": "Rug & Pillow drop moved to July 16; email revenue strong at 40% of sales. Welcome Series launching Thursday.",
       "lastTouched": "2026-06-10",
       "tasks": [
         {
@@ -217,9 +217,16 @@
           "source": "manual"
         },
         {
-          "text": "Finalize Welcome Series copy (4-email flow: brand intro, book collection, Sponge, LA guide)",
+          "text": "Finalize Welcome Series copy (4-email flow: brand intro, book collection, Sponge brand, LA guide)",
           "owner": "Fardad",
           "complexity": "medium",
+          "urgent": true,
+          "source": "auto"
+        },
+        {
+          "text": "Send Vellum shoe size inventory to DigitsUp for segmentation",
+          "owner": "Fardad",
+          "complexity": "quick",
           "urgent": true,
           "source": "auto"
         },
@@ -231,30 +238,23 @@
           "source": "auto"
         },
         {
-          "text": "Send Vellum shoe size inventory to DigitsUp",
-          "owner": "Fardad",
-          "complexity": "quick",
-          "urgent": true,
-          "source": "auto"
-        },
-        {
-          "text": "Build and schedule Vellum 'last call' email for Friday 9 AM PST (size-segmented)",
+          "text": "Build and schedule Vellum 'last call' email for Friday 9 AM PST (48 shoes, size-segmented)",
           "owner": "DigitsUp",
           "complexity": "medium",
           "urgent": true,
           "source": "auto"
         },
         {
-          "text": "Update Rug & Pillow email creative with new names and smaller images; send sample to Fardad",
+          "text": "Update Rug & Pillow email creative with new names and smaller images, send sample to Fardad",
           "owner": "DigitsUp",
           "complexity": "medium",
           "urgent": false,
           "source": "auto"
         },
         {
-          "text": "Send performance report to Fardad for 90-day extension pitch",
+          "text": "Send performance report to Fardad for 90-day contract extension pitch",
           "owner": "DigitsUp",
-          "complexity": "quick",
+          "complexity": "medium",
           "urgent": false,
           "source": "auto"
         }
@@ -280,12 +280,12 @@
         },
         {
           "party": "Fardad",
-          "item": "Vellum shoe size inventory",
+          "item": "Vellum shoe size inventory for email segmentation",
           "source": "auto"
         },
         {
           "party": "Fardad",
-          "item": "Updated Rug & Pillow email creative approval",
+          "item": "Welcome Series finalized copy by Thursday",
           "source": "auto"
         }
       ],
@@ -301,14 +301,14 @@
           "madeOn": "2026-06-09"
         }
       ],
-      "nextMilestone": "Welcome Series finalized (Thursday); Vellum last call email send (Friday 9 AM PST)",
+      "nextMilestone": "Welcome Series launch (Thursday 2026-06-12); Vellum email send (Friday 2026-06-13 at 9 AM PST)",
       "flags": [
-        "✅ Email revenue strong at 40% of sales (justifies 90-day extension)",
-        "✅ Rug & Pillow delay creates press window opportunity (WWD, Elle, Hypebeast)",
-        "⚠️ Welcome Series must finalize by Thursday for on-time launch",
-        "⚠️ Vellum 'last call' email scheduled for Friday morning—requires inventory data"
+        "✅ Email revenue strong at 40% of sales—justifies 90-day extension",
+        "✅ Rug & Pillow delay to July 16 opens press window (WWD, Elle, Hypebeast)",
+        "⚠️ Welcome Series deadline Thursday—critical for list warmup",
+        "⚠️ Vellum 'last call' Friday morning—time-sensitive inventory clearance"
       ],
-      "autoUpdatedAt": "2026-06-10T07:01:03.194232-07:00"
+      "autoUpdatedAt": "2026-06-10T10:30:17.933043-07:00"
     },
     {
       "id": "the-lab",
@@ -743,6 +743,10 @@
   ],
   "activity": [
     {
+      "ts": "2026-06-10T10:30:17.933153-07:00",
+      "text": "Salehe Bembury — Rug & Pillow drop moved to July 16; email revenue strong at 40% of sales. Welcome Series launching T"
+    },
+    {
       "ts": "2026-06-10T07:01:03.194314-07:00",
       "text": "Salehe Bembury — Rug & Pillow drop moved to July 16. Email performing strong at 40% of sales; Welcome Series finalizi"
     },
@@ -761,10 +765,6 @@
     {
       "ts": "2026-06-09T07:01:45.050938-07:00",
       "text": "Epicure — Strong Revenue: Last week hit $88k, driven by new product launches and email. The month is tracking "
-    },
-    {
-      "ts": "2026-06-09T07:01:45.051063-07:00",
-      "text": "Riversol — Replenishment Strategy: A new 60-day replenishment flow will launch, starting with the Daily Moistur"
     }
   ]
 }
