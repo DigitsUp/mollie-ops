@@ -1,7 +1,7 @@
 {
   "meta": {
-    "lastUpdated": "2026-06-09T17:00:17.671682-07:00",
-    "updatedBy": "Mollie (auto)"
+    "lastUpdated": "2026-06-09T18:13:20.186861-07:00",
+    "updatedBy": "Mollie (manual)"
   },
   "clients": [
     {
@@ -17,19 +17,22 @@
           "text": "Write + send new website launch email",
           "complexity": "medium",
           "owner": "Michael",
-          "urgent": true
+          "urgent": true,
+          "source": "manual"
         },
         {
           "text": "Check in on welcome series + abandoned cart build — must be ready for Thursday review",
           "complexity": "medium",
           "owner": "Michael",
-          "urgent": true
+          "urgent": true,
+          "source": "manual"
         },
         {
           "text": "Fix Stamped reviews integration",
           "complexity": "medium",
           "owner": "Michael",
-          "urgent": false
+          "urgent": false,
+          "source": "manual"
         }
       ],
       "waitingOn": [],
@@ -59,82 +62,96 @@
           "text": "Confirm backfill method with Dov (OuterSignal) → run backfill for 48k customers (1yr)",
           "complexity": "medium",
           "owner": "Michael",
-          "urgent": true
+          "urgent": true,
+          "source": "manual"
         },
         {
           "text": "OuterSignal → Klaviyo integration once backfill done",
           "complexity": "medium",
           "owner": "Michael",
-          "urgent": true
+          "urgent": true,
+          "source": "manual"
         },
         {
           "text": "Build post-purchase flow (BLOCKED on OuterSignal — due Jun 15)",
           "complexity": "heavy",
           "owner": "Michael",
-          "urgent": true
+          "urgent": true,
+          "source": "manual"
         },
         {
           "text": "Welcome series coupon code swap: replace FIRSTWAVE15 with unique code — update SMS, sign-up form, all welcome emails",
           "complexity": "medium",
           "owner": "Kieran/Victoria",
-          "urgent": true
+          "urgent": true,
+          "source": "manual"
         },
         {
           "text": "Schedule 30-day campaign calendar alignment session with Victoria",
           "complexity": "quick",
           "owner": "Michael",
-          "urgent": true
+          "urgent": true,
+          "source": "manual"
         },
         {
           "text": "Father's Day email — get Clay's feedback, send Saturday Jun 14",
           "complexity": "quick",
           "owner": "Michael",
-          "urgent": true
+          "urgent": true,
+          "source": "manual"
         },
         {
           "text": "Swim Week / Women's swimwear email — waiting on approved images",
           "complexity": "quick",
           "owner": "Michael",
-          "urgent": false
+          "urgent": false,
+          "source": "manual"
         },
         {
           "text": "Submit Klaviyo support ticket — customer reviews issue",
           "complexity": "quick",
           "owner": "Michael",
-          "urgent": false
+          "urgent": false,
+          "source": "manual"
         },
         {
           "text": "Roll AC_exclude tag to Add to Cart + Browse flows",
           "complexity": "quick",
           "owner": "Kieran",
-          "urgent": false
+          "urgent": false,
+          "source": "manual"
         }
       ],
       "waitingOn": [
         {
           "party": "Dov (OuterSignal)",
           "item": "Confirm backfill method for RVCA 48k customers",
-          "since": "2026-06-09"
+          "since": "2026-06-09",
+          "source": "manual"
         },
         {
           "party": "Clayton Dahl",
           "item": "Feedback on Father's Day email",
-          "since": "2026-06-09"
+          "since": "2026-06-09",
+          "source": "manual"
         },
         {
           "party": "Clayton Dahl",
           "item": "Approved images for Swim Week / Women's swimwear email",
-          "since": "2026-06-09"
+          "since": "2026-06-09",
+          "source": "manual"
         },
         {
           "party": "Clayton Dahl",
           "item": "Create Full Price Product Shopify collection for Klaviyo AI feeds",
-          "since": "2026-06-03"
+          "since": "2026-06-03",
+          "source": "manual"
         },
         {
           "party": "Clayton Dahl",
           "item": "GA access for Michael",
-          "since": "2026-06-03"
+          "since": "2026-06-03",
+          "source": "manual"
         }
       ],
       "promises": [
@@ -161,59 +178,86 @@
       "color": "#2F9E44",
       "dot": "green",
       "health": "On Track",
-      "tagline": "Rug & Pillow drop moved to July 16 due to video content delays. This creates a press window (WWD, Elle, Hypebeast)...",
+      "tagline": "Email = 40% of total sales last 30 days ✅. Rug & Pillow drop moved to Jul 16 (video delays). Vellum last call email Friday.",
       "lastTouched": "2026-06-09",
       "tasks": [
         {
-          "text": "File welcome series copy into client docs (4 emails — approved)",
-          "complexity": "quick",
+          "text": "Build + schedule Vellum 'last call' email — Friday Jun 13, 9am PST, segmented by shoe size",
+          "complexity": "medium",
           "owner": "Michael",
-          "urgent": false
+          "urgent": true,
+          "source": "manual"
         },
         {
-          "text": "File fallback / sold-out email brief into client docs",
-          "complexity": "quick",
+          "text": "Send performance report to Fardad for 90-day extension pitch",
+          "complexity": "medium",
           "owner": "Michael",
-          "urgent": false
+          "urgent": true,
+          "source": "manual"
         },
         {
-          "text": "Confirm 10-day warmup schedule with Fardad (30 groups, A–AD)",
-          "complexity": "quick",
+          "text": "Finalize welcome series — 4 emails (brand intro, books, Sponge, Salehe LA guide) — due Thursday",
+          "complexity": "medium",
           "owner": "Michael",
-          "urgent": false
+          "urgent": true,
+          "source": "manual"
         },
         {
-          "text": "Build abandoned suite in Klaviyo (v9 copy approved, pending Shopify sync)",
-          "complexity": "heavy",
+          "text": "Update Rug & Pillow email creative — new names Convex (orange) / Concave (blue), smaller images",
+          "complexity": "quick",
           "owner": "Michael",
-          "urgent": false
+          "urgent": false,
+          "source": "manual"
+        },
+        {
+          "text": "Negotiate with Klaviyo to unsuppress 10–15k high-quality leads from 600k suppressed list",
+          "complexity": "medium",
+          "owner": "Michael",
+          "urgent": false,
+          "source": "manual"
         }
       ],
       "waitingOn": [
         {
-          "party": "Kevin (Shopify admin)",
-          "item": "Shopify admin access for Klaviyo app install",
-          "since": "2026-06-01"
+          "party": "Fardad",
+          "item": "Welcome series copy finalized by Thursday",
+          "since": "2026-06-09",
+          "source": "manual"
         },
         {
           "party": "Fardad",
-          "item": "Confirm warmup schedule + group sizes for Days 4–10",
-          "since": "2026-06-03"
+          "item": "Sponge assets added to shared Dropbox folder",
+          "since": "2026-06-09",
+          "source": "manual"
+        },
+        {
+          "party": "Fardad",
+          "item": "Vellum shoe size inventory breakdown",
+          "since": "2026-06-09",
+          "source": "manual"
         }
       ],
       "promises": [
         {
-          "text": "Warmup running daily through ~June 12",
+          "text": "Vellum last call email live Friday Jun 13, 9am PST",
+          "dueDate": "2026-06-13",
+          "madeOn": "2026-06-09"
+        },
+        {
+          "text": "Welcome series finalized by Thursday Jun 12",
           "dueDate": "2026-06-12",
-          "madeOn": "2026-06-01"
+          "madeOn": "2026-06-09"
         }
       ],
-      "nextMilestone": "Warmup continuing — welcome series + abandoned suite next",
+      "nextMilestone": "Vellum last call email Friday — then welcome series + Jun 25 Sponge drop",
       "flags": [
-        "✅ Launch done — Vellum 2 drop June 3",
-        "✅ Warmup Groups A/B/C sent",
-        "Klaviyo account: VwAij6",
-        "Abandoned suite blocked on Shopify sync (Kevin granting admin)"
+        "✅ Abandoned suite all live",
+        "✅ Warmup complete — list warm",
+        "✅ Email = 40% of total sales last 30 days",
+        "⚠️ 600k lead list suppressed by Klaviyo (90-day policy) — negotiating unsuppress",
+        "Jun 25: Sponge drop | Jul 2: Satoshi | Jul 10: Puma Hali | Jul 16: Rug & Pillow",
+        "Alex Proba campaign — design done ✅, email build next (Jun 18 drop)",
+        "Klaviyo account: VwAij6"
       ]
     },
     {
@@ -222,45 +266,51 @@
       "color": "#F08C00",
       "dot": "amber",
       "health": "Moving Fast",
-      "tagline": "GHL build in progress with RV. Second Miro review Tue Jun 9. Summer camp brief needed ASAP.",
-      "lastTouched": "2026-06-08",
+      "tagline": "Miro review done Jun 9 ✅. GHL build in progress with RV. Summer camp campaign brief needed — Jun 12 lock date.",
+      "lastTouched": "2026-06-09",
       "tasks": [
         {
-          "text": "Review RV's GHL build work before tomorrow's meeting",
+          "text": "Brief summer camp campaign for design — ASAP, Jun 12 lock",
           "complexity": "medium",
           "owner": "Michael",
-          "urgent": true
+          "urgent": true,
+          "source": "manual"
         },
         {
-          "text": "Brief summer camp campaign for design — ASAP this week",
+          "text": "Scope GHL → Klaviyo integration (replacing manual Constant Contact export)",
           "complexity": "medium",
           "owner": "Michael",
-          "urgent": true
+          "urgent": false,
+          "source": "manual"
         },
         {
-          "text": "Second round Miro workflow review with Ally + Travis — Tuesday",
+          "text": "Scope RingCentral number port to GHL — feasibility + timeline",
           "complexity": "medium",
           "owner": "Michael",
-          "urgent": true
+          "urgent": false,
+          "source": "manual"
         },
         {
           "text": "Plan Spark → GHL one-way sync (tag as Sold on membership purchase)",
           "complexity": "heavy",
           "owner": "RV",
-          "urgent": false
+          "urgent": false,
+          "source": "manual"
         },
         {
           "text": "GHL data cleanup — dedupe current member tags (654 tags vs ~300 actual accounts)",
           "complexity": "heavy",
           "owner": "RV",
-          "urgent": false
+          "urgent": false,
+          "source": "manual"
         }
       ],
       "waitingOn": [
         {
-          "party": "Ally + Travis",
-          "item": "Tuesday second Miro review meeting",
-          "since": "2026-06-08"
+          "party": "Ally",
+          "item": "Campaign brief for summer camp offer (audience targeting details)",
+          "since": "2026-06-05",
+          "source": "manual"
         }
       ],
       "promises": [
@@ -275,13 +325,14 @@
           "madeOn": "2026-06-03"
         }
       ],
-      "nextMilestone": "Tue Jun 9 — Second Miro review with Ally + Travis",
+      "nextMilestone": "Jun 12 — All GHL builds locked",
       "flags": [
         "✅ SIGNED May 29",
         "✅ Kickoff Jun 3 done",
-        "✅ First draft review Jun 5 done",
+        "✅ Miro review Jun 9 done",
         "GHL = pre-member marketing. Spark = post-member operations.",
-        "⚠️ Summer camp time sensitive — brief to design ASAP",
+        "⚠️ Summer camp brief ASAP — time sensitive, Jun 12 lock",
+        "Summer camp offer: 50% off ($250) with new membership purchase",
         "Month 2: Klaviyo + Constant Contact migration"
       ]
     },
@@ -298,44 +349,51 @@
           "text": "Push post-purchase Email 2 live",
           "complexity": "medium",
           "owner": "Michael",
-          "urgent": true
+          "urgent": true,
+          "source": "manual"
         },
         {
           "text": "Push post-purchase Email 3 live",
           "complexity": "medium",
           "owner": "Michael",
-          "urgent": true
+          "urgent": true,
+          "source": "manual"
         },
         {
           "text": "Build abandoned cart split-test (plan approved by Geoff)",
           "complexity": "heavy",
           "owner": "Michael",
-          "urgent": true
+          "urgent": true,
+          "source": "manual"
         },
         {
           "text": "Scope GoAffPro → Klaviyo integration",
           "complexity": "medium",
           "owner": "Michael",
-          "urgent": false
+          "urgent": false,
+          "source": "manual"
         },
         {
           "text": "Analyze LTV of 291 First Meal Free CA participants",
           "complexity": "medium",
           "owner": "Michael",
-          "urgent": false
+          "urgent": false,
+          "source": "manual"
         },
         {
           "text": "Plan Yotpo vs Klaviyo decision (Sept 1 license expiry)",
           "complexity": "medium",
           "owner": "Michael",
-          "urgent": false
+          "urgent": false,
+          "source": "manual"
         }
       ],
       "waitingOn": [
         {
           "party": "Geoff",
           "item": "Direction on existing flow optimizations",
-          "since": "2026-06-04"
+          "since": "2026-06-04",
+          "source": "manual"
         }
       ],
       "promises": [
@@ -368,31 +426,36 @@
           "text": "Add pause logic to Winback flow (paused members)",
           "complexity": "medium",
           "owner": "Michael",
-          "urgent": true
+          "urgent": true,
+          "source": "manual"
         },
         {
           "text": "Request 15% + 10% off codes from Ali for 5-star review flow",
           "complexity": "quick",
           "owner": "Michael",
-          "urgent": true
+          "urgent": true,
+          "source": "manual"
         },
         {
           "text": "Launch 5-star review sample email",
           "complexity": "quick",
           "owner": "Michael",
-          "urgent": true
+          "urgent": true,
+          "source": "manual"
         },
         {
           "text": "Build replenishment flow for DMC + Trio",
           "complexity": "heavy",
           "owner": "Michael",
-          "urgent": false
+          "urgent": false,
+          "source": "manual"
         },
         {
           "text": "Add trust banner to all new emails",
           "complexity": "quick",
           "owner": "Michael",
-          "urgent": false
+          "urgent": false,
+          "source": "manual"
         }
       ],
       "waitingOn": [],
@@ -420,19 +483,22 @@
           "text": "Beyond the Classroom email — due Thu Jun 11",
           "complexity": "medium",
           "owner": "Michael",
-          "urgent": true
+          "urgent": true,
+          "source": "manual"
         },
         {
           "text": "Send validation email to Hiba team confirming report delivery",
           "complexity": "quick",
           "owner": "Michael",
-          "urgent": false
+          "urgent": false,
+          "source": "manual"
         },
         {
           "text": "Schedule campaign calendar regroup with client",
           "complexity": "quick",
           "owner": "Michael",
-          "urgent": false
+          "urgent": false,
+          "source": "manual"
         }
       ],
       "waitingOn": [],
@@ -457,31 +523,36 @@
           "text": "Follow up with Sam on Dropbox creative folder + brand guidelines",
           "complexity": "quick",
           "owner": "Michael",
-          "urgent": false
+          "urgent": false,
+          "source": "manual"
         },
         {
           "text": "Follow up with Dov on persona report",
           "complexity": "quick",
           "owner": "Michael",
-          "urgent": false
+          "urgent": false,
+          "source": "manual"
         },
         {
           "text": "Build post-purchase strategy + creative concepts in Figma (once assets arrive)",
           "complexity": "heavy",
           "owner": "Michael",
-          "urgent": false
+          "urgent": false,
+          "source": "manual"
         }
       ],
       "waitingOn": [
         {
           "party": "Sam",
           "item": "Dropbox creative folder + brand guidelines",
-          "since": "2026-06-01"
+          "since": "2026-06-01",
+          "source": "manual"
         },
         {
           "party": "Dov",
           "item": "Persona report (6 persona-specific app download emails)",
-          "since": "2026-06-01"
+          "since": "2026-06-01",
+          "source": "manual"
         }
       ],
       "promises": [],
@@ -507,14 +578,16 @@
           "text": "Follow up with Will if no response by end of week",
           "complexity": "quick",
           "owner": "Michael",
-          "urgent": false
+          "urgent": false,
+          "source": "manual"
         }
       ],
       "waitingOn": [
         {
           "party": "Will (client)",
           "item": "Response to proposal v3",
-          "since": "2026-05-28"
+          "since": "2026-05-28",
+          "source": "manual"
         }
       ],
       "promises": [],
@@ -620,18 +693,6 @@
   ],
   "activity": [
     {
-      "ts": "2026-06-09T17:00:17.671419-07:00",
-      "text": "Epicure — Strong Revenue: Last week hit $88k, driven by new product launches and email. The month is tracking "
-    },
-    {
-      "ts": "2026-06-09T17:00:17.671550-07:00",
-      "text": "Salehe Bembury — Rug & Pillow drop moved to July 16 due to video content delays. This creates a press window (WWD, El"
-    },
-    {
-      "ts": "2026-06-09T17:00:17.671679-07:00",
-      "text": "Riversol — Replenishment Strategy: A new 60-day replenishment flow will launch, starting with the Daily Moistur"
-    },
-    {
       "ts": "2026-06-09T07:01:45.050551-07:00",
       "text": "Epicure — Root Cause: A \"hacky\" Klaviyo flow (built by RV) incorrectly assigned locales, causing US customers "
     },
@@ -641,6 +702,18 @@
     },
     {
       "ts": "2026-06-09T07:01:45.051063-07:00",
+      "text": "Riversol — Replenishment Strategy: A new 60-day replenishment flow will launch, starting with the Daily Moistur"
+    },
+    {
+      "ts": "2026-06-08T23:41:32.431313-07:00",
+      "text": "Epicure — Root Cause: A \"hacky\" Klaviyo flow (built by RV) incorrectly assigned locales, causing US customers "
+    },
+    {
+      "ts": "2026-06-08T23:41:32.431667-07:00",
+      "text": "Epicure — Strong Revenue: Last week hit $88k, driven by new product launches and email. The month is tracking "
+    },
+    {
+      "ts": "2026-06-08T23:41:32.431795-07:00",
       "text": "Riversol — Replenishment Strategy: A new 60-day replenishment flow will launch, starting with the Daily Moistur"
     }
   ]
