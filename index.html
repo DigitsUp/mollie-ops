@@ -608,6 +608,28 @@ html, body {
   color: #E03131;
 }
 
+.source-pill {
+  display: inline-block;
+  font-size: 10px;
+  font-weight: 500;
+  padding: 1px 5px;
+  border-radius: 3px;
+  margin-left: 4px;
+  vertical-align: middle;
+}
+.source-auto {
+  background: #E8F4FD;
+  color: #1098AD;
+  border: 1px solid #B8DFF0;
+}
+
+.auto-synced-label {
+  font-size: 10px;
+  color: #999;
+  margin-top: 2px;
+  font-style: italic;
+}
+
 .deadline-chip {
   font-family: 'DM Mono', monospace;
   font-size: 10px;
@@ -1859,6 +1881,23 @@ function complexityPill(c) {
   return `<span class="complexity-pill ${p.cls}">${p.label}</span>`;
 }
 
+function sourcePill(source) {
+  if (source === 'auto') return '<span class="source-pill source-auto">auto</span>';
+  return '';
+}
+
+function formatAutoSynced(isoStr) {
+  if (!isoStr) return '';
+  const d = new Date(isoStr);
+  const diffMs = Date.now() - d.getTime();
+  const diffMin = Math.floor(diffMs / 60000);
+  const diffHrs = Math.floor(diffMin / 60);
+  if (diffMin < 1) return 'auto-synced just now';
+  if (diffMin < 60) return `auto-synced ${diffMin}m ago`;
+  if (diffHrs < 24) return `auto-synced ${diffHrs}h ago`;
+  return 'auto-synced today';
+}
+
 function getClientById(id) {
   return OPS_DATA.clients.find(c => c.id === id);
 }
@@ -2218,6 +2257,7 @@ function openSheet(clientId) {
       </div>
     </div>
     <div class="sheet-tagline">${client.tagline}</div>
+    ${client.autoUpdatedAt ? `<div class="auto-synced-label">🤖 ${formatAutoSynced(client.autoUpdatedAt)}</div>` : ''}
     <button class="sheet-close" onclick="closeSheet()">✕</button>
   `;
 
@@ -2244,6 +2284,7 @@ function openSheet(clientId) {
           <div class="task-pills">
             ${complexityPill(task.complexity)}
             ${task.urgent ? '<span class="urgent-pill">Urgent</span>' : ''}
+            ${sourcePill(task.source)}
           </div>
         </div>
       </div>
