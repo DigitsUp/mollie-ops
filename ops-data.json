@@ -1,6 +1,6 @@
 {
   "meta": {
-    "lastUpdated": "2026-06-09T22:30:31.573567-07:00",
+    "lastUpdated": "2026-06-10T05:30:24.177957-07:00",
     "updatedBy": "Mollie (auto-v2)"
   },
   "clients": [
@@ -178,8 +178,8 @@
       "color": "#2F9E44",
       "dot": "amber",
       "health": "On Track",
-      "tagline": "Rug & Pillow drop moved to July 16. Email performance strong at 40% of sales; 90-day extension pitch underway.",
-      "lastTouched": "2026-06-09",
+      "tagline": "Rug & Pillow drop moved to July 16; email revenue strong at 40% of sales. Welcome Series finalizing Thursday.",
+      "lastTouched": "2026-06-10",
       "tasks": [
         {
           "text": "Build + schedule Vellum 'last call' email — Friday Jun 13, 9am PST, segmented by shoe size",
@@ -238,24 +238,24 @@
           "source": "auto"
         },
         {
-          "text": "Build and schedule Vellum last call email for Friday 9 AM PST (size-segmented)",
+          "text": "Build and schedule Vellum 'last call' email for Friday 9 AM PST, segmented by shoe size",
           "owner": "DigitsUp",
           "complexity": "medium",
           "urgent": true,
           "source": "auto"
         },
         {
-          "text": "Update Rug & Pillow email creative with new names and smaller images; send sample to Fardad",
+          "text": "Update Rug & Pillow email creative with new names and smaller images, send sample to Fardad",
           "owner": "DigitsUp",
           "complexity": "medium",
           "urgent": false,
           "source": "auto"
         },
         {
-          "text": "Send performance report to Fardad for 90-day extension pitch",
+          "text": "Send performance report to Fardad for 90-day contract extension pitch",
           "owner": "DigitsUp",
-          "complexity": "medium",
-          "urgent": true,
+          "complexity": "quick",
+          "urgent": false,
           "source": "auto"
         }
       ],
@@ -280,17 +280,17 @@
         },
         {
           "party": "Fardad",
-          "item": "Welcome Series copy finalization",
-          "source": "auto"
-        },
-        {
-          "party": "Fardad",
           "item": "Vellum shoe size inventory data",
           "source": "auto"
         },
         {
           "party": "Fardad",
-          "item": "Approval on updated Rug & Pillow creative",
+          "item": "Sponge brand assets for Dropbox",
+          "source": "auto"
+        },
+        {
+          "party": "DigitsUp",
+          "item": "Updated Rug & Pillow creative sample for approval",
           "source": "auto"
         }
       ],
@@ -306,14 +306,14 @@
           "madeOn": "2026-06-09"
         }
       ],
-      "nextMilestone": "Vellum last call email send Friday 9 AM PST; Welcome Series finalized by Thursday",
+      "nextMilestone": "Welcome Series finalized (Thursday); Vellum last call email sent (Friday, June 13)",
       "flags": [
-        "✅ Email revenue strong at 40% of sales (book giveaway period)",
-        "⚠️ Video content delays pushed Rug & Pillow drop to July 16",
-        "✅ Press window created (WWD, Elle, Hypebeast) with new timeline",
-        "⚠️ Vellum inventory (48 shoes) depleting—last call campaign urgent"
+        "✅ Email revenue strong at 40% of sales—justifies 90-day extension",
+        "⚠️ Rug & Pillow drop pushed to July 16 due to video content delays",
+        "⚠️ Welcome Series must finalize by Thursday for timely deployment",
+        "✅ Last call email for 48 Vellum shoes scheduled Friday 9 AM PST"
       ],
-      "autoUpdatedAt": "2026-06-09T22:30:31.573410-07:00"
+      "autoUpdatedAt": "2026-06-10T05:30:24.177866-07:00"
     },
     {
       "id": "the-lab",
@@ -748,6 +748,10 @@
   ],
   "activity": [
     {
+      "ts": "2026-06-10T05:30:24.177939-07:00",
+      "text": "Salehe Bembury — Rug & Pillow drop moved to July 16; email revenue strong at 40% of sales. Welcome Series finalizing "
+    },
+    {
       "ts": "2026-06-09T22:30:31.573536-07:00",
       "text": "Salehe Bembury — Rug & Pillow drop moved to July 16. Email performance strong at 40% of sales; 90-day extension pitch"
     },
@@ -766,10 +770,6 @@
     {
       "ts": "2026-06-08T23:41:32.431313-07:00",
       "text": "Epicure — Root Cause: A \"hacky\" Klaviyo flow (built by RV) incorrectly assigned locales, causing US customers "
-    },
-    {
-      "ts": "2026-06-08T23:41:32.431667-07:00",
-      "text": "Epicure — Strong Revenue: Last week hit $88k, driven by new product launches and email. The month is tracking "
     }
   ]
 }
