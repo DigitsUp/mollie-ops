@@ -1,6 +1,6 @@
 {
   "meta": {
-    "lastUpdated": "2026-06-09T07:01:45.051067-07:00",
+    "lastUpdated": "2026-06-09T17:00:17.671682-07:00",
     "updatedBy": "Mollie (auto)"
   },
   "clients": [
@@ -52,29 +52,53 @@
       "color": "#3B5BDB",
       "dot": "amber",
       "health": "In Progress",
-      "tagline": "Welcome series LIVE ✅. Post-purchase first email needs edits before going live. Reviews ticket + OuterSignal backfill pending.",
-      "lastTouched": "2026-06-08",
+      "tagline": "OuterSignal GREEN LIGHT ✅. Post-purchase blocked until backfill + Klaviyo integration done. Welcome code swap needed. Campaign calendar alignment needed with Victoria.",
+      "lastTouched": "2026-06-09",
       "tasks": [
         {
-          "text": "Fix first email of post-purchase flow (couple edits needed) then push live",
+          "text": "Confirm backfill method with Dov (OuterSignal) → run backfill for 48k customers (1yr)",
           "complexity": "medium",
           "owner": "Michael",
           "urgent": true
         },
         {
-          "text": "Submit Klaviyo support ticket — customer reviews issue (Clay requested)",
+          "text": "OuterSignal → Klaviyo integration once backfill done",
+          "complexity": "medium",
+          "owner": "Michael",
+          "urgent": true
+        },
+        {
+          "text": "Build post-purchase flow (BLOCKED on OuterSignal — due Jun 15)",
+          "complexity": "heavy",
+          "owner": "Michael",
+          "urgent": true
+        },
+        {
+          "text": "Welcome series coupon code swap: replace FIRSTWAVE15 with unique code — update SMS, sign-up form, all welcome emails",
+          "complexity": "medium",
+          "owner": "Kieran/Victoria",
+          "urgent": true
+        },
+        {
+          "text": "Schedule 30-day campaign calendar alignment session with Victoria",
           "complexity": "quick",
           "owner": "Michael",
           "urgent": true
         },
         {
-          "text": "Approve + action OuterSignal persona backfill (Clay requested)",
+          "text": "Father's Day email — get Clay's feedback, send Saturday Jun 14",
           "complexity": "quick",
           "owner": "Michael",
           "urgent": true
         },
         {
-          "text": "Check welcome series stats today",
+          "text": "Swim Week / Women's swimwear email — waiting on approved images",
+          "complexity": "quick",
+          "owner": "Michael",
+          "urgent": false
+        },
+        {
+          "text": "Submit Klaviyo support ticket — customer reviews issue",
           "complexity": "quick",
           "owner": "Michael",
           "urgent": false
@@ -84,19 +108,23 @@
           "complexity": "quick",
           "owner": "Kieran",
           "urgent": false
-        },
-        {
-          "text": "Set up Canada Attentive signup unit for team testing",
-          "complexity": "medium",
-          "owner": "Michael",
-          "urgent": false
         }
       ],
       "waitingOn": [
         {
+          "party": "Dov (OuterSignal)",
+          "item": "Confirm backfill method for RVCA 48k customers",
+          "since": "2026-06-09"
+        },
+        {
           "party": "Clayton Dahl",
-          "item": "Confirmation on OuterSignal backfill approval",
-          "since": "2026-06-03"
+          "item": "Feedback on Father's Day email",
+          "since": "2026-06-09"
+        },
+        {
+          "party": "Clayton Dahl",
+          "item": "Approved images for Swim Week / Women's swimwear email",
+          "since": "2026-06-09"
         },
         {
           "party": "Clayton Dahl",
@@ -116,10 +144,13 @@
           "madeOn": "2026-06-03"
         }
       ],
-      "nextMilestone": "Post-purchase first email edits → live. Reviews ticket submitted.",
+      "nextMilestone": "OuterSignal backfill → Klaviyo integration → post-purchase build. Jun 15 deadline at risk.",
       "flags": [
-        "✅ Welcome series LIVE — checking stats",
-        "✅ AC_exclude tag fix live and confirmed",
+        "✅ Welcome series LIVE",
+        "✅ AC_exclude tag fix live",
+        "✅ OuterSignal backfill approved by Clay Jun 9",
+        "⚠️ Post-purchase BLOCKED on OuterSignal — due Jun 15",
+        "⚠️ Welcome code swap needed — FIRSTWAVE15 → unique code",
         "⚠️ READ ONLY on RVCA-External Slack — never post",
         "May: business up 6% YoY, flows up ~4%, campaigns down 11% (66% lower volume)"
       ]
@@ -130,8 +161,8 @@
       "color": "#2F9E44",
       "dot": "green",
       "health": "On Track",
-      "tagline": "Launch done ✅. Warmup running. Welcome series + abandoned suite next.",
-      "lastTouched": "2026-06-08",
+      "tagline": "Rug & Pillow drop moved to July 16 due to video content delays. This creates a press window (WWD, Elle, Hypebeast)...",
+      "lastTouched": "2026-06-09",
       "tasks": [
         {
           "text": "File welcome series copy into client docs (4 emails — approved)",
@@ -589,6 +620,18 @@
   ],
   "activity": [
     {
+      "ts": "2026-06-09T17:00:17.671419-07:00",
+      "text": "Epicure — Strong Revenue: Last week hit $88k, driven by new product launches and email. The month is tracking "
+    },
+    {
+      "ts": "2026-06-09T17:00:17.671550-07:00",
+      "text": "Salehe Bembury — Rug & Pillow drop moved to July 16 due to video content delays. This creates a press window (WWD, El"
+    },
+    {
+      "ts": "2026-06-09T17:00:17.671679-07:00",
+      "text": "Riversol — Replenishment Strategy: A new 60-day replenishment flow will launch, starting with the Daily Moistur"
+    },
+    {
       "ts": "2026-06-09T07:01:45.050551-07:00",
       "text": "Epicure — Root Cause: A \"hacky\" Klaviyo flow (built by RV) incorrectly assigned locales, causing US customers "
     },
@@ -598,18 +641,6 @@
     },
     {
       "ts": "2026-06-09T07:01:45.051063-07:00",
-      "text": "Riversol — Replenishment Strategy: A new 60-day replenishment flow will launch, starting with the Daily Moistur"
-    },
-    {
-      "ts": "2026-06-08T23:41:32.431313-07:00",
-      "text": "Epicure — Root Cause: A \"hacky\" Klaviyo flow (built by RV) incorrectly assigned locales, causing US customers "
-    },
-    {
-      "ts": "2026-06-08T23:41:32.431667-07:00",
-      "text": "Epicure — Strong Revenue: Last week hit $88k, driven by new product launches and email. The month is tracking "
-    },
-    {
-      "ts": "2026-06-08T23:41:32.431795-07:00",
       "text": "Riversol — Replenishment Strategy: A new 60-day replenishment flow will launch, starting with the Daily Moistur"
     }
   ]
