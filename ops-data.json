@@ -1,6 +1,6 @@
 {
   "meta": {
-    "lastUpdated": "2026-06-11T10:32:18.672202-07:00",
+    "lastUpdated": "2026-06-11T16:30:22.220923-07:00",
     "updatedBy": "Mollie (auto-v2)"
   },
   "clients": [
@@ -395,10 +395,10 @@
       "id": "epicure",
       "name": "Epicure",
       "color": "#862E9C",
-      "dot": "green",
+      "dot": "amber",
       "health": "In Progress",
-      "tagline": "Strong Revenue: Last week hit $88k, driven by new product launches and email. The month is tracking at $378k against...",
-      "lastTouched": "2026-06-09",
+      "tagline": "Epicure affiliate program launching phased rollout with simple flows first, then major onboarding overhaul. July win-back campaign targeting inactive affiliates.",
+      "lastTouched": "2026-06-11",
       "tasks": [
         {
           "text": "Push post-purchase Email 2 live",
@@ -441,6 +441,34 @@
           "owner": "Michael",
           "urgent": false,
           "source": "manual"
+        },
+        {
+          "text": "Draft briefs for all initiatives (phased rollout, onboarding, win-back campaign)",
+          "owner": "Michael",
+          "complexity": "medium",
+          "urgent": false,
+          "source": "auto"
+        },
+        {
+          "text": "Meet with Cindy to review briefs and close gaps",
+          "owner": "Michael",
+          "complexity": "quick",
+          "urgent": false,
+          "source": "auto"
+        },
+        {
+          "text": "Ensure Cindy is included in all future reviews and sign-offs",
+          "owner": "Michael",
+          "complexity": "quick",
+          "urgent": false,
+          "source": "auto"
+        },
+        {
+          "text": "Share survey findings on inactive affiliates to inform win-back messaging",
+          "owner": "Amelia",
+          "complexity": "quick",
+          "urgent": true,
+          "source": "auto"
         }
       ],
       "waitingOn": [
@@ -449,6 +477,11 @@
           "item": "Direction on existing flow optimizations",
           "since": "2026-06-04",
           "source": "manual"
+        },
+        {
+          "party": "Amelia",
+          "item": "Survey findings on inactive affiliates (70-80% are personal shoppers waiting for product)",
+          "source": "auto"
         }
       ],
       "promises": [
@@ -458,15 +491,13 @@
           "madeOn": "2026-06-08"
         }
       ],
-      "nextMilestone": "Post-purchase Emails 2+3 live → then abandoned cart split-test",
+      "nextMilestone": "Survey findings delivery (early next week) to inform July win-back campaign launch",
       "flags": [
-        "✅ Two calls today Jun 8 — big progress",
-        "✅ Locale assignment flow rebuilt — Shopify Markets sync enabled",
-        "✅ US First Meal Free form live",
-        "✅ Affiliate strategy doc live: digitsup.github.io/epicure/affiliate-strategy.html (pw: EPIC)",
-        "Active segment defined: purchased 90d OR engaged 30d (removes 77k dead weight)",
-        "First Meal Free launching in US — 6-7% lead form submit rate CA"
-      ]
+        "⚠️ Critical: Program has 90-day cookie window (not 30-day) and $250 payout threshold includes personal sales",
+        "✅ Onboarding goal: 50% link sharing, 30% sales within 2 weeks",
+        "⚠️ Phased approach: Launch simple flows (3rd-order invite, footer banner) before major affiliate onboarding overhaul"
+      ],
+      "autoUpdatedAt": "2026-06-11T16:30:19.571365-07:00"
     },
     {
       "id": "riversol",
@@ -529,10 +560,10 @@
       "id": "hiba",
       "name": "Hiba Academy",
       "color": "#E64980",
-      "dot": "green",
+      "dot": "amber",
       "health": "On Track",
-      "tagline": "May report delivered ✅. Beyond the Classroom email due Thu Jun 11.",
-      "lastTouched": "2026-06-08",
+      "tagline": "June 30 campaign pivoting to 'founding vision to reality' theme with new teachers. Draft due June 18.",
+      "lastTouched": "2026-06-11",
       "tasks": [
         {
           "text": "Beyond the Classroom email — due Thu Jun 11",
@@ -554,16 +585,37 @@
           "owner": "Michael",
           "urgent": false,
           "source": "manual"
+        },
+        {
+          "text": "Draft June 30 campaign copy and layout, deliver to Hiba Academy by June 18",
+          "owner": "Victoria",
+          "complexity": "medium",
+          "urgent": true,
+          "source": "auto"
+        },
+        {
+          "text": "Finalize strategy with David for campaigns beyond June and send email updates to DigitsUp",
+          "owner": "Client",
+          "complexity": "medium",
+          "urgent": true,
+          "source": "auto"
         }
       ],
-      "waitingOn": [],
+      "waitingOn": [
+        {
+          "party": "Hiba Academy",
+          "item": "Strategy finalization with David for post-June campaigns",
+          "source": "auto"
+        }
+      ],
       "promises": [],
-      "nextMilestone": "Thu Jun 11 — Beyond the Classroom email due",
+      "nextMilestone": "June 18 - June 30 campaign draft delivery",
       "flags": [
-        "✅ May 2026 report live: digitsup.github.io/hiba/may-2026.html — Password: HIBA2026",
-        "✅ Sent to client by Michael",
-        "All signup forms working. Pop-up offline."
-      ]
+        "✅ Campaign topic pivoted from summer programs to 'founding vision to reality' theme",
+        "✅ Audience segmented for today's send to avoid overlap with June 17 newsletter",
+        "⚠️ Future campaign planning paused until strategy is finalized"
+      ],
+      "autoUpdatedAt": "2026-06-11T16:30:22.220803-07:00"
     },
     {
       "id": "outersignal",
@@ -748,6 +800,14 @@
   ],
   "activity": [
     {
+      "ts": "2026-06-11T16:30:19.571451-07:00",
+      "text": "Epicure — Epicure affiliate program launching phased rollout with simple flows first, then major onboarding ov"
+    },
+    {
+      "ts": "2026-06-11T16:30:22.220891-07:00",
+      "text": "Hiba Academy — June 30 campaign pivoting to 'founding vision to reality' theme with new teachers. Draft due June 18"
+    },
+    {
       "ts": "2026-06-10T17:00:34.482714-07:00",
       "text": "Salehe Bembury — Rug & Pillow drop moved to July 16; email revenue strong at 40% of sales. Welcome Series finalizing "
     },
@@ -762,14 +822,6 @@
     {
       "ts": "2026-06-10T07:01:03.194314-07:00",
       "text": "Salehe Bembury — Rug & Pillow drop moved to July 16. Email performing strong at 40% of sales; Welcome Series finalizi"
-    },
-    {
-      "ts": "2026-06-10T05:30:24.177939-07:00",
-      "text": "Salehe Bembury — Rug & Pillow drop moved to July 16; email revenue strong at 40% of sales. Welcome Series finalizing "
-    },
-    {
-      "ts": "2026-06-09T22:30:31.573536-07:00",
-      "text": "Salehe Bembury — Rug & Pillow drop moved to July 16. Email performance strong at 40% of sales; 90-day extension pitch"
     }
   ]
 }
