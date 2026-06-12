@@ -1,6 +1,6 @@
 {
   "meta": {
-    "lastUpdated": "2026-06-11T17:00:29.690055-07:00",
+    "lastUpdated": "2026-06-11T22:30:24.202815-07:00",
     "updatedBy": "Mollie (auto-v2)"
   },
   "clients": [
@@ -397,7 +397,7 @@
       "color": "#862E9C",
       "dot": "amber",
       "health": "In Progress",
-      "tagline": "Epicure affiliate program phased rollout underway. Simple flows launching first, then major onboarding overhaul with win-back campaign planned for July.",
+      "tagline": "Phased affiliate program rollout underway with corrected terms (90-day cookie, $250 threshold). Win-back campaign planned for July.",
       "lastTouched": "2026-06-11",
       "tasks": [
         {
@@ -491,14 +491,13 @@
           "madeOn": "2026-06-08"
         }
       ],
-      "nextMilestone": "Amelia delivers survey findings early next week; Michael completes brief drafts for Cindy review",
+      "nextMilestone": "Briefs drafted and reviewed with Cindy; survey findings shared (early next week)",
       "flags": [
-        "⚠️ Program has 90-day cookie window, not 30-day (critical correction)",
-        "⚠️ $250 payout threshold includes personal sales (must communicate to affiliates)",
-        "✅ Onboarding goals set: 50% link sharing, 30% sales within 2 weeks",
-        "✅ Win-back campaign planned for July targeting inactive affiliates"
+        "✅ Program terms clarified: 90-day cookie (not 30), $250 payout threshold includes personal sales",
+        "⚠️ Onboarding goals ambitious: 50% link sharing, 30% first sale within 2 weeks",
+        "⚠️ Win-back campaign dependent on survey data delivery by early next week"
       ],
-      "autoUpdatedAt": "2026-06-11T17:00:26.722580-07:00"
+      "autoUpdatedAt": "2026-06-11T22:30:21.333876-07:00"
     },
     {
       "id": "riversol",
@@ -563,7 +562,7 @@
       "color": "#E64980",
       "dot": "amber",
       "health": "On Track",
-      "tagline": "June 30 campaign pivoting to 'founding vision to reality' theme. Draft due June 18 for review.",
+      "tagline": "June 30 campaign pivoting to 'founding vision to reality' theme with newly hired teachers. Draft due June 18.",
       "lastTouched": "2026-06-11",
       "tasks": [
         {
@@ -588,16 +587,9 @@
           "source": "manual"
         },
         {
-          "text": "Draft June 30 campaign copy and layout showcasing newly hired teachers with 'founding vision to reality' theme",
+          "text": "Draft June 30 campaign copy and layout, deliver to Hiba Academy by June 18",
           "owner": "Victoria",
           "complexity": "medium",
-          "urgent": true,
-          "source": "auto"
-        },
-        {
-          "text": "Deliver June 30 campaign draft to Hiba Academy for review",
-          "owner": "Victoria",
-          "complexity": "quick",
           "urgent": true,
           "source": "auto"
         },
@@ -612,23 +604,24 @@
       "waitingOn": [
         {
           "party": "Hiba Academy",
-          "item": "Campaign strategy finalization with David for post-June planning",
+          "item": "Strategy finalization with David for post-June campaigns",
           "source": "auto"
         },
         {
           "party": "Hiba Academy",
-          "item": "Review and approval of June 30 campaign draft by June 18 deadline",
+          "item": "Review and feedback on June 30 campaign draft by June 18",
           "source": "auto"
         }
       ],
       "promises": [],
-      "nextMilestone": "June 30 campaign draft delivery to Hiba Academy (June 18)",
+      "nextMilestone": "June 18 - June 30 campaign draft delivery",
       "flags": [
-        "⚠️ Future campaigns on hold pending strategy finalization",
+        "✅ Campaign topic pivot confirmed: 'founding vision to reality' theme",
         "✅ Audience segmented for today's send to avoid overlap with June 17 newsletter",
-        "⚠️ June 30 draft due June 18—tight timeline for review and revisions"
+        "⚠️ Future campaign planning paused pending strategy finalization",
+        "⚠️ June 30 draft deadline is tight (June 18 delivery)"
       ],
-      "autoUpdatedAt": "2026-06-11T17:00:29.689945-07:00"
+      "autoUpdatedAt": "2026-06-11T22:30:24.202684-07:00"
     },
     {
       "id": "outersignal",
@@ -813,6 +806,14 @@
   ],
   "activity": [
     {
+      "ts": "2026-06-11T22:30:21.333964-07:00",
+      "text": "Epicure — Phased affiliate program rollout underway with corrected terms (90-day cookie, $250 threshold). Win-"
+    },
+    {
+      "ts": "2026-06-11T22:30:24.202782-07:00",
+      "text": "Hiba Academy — June 30 campaign pivoting to 'founding vision to reality' theme with newly hired teachers. Draft due"
+    },
+    {
       "ts": "2026-06-11T17:00:26.722669-07:00",
       "text": "Epicure — Epicure affiliate program phased rollout underway. Simple flows launching first, then major onboardi"
     },
@@ -827,14 +828,6 @@
     {
       "ts": "2026-06-11T16:30:22.220891-07:00",
       "text": "Hiba Academy — June 30 campaign pivoting to 'founding vision to reality' theme with new teachers. Draft due June 18"
-    },
-    {
-      "ts": "2026-06-10T17:00:34.482714-07:00",
-      "text": "Salehe Bembury — Rug & Pillow drop moved to July 16; email revenue strong at 40% of sales. Welcome Series finalizing "
-    },
-    {
-      "ts": "2026-06-10T16:30:19.696324-07:00",
-      "text": "Salehe Bembury — Rug & Pillow drop moved to July 16; email performing strong at 40% of sales. Welcome Series finalizi"
     }
   ]
 }
