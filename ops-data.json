@@ -1,6 +1,6 @@
 {
   "meta": {
-    "lastUpdated": "2026-06-12T10:30:36.245443-07:00",
+    "lastUpdated": "2026-06-12T12:01:46.409056-07:00",
     "updatedBy": "Mollie (auto-v2)"
   },
   "clients": [
@@ -397,7 +397,7 @@
       "color": "#862E9C",
       "dot": "amber",
       "health": "In Progress",
-      "tagline": "Epicure affiliate program launching phased rollout with simple flows first, then major onboarding overhaul. Win-back campaign planned for July.",
+      "tagline": "Epicure affiliate program pivoting to phased rollout with quick wins first, then major onboarding overhaul. Win-back campaign planned for July.",
       "lastTouched": "2026-06-12",
       "tasks": [
         {
@@ -450,7 +450,7 @@
           "source": "auto"
         },
         {
-          "text": "Meet with Cindy to review briefs and close any gaps",
+          "text": "Meet with Cindy to review briefs and close gaps",
           "owner": "Michael",
           "complexity": "quick",
           "urgent": false,
@@ -464,8 +464,8 @@
           "source": "auto"
         },
         {
-          "text": "Share survey findings on inactive affiliates by early next week to inform win-back messaging",
-          "owner": "Client",
+          "text": "Share survey findings on inactive affiliates to inform win-back messaging",
+          "owner": "Amelia",
           "complexity": "quick",
           "urgent": true,
           "source": "auto"
@@ -482,11 +482,6 @@
           "party": "Amelia",
           "item": "Survey findings on inactive affiliates (70-80% are personal shoppers waiting for product)",
           "source": "auto"
-        },
-        {
-          "party": "Cindy",
-          "item": "Review and approval of initiative briefs",
-          "source": "auto"
         }
       ],
       "promises": [
@@ -496,14 +491,13 @@
           "madeOn": "2026-06-08"
         }
       ],
-      "nextMilestone": "July win-back campaign launch (survey findings needed by early next week)",
+      "nextMilestone": "Early next week: Amelia delivers survey findings; Michael completes initiative briefs",
       "flags": [
-        "⚠️ Critical: 90-day cookie window (not 30-day) and $250 payout threshold includes personal sales",
-        "⚠️ Onboarding goal: 50% affiliate link sharing and 30% sales within 2 weeks",
-        "✅ Survey data shows clear win-back opportunity: 70-80% inactive affiliates are personal shoppers",
-        "⚠️ Cindy stakeholder engagement critical—must be included in all future reviews"
+        "✅ Program parameters clarified: 90-day cookie, $250 payout threshold includes personal sales",
+        "⚠️ Onboarding goal: 50% link sharing, 30% sales within 2 weeks",
+        "⚠️ July win-back campaign targeting inactive affiliates—timing critical"
       ],
-      "autoUpdatedAt": "2026-06-12T10:30:31.526138-07:00"
+      "autoUpdatedAt": "2026-06-12T12:01:43.742431-07:00"
     },
     {
       "id": "riversol",
@@ -568,7 +562,7 @@
       "color": "#E64980",
       "dot": "amber",
       "health": "On Track",
-      "tagline": "June 30 campaign pivoting to 'founding vision to reality' theme with new teacher focus. Draft due June 18.",
+      "tagline": "June 30 campaign pivoting to 'founding vision to reality' theme with new teachers. Draft due June 18.",
       "lastTouched": "2026-06-12",
       "tasks": [
         {
@@ -612,22 +606,17 @@
           "party": "Hiba Academy",
           "item": "Strategy finalization with David for post-June campaigns",
           "source": "auto"
-        },
-        {
-          "party": "Hiba Academy",
-          "item": "Review and feedback on June 30 campaign draft",
-          "source": "auto"
         }
       ],
       "promises": [],
-      "nextMilestone": "June 18 - June 30 campaign draft due to Hiba Academy",
+      "nextMilestone": "June 18 - June 30 campaign draft delivery",
       "flags": [
-        "✅ Campaign topic pivot confirmed from summer programs to 'founding vision to reality'",
-        "✅ Audience segmentation strategy set for June 12 send to avoid June 17 newsletter overlap",
-        "⚠️ Future campaign planning paused pending David strategy alignment",
-        "⚠️ June 18 draft deadline is critical path item"
+        "✅ Campaign topic pivot approved: 'founding vision to reality' theme with newly hired teachers",
+        "✅ Audience segmented for today's send to avoid overlap with June 17 newsletter",
+        "⚠️ Future campaign planning paused pending strategy finalization with David",
+        "⚠️ June 30 draft deadline is June 18 for client review"
       ],
-      "autoUpdatedAt": "2026-06-12T10:30:36.245322-07:00"
+      "autoUpdatedAt": "2026-06-12T12:01:46.408931-07:00"
     },
     {
       "id": "outersignal",
@@ -812,6 +801,14 @@
   ],
   "activity": [
     {
+      "ts": "2026-06-12T12:01:43.742526-07:00",
+      "text": "Epicure — Epicure affiliate program pivoting to phased rollout with quick wins first, then major onboarding ov"
+    },
+    {
+      "ts": "2026-06-12T12:01:46.409021-07:00",
+      "text": "Hiba Academy — June 30 campaign pivoting to 'founding vision to reality' theme with new teachers. Draft due June 18"
+    },
+    {
       "ts": "2026-06-12T10:30:31.526239-07:00",
       "text": "Epicure — Epicure affiliate program launching phased rollout with simple flows first, then major onboarding ov"
     },
@@ -826,14 +823,6 @@
     {
       "ts": "2026-06-12T07:00:33.016606-07:00",
       "text": "Hiba Academy — June 30 campaign pivots to 'founding vision to reality' theme. Draft due June 18 for review."
-    },
-    {
-      "ts": "2026-06-12T05:30:20.045921-07:00",
-      "text": "Epicure — Epicure affiliate program phased rollout underway with corrected program mechanics. Simple flows lau"
-    },
-    {
-      "ts": "2026-06-12T05:30:24.395431-07:00",
-      "text": "Hiba Academy — June 30 campaign pivoting to 'founding vision to reality' theme. Draft due June 18. Future planning "
     }
   ]
 }
