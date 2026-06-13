@@ -1,6 +1,6 @@
 {
   "meta": {
-    "lastUpdated": "2026-06-12T17:00:33.806106-07:00",
+    "lastUpdated": "2026-06-12T22:30:23.266572-07:00",
     "updatedBy": "Mollie (auto-v2)"
   },
   "clients": [
@@ -397,7 +397,7 @@
       "color": "#862E9C",
       "dot": "amber",
       "health": "In Progress",
-      "tagline": "Phased affiliate program rollout underway with quick wins first, then major onboarding overhaul. Critical program mechanics clarified (90-day cookie, $250 threshold).",
+      "tagline": "Epicure replacing Yotpo by August; Shopify localization blocker must resolve before Klaviyo Reviews/SMS adoption.",
       "lastTouched": "2026-06-12",
       "tasks": [
         {
@@ -443,31 +443,24 @@
           "source": "manual"
         },
         {
-          "text": "Draft briefs for all initiatives (phased rollout, onboarding, win-back campaign)",
-          "owner": "Michael",
+          "text": "Investigate Epicure's Shopify Markets setup to resolve localization/market-specific messaging issue",
+          "owner": "DigitsUp",
           "complexity": "medium",
           "urgent": false,
           "source": "auto"
         },
         {
-          "text": "Meet with Cindy to review briefs and close any gaps",
-          "owner": "Michael",
-          "complexity": "quick",
-          "urgent": false,
-          "source": "auto"
-        },
-        {
-          "text": "Ensure Cindy is included in all future reviews and sign-offs",
-          "owner": "Michael",
-          "complexity": "quick",
-          "urgent": false,
-          "source": "auto"
-        },
-        {
-          "text": "Share survey findings on inactive affiliates to inform win-back messaging",
-          "owner": "Amelia",
+          "text": "Request trial extension for Marketing Analytics (trial ended June 12)",
+          "owner": "RV",
           "complexity": "quick",
           "urgent": true,
+          "source": "auto"
+        },
+        {
+          "text": "Prepare annual contract pricing options with quarterly payment structure for Reviews, SMS, and Marketing Analytics bundle",
+          "owner": "RV",
+          "complexity": "medium",
+          "urgent": false,
           "source": "auto"
         }
       ],
@@ -479,8 +472,8 @@
           "source": "manual"
         },
         {
-          "party": "Amelia",
-          "item": "Survey findings on inactive affiliates (70-80% are personal shoppers)",
+          "party": "Epicure",
+          "item": "Shopify Markets configuration details to enable market-specific messaging",
           "source": "auto"
         }
       ],
@@ -491,14 +484,14 @@
           "madeOn": "2026-06-08"
         }
       ],
-      "nextMilestone": "Michael to present initial briefs after Cindy review; Amelia survey findings due early next week",
+      "nextMilestone": "Pricing review meeting Monday, June 15 at 2 PM Pacific",
       "flags": [
-        "⚠️ Program cookie window is 90 days (not 30) — critical for messaging",
-        "⚠️ $250 payout threshold includes personal sales — clarify with affiliates",
-        "✅ Onboarding targets set: 50% link sharing, 30% sales within 2 weeks",
-        "✅ July win-back campaign strategy informed by survey data"
+        "⚠️ Single-store Shopify setup blocks market-specific messaging—prerequisite for Klaviyo adoption",
+        "⚠️ Yotpo contract ends August—hard deadline for replacement solution",
+        "✅ Epicure receptive to annual contracts with quarterly payments",
+        "⚠️ Klaviyo must support NPS tracking (critical for investor reporting)"
       ],
-      "autoUpdatedAt": "2026-06-12T17:00:30.937513-07:00"
+      "autoUpdatedAt": "2026-06-12T22:30:23.266448-07:00"
     },
     {
       "id": "riversol",
@@ -807,6 +800,10 @@
   ],
   "activity": [
     {
+      "ts": "2026-06-12T22:30:23.266538-07:00",
+      "text": "Epicure — Epicure replacing Yotpo by August; Shopify localization blocker must resolve before Klaviyo Reviews/"
+    },
+    {
       "ts": "2026-06-12T17:00:27.458620-07:00",
       "text": "Epicure — Epicure replacing Yotpo by August; Shopify Markets localization is prerequisite blocker for Klaviyo "
     },
@@ -825,10 +822,6 @@
     {
       "ts": "2026-06-12T16:30:37.250193-07:00",
       "text": "Epicure — Epicure affiliate program phased rollout underway with corrected program terms (90-day cookie, $250 "
-    },
-    {
-      "ts": "2026-06-12T16:30:40.158972-07:00",
-      "text": "Hiba Academy — June 30 campaign pivoting to 'founding vision to reality' theme with new teachers. Draft due June 18"
     }
   ]
 }
