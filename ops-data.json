@@ -1,6 +1,6 @@
 {
   "meta": {
-    "lastUpdated": "2026-06-13T05:30:35.317254-07:00",
+    "lastUpdated": "2026-06-13T10:30:22.936881-07:00",
     "updatedBy": "Mollie (auto-v2)"
   },
   "clients": [
@@ -397,7 +397,7 @@
       "color": "#862E9C",
       "dot": "amber",
       "health": "In Progress",
-      "tagline": "Epicure replacing Yotpo by August; Shopify Markets setup is blocking localization features. Pricing review Monday.",
+      "tagline": "Epicure replacing Yotpo by August; Shopify localization blocker must resolve before Klaviyo adoption.",
       "lastTouched": "2026-06-13",
       "tasks": [
         {
@@ -446,27 +446,20 @@
           "text": "Investigate Epicure's Shopify Markets setup to resolve localization/market-specific messaging issue",
           "owner": "DigitsUp",
           "complexity": "medium",
-          "urgent": false,
+          "urgent": true,
           "source": "auto"
         },
         {
           "text": "Request trial extension for Marketing Analytics (trial ends June 12)",
-          "owner": "RV",
+          "owner": "DigitsUp",
           "complexity": "quick",
           "urgent": true,
           "source": "auto"
         },
         {
           "text": "Prepare annual contract pricing options with quarterly payment terms for Reviews, SMS, and Marketing Analytics bundle",
-          "owner": "RV",
-          "complexity": "medium",
-          "urgent": true,
-          "source": "auto"
-        },
-        {
-          "text": "Confirm Klaviyo supports NPS tracking for investor reporting requirement",
           "owner": "DigitsUp",
-          "complexity": "quick",
+          "complexity": "medium",
           "urgent": false,
           "source": "auto"
         }
@@ -480,12 +473,7 @@
         },
         {
           "party": "Epicure",
-          "item": "Decision on annual contract terms and bundle pricing for Monday review",
-          "source": "auto"
-        },
-        {
-          "party": "Epicure",
-          "item": "Shopify Markets configuration details for localization assessment",
+          "item": "Approval of annual contract pricing structure for next meeting (June 15)",
           "source": "auto"
         }
       ],
@@ -496,15 +484,14 @@
           "madeOn": "2026-06-08"
         }
       ],
-      "nextMilestone": "Pricing review meeting Monday, June 15 at 2 PM Pacific",
+      "nextMilestone": "Monday, June 15, 2 PM Pacific—pricing review meeting",
       "flags": [
-        "⚠️ Primary blocker: single-store Shopify setup prevents market-specific messaging",
-        "⚠️ Yotpo contract ends August 2026 — hard deadline for replacement",
-        "⚠️ NPS tracking requirement is critical for investor reporting",
-        "✅ Quarterly payment terms are acceptable to Epicure",
-        "⚠️ Marketing Analytics trial extension needed immediately (ended June 12)"
+        "⚠️ Primary blocker: Single-store Shopify setup prevents market-specific messaging",
+        "⚠️ Yotpo contract ends August—hard deadline for replacement",
+        "✅ Klaviyo must support NPS tracking for investor reporting (critical requirement identified)",
+        "⚠️ Marketing Analytics trial expires today (June 12)—extension needed"
       ],
-      "autoUpdatedAt": "2026-06-13T05:30:35.317227-07:00"
+      "autoUpdatedAt": "2026-06-13T10:30:22.936780-07:00"
     },
     {
       "id": "riversol",
@@ -813,6 +800,10 @@
   ],
   "activity": [
     {
+      "ts": "2026-06-13T10:30:22.936858-07:00",
+      "text": "Epicure — Epicure replacing Yotpo by August; Shopify localization blocker must resolve before Klaviyo adoption"
+    },
+    {
       "ts": "2026-06-13T05:30:35.317248-07:00",
       "text": "Epicure — Epicure replacing Yotpo by August; Shopify Markets setup is blocking localization features. Pricing "
     },
@@ -831,10 +822,6 @@
     {
       "ts": "2026-06-12T17:00:33.806070-07:00",
       "text": "Hiba Academy — June 30 campaign pivoting to 'founding vision' theme with new teachers. Draft due June 18; future pl"
-    },
-    {
-      "ts": "2026-06-12T16:30:34.044564-07:00",
-      "text": "Epicure — Epicure replacing Yotpo by August; Shopify Markets localization is prerequisite blocker for Klaviyo "
     }
   ]
 }
