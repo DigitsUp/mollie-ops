@@ -1,6 +1,6 @@
 {
   "meta": {
-    "lastUpdated": "2026-06-15T10:30:14.015591-07:00",
+    "lastUpdated": "2026-06-15T16:30:23.923121-07:00",
     "updatedBy": "Mollie (auto-v2)"
   },
   "clients": [
@@ -397,8 +397,8 @@
       "color": "#862E9C",
       "dot": "amber",
       "health": "In Progress",
-      "tagline": "Epicure replacing Yotpo by August; Shopify Markets setup is critical blocker for Klaviyo adoption.",
-      "lastTouched": "2026-06-13",
+      "tagline": "Strong $100k week but U.S. underperformance noted. Key initiatives: affiliate program refresh, automated winback flow by mid-July, Klaviyo month-to-month strategy.",
+      "lastTouched": "2026-06-15",
       "tasks": [
         {
           "text": "Push post-purchase Email 2 live",
@@ -443,24 +443,45 @@
           "source": "manual"
         },
         {
-          "text": "Investigate Epicure's Shopify Markets setup to resolve localization/market-specific messaging issue",
-          "owner": "DigitsUp",
-          "complexity": "medium",
-          "urgent": true,
-          "source": "auto"
-        },
-        {
-          "text": "Request trial extension for Marketing Analytics (trial ended June 12)",
-          "owner": "RV",
+          "text": "Approve the June 16 U.S. back-in-stock email",
+          "owner": "Client",
           "complexity": "quick",
           "urgent": true,
           "source": "auto"
         },
         {
-          "text": "Prepare annual contract pricing options with quarterly payment terms for Reviews, SMS, and Marketing Analytics bundle",
-          "owner": "RV",
+          "text": "Reactivate the Gleam account for upcoming giveaway",
+          "owner": "DigitsUp",
+          "complexity": "quick",
+          "urgent": true,
+          "source": "auto"
+        },
+        {
+          "text": "Complete affiliate program initiatives 1 & 2 (invite email, Shopify banner) by Friday",
+          "owner": "Michael",
           "complexity": "medium",
           "urgent": true,
+          "source": "auto"
+        },
+        {
+          "text": "Send affiliate program initiative 3 (onboarding funnel) briefs by tomorrow",
+          "owner": "Michael",
+          "complexity": "medium",
+          "urgent": true,
+          "source": "auto"
+        },
+        {
+          "text": "Build automated winback flow with 180-day rolling trigger and 15% discount offer by mid-July",
+          "owner": "DigitsUp",
+          "complexity": "heavy",
+          "urgent": false,
+          "source": "auto"
+        },
+        {
+          "text": "Create marketing tracker to ensure follow-up on action items",
+          "owner": "DigitsUp",
+          "complexity": "medium",
+          "urgent": false,
           "source": "auto"
         }
       ],
@@ -472,8 +493,13 @@
           "source": "manual"
         },
         {
-          "party": "Epicure",
-          "item": "Decision on annual contract with quarterly payments for bundled services",
+          "party": "Cindy",
+          "item": "Grant Michael and Harvey temporary GoF Pro access",
+          "source": "auto"
+        },
+        {
+          "party": "Klaviyo",
+          "item": "Contract discussion meeting on Friday",
           "source": "auto"
         }
       ],
@@ -484,14 +510,14 @@
           "madeOn": "2026-06-08"
         }
       ],
-      "nextMilestone": "Pricing review meeting Monday, June 15 at 2 PM Pacific",
+      "nextMilestone": "Mid-July: Automated winback flow launch",
       "flags": [
-        "⚠️ Single-store Shopify setup blocks market-specific messaging and Klaviyo SMS adoption",
-        "⚠️ Yotpo contract ends August 2026 (hard deadline for replacement)",
-        "✅ Klaviyo must support NPS tracking for investor reporting (key differentiator vs Yotpo)",
-        "⚠️ Marketing Analytics trial expired June 12 - extension needed immediately"
+        "⚠️ U.S. market underperformance (<10% of total revenue) — lower free shipping threshold proposed",
+        "⚠️ Affiliate program currently offers no direct customer benefit — shifting to 10% discount incentive",
+        "✅ Avoiding costly Klaviyo annual contract lock-in; staying month-to-month",
+        "⚠️ Multiple urgent deliverables due this week (June 16-17)"
       ],
-      "autoUpdatedAt": "2026-06-13T16:32:28.080907-07:00"
+      "autoUpdatedAt": "2026-06-15T16:30:19.923603-07:00"
     },
     {
       "id": "riversol",
@@ -621,10 +647,10 @@
       "id": "outersignal",
       "name": "OuterSignal",
       "color": "#5C7CFA",
-      "dot": "grey",
+      "dot": "amber",
       "health": "Waiting on Client",
-      "tagline": "Kickoff done. Waiting on Sam (assets) + Dov (persona report). Brief written for Christy Dawn post-purchase.",
-      "lastTouched": "2026-06-08",
+      "tagline": "Consolidating Klaviyo post-purchase flows with new app download strategy for first-time buyers and rewards redemption opportunity for 2,800 existing customers.",
+      "lastTouched": "2026-06-15",
       "tasks": [
         {
           "text": "Follow up with Sam on Dropbox creative folder + brand guidelines",
@@ -646,6 +672,41 @@
           "owner": "Michael",
           "urgent": false,
           "source": "manual"
+        },
+        {
+          "text": "Draft the new Post-Purchase 2026 flow strategy in Miro/Figma",
+          "owner": "DigitsUp",
+          "complexity": "medium",
+          "urgent": false,
+          "source": "auto"
+        },
+        {
+          "text": "Rebuild the flow in Klaviyo with new app download email and consolidate existing content",
+          "owner": "DigitsUp",
+          "complexity": "heavy",
+          "urgent": false,
+          "source": "auto"
+        },
+        {
+          "text": "Send Sam Pick full Klaviyo audit including 2,800 customer rewards redemption opportunity",
+          "owner": "DigitsUp",
+          "complexity": "medium",
+          "urgent": false,
+          "source": "auto"
+        },
+        {
+          "text": "Deliver completed draft flow by EOW",
+          "owner": "DigitsUp",
+          "complexity": "heavy",
+          "urgent": true,
+          "source": "auto"
+        },
+        {
+          "text": "Review Miro/Figma strategy draft and provide feedback",
+          "owner": "Client",
+          "complexity": "quick",
+          "urgent": false,
+          "source": "auto"
         }
       ],
       "waitingOn": [
@@ -660,17 +721,22 @@
           "item": "Persona report (6 persona-specific app download emails)",
           "since": "2026-06-01",
           "source": "manual"
+        },
+        {
+          "party": "Sam Pick (Christy Dawn)",
+          "item": "Feedback on Miro/Figma strategy draft",
+          "source": "auto"
         }
       ],
       "promises": [],
-      "nextMilestone": "Creative concepts in Figma — once assets received from Sam + Dov",
+      "nextMilestone": "Completed draft flow delivery by end of week",
       "flags": [
-        "✅ Kickoff done June 1",
-        "✅ Christy Dawn post-purchase brief written Jun 8",
-        "Scope: 6 persona-specific post-purchase emails → drive app adoption (20k users)",
-        "OuterSignal backfilled to Sep 9, 2025 ✅",
-        "Timeline: ~10 days creative, 1 week Klaviyo build once assets received"
-      ]
+        "✅ Email design approved; remove cotton plant background for cleaner aesthetic and mobile optimization",
+        "⚠️ Two conflicting post-purchase flows (2024 & May 2025) need consolidation",
+        "✅ New customer strategy defined: 10% app-download offer + $30 gift upgrade",
+        "✅ Existing customer opportunity identified: 2,800 customers with $10+ redeemable rewards points"
+      ],
+      "autoUpdatedAt": "2026-06-15T16:30:23.922922-07:00"
     },
     {
       "id": "sfr",
@@ -800,6 +866,14 @@
   ],
   "activity": [
     {
+      "ts": "2026-06-15T16:30:19.923701-07:00",
+      "text": "Epicure — Strong $100k week but U.S. underperformance noted. Key initiatives: affiliate program refresh, autom"
+    },
+    {
+      "ts": "2026-06-15T16:30:23.923066-07:00",
+      "text": "OuterSignal — Consolidating Klaviyo post-purchase flows with new app download strategy for first-time buyers and r"
+    },
+    {
       "ts": "2026-06-13T16:32:28.081004-07:00",
       "text": "Epicure — Epicure replacing Yotpo by August; Shopify Markets setup is critical blocker for Klaviyo adoption."
     },
@@ -814,14 +888,6 @@
     {
       "ts": "2026-06-12T22:30:23.266538-07:00",
       "text": "Epicure — Epicure replacing Yotpo by August; Shopify localization blocker must resolve before Klaviyo Reviews/"
-    },
-    {
-      "ts": "2026-06-12T17:00:27.458620-07:00",
-      "text": "Epicure — Epicure replacing Yotpo by August; Shopify Markets localization is prerequisite blocker for Klaviyo "
-    },
-    {
-      "ts": "2026-06-12T17:00:30.937609-07:00",
-      "text": "Epicure — Phased affiliate program rollout underway with quick wins first, then major onboarding overhaul. Cri"
     }
   ]
 }
