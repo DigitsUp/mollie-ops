@@ -1,6 +1,6 @@
 {
   "meta": {
-    "lastUpdated": "2026-06-15T22:31:02.530501-07:00",
+    "lastUpdated": "2026-06-16T05:30:49.037281-07:00",
     "updatedBy": "Mollie (auto-v4)"
   },
   "clients": [
@@ -8,10 +8,10 @@
       "id": "frnk",
       "name": "FRNK Boutique",
       "color": "#E8845C",
-      "dot": "red",
+      "dot": "amber",
       "health": "In Progress",
-      "tagline": "Website live but launch email not yet sent. Blocker on email deployment as of 2026-06-15.",
-      "lastTouched": "2026-06-15",
+      "tagline": "Website live, launch email not yet sent. Awaiting send to complete go-live.",
+      "lastTouched": "2026-06-16",
       "tasks": [
         {
           "text": "Write + send new website launch email",
@@ -35,7 +35,7 @@
           "source": "manual"
         },
         {
-          "text": "Send launch email for FRNK Boutique",
+          "text": "Send launch email for FRNK Boutique website",
           "owner": "DigitsUp",
           "complexity": "quick",
           "urgent": true,
@@ -50,12 +50,12 @@
           "madeOn": "2026-06-08"
         }
       ],
-      "nextMilestone": "Launch email deployment (overdue as of 2026-06-15)",
+      "nextMilestone": "Launch email send completion",
       "flags": [
-        "⚠️ Website live but launch email NOT sent",
-        "⚠️ Critical blocker: email deployment needed to complete launch"
+        "⚠️ Launch email blocked — website live since 2026-06-15 but email not sent",
+        "✅ Website live and ready"
       ],
-      "autoUpdatedAt": "2026-06-15T22:30:45.837683-07:00"
+      "autoUpdatedAt": "2026-06-16T05:30:49.036607-07:00"
     },
     {
       "id": "rvca",
@@ -181,8 +181,8 @@
       "color": "#2F9E44",
       "dot": "amber",
       "health": "On Track",
-      "tagline": "Warmup report complete. Welcome series in progress with Victoria building 4 emails. Jun 18 drop coming up.",
-      "lastTouched": "2026-06-15",
+      "tagline": "Warmup report complete. Welcome series in progress with Victoria. Jun 18 drop ticket needed, Wed call scheduled.",
+      "lastTouched": "2026-06-16",
       "tasks": [
         {
           "text": "Build + schedule Vellum 'last call' email — Friday Jun 13, 9am PST, segmented by shoe size",
@@ -222,7 +222,7 @@
         {
           "text": "Build ticket for Alex Proba Jun 18 drop",
           "owner": "DigitsUp",
-          "complexity": "medium",
+          "complexity": "quick",
           "urgent": true,
           "source": "auto"
         },
@@ -255,7 +255,7 @@
         },
         {
           "party": "Victoria",
-          "item": "Welcome series email builds (4 emails)",
+          "item": "Welcome series (4 emails) completion",
           "source": "auto"
         }
       ],
@@ -271,13 +271,13 @@
           "madeOn": "2026-06-09"
         }
       ],
-      "nextMilestone": "Jun 17 3:30pm call",
+      "nextMilestone": "Wed Jun 17 3:30pm call",
       "flags": [
-        "✅ Warmup report complete — do not touch",
-        "⚠️ Jun 18 drop ticket needs to be built",
-        "📅 Wed Jun 17 3:30pm call scheduled"
+        "✅ Warmup report done — do not touch",
+        "⚠️ Jun 18 drop ticket needed urgently",
+        "Wed Jun 17 3:30pm call scheduled"
       ],
-      "autoUpdatedAt": "2026-06-15T22:30:43.790681-07:00"
+      "autoUpdatedAt": "2026-06-16T05:30:27.943256-07:00"
     },
     {
       "id": "the-lab",
@@ -286,7 +286,7 @@
       "dot": "grey",
       "health": "Moving Fast",
       "tagline": "Month 1 complete Jun 19. Awaiting summer camp brief from client to proceed.",
-      "lastTouched": "2026-06-15",
+      "lastTouched": "2026-06-16",
       "tasks": [
         {
           "text": "Brief summer camp campaign for design — ASAP, Jun 12 lock",
@@ -356,12 +356,12 @@
           "madeOn": "2026-06-03"
         }
       ],
-      "nextMilestone": "Jun 19 — Month 1 completion + summer camp brief delivery",
+      "nextMilestone": "Month 1 complete: Jun 19",
       "flags": [
-        "✅ Month 1 complete Jun 19",
+        "✅ Month 1 completed on schedule (Jun 19)",
         "⚠️ Summer camp brief still needed from client"
       ],
-      "autoUpdatedAt": "2026-06-15T22:31:02.529757-07:00"
+      "autoUpdatedAt": "2026-06-16T05:30:30.400070-07:00"
     },
     {
       "id": "epicure",
@@ -369,8 +369,8 @@
       "color": "#862E9C",
       "dot": "amber",
       "health": "In Progress",
-      "tagline": "PP Email 2 & order confirmation footer briefs still needed; affiliate program moving forward with Cindy/Amelia blockers.",
-      "lastTouched": "2026-06-15",
+      "tagline": "Affiliate program Initiative 3 briefs due tomorrow; PP Email 2 & order footer still pending. Waiting on Cindy (GoAffPro URL) and Amelia sign-off.",
+      "lastTouched": "2026-06-16",
       "tasks": [
         {
           "text": "Push post-purchase Email 2 live",
@@ -415,42 +415,42 @@
           "source": "manual"
         },
         {
-          "text": "Complete PP Email 2 brief (recipe refresh)",
+          "text": "Complete affiliate program Initiative 3 (onboarding funnel) briefs",
           "owner": "Michael",
           "complexity": "medium",
           "urgent": true,
+          "source": "auto"
+        },
+        {
+          "text": "Complete PP Email 2 brief (recipe refresh)",
+          "owner": "Michael",
+          "complexity": "medium",
+          "urgent": false,
           "source": "auto"
         },
         {
           "text": "Complete order confirmation footer brief",
           "owner": "Michael",
           "complexity": "medium",
-          "urgent": true,
+          "urgent": false,
           "source": "auto"
         },
         {
-          "text": "Send GoF Pro access request to Cindy (CC Geoff) for Michael & Harvey",
+          "text": "Send GoF Pro access request to Cindy (CC Geoff)",
           "owner": "Michael",
           "complexity": "quick",
-          "urgent": false,
-          "source": "auto"
-        },
-        {
-          "text": "Approve June 16 U.S. back-in-stock email",
-          "owner": "Client",
-          "complexity": "quick",
           "urgent": true,
           "source": "auto"
         },
         {
-          "text": "Reactivate Gleam account for upcoming giveaway",
-          "owner": "Client",
-          "complexity": "quick",
+          "text": "Meet with Klaviyo on Friday to discuss contract",
+          "owner": "Michael",
+          "complexity": "medium",
           "urgent": false,
           "source": "auto"
         },
         {
-          "text": "Meet with Klaviyo on Friday to discuss contract decision",
+          "text": "Collaborate with Meaghan on post-purchase recipe recommendation email",
           "owner": "Michael",
           "complexity": "medium",
           "urgent": false,
@@ -466,17 +466,17 @@
         },
         {
           "party": "Cindy",
-          "item": "GoAffPro URL for affiliate invite email (PP Email 3)",
+          "item": "GoAffPro URL for affiliate invite email",
           "source": "auto"
         },
         {
           "party": "Amelia",
-          "item": "Sign-off on affiliate invite email (PP Email 3)",
+          "item": "Sign-off on affiliate invite (PP Email 3)",
           "source": "auto"
         },
         {
           "party": "Cindy",
-          "item": "Grant temporary GoF Pro access to Michael & Harvey",
+          "item": "Grant Michael and Harvey temporary GoF Pro access",
           "source": "auto"
         }
       ],
@@ -487,14 +487,15 @@
           "madeOn": "2026-06-08"
         }
       ],
-      "nextMilestone": "Complete PP Email 2 & order confirmation footer briefs + affiliate program deliverables by 2026-06-16/17",
+      "nextMilestone": "2026-06-17 — Initiative 3 affiliate briefs due; PP Email 2 & order footer briefs needed",
       "flags": [
-        "✅ PP Email 3 (affiliate invite) brief complete & ready for sign-off",
-        "⚠️ Two critical email briefs overdue: PP Email 2 & order confirmation footer",
-        "⚠️ U.S. market underperforming (<10% of revenue) — free shipping threshold test proposed",
-        "⚠️ Affiliate program deliverables due Friday (initiatives 1 & 2) + onboarding briefs due tomorrow"
+        "✅ PP Email 3 (Affiliate Invite) complete — awaiting Cindy URL + Amelia sign-off",
+        "⚠️ PP Email 2 (recipe refresh) not started — due soon",
+        "⚠️ Order confirmation footer brief not started — due soon",
+        "⚠️ Initiative 3 briefs due tomorrow (2026-06-17)",
+        "📊 Last week: $100k revenue; U.S. market <10% — shipping threshold test proposed"
       ],
-      "autoUpdatedAt": "2026-06-15T22:30:51.265833-07:00"
+      "autoUpdatedAt": "2026-06-16T05:30:23.969784-07:00"
     },
     {
       "id": "riversol",
@@ -502,8 +503,8 @@
       "color": "#1098AD",
       "dot": "amber",
       "health": "Active",
-      "tagline": "Replenishment V2 live, awaiting Arnaud feedback. 5-star review pending creative assets from Ali and Arno/Oona.",
-      "lastTouched": "2026-06-15",
+      "tagline": "Replenishment V2 live, awaiting Arnaud feedback. 5-star review blocked on codes and lifestyle images.",
+      "lastTouched": "2026-06-16",
       "tasks": [
         {
           "text": "Add pause logic to Winback flow (paused members)",
@@ -541,22 +542,22 @@
           "source": "manual"
         },
         {
-          "text": "Prepare for Wed Jun 17 2pm Replenishment V2 call with Arnaud",
+          "text": "Join Wed Jun 17 2pm call with Arnaud re: Replenishment V2 feedback",
           "owner": "DigitsUp",
           "complexity": "quick",
           "urgent": false,
           "source": "auto"
         },
         {
-          "text": "Follow up with Ali on review codes",
-          "owner": "Client",
+          "text": "Follow up on 5-star review codes from Ali",
+          "owner": "DigitsUp",
           "complexity": "quick",
           "urgent": false,
           "source": "auto"
         },
         {
-          "text": "Follow up with Arno/Oona on lifestyle images for 5-star review",
-          "owner": "Client",
+          "text": "Follow up on lifestyle images from Arno/Oona for 5-star review",
+          "owner": "DigitsUp",
           "complexity": "quick",
           "urgent": false,
           "source": "auto"
@@ -570,23 +571,23 @@
         },
         {
           "party": "Ali",
-          "item": "Review codes",
+          "item": "5-star review codes",
           "source": "auto"
         },
         {
           "party": "Arno/Oona",
-          "item": "Lifestyle images for 5-star review",
+          "item": "5-star review lifestyle images",
           "source": "auto"
         }
       ],
       "promises": [],
-      "nextMilestone": "Wed Jun 17 2pm call with Arnaud on Replenishment V2",
+      "nextMilestone": "Wed Jun 17 2pm - Replenishment V2 feedback call with Arnaud",
       "flags": [
-        "⚠️ Replenishment V2 live but awaiting Arnaud's input",
-        "⚠️ 5-star review blocked on two asset deliveries",
-        "✅ Wed Jun 17 call scheduled for Replenishment V2"
+        "⚠️ Replenishment V2 live but pending Arnaud review feedback",
+        "⚠️ 5-star review blocked on two dependencies (codes + images)",
+        "✅ Wed Jun 17 2pm call scheduled"
       ],
-      "autoUpdatedAt": "2026-06-15T22:30:57.102536-07:00"
+      "autoUpdatedAt": "2026-06-16T05:30:46.785118-07:00"
     },
     {
       "id": "hiba",
@@ -594,8 +595,8 @@
       "color": "#E64980",
       "dot": "amber",
       "health": "On Track",
-      "tagline": "Renewal proposal in progress; contract ends June. Draft due to Victoria by Jun 18 for client send.",
-      "lastTouched": "2026-06-15",
+      "tagline": "Renewal proposal due from Michael; founding vision content draft due to Victoria by Jun 18 for Hiba delivery by Jun 30.",
+      "lastTouched": "2026-06-16",
       "tasks": [
         {
           "text": "Send validation email to Hiba team confirming report delivery",
@@ -612,15 +613,22 @@
           "source": "manual"
         },
         {
-          "text": "Draft renewal proposal for Hiba Academy",
+          "text": "Draft renewal proposal for Hiba Academy (contract ends June)",
           "owner": "Michael",
           "complexity": "medium",
-          "urgent": false,
+          "urgent": true,
           "source": "auto"
         },
         {
-          "text": "Send 'Founding vision to reality' content to Hiba Academy",
+          "text": "Draft 'Founding vision to reality' content for Hiba Academy",
           "owner": "Victoria",
+          "complexity": "medium",
+          "urgent": true,
+          "source": "auto"
+        },
+        {
+          "text": "Send final 'Founding vision to reality' content to Hiba Academy",
+          "owner": "DigitsUp",
           "complexity": "quick",
           "urgent": true,
           "source": "auto"
@@ -629,23 +637,23 @@
       "waitingOn": [
         {
           "party": "Michael",
-          "item": "Renewal proposal draft",
+          "item": "Renewal proposal draft for Hiba Academy",
           "source": "auto"
         },
         {
           "party": "Victoria",
-          "item": "Draft review and finalization before Jun 18 deadline",
+          "item": "Draft content for 'Founding vision to reality' piece",
           "source": "auto"
         }
       ],
       "promises": [],
-      "nextMilestone": "Jun 18 — renewal proposal draft due to Victoria",
+      "nextMilestone": "Jun 18 — Victoria's draft due; Jun 30 — content delivery to Hiba Academy",
       "flags": [
-        "⚠️ Contract ends June — renewal proposal critical",
-        "⚠️ Jun 18 deadline for draft to Victoria",
-        "⚠️ Jun 30 client send deadline for 'Founding vision to reality' content"
+        "⚠️ Contract renewal requested by Veronica on Jun 11 — proposal overdue",
+        "⚠️ Content draft due Jun 18, delivery due Jun 30 — tight timeline",
+        "⚠️ Multiple deliverables converging end of June"
       ],
-      "autoUpdatedAt": "2026-06-15T22:31:00.574698-07:00"
+      "autoUpdatedAt": "2026-06-16T05:30:43.609826-07:00"
     },
     {
       "id": "outersignal",
@@ -653,8 +661,8 @@
       "color": "#5C7CFA",
       "dot": "amber",
       "health": "Waiting on Client",
-      "tagline": "Post-Purchase 2026 flow strategy decided Jun 15. Draft due EOW; OhSnap kickoff Jun 16 1pm.",
-      "lastTouched": "2026-06-15",
+      "tagline": "Post-Purchase 2026 flow strategy finalized. Draft due EOW; OhSnap kickoff today at 1pm.",
+      "lastTouched": "2026-06-16",
       "tasks": [
         {
           "text": "Follow up with Sam on Dropbox creative folder + brand guidelines",
@@ -678,38 +686,38 @@
           "source": "manual"
         },
         {
-          "text": "Draft Post-Purchase 2026 flow strategy in Miro/Figma incorporating new app download email and consolidating 2024 + May 2025 flows",
+          "text": "Draft new Post-Purchase 2026 flow strategy in Miro/Figma incorporating app download email and consolidating existing content",
           "owner": "DigitsUp",
           "complexity": "heavy",
           "urgent": true,
           "source": "auto"
         },
         {
-          "text": "Rebuild Post-Purchase 2026 flow in Klaviyo with new customer path (10% app-download offer → $30 gift upgrade) and existing customer path (rewards balance reminder)",
+          "text": "Rebuild Post-Purchase 2026 flow in Klaviyo with new customer (10% app-download offer) and existing customer (rewards reminder) paths",
           "owner": "DigitsUp",
           "complexity": "heavy",
           "urgent": true,
           "source": "auto"
         },
         {
-          "text": "Remove cotton plant background from email design; approve final creative and simplify mobile rendering",
-          "owner": "DigitsUp",
-          "complexity": "quick",
-          "urgent": false,
-          "source": "auto"
-        },
-        {
-          "text": "Send Sam Pick full Klaviyo audit including 2,800-customer rewards redemption opportunity ($10+ redeemable points)",
+          "text": "Send Sam Pick full Klaviyo audit including 2,800-customer redeemable rewards points opportunity",
           "owner": "DigitsUp",
           "complexity": "medium",
           "urgent": false,
           "source": "auto"
         },
         {
-          "text": "Deliver completed draft flow by EOW (Jun 15)",
-          "owner": "DigitsUp",
-          "complexity": "heavy",
-          "urgent": true,
+          "text": "Remove cotton plant background from email design; approve final creative",
+          "owner": "Client",
+          "complexity": "quick",
+          "urgent": false,
+          "source": "auto"
+        },
+        {
+          "text": "Review Miro/Figma strategy draft and provide feedback",
+          "owner": "Client",
+          "complexity": "medium",
+          "urgent": false,
           "source": "auto"
         }
       ],
@@ -727,21 +735,25 @@
           "source": "manual"
         },
         {
-          "party": "Sam Pick (Client)",
-          "item": "Review Miro/Figma strategy draft and provide feedback",
+          "party": "Sam Pick (Christy Dawn)",
+          "item": "Review and feedback on Post-Purchase 2026 flow strategy draft",
+          "source": "auto"
+        },
+        {
+          "party": "Client",
+          "item": "Final approval on email design changes (cotton plant background removal)",
           "source": "auto"
         }
       ],
       "promises": [],
-      "nextMilestone": "Post-Purchase 2026 flow draft due EOW (Jun 15); OhSnap x OuterSignal kickoff Jun 16 1pm",
+      "nextMilestone": "Post-Purchase 2026 flow draft delivery — EOW 2026-06-20",
       "flags": [
-        "✅ Strategy decided Jun 15 call — consolidated flows approved",
-        "✅ New customer path locked: 10% app-download offer → $30 upgrade",
-        "✅ Existing customer opportunity identified: 2,800 customers with $10+ redeemable",
-        "⚠️ EOW draft deadline (Jun 15) — urgent turnaround required",
-        "⚠️ OhSnap kickoff Jun 16 1pm — tight timeline for parallel deliverables"
+        "✅ Strategy decided Jun 15; two conflicting flows (2024 & May 2025) consolidating into single 2026 flow",
+        "✅ Clear customer segmentation: first-time buyers (10% app offer) vs existing (rewards reminder for 2,800 customers)",
+        "⚠️ Draft due EOW — heavy workload with Klaviyo rebuild required",
+        "⚠️ OhSnap x OuterSignal kickoff TODAY (Jun 16 1pm) — ensure no scheduling conflicts"
       ],
-      "autoUpdatedAt": "2026-06-15T22:30:41.037524-07:00"
+      "autoUpdatedAt": "2026-06-16T05:30:36.136251-07:00"
     },
     {
       "id": "sfr",
@@ -749,8 +761,8 @@
       "color": "#845EF7",
       "dot": "green",
       "health": "Pending — Proposal Sent",
-      "tagline": "SFR Distillery signed ✅. 60-day build kicks off Jun 22 with onboarding + kickoff meeting with Will.",
-      "lastTouched": "2026-06-15",
+      "tagline": "SFR Distillery signed and ready to start Jun 22. Internal kickoff Jun 16, onboarding + client kickoff with Will follows.",
+      "lastTouched": "2026-06-16",
       "tasks": [
         {
           "text": "Follow up with Will if no response by end of week",
@@ -760,28 +772,21 @@
           "source": "manual"
         },
         {
-          "text": "Internal meeting with SFR Distillery team",
+          "text": "Conduct internal meeting with SFR Distillery team",
           "owner": "DigitsUp",
           "complexity": "quick",
           "urgent": false,
           "source": "auto"
         },
         {
-          "text": "Onboarding + kickoff meeting with Will Rogers",
+          "text": "Onboarding + kickoff meeting with Will Rogers (SFR CXO)",
           "owner": "DigitsUp",
           "complexity": "medium",
           "urgent": false,
           "source": "auto"
         },
         {
-          "text": "Month 1 build: abandoned suite, welcome series, sign-up form",
-          "owner": "DigitsUp",
-          "complexity": "heavy",
-          "urgent": false,
-          "source": "auto"
-        },
-        {
-          "text": "Month 2 build: post-purchase, winback, loyalty layer",
+          "text": "Begin Month 1 deliverables: abandoned suite, welcome series, sign-up form",
           "owner": "DigitsUp",
           "complexity": "heavy",
           "urgent": false,
@@ -802,14 +807,13 @@
         }
       ],
       "promises": [],
-      "nextMilestone": "Jun 22 — Onboarding + kickoff with Will Rogers",
+      "nextMilestone": "Jun 22 — Project start + onboarding kickoff with Will Rogers",
       "flags": [
         "✅ Contract signed",
-        "✅ Proposal approved by Will Rogers (Jun 8)",
-        "Scope sent to Lawrence (Jun 15)",
-        "60-day build timeline in CAD pricing"
+        "✅ Scope document sent to Lawrence (Jun 15)",
+        "60-day build plan: Month 1 foundation, Month 2 post-purchase + loyalty + winback"
       ],
-      "autoUpdatedAt": "2026-06-15T22:30:54.017992-07:00"
+      "autoUpdatedAt": "2026-06-16T05:30:39.206502-07:00"
     }
   ],
   "pipeline": [
@@ -911,7 +915,7 @@
       "clientName": "Epicure",
       "text": "Push post-purchase Email 2 live",
       "complexity": "medium",
-      "deadline": "2026-06-16",
+      "deadline": "2026-06-17",
       "urgent": true,
       "source": "auto"
     },
@@ -919,8 +923,8 @@
       "icon": "🟡",
       "clientId": "hiba",
       "clientName": "Hiba Academy",
-      "text": "Send 'Founding vision to reality' content to Hiba Academy",
-      "complexity": "quick",
+      "text": "Draft renewal proposal for Hiba Academy (contract ends June)",
+      "complexity": "medium",
       "deadline": "Jun 18",
       "urgent": true,
       "source": "auto"
@@ -929,37 +933,37 @@
       "icon": "🟡",
       "clientId": "outersignal",
       "clientName": "OuterSignal",
-      "text": "Draft Post-Purchase 2026 flow strategy in Miro/Figma incorporating new app download email and consolidating 2024 + May 2025 flows",
+      "text": "Draft new Post-Purchase 2026 flow strategy in Miro/Figma incorporating app download email and consolidating existing content",
       "complexity": "heavy",
-      "deadline": "Jun 15",
+      "deadline": "2026-06-20",
       "urgent": true,
       "source": "auto"
     }
   ],
   "activity": [
     {
-      "ts": "2026-06-15T22:30:41.037635-07:00",
-      "text": "OuterSignal — Post-Purchase 2026 flow strategy decided Jun 15. Draft due EOW; OhSnap kickoff Jun 16 1pm."
+      "ts": "2026-06-16T05:30:23.969917-07:00",
+      "text": "Epicure — Affiliate program Initiative 3 briefs due tomorrow; PP Email 2 & order footer still pending. Waiting"
     },
     {
-      "ts": "2026-06-15T22:30:43.790830-07:00",
-      "text": "Salehe Bembury — Warmup report complete. Welcome series in progress with Victoria building 4 emails. Jun 18 drop comi"
+      "ts": "2026-06-16T05:30:27.943393-07:00",
+      "text": "Salehe Bembury — Warmup report complete. Welcome series in progress with Victoria. Jun 18 drop ticket needed, Wed cal"
     },
     {
-      "ts": "2026-06-15T22:30:45.837791-07:00",
-      "text": "FRNK Boutique — Website live but launch email not yet sent. Blocker on email deployment as of 2026-06-15."
+      "ts": "2026-06-16T05:30:30.400186-07:00",
+      "text": "The Lab Life — Month 1 complete Jun 19. Awaiting summer camp brief from client to proceed."
     },
     {
-      "ts": "2026-06-15T22:30:51.265946-07:00",
-      "text": "Epicure — PP Email 2 & order confirmation footer briefs still needed; affiliate program moving forward with Ci"
+      "ts": "2026-06-16T05:30:36.136357-07:00",
+      "text": "OuterSignal — Post-Purchase 2026 flow strategy finalized. Draft due EOW; OhSnap kickoff today at 1pm."
     },
     {
-      "ts": "2026-06-15T22:30:54.018100-07:00",
-      "text": "SFR Distillery — SFR Distillery signed ✅. 60-day build kicks off Jun 22 with onboarding + kickoff meeting with Will."
+      "ts": "2026-06-16T05:30:39.206609-07:00",
+      "text": "SFR Distillery — SFR Distillery signed and ready to start Jun 22. Internal kickoff Jun 16, onboarding + client kickof"
     },
     {
-      "ts": "2026-06-15T22:30:57.102641-07:00",
-      "text": "Riversol — Replenishment V2 live, awaiting Arnaud feedback. 5-star review pending creative assets from Ali and "
+      "ts": "2026-06-16T05:30:43.609936-07:00",
+      "text": "Hiba Academy — Renewal proposal due from Michael; founding vision content draft due to Victoria by Jun 18 for Hiba "
     }
   ]
 }
