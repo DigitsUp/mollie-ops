@@ -1,6 +1,6 @@
 {
   "meta": {
-    "lastUpdated": "2026-06-22T07:02:22.706863-07:00",
+    "lastUpdated": "2026-06-22T10:30:44.678256-07:00",
     "updatedBy": "Mollie (auto-v4)",
     "cacheBust": "2026-06-17T21:43:00-07:00"
   },
@@ -11,7 +11,7 @@
       "color": "#3B5BDB",
       "dot": "amber",
       "health": "In Progress",
-      "tagline": "Post-purchase monitoring live since Jun 20; Q3 campaign briefs pending to Clay.",
+      "tagline": "Post-purchase monitoring live since Jun 20. Q3 campaign briefs pending delivery to Clay.",
       "lastTouched": "2026-06-22",
       "tasks": [
         {
@@ -71,7 +71,7 @@
           "source": "auto"
         },
         {
-          "text": "Prepare and deliver Q3 campaign briefs to Clay",
+          "text": "Deliver Q3 campaign briefs to Clay",
           "owner": "DigitsUp",
           "complexity": "medium",
           "urgent": false,
@@ -110,12 +110,12 @@
           "madeOn": "2026-06-17"
         }
       ],
-      "nextMilestone": "Q3 campaign briefs delivery to Clay",
+      "nextMilestone": "Q3 campaign briefs delivery",
       "flags": [
-        "✅ Post-purchase tracking live (Jun 20)",
-        "⚠️ Q3 campaign briefs not yet delivered to Clay"
+        "✅ Post-purchase live and monitoring active",
+        "⚠️ Q3 campaign briefs need to be sent to Clay"
       ],
-      "autoUpdatedAt": "2026-06-22T07:02:22.705967-07:00"
+      "autoUpdatedAt": "2026-06-22T10:30:33.462556-07:00"
     },
     {
       "id": "riversol",
@@ -123,7 +123,7 @@
       "color": "#1098AD",
       "dot": "amber",
       "health": "Active",
-      "tagline": "Riversol replenishment flows V2 awaiting Arnaud approval. Working session invite overdue.",
+      "tagline": "Riversol replenishment flows in progress; V2 awaiting Arnaud approval. Working session invite overdue.",
       "lastTouched": "2026-06-22",
       "tasks": [
         {
@@ -225,7 +225,7 @@
         },
         {
           "party": "Arnaud",
-          "item": "Approval on Riversol replenishment flows V2",
+          "item": "Approval on Riversol V2 replenishment flows",
           "source": "auto"
         }
       ],
@@ -238,11 +238,11 @@
       ],
       "nextMilestone": "Monday 11am working session",
       "flags": [
-        "⚠️ Working session invite overdue — send tonight",
-        "⚠️ V2 blocked pending Arnaud approval",
-        "Replenishment flows covering 5 SKUs + general bucket"
+        "⚠️ Working session invite OVERDUE — send tonight",
+        "⚠️ V2 awaiting Arnaud approval",
+        "Replenishment flows: 5 SKUs + general bucket in development"
       ],
-      "autoUpdatedAt": "2026-06-22T07:01:59.871866-07:00"
+      "autoUpdatedAt": "2026-06-22T10:30:25.731039-07:00"
     },
     {
       "id": "salehe",
@@ -250,7 +250,7 @@
       "color": "#2F9E44",
       "dot": "amber",
       "health": "Pivoting",
-      "tagline": "Non-selling campaign strategy and VIP SMS list building planned for Jul–Aug.",
+      "tagline": "Non-selling campaign strategy and VIP SMS list build underway for Jul–Aug period.",
       "lastTouched": "2026-06-22",
       "tasks": [
         {
@@ -347,11 +347,12 @@
           "madeOn": "2026-06-17"
         }
       ],
-      "nextMilestone": "Non-selling campaign strategy and VIP SMS list completion (Jul–Aug 2026)",
+      "nextMilestone": "Jul–Aug campaign launch",
       "flags": [
-        "Campaign strategy and SMS list are scheduled priorities for Jul–Aug"
+        "Non-selling campaign strategy in planning phase",
+        "VIP SMS list build in progress"
       ],
-      "autoUpdatedAt": "2026-06-22T07:02:14.266393-07:00"
+      "autoUpdatedAt": "2026-06-22T10:30:39.658110-07:00"
     },
     {
       "id": "the-lab",
@@ -359,7 +360,7 @@
       "color": "#F08C00",
       "dot": "amber",
       "health": "On Track",
-      "tagline": "6-email GHL series in build with review call June 25. Copy complete, rebooking link pending from Ally.",
+      "tagline": "6-email GHL series in build with Michael + RV. Review call locked for June 25, 1pm PST. Awaiting rebooking link from Ally.",
       "lastTouched": "2026-06-22",
       "tasks": [
         {
@@ -405,24 +406,31 @@
           "source": "manual"
         },
         {
-          "text": "Obtain rebooking link from Ally (Break Lighthouse) for GHL email series",
-          "owner": "Client",
-          "complexity": "quick",
+          "text": "Complete 6 GHL emails + SMS series for Setter: No-Show and Setter: New Lead In pipelines",
+          "owner": "Michael",
+          "complexity": "heavy",
           "urgent": true,
           "source": "auto"
         },
         {
           "text": "Prepare for review call with Ally + Travis on June 25, 1pm PST",
-          "owner": "DigitsUp",
+          "owner": "Michael",
           "complexity": "medium",
           "urgent": true,
+          "source": "auto"
+        },
+        {
+          "text": "Obtain rebooking link from Ally (Break Lighthouse)",
+          "owner": "DigitsUp",
+          "complexity": "quick",
+          "urgent": false,
           "source": "auto"
         }
       ],
       "waitingOn": [
         {
           "party": "Ally Johnson",
-          "item": "Rebooking link (Break Lighthouse) for GHL email pipeline",
+          "item": "Rebooking link (Break Lighthouse)",
           "source": "auto"
         }
       ],
@@ -433,14 +441,13 @@
           "madeOn": "2026-06-03"
         }
       ],
-      "nextMilestone": "Review call with Ally + Travis — June 25, 1pm PST",
+      "nextMilestone": "June 25, 1pm PST — GHL Email Series Review Call (Ally + Travis)",
       "flags": [
-        "✅ Copy complete (Michael + RV finished)",
-        "✅ Brief written and filed",
-        "⚠️ Rebooking link blocking final build",
-        "⚠️ Hard deadline: June 25, 1pm PST review call"
+        "⚠️ Hard deadline: June 25, 1pm PST review call",
+        "✅ Brief completed and emailed to Michael",
+        "✅ Michael finished copy + Figma board (as of Jun 21)"
       ],
-      "autoUpdatedAt": "2026-06-22T07:02:12.478021-07:00"
+      "autoUpdatedAt": "2026-06-22T10:30:44.677332-07:00"
     },
     {
       "id": "epicure",
@@ -448,7 +455,7 @@
       "color": "#862E9C",
       "dot": "amber",
       "health": "In Progress",
-      "tagline": "Affiliate onboarding brief complete & filed. Klaviyo sync Monday. Awaiting PP Email 2 brief from client.",
+      "tagline": "Affiliate onboarding brief complete & filed. Klaviyo pricing sync & PP Email 2 brief are next priorities.",
       "lastTouched": "2026-06-22",
       "tasks": [
         {
@@ -494,16 +501,23 @@
           "source": "manual"
         },
         {
-          "text": "Meaghan: Complete affiliate onboarding copy with Debbie kickoff",
+          "text": "Klaviyo pricing sync meeting",
           "owner": "DigitsUp",
           "complexity": "medium",
           "urgent": false,
           "source": "auto"
         },
         {
-          "text": "Confirm Klaviyo pricing sync scheduled for Monday 11am",
-          "owner": "Michael",
-          "complexity": "quick",
+          "text": "PP Email 2 brief — still needed",
+          "owner": "DigitsUp",
+          "complexity": "medium",
+          "urgent": false,
+          "source": "auto"
+        },
+        {
+          "text": "Meaghan to do affiliate onboarding copy with Debbie kickoff",
+          "owner": "Client",
+          "complexity": "medium",
           "urgent": false,
           "source": "auto"
         }
@@ -528,20 +542,25 @@
           "source": "manual"
         },
         {
-          "party": "Client",
-          "item": "PP Email 2 brief",
+          "party": "Debbie",
+          "item": "Kick off affiliate onboarding copy work with Meaghan",
+          "source": "auto"
+        },
+        {
+          "party": "Michael",
+          "item": "PP Email 2 brief delivery",
           "source": "auto"
         }
       ],
       "promises": [],
-      "nextMilestone": "Klaviyo pricing sync — Monday 11am, 2026-06-23",
+      "nextMilestone": "Klaviyo pricing sync — Monday 2026-06-25 at 11am",
       "flags": [
-        "✅ Affiliate onboarding brief written & filed to mike@digitsup.com",
-        "✅ All source docs extracted & organized (11 email screenshots processed)",
-        "⚠️ PP Email 2 brief still needed before proceeding",
-        "ℹ️ Michael working in Claude directly — Callie not needed"
+        "✅ Affiliate onboarding brief written & filed",
+        "✅ Source docs (both Amelia files + email screenshots) fully extracted & documented",
+        "⚠️ PP Email 2 brief still needed",
+        "⚠️ Klaviyo pricing sync Monday 11am — confirm attendance"
       ],
-      "autoUpdatedAt": "2026-06-22T07:02:19.716834-07:00"
+      "autoUpdatedAt": "2026-06-22T10:30:31.261322-07:00"
     },
     {
       "id": "hiba",
@@ -549,7 +568,7 @@
       "color": "#E64980",
       "dot": "amber",
       "health": "On Track",
-      "tagline": "Hiba Academy extended through September. 90-day gameplan + scope due this week for David and team.",
+      "tagline": "Hiba Academy extended through September. 90-day gameplan + scope for David and team due this week.",
       "lastTouched": "2026-06-22",
       "tasks": [
         {
@@ -567,8 +586,8 @@
           "source": "manual"
         },
         {
-          "text": "Develop 90-day gameplan + scope for David and Hiba Academy team",
-          "owner": "DigitsUp",
+          "text": "Develop 90-day gameplan + scope for David + Hiba team",
+          "owner": "Michael",
           "complexity": "heavy",
           "urgent": true,
           "source": "auto"
@@ -582,8 +601,8 @@
           "source": "manual"
         },
         {
-          "party": "Veronica",
-          "item": "Renewal proposal (requested Jun 11)",
+          "party": "David / Hiba team",
+          "item": "90-day gameplan + scope delivery",
           "source": "auto"
         }
       ],
@@ -594,20 +613,20 @@
           "madeOn": "2026-06-11"
         }
       ],
-      "nextMilestone": "90-day gameplan + scope delivery (this week)",
+      "nextMilestone": "90-day gameplan + scope delivery for David + Hiba team (end of week)",
       "flags": [
         "✅ Contract extended through September",
-        "⚠️ 90-day gameplan + scope due this week"
+        "⚠️ 90-day gameplan due this week"
       ],
-      "autoUpdatedAt": "2026-06-22T07:02:04.431935-07:00"
+      "autoUpdatedAt": "2026-06-22T10:30:23.606713-07:00"
     },
     {
       "id": "outersignal",
       "name": "OuterSignal",
       "color": "#5C7CFA",
-      "dot": "amber",
+      "dot": "green",
       "health": "Waiting on Client",
-      "tagline": "OuterSignal copy & persona briefs complete. Figma board ready for design stage with Debbie coordinating. Monday kickoff call scheduled.",
+      "tagline": "OhSnap copy done and in Figma design stage. Debbie coordinating kickoff call Monday 9:30am.",
       "lastTouched": "2026-06-22",
       "tasks": [
         {
@@ -632,17 +651,17 @@
           "source": "manual"
         },
         {
-          "text": "Move copy to design stage in Figma",
+          "text": "Debbie to coordinate OhSnap design kickoff call",
           "owner": "DigitsUp",
-          "complexity": "medium",
+          "complexity": "quick",
           "urgent": false,
           "source": "auto"
         },
         {
-          "text": "Conduct Monday kickoff call for OuterSignal project",
-          "owner": "Debbie",
-          "complexity": "quick",
-          "urgent": true,
+          "text": "Meaghan to move copy to design stage in Figma",
+          "owner": "Kieran",
+          "complexity": "medium",
+          "urgent": false,
           "source": "auto"
         }
       ],
@@ -667,7 +686,7 @@
         },
         {
           "party": "Debbie",
-          "item": "Design stage initiation and coordination",
+          "item": "Confirmation of Monday 9:30am kickoff call scheduled",
           "source": "auto"
         }
       ],
@@ -678,13 +697,13 @@
           "madeOn": "2026-06-17"
         }
       ],
-      "nextMilestone": "Monday 9:30am kickoff call",
+      "nextMilestone": "Monday 9:30am — OhSnap design kickoff call with Debbie",
       "flags": [
         "✅ Persona briefs + copy completed by Michael",
-        "✅ Figma brief ready for design handoff",
-        "⚠️ Debbie coordinating — design phase in progress"
+        "✅ Figma brief ready for design stage",
+        "⚠️ Monday 9:30am call with Debbie — needs confirmation"
       ],
-      "autoUpdatedAt": "2026-06-22T07:02:02.430550-07:00"
+      "autoUpdatedAt": "2026-06-22T10:30:37.916034-07:00"
     },
     {
       "id": "frnk",
@@ -692,7 +711,7 @@
       "color": "#E8845C",
       "dot": "green",
       "health": "Blocked",
-      "tagline": "Launch email sent Jun 21. On track with no blockers identified.",
+      "tagline": "Launch email sent Jun 21. Status tracking needed for post-launch metrics and next steps.",
       "lastTouched": "2026-06-22",
       "tasks": [
         {
@@ -738,11 +757,11 @@
         }
       ],
       "promises": [],
-      "nextMilestone": "No next milestone specified",
+      "nextMilestone": "Post-launch performance tracking",
       "flags": [
         "✅ Launch email sent Jun 21"
       ],
-      "autoUpdatedAt": "2026-06-22T07:02:09.391866-07:00"
+      "autoUpdatedAt": "2026-06-22T10:30:35.049162-07:00"
     },
     {
       "id": "sfr",
@@ -750,7 +769,7 @@
       "color": "#845EF7",
       "dot": "red",
       "health": "Starting Jun 22",
-      "tagline": "Agreement NOT signed as of Jun 21 — all work on hold until execution.",
+      "tagline": "⚠️ BLOCKED: Agreement not signed as of Jun 21. All work on hold pending signature.",
       "lastTouched": "2026-06-22",
       "tasks": [
         {
@@ -761,7 +780,7 @@
           "source": "manual"
         },
         {
-          "text": "Follow up on SFR Distillery agreement signature status",
+          "text": "Follow up on agreement signature status with SFR Distillery",
           "owner": "Michael",
           "complexity": "quick",
           "urgent": true,
@@ -777,17 +796,17 @@
         },
         {
           "party": "SFR Distillery",
-          "item": "Agreement signature",
+          "item": "Signed agreement",
           "source": "auto"
         }
       ],
       "promises": [],
-      "nextMilestone": "Agreement signature from SFR Distillery",
+      "nextMilestone": "Agreement signature",
       "flags": [
-        "⚠️ HOLD — agreement NOT signed as of Jun 21",
-        "⚠️ Nothing moves until agreement is signed"
+        "⚠️ Agreement NOT signed as of Jun 21 — blocks all downstream work",
+        "⚠️ Status flagged in NOW.md and REMINDERS.md"
       ],
-      "autoUpdatedAt": "2026-06-22T07:02:16.459220-07:00"
+      "autoUpdatedAt": "2026-06-22T10:30:27.779305-07:00"
     }
   ],
   "pipeline": [
@@ -938,7 +957,7 @@
       "source": "auto"
     },
     {
-      "icon": "🟡",
+      "icon": "🟢",
       "clientId": "outersignal",
       "clientName": "OuterSignal",
       "text": "Build Post-Purchase 2026 flow draft — due EOW Jun 20 (once assets arrive)",
@@ -960,28 +979,28 @@
   ],
   "activity": [
     {
-      "ts": "2026-06-22T07:01:59.871977-07:00",
-      "text": "Riversol — Riversol replenishment flows V2 awaiting Arnaud approval. Working session invite overdue."
+      "ts": "2026-06-22T10:30:23.606816-07:00",
+      "text": "Hiba Academy — Hiba Academy extended through September. 90-day gameplan + scope for David and team due this week."
     },
     {
-      "ts": "2026-06-22T07:02:02.430663-07:00",
-      "text": "OuterSignal — OuterSignal copy & persona briefs complete. Figma board ready for design stage with Debbie coordinat"
+      "ts": "2026-06-22T10:30:25.731147-07:00",
+      "text": "Riversol — Riversol replenishment flows in progress; V2 awaiting Arnaud approval. Working session invite overdu"
     },
     {
-      "ts": "2026-06-22T07:02:04.432037-07:00",
-      "text": "Hiba Academy — Hiba Academy extended through September. 90-day gameplan + scope due this week for David and team."
+      "ts": "2026-06-22T10:30:27.779413-07:00",
+      "text": "SFR Distillery — ⚠️ BLOCKED: Agreement not signed as of Jun 21. All work on hold pending signature."
     },
     {
-      "ts": "2026-06-22T07:02:09.391971-07:00",
-      "text": "FRNK Boutique — Launch email sent Jun 21. On track with no blockers identified."
+      "ts": "2026-06-22T10:30:31.261452-07:00",
+      "text": "Epicure — Affiliate onboarding brief complete & filed. Klaviyo pricing sync & PP Email 2 brief are next priori"
     },
     {
-      "ts": "2026-06-22T07:02:12.478123-07:00",
-      "text": "The Lab Life — 6-email GHL series in build with review call June 25. Copy complete, rebooking link pending from All"
+      "ts": "2026-06-22T10:30:33.462675-07:00",
+      "text": "RVCA — Post-purchase monitoring live since Jun 20. Q3 campaign briefs pending delivery to Clay."
     },
     {
-      "ts": "2026-06-22T07:02:14.266508-07:00",
-      "text": "Salehe Bembury — Non-selling campaign strategy and VIP SMS list building planned for Jul–Aug."
+      "ts": "2026-06-22T10:30:35.049266-07:00",
+      "text": "FRNK Boutique — Launch email sent Jun 21. Status tracking needed for post-launch metrics and next steps."
     }
   ]
 }
