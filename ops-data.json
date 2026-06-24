@@ -1,6 +1,6 @@
 {
   "meta": {
-    "lastUpdated": "2026-06-24T10:30:40.709396-07:00",
+    "lastUpdated": "2026-06-24T16:30:50.478195-07:00",
     "updatedBy": "Mollie (auto-v4)",
     "cacheBust": "2026-06-17T21:43:00-07:00"
   },
@@ -11,7 +11,7 @@
       "color": "#3B5BDB",
       "dot": "amber",
       "health": "In Progress",
-      "tagline": "RVCA post-purchase live since Jun 20. Michael building winback flow; Q3 briefs pending to Clay.",
+      "tagline": "Optimize post-purchase email subject lines and preview text for new customer lane. Q3 briefs awaiting Full Price collection + GA + product IDs.",
       "lastTouched": "2026-06-24",
       "tasks": [
         {
@@ -64,23 +64,23 @@
           "source": "manual"
         },
         {
-          "text": "Monitor post-purchase experience (live since Jun 20)",
+          "text": "Optimize subject lines + preview text on post-purchase flows (new customer lane with offer: free ship no min vs. $20 off $100+)",
+          "owner": "Michael",
+          "complexity": "medium",
+          "urgent": true,
+          "source": "auto"
+        },
+        {
+          "text": "Monitor post-purchase flow performance (live Jun 20)",
           "owner": "DigitsUp",
           "complexity": "quick",
           "urgent": false,
           "source": "auto"
         },
         {
-          "text": "Build winback flow",
-          "owner": "Michael",
-          "complexity": "medium",
-          "urgent": false,
-          "source": "auto"
-        },
-        {
-          "text": "Deliver Q3 campaign briefs to Clay",
+          "text": "Prepare Q3 campaign briefs for Clay with Full Price collection details, GA data, and product IDs",
           "owner": "DigitsUp",
-          "complexity": "medium",
+          "complexity": "heavy",
           "urgent": false,
           "source": "auto"
         }
@@ -105,8 +105,8 @@
           "source": "manual"
         },
         {
-          "party": "Clay",
-          "item": "Q3 campaign brief review/approval",
+          "party": "RVCA",
+          "item": "Full Price collection details + GA data + product IDs for Q3 campaign briefs",
           "source": "auto"
         }
       ],
@@ -117,20 +117,21 @@
           "madeOn": "2026-06-17"
         }
       ],
-      "nextMilestone": "Q3 campaign briefs delivery",
+      "nextMilestone": "Complete subject line optimization before Michael's break end (today or first thing tomorrow)",
       "flags": [
-        "✅ Post-purchase live and monitoring",
-        "⚠️ Winback flow in development—timeline unclear"
+        "⚠️ Post-purchase flow live Jun 20 — monitor for performance issues",
+        "⚠️ Q3 briefs blocked on Full Price collection + GA + product IDs from RVCA",
+        "✅ Michael returning from break today — ready to execute subject line optimization"
       ],
-      "autoUpdatedAt": "2026-06-24T10:30:27.192260-07:00"
+      "autoUpdatedAt": "2026-06-24T16:30:50.477276-07:00"
     },
     {
       "id": "riversol",
       "name": "Riversol",
       "color": "#1098AD",
-      "dot": "red",
+      "dot": "amber",
       "health": "Active",
-      "tagline": "Replenishment flows V2 awaiting Arnaud approval; flows not yet started—highest priority.",
+      "tagline": "Sample flow report built but not shared; 4 key email flows under optimization with A/B testing and winback simplification planned.",
       "lastTouched": "2026-06-24",
       "tasks": [
         {
@@ -204,16 +205,44 @@
           "source": "manual"
         },
         {
-          "text": "Start replenishment flows implementation (5 SKUs + general bucket)",
+          "text": "Working session with Michael to build Klaviyo reporting skill properly before retry",
           "owner": "DigitsUp",
-          "complexity": "heavy",
+          "complexity": "medium",
+          "urgent": false,
+          "source": "auto"
+        },
+        {
+          "text": "Implement A/B test for 20% off banner in Sample Flow emails 7–12 to pull discount forward ~10 days",
+          "owner": "Michael",
+          "complexity": "medium",
           "urgent": true,
           "source": "auto"
         },
         {
-          "text": "Obtain Arnaud approval for V2 replenishment flows",
+          "text": "Simplify Sampler Winback flow to 3-email series (Offer → Bundle Math → Last Call)",
           "owner": "Michael",
-          "complexity": "quick",
+          "complexity": "medium",
+          "urgent": false,
+          "source": "auto"
+        },
+        {
+          "text": "Develop 'make right' email for 1–3 star reviews offering free 20-min skincare consultation",
+          "owner": "Michael",
+          "complexity": "medium",
+          "urgent": false,
+          "source": "auto"
+        },
+        {
+          "text": "Build Replenishment flow with 'New Arrivals' email replacing 'New Launches'",
+          "owner": "Michael",
+          "complexity": "heavy",
+          "urgent": false,
+          "source": "auto"
+        },
+        {
+          "text": "Deliver buyer behavior analysis: AOV + time-to-purchase comparison (old vs new sample flow)",
+          "owner": "DigitsUp",
+          "complexity": "medium",
           "urgent": true,
           "source": "auto"
         }
@@ -238,8 +267,18 @@
           "source": "manual"
         },
         {
-          "party": "Arnaud",
-          "item": "Approval for V2 replenishment flows",
+          "party": "Una",
+          "item": "Date when Sample Flow offer switched from 30% to 20% (needed to rerun analysis)",
+          "source": "auto"
+        },
+        {
+          "party": "Michael",
+          "item": "Upgrade Winback Samplers Email 1 to 30% off",
+          "source": "auto"
+        },
+        {
+          "party": "Client",
+          "item": "Arnaud V2 approval, Ali codes, Arno+Oona lifestyle images",
           "source": "auto"
         }
       ],
@@ -250,12 +289,15 @@
           "madeOn": "2026-06-17"
         }
       ],
-      "nextMilestone": "Arnaud approval of V2, then flows implementation start",
+      "nextMilestone": "Michael implements Sample Flow A/B test + delivers buyer behavior analysis",
       "flags": [
-        "⚠️ Flows blocked—awaiting V2 approval before execution can begin",
-        "⚠️ Critical priority: replenishment flows highest on NOW list"
+        "⚠️ Report built but NOT shared — needs validation before client use (high error rate in initial draft)",
+        "⚠️ Skin quiz onboarding strategy still TBD",
+        "⚠️ Buyer behavior analysis owed — critical blocker for Sample Flow decisions",
+        "✅ Replenishment flow approved for build",
+        "⚠️ Klaviyo send volume nearly maxed previous plan — winback simplification needed"
       ],
-      "autoUpdatedAt": "2026-06-24T10:30:19.308068-07:00"
+      "autoUpdatedAt": "2026-06-24T16:30:36.050889-07:00"
     },
     {
       "id": "salehe",
@@ -263,7 +305,7 @@
       "color": "#2F9E44",
       "dot": "amber",
       "health": "Pivoting",
-      "tagline": "Core flows not built yet; list cleaning underway (~$2.5k Kickbox). Non-selling campaign strategy due Jul–Aug.",
+      "tagline": "Core flows not built; list clean pending ~$2.5k Kickbox charge. Non-selling campaign strategy due Jul–Aug.",
       "lastTouched": "2026-06-24",
       "tasks": [
         {
@@ -309,16 +351,16 @@
           "source": "manual"
         },
         {
-          "text": "Clean list first — Kickbox implementation (~$2.5k)",
+          "text": "Build core flows for Salehe Bembury",
           "owner": "DigitsUp",
-          "complexity": "medium",
+          "complexity": "heavy",
           "urgent": false,
           "source": "auto"
         },
         {
-          "text": "Build core flows",
-          "owner": "DigitsUp",
-          "complexity": "heavy",
+          "text": "Process list clean — Kickbox ~$2.5k charge",
+          "owner": "Michael",
+          "complexity": "quick",
           "urgent": false,
           "source": "auto"
         },
@@ -367,12 +409,12 @@
           "madeOn": "2026-06-17"
         }
       ],
-      "nextMilestone": "Jul–Aug: non-selling campaign strategy deployment",
+      "nextMilestone": "Weekly meeting Thursday 3:30pm; non-selling campaign strategy due Jul–Aug",
       "flags": [
-        "⚠️ Core flows not yet built — dependency for campaign launch",
-        "Kickbox list cleaning in progress (~$2.5k budget allocated)"
+        "Weekly meeting Thu 3:30pm scheduled",
+        "Core flows blocking campaign readiness"
       ],
-      "autoUpdatedAt": "2026-06-24T10:30:40.708567-07:00"
+      "autoUpdatedAt": "2026-06-24T16:30:26.322648-07:00"
     },
     {
       "id": "the-lab",
@@ -380,7 +422,7 @@
       "color": "#F08C00",
       "dot": "amber",
       "health": "On Track",
-      "tagline": "6 GHL emails in build with hard review deadline tomorrow (Jun 25, 1pm PST). On track but time-critical.",
+      "tagline": "Review call scheduled Thu Jun 25 1pm. Need to confirm status of 6 GHL emails in build before call.",
       "lastTouched": "2026-06-24",
       "tasks": [
         {
@@ -426,14 +468,7 @@
           "source": "manual"
         },
         {
-          "text": "Complete 6 GHL emails in build for The Lab Life",
-          "owner": "DigitsUp",
-          "complexity": "medium",
-          "urgent": false,
-          "source": "auto"
-        },
-        {
-          "text": "Prepare for The Lab Life review call on Jun 25 at 1pm PST",
+          "text": "Confirm status of 6 GHL emails in build",
           "owner": "DigitsUp",
           "complexity": "quick",
           "urgent": true,
@@ -442,8 +477,8 @@
       ],
       "waitingOn": [
         {
-          "party": "Client",
-          "item": "Feedback from Jun 25 review call on 6 GHL emails",
+          "party": "DigitsUp",
+          "item": "Confirmation of 6 GHL emails status before review call",
           "source": "auto"
         }
       ],
@@ -454,12 +489,12 @@
           "madeOn": "2026-06-03"
         }
       ],
-      "nextMilestone": "The Lab Life review call — Jun 25, 1pm PST",
+      "nextMilestone": "Review call — Thursday, June 25 at 1pm",
       "flags": [
-        "⚠️ Hard deadline: Jun 25, 1pm PST review call",
-        "⚠️ 6 GHL emails still in build—tight timeline before review"
+        "⚠️ 6 GHL emails pending status confirmation",
+        "Review call Thu Jun 25 1pm — must confirm email status beforehand"
       ],
-      "autoUpdatedAt": "2026-06-24T10:30:32.619739-07:00"
+      "autoUpdatedAt": "2026-06-24T16:30:29.087433-07:00"
     },
     {
       "id": "epicure",
@@ -467,7 +502,7 @@
       "color": "#862E9C",
       "dot": "amber",
       "health": "In Progress",
-      "tagline": "Epicure builds strong momentum with 7-9 weekly EN/FR builds on track. Affiliate program unblocked; awaiting PP Email 2 brief.",
+      "tagline": "Epicure executing 7-9 weekly builds (EN/FR) with affiliate onboarding in progress. Awaiting critical assets from Cindy and Amelia.",
       "lastTouched": "2026-06-24",
       "tasks": [
         {
@@ -513,23 +548,23 @@
           "source": "manual"
         },
         {
-          "text": "Finalize PP Email 2 brief for Epicure",
-          "owner": "Client",
-          "complexity": "medium",
-          "urgent": true,
-          "source": "auto"
-        },
-        {
-          "text": "Meaghan to complete affiliate onboarding copy",
+          "text": "Kickoff affiliate onboarding with Debbie (Meaghan copy ready)",
           "owner": "DigitsUp",
           "complexity": "medium",
           "urgent": false,
           "source": "auto"
         },
         {
-          "text": "Debbie to kick off affiliate onboarding process",
-          "owner": "DigitsUp",
-          "complexity": "medium",
+          "text": "Follow up with Cindy for GoAffPro URL, free SKU, and E6 copy",
+          "owner": "Michael",
+          "complexity": "quick",
+          "urgent": false,
+          "source": "auto"
+        },
+        {
+          "text": "Follow up with Amelia for E3 reviews",
+          "owner": "Michael",
+          "complexity": "quick",
           "urgent": false,
           "source": "auto"
         }
@@ -554,19 +589,25 @@
           "source": "manual"
         },
         {
-          "party": "Client",
-          "item": "PP Email 2 brief",
+          "party": "Cindy",
+          "item": "GoAffPro URL, free SKU, and E6 copy",
+          "source": "auto"
+        },
+        {
+          "party": "Amelia",
+          "item": "Reviews for E3",
           "source": "auto"
         }
       ],
       "promises": [],
-      "nextMilestone": "PP Email 2 brief completion and affiliate onboarding launch",
+      "nextMilestone": "Complete affiliate onboarding kickoff with Debbie",
       "flags": [
-        "✅ Affiliate program unblocked with promo code stacking enabled",
-        "⚠️ PP Email 2 brief still needed to proceed",
-        "✅ 7-9 weekly builds EN/FR on schedule"
+        "⚠️ Blocked on Cindy assets (GoAffPro URL, free SKU, E6 copy)",
+        "⚠️ Blocked on Amelia reviews for E3",
+        "✅ Affiliate onboarding copy from Meaghan ready",
+        "✅ Maintaining 7-9 weekly EN/FR builds"
       ],
-      "autoUpdatedAt": "2026-06-24T10:30:22.173828-07:00"
+      "autoUpdatedAt": "2026-06-24T16:30:47.338339-07:00"
     },
     {
       "id": "hiba",
@@ -574,7 +615,7 @@
       "color": "#E64980",
       "dot": "red",
       "health": "On Track",
-      "tagline": "Overdue 'Founding vision to reality' send due June 30. Need 90-day gameplan + Q3 campaign planning session scheduled.",
+      "tagline": "Overdue June 30 send on 'Founding vision to reality' + Victoria session needed for Q3 campaign planning.",
       "lastTouched": "2026-06-24",
       "tasks": [
         {
@@ -592,24 +633,17 @@
           "source": "manual"
         },
         {
-          "text": "Send 'Founding vision to reality' asset to Hiba Academy",
-          "owner": "Michael",
-          "complexity": "quick",
-          "urgent": true,
-          "source": "auto"
-        },
-        {
-          "text": "Develop 90-day gameplan for David + team",
-          "owner": "Michael",
-          "complexity": "heavy",
-          "urgent": true,
-          "source": "auto"
-        },
-        {
-          "text": "Schedule session with Victoria to plan rest of Q3 campaigns + flow updates",
+          "text": "Send 'Founding vision to reality' deliverable to Hiba Academy",
           "owner": "Michael",
           "complexity": "medium",
-          "urgent": false,
+          "urgent": true,
+          "source": "auto"
+        },
+        {
+          "text": "Schedule Victoria session for Q3 campaign planning + flow updates",
+          "owner": "Victoria",
+          "complexity": "quick",
+          "urgent": true,
           "source": "auto"
         }
       ],
@@ -621,13 +655,8 @@
           "source": "manual"
         },
         {
-          "party": "Michael",
-          "item": "90-day gameplan completion for David + team",
-          "source": "auto"
-        },
-        {
-          "party": "Victoria",
-          "item": "Availability for Q3 campaign planning session",
+          "party": "Hiba Academy",
+          "item": "Confirmation/input on Q3 campaign direction for Victoria planning session",
           "source": "auto"
         }
       ],
@@ -638,13 +667,13 @@
           "madeOn": "2026-06-11"
         }
       ],
-      "nextMilestone": "June 30 — Send 'Founding vision to reality' + complete 90-day gameplan",
+      "nextMilestone": "June 30 — Send 'Founding vision to reality' deliverable",
       "flags": [
-        "⚠️ OVERDUE: 'Founding vision to reality' send — June 30 deadline",
-        "⚠️ 90-day gameplan needed this week",
-        "⚠️ Q3 campaign planning session not yet scheduled"
+        "⚠️ June 30 send OVERDUE — needs immediate delivery",
+        "⚠️ Victoria session not yet scheduled — blocking Q3 campaign work",
+        "✅ Weekly Thu 11am meeting cadence in place"
       ],
-      "autoUpdatedAt": "2026-06-24T10:30:37.743802-07:00"
+      "autoUpdatedAt": "2026-06-24T16:30:23.101249-07:00"
     },
     {
       "id": "outersignal",
@@ -652,7 +681,7 @@
       "color": "#5C7CFA",
       "dot": "red",
       "health": "Waiting on Client",
-      "tagline": "OuterSignal copy in Figma blocked waiting for JD image library assets. Victoria following up with JD@osnap.com.",
+      "tagline": "Christy Dawn flow blocked by placeholder tracking image—due before 10:30am Thu Jun 25. OhSnap strategy page done; awaiting JD image response.",
       "lastTouched": "2026-06-24",
       "tasks": [
         {
@@ -677,24 +706,24 @@
           "source": "manual"
         },
         {
-          "text": "Victoria to email JD@osnap.com for image library assets needed for Figma copy",
+          "text": "Finalize Christy Dawn flow before 10:30am Thu Jun 25—read clients/outersignal/context.md first",
+          "owner": "DigitsUp",
+          "complexity": "heavy",
+          "urgent": true,
+          "source": "auto"
+        },
+        {
+          "text": "Replace placeholder tracking image in Christy Dawn flow with final asset from Victoria",
           "owner": "Victoria",
           "complexity": "quick",
           "urgent": true,
           "source": "auto"
         },
         {
-          "text": "Finalize Christy Dawn flow before tomorrow's meetings",
+          "text": "Follow up on JD image response for OhSnap strategy page (sent Jun 24)",
           "owner": "Michael",
-          "complexity": "medium",
-          "urgent": true,
-          "source": "auto"
-        },
-        {
-          "text": "Send OhSnap strategy to JD for image folder build",
-          "owner": "Michael",
-          "complexity": "medium",
-          "urgent": true,
+          "complexity": "quick",
+          "urgent": false,
           "source": "auto"
         }
       ],
@@ -718,8 +747,13 @@
           "source": "manual"
         },
         {
-          "party": "JD",
-          "item": "Image library assets for Figma copy work",
+          "party": "Victoria",
+          "item": "Final tracking image asset for Christy Dawn flow",
+          "source": "auto"
+        },
+        {
+          "party": "Client",
+          "item": "JD image response for OhSnap strategy page",
           "source": "auto"
         }
       ],
@@ -730,13 +764,14 @@
           "madeOn": "2026-06-17"
         }
       ],
-      "nextMilestone": "Tomorrow's meetings — Christy Dawn flow must be finalized",
+      "nextMilestone": "Christy Dawn flow delivery before 10:30am Thu Jun 25 (OuterSignal meeting)",
       "flags": [
-        "🔴 Copy in Figma blocked on JD image library",
-        "🔴 Christy Dawn flow time-sensitive — due before tomorrow's meetings",
-        "⚠️ Strategy delivery to JD needed to unblock image folder build"
+        "🔴 Christy Dawn flow is hard constraint—blocks entire day until resolved",
+        "✅ OhSnap strategy design page built; JD email drafted & sent by Michael",
+        "⚠️ Christy Dawn blocked by placeholder tracking image awaiting Victoria",
+        "📅 OuterSignal meeting Thu Jun 25—Christy Dawn delivery is critical"
       ],
-      "autoUpdatedAt": "2026-06-24T10:30:29.854517-07:00"
+      "autoUpdatedAt": "2026-06-24T16:30:41.478194-07:00"
     },
     {
       "id": "frnk",
@@ -744,7 +779,7 @@
       "color": "#E8845C",
       "dot": "amber",
       "health": "Blocked",
-      "tagline": "Welcome series on hold pending pop-up launch; context.md missing and needs building.",
+      "tagline": "Welcome series on hold pending pop-up launch. Bi-weekly sync scheduled for Thursday 10am.",
       "lastTouched": "2026-06-24",
       "tasks": [
         {
@@ -769,16 +804,9 @@
           "source": "manual"
         },
         {
-          "text": "Build FRNK context.md from memory files",
+          "text": "Build FRNK context.md for next session",
           "owner": "DigitsUp",
           "complexity": "medium",
-          "urgent": false,
-          "source": "auto"
-        },
-        {
-          "text": "Confirm GitHub Copilot status and upgrade memory provider if applicable",
-          "owner": "Michael",
-          "complexity": "quick",
           "urgent": false,
           "source": "auto"
         }
@@ -791,18 +819,19 @@
           "source": "manual"
         },
         {
-          "party": "DigitsUp",
-          "item": "Next available session to build context.md",
+          "party": "Client",
+          "item": "Pop-up launch to activate welcome series",
           "source": "auto"
         }
       ],
       "promises": [],
-      "nextMilestone": "Pop-up launch to enable welcome series",
+      "nextMilestone": "Thursday 10am bi-weekly meeting",
       "flags": [
-        "⚠️ Welcome series blocked — pop-up not live",
-        "⚠️ Context.md missing — build next available session"
+        "⚠️ Welcome series blocked—pop-up not live",
+        "Bi-weekly meeting Thu 10am confirmed",
+        "⚠️ FRNK context.md missing—needs documentation"
       ],
-      "autoUpdatedAt": "2026-06-24T10:30:24.733052-07:00"
+      "autoUpdatedAt": "2026-06-24T16:30:44.549616-07:00"
     },
     {
       "id": "sfr",
@@ -810,7 +839,7 @@
       "color": "#845EF7",
       "dot": "amber",
       "health": "Starting Jun 22",
-      "tagline": "Kickoff meeting scheduled for Thu Jun 25 noon. Two proposal files need filing to client folder post-upgrade.",
+      "tagline": "SFR Distillery kickoff tomorrow at noon. Two files need to be moved to client folder before meeting.",
       "lastTouched": "2026-06-24",
       "tasks": [
         {
@@ -821,17 +850,17 @@
           "source": "manual"
         },
         {
-          "text": "File `callie-output/sfr-first-order-analysis.html` to `clients/sfr-distillery/`",
+          "text": "File `callie-output/sfr-first-order-analysis.html` to `clients/sfr-distillery/` before kickoff",
           "owner": "DigitsUp",
           "complexity": "quick",
-          "urgent": false,
+          "urgent": true,
           "source": "auto"
         },
         {
-          "text": "File `sfr-proposal-v2.html` to `clients/sfr-distillery/`",
+          "text": "File `sfr-proposal-v2.html` to `clients/sfr-distillery/` before kickoff",
           "owner": "DigitsUp",
           "complexity": "quick",
-          "urgent": false,
+          "urgent": true,
           "source": "auto"
         }
       ],
@@ -849,13 +878,12 @@
         }
       ],
       "promises": [],
-      "nextMilestone": "Kickoff meeting Thu Jun 25 noon",
+      "nextMilestone": "Kickoff meeting Thu Jun 25 at noon",
       "flags": [
-        "✅ Proposal accepted Jun 12",
-        "✅ Kickoff meeting confirmed Thu Jun 25 noon",
-        "⚠️ File migration pending post-upgrade"
+        "⚠️ Kickoff Thu Jun 25 at noon — files must be organized before meeting",
+        "⚠️ Callie-output filing pending post-upgrade"
       ],
-      "autoUpdatedAt": "2026-06-24T10:30:34.769034-07:00"
+      "autoUpdatedAt": "2026-06-24T16:30:38.204961-07:00"
     }
   ],
   "pipeline": [
@@ -1001,7 +1029,7 @@
       "clientName": "OuterSignal",
       "text": "Build Post-Purchase 2026 flow draft — due EOW Jun 20 (once assets arrive)",
       "complexity": "heavy",
-      "deadline": null,
+      "deadline": "Jun 25",
       "urgent": true,
       "source": "auto"
     },
@@ -1011,7 +1039,7 @@
       "clientName": "The Lab Life",
       "text": "Confirm Month 1 completion with Travis + Ally by Jun 19",
       "complexity": "quick",
-      "deadline": "Jun 25",
+      "deadline": null,
       "urgent": true,
       "source": "auto"
     },
@@ -1028,28 +1056,28 @@
   ],
   "activity": [
     {
-      "ts": "2026-06-24T10:30:19.308144-07:00",
-      "text": "Riversol — Replenishment flows V2 awaiting Arnaud approval; flows not yet started—highest priority."
+      "ts": "2026-06-24T16:30:23.101325-07:00",
+      "text": "Hiba Academy — Overdue June 30 send on 'Founding vision to reality' + Victoria session needed for Q3 campaign plann"
     },
     {
-      "ts": "2026-06-24T10:30:22.173931-07:00",
-      "text": "Epicure — Epicure builds strong momentum with 7-9 weekly EN/FR builds on track. Affiliate program unblocked; a"
+      "ts": "2026-06-24T16:30:26.322740-07:00",
+      "text": "Salehe Bembury — Core flows not built; list clean pending ~$2.5k Kickbox charge. Non-selling campaign strategy due Ju"
     },
     {
-      "ts": "2026-06-24T10:30:24.733163-07:00",
-      "text": "FRNK Boutique — Welcome series on hold pending pop-up launch; context.md missing and needs building."
+      "ts": "2026-06-24T16:30:29.087539-07:00",
+      "text": "The Lab Life — Review call scheduled Thu Jun 25 1pm. Need to confirm status of 6 GHL emails in build before call."
     },
     {
-      "ts": "2026-06-24T10:30:27.192382-07:00",
-      "text": "RVCA — RVCA post-purchase live since Jun 20. Michael building winback flow; Q3 briefs pending to Clay."
+      "ts": "2026-06-24T16:30:36.050994-07:00",
+      "text": "Riversol — Sample flow report built but not shared; 4 key email flows under optimization with A/B testing and w"
     },
     {
-      "ts": "2026-06-24T10:30:29.854617-07:00",
-      "text": "OuterSignal — OuterSignal copy in Figma blocked waiting for JD image library assets. Victoria following up with JD"
+      "ts": "2026-06-24T16:30:38.205069-07:00",
+      "text": "SFR Distillery — SFR Distillery kickoff tomorrow at noon. Two files need to be moved to client folder before meeting."
     },
     {
-      "ts": "2026-06-24T10:30:32.619837-07:00",
-      "text": "The Lab Life — 6 GHL emails in build with hard review deadline tomorrow (Jun 25, 1pm PST). On track but time-critic"
+      "ts": "2026-06-24T16:30:41.478300-07:00",
+      "text": "OuterSignal — Christy Dawn flow blocked by placeholder tracking image—due before 10:30am Thu Jun 25. OhSnap strate"
     }
   ]
 }
