@@ -1,6 +1,6 @@
 {
   "meta": {
-    "lastUpdated": "2026-06-27T05:30:37.664011-07:00",
+    "lastUpdated": "2026-06-27T16:30:49.330505-07:00",
     "updatedBy": "Mollie (auto-v4)",
     "cacheBust": "2026-06-17T21:43:00-07:00"
   },
@@ -11,7 +11,7 @@
       "color": "#3B5BDB",
       "dot": "amber",
       "health": "In Progress",
-      "tagline": "Winback flow + review automations in progress; status unclear after 1pm call today.",
+      "tagline": "Winback flow build + live flip in progress with 3-offer split test; review automations scope pending clarity from 1pm call.",
       "lastTouched": "2026-06-27",
       "tasks": [
         {
@@ -79,7 +79,7 @@
         },
         {
           "text": "Scope review automations",
-          "owner": "DigitsUp",
+          "owner": "Michael",
           "complexity": "medium",
           "urgent": false,
           "source": "auto"
@@ -106,7 +106,7 @@
         },
         {
           "party": "Michael",
-          "item": "Clarification on 1pm call outcomes and next steps for winback + review automations",
+          "item": "Clarification on status and next steps from 1pm call",
           "source": "auto"
         }
       ],
@@ -117,12 +117,13 @@
           "madeOn": "2026-06-17"
         }
       ],
-      "nextMilestone": "Winback flow live with 3-offer split test",
+      "nextMilestone": "Winback flow live + review automations scoped",
       "flags": [
-        "⚠️ Status unclear post-1pm call — needs follow-up",
-        "⚠️ Review automations scope not yet defined"
+        "⚠️ Status unclear after 1pm call — awaiting confirmation",
+        "Winback flow: 3-offer split test structure defined",
+        "Review automations require scope definition"
       ],
-      "autoUpdatedAt": "2026-06-27T05:30:28.442410-07:00"
+      "autoUpdatedAt": "2026-06-27T16:30:49.329559-07:00"
     },
     {
       "id": "riversol",
@@ -436,9 +437,9 @@
       "id": "the-lab",
       "name": "The Lab Life",
       "color": "#F08C00",
-      "dot": "red",
+      "dot": "amber",
       "health": "On Track",
-      "tagline": "July 4th brief ready for delivery; $5k invoice unpaid—work pauses Monday without payment commitment from Travis.",
+      "tagline": "July 4th brief written & ready. Michael to insert booking form URL + phone number, then send to RV. Invoice payment required by Monday or work pauses.",
       "lastTouched": "2026-06-27",
       "tasks": [
         {
@@ -505,16 +506,9 @@
           "source": "auto"
         },
         {
-          "text": "Create single email design for Lab Life July 4th promo (due Monday for client meeting)",
+          "text": "Design July 4th promo email (single design due Monday for client meeting)",
           "owner": "DigitsUp",
           "complexity": "medium",
-          "urgent": true,
-          "source": "auto"
-        },
-        {
-          "text": "Secure payment commitment from Travis on $5k outstanding invoice",
-          "owner": "Client",
-          "complexity": "heavy",
           "urgent": true,
           "source": "auto"
         }
@@ -522,12 +516,12 @@
       "waitingOn": [
         {
           "party": "Travis (Client)",
-          "item": "$5k invoice payment commitment to resume work",
+          "item": "$5k invoice payment commitment to resume work Monday",
           "source": "auto"
         },
         {
           "party": "RV",
-          "item": "Acknowledgment of full brief delivery",
+          "item": "Receipt & sign-off on full July 4th brief",
           "source": "auto"
         }
       ],
@@ -538,14 +532,13 @@
           "madeOn": "2026-06-03"
         }
       ],
-      "nextMilestone": "Monday: July 4th email design due for client meeting; payment commitment deadline",
+      "nextMilestone": "July 4th campaign launch (Monday client meeting)",
       "flags": [
-        "⚠️ $5k invoice unpaid—work pauses Monday without payment",
-        "⚠️ July 4th brief + design due Monday for client meeting",
-        "✅ Brief copy and design brief written and ready",
-        "⚠️ Marl to decide delegation of email design to Melrick"
+        "⚠️ $5k invoice unpaid — work pauses Monday if Travis doesn't commit to payment",
+        "⚠️ July 4th promo email design due Monday for client meeting",
+        "✅ Brief + copy + design brief written and ready for distribution"
       ],
-      "autoUpdatedAt": "2026-06-27T05:30:34.893596-07:00"
+      "autoUpdatedAt": "2026-06-27T16:30:46.795521-07:00"
     },
     {
       "id": "epicure",
@@ -659,7 +652,7 @@
       "color": "#E64980",
       "dot": "amber",
       "health": "On Track",
-      "tagline": "Hiba Academy needs 'Founding vision to reality' draft by Monday for Jun 30 send. Harrison F. onboarding confirmation due today.",
+      "tagline": "Hiba Academy needs 'Founding vision to reality' draft before Monday. Harrison F. onboarding confirmation due today.",
       "lastTouched": "2026-06-27",
       "tasks": [
         {
@@ -684,7 +677,7 @@
           "source": "auto"
         },
         {
-          "text": "Confirm Harrison F. onboarding completion for Hiba Academy",
+          "text": "Confirm Harrison F. onboarding complete by Jun 27",
           "owner": "Michael",
           "complexity": "quick",
           "urgent": true,
@@ -711,12 +704,12 @@
           "madeOn": "2026-06-11"
         }
       ],
-      "nextMilestone": "Hiba Academy 'Founding vision to reality' send on Jun 30",
+      "nextMilestone": "Jun 30 send - 'Founding vision to reality'",
       "flags": [
-        "⚠️ Draft deadline: must complete before Monday for Jun 30 send",
-        "⚠️ Harrison F. onboarding confirmation due today (Jun 27)"
+        "⚠️ Draft needed before Monday for Jun 30 send",
+        "⚠️ Harrison F. onboarding confirmation due today"
       ],
-      "autoUpdatedAt": "2026-06-27T05:30:30.592702-07:00"
+      "autoUpdatedAt": "2026-06-27T16:30:39.119779-07:00"
     },
     {
       "id": "outersignal",
@@ -813,9 +806,9 @@
       "id": "frnk",
       "name": "FRNK Boutique",
       "color": "#E8845C",
-      "dot": "amber",
+      "dot": "grey",
       "health": "Blocked",
-      "tagline": "FRNK Boutique welcome series ready to launch pending discount code link and styling decisions.",
+      "tagline": "No FRNK Boutique data found in provided context.",
       "lastTouched": "2026-06-27",
       "tasks": [
         {
@@ -880,13 +873,11 @@
         }
       ],
       "promises": [],
-      "nextMilestone": "Welcome email series launch (pending code link and styling approval)",
+      "nextMilestone": "Awaiting FRNK Boutique updates",
       "flags": [
-        "⚠️ Welcome series blocked on two final items before launch",
-        "✅ Discount code finalized: welcome20 for 20% off entire order",
-        "⚠️ Font size and CTA styling decisions still pending"
+        "⚠️ No FRNK Boutique information in source materials"
       ],
-      "autoUpdatedAt": "2026-06-27T05:30:21.377537-07:00"
+      "autoUpdatedAt": "2026-06-27T16:30:42.596882-07:00"
     },
     {
       "id": "sfr",
@@ -894,7 +885,7 @@
       "color": "#845EF7",
       "dot": "amber",
       "health": "Starting Jun 22",
-      "tagline": "Post-kickoff follow-up underway. Awaiting copy intake form delivery and bi-weekly cadence launch on Jul 6.",
+      "tagline": "SFR Distillery kickoff complete. Awaiting copy intake form submission and bi-weekly meeting cadence launch.",
       "lastTouched": "2026-06-27",
       "tasks": [
         {
@@ -912,7 +903,7 @@
           "source": "auto"
         },
         {
-          "text": "Schedule bi-weekly sync: Mondays 2pm ET starting Jul 6",
+          "text": "Schedule bi-weekly meetings: Mondays 2pm ET starting Jul 6",
           "owner": "DigitsUp",
           "complexity": "quick",
           "urgent": false,
@@ -928,17 +919,17 @@
         },
         {
           "party": "Will Rogers",
-          "item": "Completed copy intake form + asset submission",
+          "item": "Copy intake form + asset request completion",
           "source": "auto"
         }
       ],
       "promises": [],
-      "nextMilestone": "Jul 6 — First bi-weekly sync (Mondays 2pm ET)",
+      "nextMilestone": "Jul 6 — First bi-weekly meeting (Mondays 2pm ET)",
       "flags": [
-        "⚠️ Copy intake form not yet sent to client",
-        "⚠️ Bi-weekly cadence not yet scheduled"
+        "Kickoff completed Jun 25 — follow-up actions initiated",
+        "Bi-weekly cadence starts Jul 6 (Mondays 2pm ET)"
       ],
-      "autoUpdatedAt": "2026-06-27T05:30:37.663097-07:00"
+      "autoUpdatedAt": "2026-06-27T16:30:41.368459-07:00"
     }
   ],
   "pipeline": [
@@ -1079,7 +1070,7 @@
       "urgent": false
     },
     {
-      "icon": "🔴",
+      "icon": "🟡",
       "clientId": "the-lab",
       "clientName": "The Lab Life",
       "text": "Confirm Month 1 completion with Travis + Ally by Jun 19",
@@ -1099,7 +1090,7 @@
       "source": "auto"
     },
     {
-      "icon": "🟡",
+      "icon": "⚪",
       "clientId": "frnk",
       "clientName": "FRNK Boutique",
       "text": "Provide shareable link for discount code 'welcome20' (20% off) to Kieran for embedding in all four welcome emails",
@@ -1111,28 +1102,28 @@
   ],
   "activity": [
     {
+      "ts": "2026-06-27T16:30:39.119883-07:00",
+      "text": "Hiba Academy — Hiba Academy needs 'Founding vision to reality' draft before Monday. Harrison F. onboarding confirma"
+    },
+    {
+      "ts": "2026-06-27T16:30:41.368540-07:00",
+      "text": "SFR Distillery — SFR Distillery kickoff complete. Awaiting copy intake form submission and bi-weekly meeting cadence "
+    },
+    {
+      "ts": "2026-06-27T16:30:42.596986-07:00",
+      "text": "FRNK Boutique — No FRNK Boutique data found in provided context."
+    },
+    {
+      "ts": "2026-06-27T16:30:46.795626-07:00",
+      "text": "The Lab Life — July 4th brief written & ready. Michael to insert booking form URL + phone number, then send to RV. "
+    },
+    {
+      "ts": "2026-06-27T16:30:49.329684-07:00",
+      "text": "RVCA — Winback flow build + live flip in progress with 3-offer split test; review automations scope pending"
+    },
+    {
       "ts": "2026-06-27T05:30:21.377637-07:00",
       "text": "FRNK Boutique — FRNK Boutique welcome series ready to launch pending discount code link and styling decisions."
-    },
-    {
-      "ts": "2026-06-27T05:30:23.013513-07:00",
-      "text": "Salehe Bembury — No actionable data found for Salehe Bembury in provided context."
-    },
-    {
-      "ts": "2026-06-27T05:30:25.779983-07:00",
-      "text": "OuterSignal — OuterSignal post-purchase email flow consolidation finalized with Orders=1 split logic and returning"
-    },
-    {
-      "ts": "2026-06-27T05:30:28.442516-07:00",
-      "text": "RVCA — Winback flow + review automations in progress; status unclear after 1pm call today."
-    },
-    {
-      "ts": "2026-06-27T05:30:30.592795-07:00",
-      "text": "Hiba Academy — Hiba Academy needs 'Founding vision to reality' draft by Monday for Jun 30 send. Harrison F. onboard"
-    },
-    {
-      "ts": "2026-06-27T05:30:34.893719-07:00",
-      "text": "The Lab Life — July 4th brief ready for delivery; $5k invoice unpaid—work pauses Monday without payment commitment "
     }
   ]
 }
