@@ -1,6 +1,6 @@
 {
   "meta": {
-    "lastUpdated": "2026-06-26T22:30:48.348182-07:00",
+    "lastUpdated": "2026-06-27T05:30:37.664011-07:00",
     "updatedBy": "Mollie (auto-v4)",
     "cacheBust": "2026-06-17T21:43:00-07:00"
   },
@@ -11,8 +11,8 @@
       "color": "#3B5BDB",
       "dot": "amber",
       "health": "In Progress",
-      "tagline": "Winback flow + review automations in progress. Status unclear after 1pm call — needs clarification on scope and timeline.",
-      "lastTouched": "2026-06-26",
+      "tagline": "Winback flow + review automations in progress; status unclear after 1pm call today.",
+      "lastTouched": "2026-06-27",
       "tasks": [
         {
           "text": "Post-purchase flow go-live Friday Jun 20 — emails 1 & 3 built, manual mode, OuterSignal backfill done",
@@ -78,10 +78,10 @@
           "source": "auto"
         },
         {
-          "text": "Scope review automations project",
-          "owner": "Michael",
+          "text": "Scope review automations",
+          "owner": "DigitsUp",
           "complexity": "medium",
-          "urgent": true,
+          "urgent": false,
           "source": "auto"
         }
       ],
@@ -106,7 +106,7 @@
         },
         {
           "party": "Michael",
-          "item": "Clarification on project status and next steps post-1pm call",
+          "item": "Clarification on 1pm call outcomes and next steps for winback + review automations",
           "source": "auto"
         }
       ],
@@ -119,10 +119,10 @@
       ],
       "nextMilestone": "Winback flow live with 3-offer split test",
       "flags": [
-        "⚠️ Status unclear after 1pm call — needs follow-up",
+        "⚠️ Status unclear post-1pm call — needs follow-up",
         "⚠️ Review automations scope not yet defined"
       ],
-      "autoUpdatedAt": "2026-06-26T22:30:48.347297-07:00"
+      "autoUpdatedAt": "2026-06-27T05:30:28.442410-07:00"
     },
     {
       "id": "riversol",
@@ -296,8 +296,8 @@
       "color": "#2F9E44",
       "dot": "grey",
       "health": "Pivoting",
-      "tagline": "Insufficient data for Salehe Bembury. Email content references other clients (Puma, Sponge); no Salehe-specific updates found.",
-      "lastTouched": "2026-06-26",
+      "tagline": "No actionable data found for Salehe Bembury in provided context.",
+      "lastTouched": "2026-06-27",
       "tasks": [
         {
           "text": "Add product titles to Alex Proba Figma design; send to Fardad (drop moved to July)",
@@ -426,11 +426,11 @@
           "madeOn": "2026-06-17"
         }
       ],
-      "nextMilestone": "Awaiting Salehe Bembury project details",
+      "nextMilestone": "Awaiting Salehe Bembury project context",
       "flags": [
-        "⚠️ No Salehe Bembury-specific information in provided context"
+        "⚠️ Source material contains only Puma/Sponge brand strategy — no Salehe Bembury-specific content"
       ],
-      "autoUpdatedAt": "2026-06-26T22:30:42.301359-07:00"
+      "autoUpdatedAt": "2026-06-27T05:30:23.013460-07:00"
     },
     {
       "id": "the-lab",
@@ -439,7 +439,7 @@
       "dot": "red",
       "health": "On Track",
       "tagline": "July 4th brief ready for delivery; $5k invoice unpaid—work pauses Monday without payment commitment from Travis.",
-      "lastTouched": "2026-06-26",
+      "lastTouched": "2026-06-27",
       "tasks": [
         {
           "text": "Confirm Month 1 completion with Travis + Ally by Jun 19",
@@ -491,7 +491,7 @@
           "source": "auto"
         },
         {
-          "text": "Drop completed brief in Marl's ticket",
+          "text": "Drop completed brief into Marl's ticket",
           "owner": "Michael",
           "complexity": "quick",
           "urgent": true,
@@ -505,14 +505,14 @@
           "source": "auto"
         },
         {
-          "text": "Design single email for Lab Life July 4th promo—due Monday for client meeting",
+          "text": "Create single email design for Lab Life July 4th promo (due Monday for client meeting)",
           "owner": "DigitsUp",
           "complexity": "medium",
           "urgent": true,
           "source": "auto"
         },
         {
-          "text": "Secure payment commitment from Travis on $5k invoice",
+          "text": "Secure payment commitment from Travis on $5k outstanding invoice",
           "owner": "Client",
           "complexity": "heavy",
           "urgent": true,
@@ -521,13 +521,13 @@
       ],
       "waitingOn": [
         {
-          "party": "Travis (Lab Life)",
-          "item": "$5k invoice payment commitment",
+          "party": "Travis (Client)",
+          "item": "$5k invoice payment commitment to resume work",
           "source": "auto"
         },
         {
-          "party": "Michael",
-          "item": "Booking form URL + phone number insertion",
+          "party": "RV",
+          "item": "Acknowledgment of full brief delivery",
           "source": "auto"
         }
       ],
@@ -540,12 +540,12 @@
       ],
       "nextMilestone": "Monday: July 4th email design due for client meeting; payment commitment deadline",
       "flags": [
-        "⚠️ CRITICAL: Work pauses Monday if $5k invoice unpaid—no DigitsUp subsidy",
-        "⚠️ July 4th brief + copy + design brief written and ready",
-        "⚠️ Single email design due Monday for client meeting",
-        "⚠️ No-show lead nurture sequence decoupled as 30-45 day automated flow"
+        "⚠️ $5k invoice unpaid—work pauses Monday without payment",
+        "⚠️ July 4th brief + design due Monday for client meeting",
+        "✅ Brief copy and design brief written and ready",
+        "⚠️ Marl to decide delegation of email design to Melrick"
       ],
-      "autoUpdatedAt": "2026-06-26T22:30:38.002765-07:00"
+      "autoUpdatedAt": "2026-06-27T05:30:34.893596-07:00"
     },
     {
       "id": "epicure",
@@ -659,8 +659,8 @@
       "color": "#E64980",
       "dot": "amber",
       "health": "On Track",
-      "tagline": "Hiba Academy needs draft of 'Founding vision to reality' content by Monday for Jun 30 send.",
-      "lastTouched": "2026-06-26",
+      "tagline": "Hiba Academy needs 'Founding vision to reality' draft by Monday for Jun 30 send. Harrison F. onboarding confirmation due today.",
+      "lastTouched": "2026-06-27",
       "tasks": [
         {
           "text": "Draft renewal proposal for Hiba Academy (contract ends June) — Veronica asked Jun 11",
@@ -680,6 +680,13 @@
           "text": "Draft 'Founding vision to reality' content for Hiba Jun 30 send",
           "owner": "Michael",
           "complexity": "medium",
+          "urgent": true,
+          "source": "auto"
+        },
+        {
+          "text": "Confirm Harrison F. onboarding completion for Hiba Academy",
+          "owner": "Michael",
+          "complexity": "quick",
           "urgent": true,
           "source": "auto"
         }
@@ -704,20 +711,21 @@
           "madeOn": "2026-06-11"
         }
       ],
-      "nextMilestone": "Jun 30 send - 'Founding vision to reality' content",
+      "nextMilestone": "Hiba Academy 'Founding vision to reality' send on Jun 30",
       "flags": [
-        "⚠️ Draft needed before Monday for Jun 30 send deadline"
+        "⚠️ Draft deadline: must complete before Monday for Jun 30 send",
+        "⚠️ Harrison F. onboarding confirmation due today (Jun 27)"
       ],
-      "autoUpdatedAt": "2026-06-26T22:30:45.785869-07:00"
+      "autoUpdatedAt": "2026-06-27T05:30:30.592702-07:00"
     },
     {
       "id": "outersignal",
       "name": "OuterSignal",
       "color": "#5C7CFA",
-      "dot": "green",
+      "dot": "amber",
       "health": "Waiting on Client",
-      "tagline": "OuterSignal post-purchase email flow complete. Team finalized consolidated flow with Orders=1 split and Points Unlocked email replacement.",
-      "lastTouched": "2026-06-26",
+      "tagline": "OuterSignal post-purchase email flow consolidation finalized with Orders=1 split logic and returning customer path redesign.",
+      "lastTouched": "2026-06-27",
       "tasks": [
         {
           "text": "Build Post-Purchase 2026 flow draft — due EOW Jun 20 (once assets arrive)",
@@ -741,22 +749,22 @@
           "source": "manual"
         },
         {
-          "text": "Implement Orders = 1 split logic to separate new from returning customers in post-purchase flow",
-          "owner": "Michael",
+          "text": "Implement Orders = 1 split to separate new from returning customers in consolidated post-purchase flow",
+          "owner": "DigitsUp",
           "complexity": "medium",
           "urgent": false,
           "source": "auto"
         },
         {
           "text": "Force existing app users into $30 off lane to prevent duplicate 10% off app download offer",
-          "owner": "Michael",
-          "complexity": "quick",
+          "owner": "DigitsUp",
+          "complexity": "medium",
           "urgent": false,
           "source": "auto"
         },
         {
-          "text": "Deploy 'Points Unlocked' email to replace 'New Arrivals' email (~17 days post-purchase)",
-          "owner": "Kieran",
+          "text": "Replace 'New Arrivals' email with 'Points Unlocked' email in returning customer path (~17 days post-purchase)",
+          "owner": "DigitsUp",
           "complexity": "medium",
           "urgent": false,
           "source": "auto"
@@ -794,14 +802,12 @@
           "madeOn": "2026-06-17"
         }
       ],
-      "nextMilestone": "Post-purchase email flow deployment",
+      "nextMilestone": "Post-purchase email flow implementation and testing",
       "flags": [
-        "✅ Flow logic finalized with Orders=1 split for new vs returning customers",
-        "✅ Michael built flow, Kieran built emails, Victoria handled briefs/copy",
-        "✅ Meeting summary filed: clients/outersignal/meetings/2026-06-25-christy-dawn-outersignal-x-digitsup-meeting.md",
-        "✅ Key fix implemented: force existing app users into $30 off lane"
+        "✅ Post-purchase email flow logic finalized with clear segment splits",
+        "⚠️ Existing app users routing requires careful implementation to prevent offer conflicts"
       ],
-      "autoUpdatedAt": "2026-06-26T22:30:44.019249-07:00"
+      "autoUpdatedAt": "2026-06-27T05:30:25.779907-07:00"
     },
     {
       "id": "frnk",
@@ -809,8 +815,8 @@
       "color": "#E8845C",
       "dot": "amber",
       "health": "Blocked",
-      "tagline": "FRNK Boutique welcome series ready for launch pending discount code link and email styling decisions.",
-      "lastTouched": "2026-06-26",
+      "tagline": "FRNK Boutique welcome series ready to launch pending discount code link and styling decisions.",
+      "lastTouched": "2026-06-27",
       "tasks": [
         {
           "text": "Confirm welcome series + abandoned cart build status with team",
@@ -834,24 +840,24 @@
           "source": "manual"
         },
         {
-          "text": "Provide shareable link for welcome20 discount code to Kieran for embedding in all four welcome emails",
+          "text": "Provide shareable link for discount code 'welcome20' (20% off) to Kieran for embedding in all four welcome emails",
           "owner": "Michael",
           "complexity": "quick",
           "urgent": true,
           "source": "auto"
         },
         {
-          "text": "Finalize email styling decision: standardize font size (16pt vs 18pt) and CTA button styling across welcome series",
+          "text": "Finalize styling decisions for welcome series: standardize font size (16pt vs 18pt) and CTA styling",
           "owner": "DigitsUp",
           "complexity": "quick",
           "urgent": true,
           "source": "auto"
         },
         {
-          "text": "Embed discount code link in all four welcome emails once styling is finalized",
+          "text": "Launch FRNK Boutique welcome email series once code link and styling decisions are confirmed",
           "owner": "Kieran",
-          "complexity": "quick",
-          "urgent": true,
+          "complexity": "medium",
+          "urgent": false,
           "source": "auto"
         }
       ],
@@ -864,24 +870,23 @@
         },
         {
           "party": "Michael",
-          "item": "Shareable link for welcome20 discount code (20% off entire order)",
+          "item": "Shareable link for 'welcome20' discount code",
           "source": "auto"
         },
         {
           "party": "DigitsUp",
-          "item": "Final decision on email font size and CTA button styling",
+          "item": "Styling decisions (font size and CTA standardization)",
           "source": "auto"
         }
       ],
       "promises": [],
-      "nextMilestone": "Welcome email series launch (pending Michael's discount link + styling approval)",
+      "nextMilestone": "Welcome email series launch (pending code link and styling approval)",
       "flags": [
-        "✅ Welcome series content finalized and ready for launch",
-        "✅ Discount code determined: welcome20 for 20% off",
-        "⚠️ Launch blocked on two final approvals: discount link + styling decisions",
-        "⚠️ All four welcome emails waiting on styling finalization before deployment"
+        "⚠️ Welcome series blocked on two final items before launch",
+        "✅ Discount code finalized: welcome20 for 20% off entire order",
+        "⚠️ Font size and CTA styling decisions still pending"
       ],
-      "autoUpdatedAt": "2026-06-26T22:30:33.653008-07:00"
+      "autoUpdatedAt": "2026-06-27T05:30:21.377537-07:00"
     },
     {
       "id": "sfr",
@@ -889,8 +894,8 @@
       "color": "#845EF7",
       "dot": "amber",
       "health": "Starting Jun 22",
-      "tagline": "Post-kickoff: awaiting copy intake form & asset request delivery to Will Rogers; bi-weekly syncs launching Jul 6.",
-      "lastTouched": "2026-06-26",
+      "tagline": "Post-kickoff follow-up underway. Awaiting copy intake form delivery and bi-weekly cadence launch on Jul 6.",
+      "lastTouched": "2026-06-27",
       "tasks": [
         {
           "text": "Prep onboarding doc + kickoff agenda for Will — Jun 22",
@@ -901,13 +906,13 @@
         },
         {
           "text": "Send copy intake form + asset request to Will Rogers",
-          "owner": "Michael",
+          "owner": "DigitsUp",
           "complexity": "quick",
           "urgent": false,
           "source": "auto"
         },
         {
-          "text": "Schedule bi-weekly Monday 2pm ET meetings starting Jul 6",
+          "text": "Schedule bi-weekly sync: Mondays 2pm ET starting Jul 6",
           "owner": "DigitsUp",
           "complexity": "quick",
           "urgent": false,
@@ -923,17 +928,17 @@
         },
         {
           "party": "Will Rogers",
-          "item": "Completion & return of copy intake form + asset request",
+          "item": "Completed copy intake form + asset submission",
           "source": "auto"
         }
       ],
       "promises": [],
-      "nextMilestone": "First bi-weekly sync: Monday, Jul 6 at 2pm ET",
+      "nextMilestone": "Jul 6 — First bi-weekly sync (Mondays 2pm ET)",
       "flags": [
-        "Kickoff completed Jun 25",
-        "Awaiting client intake materials before next phase"
+        "⚠️ Copy intake form not yet sent to client",
+        "⚠️ Bi-weekly cadence not yet scheduled"
       ],
-      "autoUpdatedAt": "2026-06-26T22:30:40.662135-07:00"
+      "autoUpdatedAt": "2026-06-27T05:30:37.663097-07:00"
     }
   ],
   "pipeline": [
@@ -1085,16 +1090,6 @@
     },
     {
       "icon": "🟡",
-      "clientId": "frnk",
-      "clientName": "FRNK Boutique",
-      "text": "Provide shareable link for welcome20 discount code to Kieran for embedding in all four welcome emails",
-      "complexity": "quick",
-      "deadline": null,
-      "urgent": true,
-      "source": "auto"
-    },
-    {
-      "icon": "🟢",
       "clientId": "outersignal",
       "clientName": "OuterSignal",
       "text": "Build Post-Purchase 2026 flow draft — due EOW Jun 20 (once assets arrive)",
@@ -1102,32 +1097,42 @@
       "deadline": null,
       "urgent": true,
       "source": "auto"
+    },
+    {
+      "icon": "🟡",
+      "clientId": "frnk",
+      "clientName": "FRNK Boutique",
+      "text": "Provide shareable link for discount code 'welcome20' (20% off) to Kieran for embedding in all four welcome emails",
+      "complexity": "quick",
+      "deadline": null,
+      "urgent": true,
+      "source": "auto"
     }
   ],
   "activity": [
     {
-      "ts": "2026-06-26T22:30:33.653081-07:00",
-      "text": "FRNK Boutique — FRNK Boutique welcome series ready for launch pending discount code link and email styling decisions"
+      "ts": "2026-06-27T05:30:21.377637-07:00",
+      "text": "FRNK Boutique — FRNK Boutique welcome series ready to launch pending discount code link and styling decisions."
     },
     {
-      "ts": "2026-06-26T22:30:38.002871-07:00",
+      "ts": "2026-06-27T05:30:23.013513-07:00",
+      "text": "Salehe Bembury — No actionable data found for Salehe Bembury in provided context."
+    },
+    {
+      "ts": "2026-06-27T05:30:25.779983-07:00",
+      "text": "OuterSignal — OuterSignal post-purchase email flow consolidation finalized with Orders=1 split logic and returning"
+    },
+    {
+      "ts": "2026-06-27T05:30:28.442516-07:00",
+      "text": "RVCA — Winback flow + review automations in progress; status unclear after 1pm call today."
+    },
+    {
+      "ts": "2026-06-27T05:30:30.592795-07:00",
+      "text": "Hiba Academy — Hiba Academy needs 'Founding vision to reality' draft by Monday for Jun 30 send. Harrison F. onboard"
+    },
+    {
+      "ts": "2026-06-27T05:30:34.893719-07:00",
       "text": "The Lab Life — July 4th brief ready for delivery; $5k invoice unpaid—work pauses Monday without payment commitment "
-    },
-    {
-      "ts": "2026-06-26T22:30:40.662232-07:00",
-      "text": "SFR Distillery — Post-kickoff: awaiting copy intake form & asset request delivery to Will Rogers; bi-weekly syncs lau"
-    },
-    {
-      "ts": "2026-06-26T22:30:42.301492-07:00",
-      "text": "Salehe Bembury — Insufficient data for Salehe Bembury. Email content references other clients (Puma, Sponge); no Sale"
-    },
-    {
-      "ts": "2026-06-26T22:30:44.019357-07:00",
-      "text": "OuterSignal — OuterSignal post-purchase email flow complete. Team finalized consolidated flow with Orders=1 split "
-    },
-    {
-      "ts": "2026-06-26T22:30:45.785967-07:00",
-      "text": "Hiba Academy — Hiba Academy needs draft of 'Founding vision to reality' content by Monday for Jun 30 send."
     }
   ]
 }
