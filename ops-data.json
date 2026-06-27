@@ -1,6 +1,6 @@
 {
   "meta": {
-    "lastUpdated": "2026-06-26T16:30:47.740422-07:00",
+    "lastUpdated": "2026-06-26T17:00:49.858988-07:00",
     "updatedBy": "Mollie (auto-v4)",
     "cacheBust": "2026-06-17T21:43:00-07:00"
   },
@@ -11,7 +11,7 @@
       "color": "#3B5BDB",
       "dot": "amber",
       "health": "In Progress",
-      "tagline": "Winback flow + review automations in progress; status unclear after 1pm call. AI Grow implementation gap identified.",
+      "tagline": "Winback + Review Automations in progress; status unclear after 1pm call. AI Grow implementation needed for subscriber growth.",
       "lastTouched": "2026-06-26",
       "tasks": [
         {
@@ -64,7 +64,7 @@
           "source": "manual"
         },
         {
-          "text": "Build and flip live winback flow with 3-offer split test",
+          "text": "Build winback flow with 3-offer split test and flip live",
           "owner": "DigitsUp",
           "complexity": "medium",
           "urgent": false,
@@ -78,7 +78,7 @@
           "source": "auto"
         },
         {
-          "text": "Implement AI Grow rules on sign-up units to optimize subscriber growth",
+          "text": "Implement AI Grow rules on sign-up units for subscriber optimization",
           "owner": "Client",
           "complexity": "medium",
           "urgent": false,
@@ -117,13 +117,13 @@
           "madeOn": "2026-06-17"
         }
       ],
-      "nextMilestone": "Winback flow live + review automations scoped",
+      "nextMilestone": "Winback flow build + live launch (date TBD)",
       "flags": [
-        "⚠️ Status unclear after 1pm call — needs confirmation",
-        "⚠️ AI Grow not currently implemented on sign-up units",
-        "→ Winback flow: 3-offer split test ready to build"
+        "⚠️ Status unclear after 1pm call — needs follow-up",
+        "⚠️ AI Grow not implemented on current sign-up units",
+        "📋 Winback flow requires 3-offer split test configuration"
       ],
-      "autoUpdatedAt": "2026-06-26T16:30:26.848999-07:00"
+      "autoUpdatedAt": "2026-06-26T17:00:38.694786-07:00"
     },
     {
       "id": "riversol",
@@ -297,7 +297,7 @@
       "color": "#2F9E44",
       "dot": "amber",
       "health": "Pivoting",
-      "tagline": "Monthly editorial newsletter launching with giveaway strategy shift to social. July-Aug product calendar locked (Mugs, Sale, Speaker pre-sale).",
+      "tagline": "Editorial newsletter launching with giveaway strategy shift to social. July-August product drops scheduled (mugs, sale, speakers).",
       "lastTouched": "2026-06-26",
       "tasks": [
         {
@@ -343,24 +343,45 @@
           "source": "manual"
         },
         {
-          "text": "Pitch new editorial newsletter concept to Salehe for approval",
+          "text": "Update sign-up form to collect SMS",
+          "owner": "Michael",
+          "complexity": "quick",
+          "urgent": false,
+          "source": "auto"
+        },
+        {
+          "text": "Add UTMs to Sponge link in welcome series",
+          "owner": "Michael",
+          "complexity": "quick",
+          "urgent": false,
+          "source": "auto"
+        },
+        {
+          "text": "Explore trial pricing for secondary email tool (e.g., Attentive)",
+          "owner": "Michael",
+          "complexity": "medium",
+          "urgent": false,
+          "source": "auto"
+        },
+        {
+          "text": "Add mug, sale, and speaker assets to shared Dropbox",
           "owner": "DigitsUp",
           "complexity": "quick",
           "urgent": false,
           "source": "auto"
         },
         {
-          "text": "Decide on next giveaway item for July 1st meeting",
-          "owner": "Client",
-          "complexity": "quick",
-          "urgent": true,
-          "source": "auto"
-        },
-        {
-          "text": "Review new welcome series emails in Figma",
+          "text": "Pitch new editorial newsletter concept to Salehe",
           "owner": "DigitsUp",
           "complexity": "medium",
           "urgent": false,
+          "source": "auto"
+        },
+        {
+          "text": "Build draft monthly editorial newsletter for review by July 6",
+          "owner": "Kieran",
+          "complexity": "medium",
+          "urgent": true,
           "source": "auto"
         }
       ],
@@ -384,13 +405,18 @@
           "source": "manual"
         },
         {
-          "party": "Salehe Bembury",
-          "item": "Approval on editorial newsletter concept",
+          "party": "Salehe",
+          "item": "Approval of editorial newsletter concept",
           "source": "auto"
         },
         {
           "party": "Team",
-          "item": "Next giveaway item decision by July 1st",
+          "item": "Decision on next giveaway item by July 1st meeting",
+          "source": "auto"
+        },
+        {
+          "party": "Team",
+          "item": "Review of new welcome series emails in Figma",
           "source": "auto"
         }
       ],
@@ -401,14 +427,13 @@
           "madeOn": "2026-06-17"
         }
       ],
-      "nextMilestone": "July 1st meeting — finalize next giveaway item; July 6 — editorial newsletter draft due for review",
+      "nextMilestone": "July 6 — Editorial newsletter draft ready for review; July 1 — Team meeting to decide next giveaway item",
       "flags": [
-        "⚠️ July 1st meeting deadline: giveaway item selection required",
-        "✅ July-Aug drop schedule confirmed (Mugs 7/30, Sale 8/13, Speaker 8/27)",
-        "⚠️ Klaviyo cost mitigation strategy in place—secondary email tool needed for Summer Archive Sale",
-        "✅ Giveaway strategy shift to social will grow active Klaviyo list via website resubscribes"
+        "⚠️ Klaviyo contract cost avoidance strategy requires secondary email tool setup before Aug 13 Summer Archive Sale",
+        "⚠️ Giveaway strategy shift requires social media announcement coordination",
+        "✅ Packed Q3 product schedule confirms market momentum (mugs Jul 30, sale Aug 13, speakers Aug 27)"
       ],
-      "autoUpdatedAt": "2026-06-26T16:30:36.270293-07:00"
+      "autoUpdatedAt": "2026-06-26T17:00:49.858110-07:00"
     },
     {
       "id": "the-lab",
@@ -416,7 +441,7 @@
       "color": "#F08C00",
       "dot": "red",
       "health": "On Track",
-      "tagline": "July 4th brief ready for delivery; no-show nurture & promo campaign in build phase. $5k invoice unpaid — work pauses Monday without payment commitment.",
+      "tagline": "July 4th brief ready for delivery; SMS/email nurture sequences in build phase. Critical: $5k invoice unpaid—work pauses Monday without payment commitment.",
       "lastTouched": "2026-06-26",
       "tasks": [
         {
@@ -476,7 +501,7 @@
           "source": "auto"
         },
         {
-          "text": "Build independent no-show email/SMS nurture sequence in GoHighLevel (30-45 day automated flow)",
+          "text": "Build independent no-show email/SMS nurture sequence in GoHighLevel (30–45 day flow)",
           "owner": "Michael",
           "complexity": "heavy",
           "urgent": false,
@@ -497,8 +522,8 @@
           "source": "auto"
         },
         {
-          "text": "Perform manual Spark-to-GoHighLevel member sync Monday morning before promo launch (critical data sync to exclude current members)",
-          "owner": "Victoria",
+          "text": "Perform manual Spark-to-GoHighLevel member sync Monday morning before promo launch to prevent sending offer to current members",
+          "owner": "DigitsUp",
           "complexity": "medium",
           "urgent": true,
           "source": "auto"
@@ -506,18 +531,13 @@
       ],
       "waitingOn": [
         {
-          "party": "Travis (Client)",
-          "item": "$5k invoice payment commitment — work pauses Monday without it",
+          "party": "Client (Travis)",
+          "item": "$5k invoice payment—work pauses Monday without commitment",
           "source": "auto"
         },
         {
           "party": "Michael",
-          "item": "Monday 8:30–9:30 AM PST review meeting scheduled",
-          "source": "auto"
-        },
-        {
-          "party": "Marl",
-          "item": "Confirm single email design delegation for July 4th promo (due Monday for client meeting)",
+          "item": "Monday 8:30–9:30 AM PST review meeting scheduled (data sync verification before promo launch)",
           "source": "auto"
         }
       ],
@@ -528,15 +548,15 @@
           "madeOn": "2026-06-03"
         }
       ],
-      "nextMilestone": "Monday 2026-06-28 — 8:30 AM review meeting + promo launch (pending payment + email design completion)",
+      "nextMilestone": "Monday 2026-06-30: 8:30–9:30 AM PST—member sync verification + July 4th promo campaign launch",
       "flags": [
-        "⚠️ BLOCKED: $5k invoice unpaid — DigitsUp will not subsidize; work pauses Monday without commitment",
-        "⚠️ URGENT: July 4th brief ready but needs URL/phone insertion before RV handoff",
-        "✅ Promo approved: 50% off first month + no initiation fee for 19k OldLead segment",
-        "⚠️ SMS throttling required: batch delivery (e.g., 100/hr) to manage GoHighLevel 700/day limit",
-        "⚠️ Critical: Data sync Monday morning must prevent sending promo to current members"
+        "⚠️ BLOCKER: $5k invoice unpaid. DigitsUp will not subsidize partnership issues—work pauses Monday.",
+        "⚠️ SMS throttling required: batch at 100/hr to respect GoHighLevel's 700/day limit and sales team call capacity.",
+        "⚠️ Critical data sync Monday morning required to prevent promo offer reaching current members.",
+        "✅ July 4th promo approved: 50% off first month + no initiation fee targeting 19k OldLead segment.",
+        "✅ Direct GoHighLevel rebooking link + sticky contact tech will simplify no-show nurture UX."
       ],
-      "autoUpdatedAt": "2026-06-26T16:30:47.739565-07:00"
+      "autoUpdatedAt": "2026-06-26T17:00:28.199264-07:00"
     },
     {
       "id": "epicure",
@@ -650,7 +670,7 @@
       "color": "#E64980",
       "dot": "amber",
       "health": "On Track",
-      "tagline": "Hiba Academy needs 'Founding vision to reality' draft before Monday for Jun 30 send. On track pending content completion.",
+      "tagline": "Draft needed for Jun 30 'Founding vision to reality' send before Monday. On track for weekend deadline.",
       "lastTouched": "2026-06-26",
       "tasks": [
         {
@@ -668,7 +688,7 @@
           "source": "manual"
         },
         {
-          "text": "Draft 'Founding vision to reality' content for Hiba Academy Jun 30 send",
+          "text": "Draft 'Founding vision to reality' content for Hiba Jun 30 send",
           "owner": "Michael",
           "complexity": "medium",
           "urgent": true,
@@ -697,10 +717,10 @@
       ],
       "nextMilestone": "Jun 30 send — 'Founding vision to reality'",
       "flags": [
-        "⚠️ Draft deadline: before Monday (Jun 28) for Jun 30 send",
-        "Jun 30 send date confirmed"
+        "⚠️ Draft deadline: must complete before Monday for Jun 30 send",
+        "Jun 30 send campaign in progress"
       ],
-      "autoUpdatedAt": "2026-06-26T16:30:31.661504-07:00"
+      "autoUpdatedAt": "2026-06-26T17:00:40.435041-07:00"
     },
     {
       "id": "outersignal",
@@ -708,7 +728,7 @@
       "color": "#5C7CFA",
       "dot": "green",
       "health": "Waiting on Client",
-      "tagline": "Post-purchase email flow finalized with consolidated logic. New/returning customer split implemented; existing app users routed to $30 off lane.",
+      "tagline": "Post-purchase email flow finalized with consolidated logic. New vs returning customer split implemented with existing app user fix.",
       "lastTouched": "2026-06-26",
       "tasks": [
         {
@@ -740,14 +760,14 @@
           "source": "auto"
         },
         {
-          "text": "Apply fix to force existing app users into $30 off lane (prevent 10% off app download offer)",
-          "owner": "DigitsUp",
+          "text": "Force existing app users into $30 off lane to prevent duplicate 10% off app download offer",
+          "owner": "Michael",
           "complexity": "quick",
           "urgent": false,
           "source": "auto"
         },
         {
-          "text": "Replace 'New Arrivals' email with 'Points Unlocked' email (send ~17 days post-purchase)",
+          "text": "Deploy 'Points Unlocked' email to replace 'New Arrivals' email (~17 days post-purchase)",
           "owner": "Kieran",
           "complexity": "medium",
           "urgent": false,
@@ -786,13 +806,14 @@
           "madeOn": "2026-06-17"
         }
       ],
-      "nextMilestone": "Implementation of consolidated post-purchase email flow with new logic splits",
+      "nextMilestone": "Post-purchase flow deployment and monitoring",
       "flags": [
-        "✅ Flow logic finalized at Fathom meeting (2026-06-25)",
-        "✅ Michael built flow, Kieran built emails, Victoria handled briefs/copy",
-        "✅ 10:30 call completed with Sam Pick (Director of E-commerce, Christy Dawn)"
+        "✅ Flow logic finalized with key customer segmentation",
+        "✅ Email templates designed (Kieran)",
+        "✅ Strategy briefs and copy completed (Victoria)",
+        "⚠️ Implementation of app user fix pending deployment"
       ],
-      "autoUpdatedAt": "2026-06-26T16:30:22.905114-07:00"
+      "autoUpdatedAt": "2026-06-26T17:00:34.498021-07:00"
     },
     {
       "id": "frnk",
@@ -800,7 +821,7 @@
       "color": "#E8845C",
       "dot": "amber",
       "health": "Blocked",
-      "tagline": "FRNK Boutique welcome series ready for launch pending discount code link and styling decisions on font size/CTA buttons.",
+      "tagline": "Welcome email series ready for launch pending discount code link and styling decisions (font size & CTA buttons).",
       "lastTouched": "2026-06-26",
       "tasks": [
         {
@@ -839,7 +860,7 @@
           "source": "auto"
         },
         {
-          "text": "Embed discount code link in all four welcome emails once link is provided",
+          "text": "Embed discount code link in all four welcome series emails once link is provided",
           "owner": "Kieran",
           "complexity": "quick",
           "urgent": true,
@@ -859,20 +880,20 @@
           "source": "auto"
         },
         {
-          "party": "DigitsUp",
-          "item": "Final styling decisions on font size and CTA buttons for welcome series",
+          "party": "DigitsUp Team",
+          "item": "Decision on email font size and CTA button styling standardization",
           "source": "auto"
         }
       ],
       "promises": [],
-      "nextMilestone": "Launch FRNK Boutique welcome email series (pending code link and styling decisions)",
+      "nextMilestone": "Welcome email series launch (pending code link & styling finalization)",
       "flags": [
-        "✅ Welcome series content finalized and ready for launch",
+        "✅ Welcome series content complete and ready",
         "✅ Discount code confirmed: welcome20 for 20% off",
-        "⚠️ Launch blocked on two final items: discount code link and styling sign-off",
-        "⚠️ All four emails need discount code embedded before going live"
+        "⚠️ Launch blocked on two final items: discount link + styling decisions",
+        "⚠️ All four emails pending code embed before go-live"
       ],
-      "autoUpdatedAt": "2026-06-26T16:30:39.854066-07:00"
+      "autoUpdatedAt": "2026-06-26T17:00:44.224476-07:00"
     },
     {
       "id": "sfr",
@@ -880,7 +901,7 @@
       "color": "#845EF7",
       "dot": "amber",
       "health": "Starting Jun 22",
-      "tagline": "Post-kickoff follow-up underway. Awaiting copy intake form delivery and bi-weekly cadence launch.",
+      "tagline": "Post-kickoff follow-up underway. Awaiting copy intake form and asset request delivery to Will Rogers, with bi-weekly syncs launching Jul 6.",
       "lastTouched": "2026-06-26",
       "tasks": [
         {
@@ -891,14 +912,21 @@
           "source": "manual"
         },
         {
-          "text": "Send copy intake form + asset request to Will Rogers",
+          "text": "Send copy intake form to Will Rogers",
           "owner": "DigitsUp",
           "complexity": "quick",
           "urgent": false,
           "source": "auto"
         },
         {
-          "text": "Schedule bi-weekly check-ins: Mondays 2pm ET starting Jul 6",
+          "text": "Send asset request to Will Rogers",
+          "owner": "DigitsUp",
+          "complexity": "quick",
+          "urgent": false,
+          "source": "auto"
+        },
+        {
+          "text": "Schedule bi-weekly sync meetings starting Jul 6, Mondays 2pm ET",
           "owner": "DigitsUp",
           "complexity": "quick",
           "urgent": false,
@@ -914,17 +942,22 @@
         },
         {
           "party": "Will Rogers",
-          "item": "Copy intake form completion + asset submission",
+          "item": "Completion and return of copy intake form",
+          "source": "auto"
+        },
+        {
+          "party": "Will Rogers",
+          "item": "Submission of assets per request",
           "source": "auto"
         }
       ],
       "promises": [],
-      "nextMilestone": "First bi-weekly check-in: Monday, July 6, 2026 at 2pm ET",
+      "nextMilestone": "Jul 6 — First bi-weekly sync (Mondays 2pm ET)",
       "flags": [
-        "Kickoff completed Jun 25 — momentum to maintain",
-        "Bi-weekly cadence starts Jul 6 (Mondays 2pm ET)"
+        "⚠️ Kickoff completed Jun 25 — follow-up items in flight",
+        "⚠️ Awaiting client submission of intake form and assets"
       ],
-      "autoUpdatedAt": "2026-06-26T16:30:29.409034-07:00"
+      "autoUpdatedAt": "2026-06-26T17:00:31.060950-07:00"
     }
   ],
   "pipeline": [
@@ -1070,7 +1103,7 @@
       "clientName": "The Lab Life",
       "text": "Confirm Month 1 completion with Travis + Ally by Jun 19",
       "complexity": "quick",
-      "deadline": "2026-06-28",
+      "deadline": "2026-06-30",
       "urgent": true,
       "source": "auto"
     },
@@ -1097,28 +1130,28 @@
   ],
   "activity": [
     {
-      "ts": "2026-06-26T16:30:22.905222-07:00",
-      "text": "OuterSignal — Post-purchase email flow finalized with consolidated logic. New/returning customer split implemented"
+      "ts": "2026-06-26T17:00:28.199367-07:00",
+      "text": "The Lab Life — July 4th brief ready for delivery; SMS/email nurture sequences in build phase. Critical: $5k invoice"
     },
     {
-      "ts": "2026-06-26T16:30:26.849154-07:00",
-      "text": "RVCA — Winback flow + review automations in progress; status unclear after 1pm call. AI Grow implementation"
+      "ts": "2026-06-26T17:00:31.061046-07:00",
+      "text": "SFR Distillery — Post-kickoff follow-up underway. Awaiting copy intake form and asset request delivery to Will Rogers"
     },
     {
-      "ts": "2026-06-26T16:30:29.409149-07:00",
-      "text": "SFR Distillery — Post-kickoff follow-up underway. Awaiting copy intake form delivery and bi-weekly cadence launch."
+      "ts": "2026-06-26T17:00:34.498130-07:00",
+      "text": "OuterSignal — Post-purchase email flow finalized with consolidated logic. New vs returning customer split implemen"
     },
     {
-      "ts": "2026-06-26T16:30:31.661619-07:00",
-      "text": "Hiba Academy — Hiba Academy needs 'Founding vision to reality' draft before Monday for Jun 30 send. On track pendin"
+      "ts": "2026-06-26T17:00:38.694874-07:00",
+      "text": "RVCA — Winback + Review Automations in progress; status unclear after 1pm call. AI Grow implementation need"
     },
     {
-      "ts": "2026-06-26T16:30:36.270396-07:00",
-      "text": "Salehe Bembury — Monthly editorial newsletter launching with giveaway strategy shift to social. July-Aug product cale"
+      "ts": "2026-06-26T17:00:40.435137-07:00",
+      "text": "Hiba Academy — Draft needed for Jun 30 'Founding vision to reality' send before Monday. On track for weekend deadli"
     },
     {
-      "ts": "2026-06-26T16:30:39.854176-07:00",
-      "text": "FRNK Boutique — FRNK Boutique welcome series ready for launch pending discount code link and styling decisions on fo"
+      "ts": "2026-06-26T17:00:44.224585-07:00",
+      "text": "FRNK Boutique — Welcome email series ready for launch pending discount code link and styling decisions (font size & "
     }
   ]
 }
