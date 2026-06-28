@@ -1,6 +1,6 @@
 {
   "meta": {
-    "lastUpdated": "2026-06-28T10:30:26.131753-07:00",
+    "lastUpdated": "2026-06-28T16:30:26.593781-07:00",
     "updatedBy": "Mollie (auto-v4)",
     "cacheBust": "2026-06-17T21:43:00-07:00"
   },
@@ -11,7 +11,7 @@
       "color": "#3B5BDB",
       "dot": "amber",
       "health": "In Progress",
-      "tagline": "Winback + Review Automations in progress. Status unclear post-1pm call—needs clarification on next steps.",
+      "tagline": "Winback flow ready to build & flip live with 3-offer split test. Review automations need scoping. Status clarity needed post-1pm call.",
       "lastTouched": "2026-06-28",
       "tasks": [
         {
@@ -71,15 +71,15 @@
           "source": "auto"
         },
         {
-          "text": "Flip winback flow live once build complete",
+          "text": "Flip winback flow live",
           "owner": "DigitsUp",
           "complexity": "quick",
           "urgent": false,
           "source": "auto"
         },
         {
-          "text": "Scope review automations work",
-          "owner": "DigitsUp",
+          "text": "Scope review automations",
+          "owner": "Michael",
           "complexity": "medium",
           "urgent": false,
           "source": "auto"
@@ -106,7 +106,7 @@
         },
         {
           "party": "Michael",
-          "item": "Clarification on status and next steps post-1pm call",
+          "item": "Status clarity post-1pm call regarding winback + review automations",
           "source": "auto"
         }
       ],
@@ -119,11 +119,11 @@
       ],
       "nextMilestone": "Winback flow live with split test",
       "flags": [
-        "⚠️ Status unclear after 1pm call—needs follow-up",
-        "Winback: 3-offer split test structure defined",
-        "Review automations: scope phase initiated"
+        "⚠️ Status unclear after 1pm call — needs follow-up",
+        "✅ Winback flow ready to proceed (3-offer split test defined)",
+        "⚠️ Review automations scope pending"
       ],
-      "autoUpdatedAt": "2026-06-28T10:30:17.325790-07:00"
+      "autoUpdatedAt": "2026-06-28T16:30:24.341036-07:00"
     },
     {
       "id": "riversol",
@@ -439,7 +439,7 @@
       "color": "#F08C00",
       "dot": "amber",
       "health": "On Track",
-      "tagline": "July 4th brief complete with copy & design. Michael needs to insert booking form URL + phone, drop in Marl's ticket, send to RV.",
+      "tagline": "July 4th brief written and ready. Michael needs to insert booking form URL + phone number, drop in Marl's ticket, and send to RV.",
       "lastTouched": "2026-06-28",
       "tasks": [
         {
@@ -499,7 +499,7 @@
           "source": "auto"
         },
         {
-          "text": "Send full brief to RV",
+          "text": "Send full July 4th brief to RV",
           "owner": "Michael",
           "complexity": "quick",
           "urgent": true,
@@ -509,7 +509,7 @@
       "waitingOn": [
         {
           "party": "Michael",
-          "item": "Booking form URL + phone number insertion and brief distribution",
+          "item": "Booking form URL and phone number insertion",
           "source": "auto"
         }
       ],
@@ -520,12 +520,12 @@
           "madeOn": "2026-06-03"
         }
       ],
-      "nextMilestone": "July 4th brief finalized and delivered to RV",
+      "nextMilestone": "July 4th brief delivery to RV and client",
       "flags": [
-        "✅ July 4th brief + copy + design brief written and ready",
-        "⚠️ Critical details (booking form URL, phone number) still need insertion before distribution"
+        "✅ Brief + copy + design brief written and ready",
+        "⚠️ Three critical handoff tasks pending Michael action"
       ],
-      "autoUpdatedAt": "2026-06-28T10:30:20.805127-07:00"
+      "autoUpdatedAt": "2026-06-28T16:30:17.787602-07:00"
     },
     {
       "id": "epicure",
@@ -639,7 +639,7 @@
       "color": "#E64980",
       "dot": "amber",
       "health": "On Track",
-      "tagline": "Hiba Academy needs 'Founding vision to reality' draft before Monday. Harrison F. onboarding confirmation pending.",
+      "tagline": "Hiba Academy needs 'Founding vision to reality' draft before Monday for Jun 30 send. Harrison F. onboarding confirmation due by Jun 27.",
       "lastTouched": "2026-06-28",
       "tasks": [
         {
@@ -657,14 +657,14 @@
           "source": "manual"
         },
         {
-          "text": "Draft 'Founding vision to reality' content for Hiba Jun 30 send",
+          "text": "Draft 'Founding vision to reality' messaging for Hiba Academy Jun 30 send",
           "owner": "Michael",
           "complexity": "medium",
           "urgent": true,
           "source": "auto"
         },
         {
-          "text": "Confirm Harrison F. onboarding completion by Jun 27",
+          "text": "Confirm Harrison F. onboarding complete for Hiba Academy",
           "owner": "Michael",
           "complexity": "quick",
           "urgent": true,
@@ -691,12 +691,12 @@
           "madeOn": "2026-06-11"
         }
       ],
-      "nextMilestone": "Hiba Jun 30 send - 'Founding vision to reality'",
+      "nextMilestone": "Hiba Academy messaging send Jun 30",
       "flags": [
-        "⚠️ Draft deadline: before Monday for Hiba Jun 30 send",
-        "⚠️ Harrison F. onboarding confirmation needed by Jun 27"
+        "⚠️ Draft deadline: before Monday (Jun 28 context, send Jun 30)",
+        "⚠️ Onboarding confirmation due Jun 27 — may be overdue"
       ],
-      "autoUpdatedAt": "2026-06-28T10:30:23.263525-07:00"
+      "autoUpdatedAt": "2026-06-28T16:30:26.592918-07:00"
     },
     {
       "id": "outersignal",
@@ -795,7 +795,7 @@
       "color": "#E8845C",
       "dot": "grey",
       "health": "Blocked",
-      "tagline": "No FRNK Boutique data found in provided context.",
+      "tagline": "No FRNK Boutique-specific updates identified in provided context.",
       "lastTouched": "2026-06-28",
       "tasks": [
         {
@@ -860,11 +860,11 @@
         }
       ],
       "promises": [],
-      "nextMilestone": "Unknown",
+      "nextMilestone": "",
       "flags": [
-        "No explicit FRNK Boutique mentions in source material"
+        "No FRNK Boutique data in source materials"
       ],
-      "autoUpdatedAt": "2026-06-28T05:30:34.916995-07:00"
+      "autoUpdatedAt": "2026-06-28T16:30:21.473737-07:00"
     },
     {
       "id": "sfr",
@@ -872,7 +872,7 @@
       "color": "#845EF7",
       "dot": "amber",
       "health": "Starting Jun 22",
-      "tagline": "SFR Distillery kickoff follow-up in progress. Awaiting copy intake form delivery and bi-weekly meeting schedule confirmation.",
+      "tagline": "Post-kickoff follow-up in progress. Awaiting copy intake form delivery and bi-weekly cadence launch on Jul 6.",
       "lastTouched": "2026-06-28",
       "tasks": [
         {
@@ -890,7 +890,7 @@
           "source": "auto"
         },
         {
-          "text": "Schedule bi-weekly meetings for Mondays 2pm ET starting Jul 6",
+          "text": "Schedule bi-weekly standing meeting for Mondays 2pm ET starting Jul 6",
           "owner": "DigitsUp",
           "complexity": "quick",
           "urgent": false,
@@ -906,22 +906,17 @@
         },
         {
           "party": "Will Rogers",
-          "item": "Copy intake form + asset request completion",
-          "source": "auto"
-        },
-        {
-          "party": "Will Rogers",
-          "item": "Confirmation of bi-weekly Monday 2pm ET meeting schedule",
+          "item": "Completed copy intake form + asset request response",
           "source": "auto"
         }
       ],
       "promises": [],
-      "nextMilestone": "First bi-weekly meeting scheduled for Monday, Jul 6, 2026 at 2pm ET",
+      "nextMilestone": "Jul 6 — First bi-weekly standing meeting",
       "flags": [
-        "⚠️ Kickoff follow-up items pending delivery",
-        "⚠️ Bi-weekly cadence (Mondays 2pm ET) awaiting confirmation"
+        "Kickoff completed Jun 25 — follow-up items tracked",
+        "Bi-weekly cadence starts Jul 6 (Mondays 2pm ET)"
       ],
-      "autoUpdatedAt": "2026-06-28T10:30:26.130903-07:00"
+      "autoUpdatedAt": "2026-06-28T16:30:20.244184-07:00"
     }
   ],
   "pipeline": [
@@ -1094,28 +1089,28 @@
   ],
   "activity": [
     {
+      "ts": "2026-06-28T16:30:17.787705-07:00",
+      "text": "The Lab Life — July 4th brief written and ready. Michael needs to insert booking form URL + phone number, drop in M"
+    },
+    {
+      "ts": "2026-06-28T16:30:20.244295-07:00",
+      "text": "SFR Distillery — Post-kickoff follow-up in progress. Awaiting copy intake form delivery and bi-weekly cadence launch "
+    },
+    {
+      "ts": "2026-06-28T16:30:21.473837-07:00",
+      "text": "FRNK Boutique — No FRNK Boutique-specific updates identified in provided context."
+    },
+    {
+      "ts": "2026-06-28T16:30:24.341141-07:00",
+      "text": "RVCA — Winback flow ready to build & flip live with 3-offer split test. Review automations need scoping. St"
+    },
+    {
+      "ts": "2026-06-28T16:30:26.593016-07:00",
+      "text": "Hiba Academy — Hiba Academy needs 'Founding vision to reality' draft before Monday for Jun 30 send. Harrison F. onb"
+    },
+    {
       "ts": "2026-06-28T10:30:17.325916-07:00",
       "text": "RVCA — Winback + Review Automations in progress. Status unclear post-1pm call—needs clarification on next s"
-    },
-    {
-      "ts": "2026-06-28T10:30:20.805231-07:00",
-      "text": "The Lab Life — July 4th brief complete with copy & design. Michael needs to insert booking form URL + phone, drop i"
-    },
-    {
-      "ts": "2026-06-28T10:30:23.263621-07:00",
-      "text": "Hiba Academy — Hiba Academy needs 'Founding vision to reality' draft before Monday. Harrison F. onboarding confirma"
-    },
-    {
-      "ts": "2026-06-28T10:30:26.131001-07:00",
-      "text": "SFR Distillery — SFR Distillery kickoff follow-up in progress. Awaiting copy intake form delivery and bi-weekly meeti"
-    },
-    {
-      "ts": "2026-06-28T05:30:26.554102-07:00",
-      "text": "The Lab Life — July 4th brief ready for delivery; $5k invoice unpaid and blocking work Monday unless Travis commits"
-    },
-    {
-      "ts": "2026-06-28T05:30:31.335961-07:00",
-      "text": "Hiba Academy — Hiba Academy needs draft of 'Founding vision to reality' messaging before Monday for Jun 30 send."
     }
   ]
 }
