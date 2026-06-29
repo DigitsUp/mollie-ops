@@ -1,6 +1,6 @@
 {
   "meta": {
-    "lastUpdated": "2026-06-28T16:30:26.593781-07:00",
+    "lastUpdated": "2026-06-28T22:30:55.038077-07:00",
     "updatedBy": "Mollie (auto-v4)",
     "cacheBust": "2026-06-17T21:43:00-07:00"
   },
@@ -11,7 +11,7 @@
       "color": "#3B5BDB",
       "dot": "amber",
       "health": "In Progress",
-      "tagline": "Winback flow ready to build & flip live with 3-offer split test. Review automations need scoping. Status clarity needed post-1pm call.",
+      "tagline": "RVCA winback + review automations status unclear since Jun 25 call — needs clarification on next steps.",
       "lastTouched": "2026-06-28",
       "tasks": [
         {
@@ -106,7 +106,7 @@
         },
         {
           "party": "Michael",
-          "item": "Status clarity post-1pm call regarding winback + review automations",
+          "item": "Clarification on RVCA winback + review automations status following Jun 25 call",
           "source": "auto"
         }
       ],
@@ -117,13 +117,11 @@
           "madeOn": "2026-06-17"
         }
       ],
-      "nextMilestone": "Winback flow live with split test",
+      "nextMilestone": "Status clarification call with Michael",
       "flags": [
-        "⚠️ Status unclear after 1pm call — needs follow-up",
-        "✅ Winback flow ready to proceed (3-offer split test defined)",
-        "⚠️ Review automations scope pending"
+        "⚠️ Status unclear from Jun 25 call — requires follow-up"
       ],
-      "autoUpdatedAt": "2026-06-28T16:30:24.341036-07:00"
+      "autoUpdatedAt": "2026-06-28T22:30:55.037157-07:00"
     },
     {
       "id": "riversol",
@@ -131,8 +129,8 @@
       "color": "#1098AD",
       "dot": "amber",
       "health": "Active",
-      "tagline": "Report draft built but not validated; accuracy issues need fixing. Owed: buyer behavior analysis. Winback Samplers Email 1 upgrade this week.",
-      "lastTouched": "2026-06-25",
+      "tagline": "Riversol flows not started — priority review needed. Check context.md for details.",
+      "lastTouched": "2026-06-28",
       "tasks": [
         {
           "text": "Provide Figma access to Riversol team; request header + copy feedback on replenishment mockups",
@@ -205,38 +203,17 @@
           "source": "manual"
         },
         {
-          "text": "Working session with Michael to build Klaviyo reporting skill properly",
-          "owner": "DigitsUp",
-          "complexity": "medium",
-          "urgent": false,
-          "source": "auto"
-        },
-        {
-          "text": "Upgrade Winback Samplers Email 1 to 30% off",
+          "text": "Review Riversol context.md for flow requirements and blockers",
           "owner": "Michael",
           "complexity": "quick",
           "urgent": true,
           "source": "auto"
         },
         {
-          "text": "Deliver buyer behavior analysis: AOV + time-to-purchase comparison (old vs new sample flow)",
-          "owner": "DigitsUp",
-          "complexity": "heavy",
-          "urgent": true,
-          "source": "auto"
-        },
-        {
-          "text": "Validate and fix accuracy issues in report draft before sharing",
+          "text": "Initiate Riversol flows",
           "owner": "DigitsUp",
           "complexity": "medium",
-          "urgent": false,
-          "source": "auto"
-        },
-        {
-          "text": "Update Riversol context.md with latest data and decisions",
-          "owner": "DigitsUp",
-          "complexity": "quick",
-          "urgent": false,
+          "urgent": true,
           "source": "auto"
         }
       ],
@@ -282,14 +259,12 @@
           "madeOn": "2026-06-17"
         }
       ],
-      "nextMilestone": "Working session to fix report + build Klaviyo skill; deliver buyer behavior analysis",
+      "nextMilestone": "Flow initiation",
       "flags": [
-        "⚠️ Report built Jun 24 but NOT shared — accuracy issues flagged",
-        "⚠️ Buyer behavior analysis OWED — critical for winback validation",
-        "✅ Callie-output filing completed; Riversol report now in clients/riversol/reports/",
-        "⚠️ Winback Samplers Email 1 upgrade must happen this week (Michael confirmed)"
+        "⚠️ Flows not started — flagged as priority",
+        "⚠️ Requires context.md review before proceeding"
       ],
-      "autoUpdatedAt": "2026-06-25T22:30:46.800317-07:00"
+      "autoUpdatedAt": "2026-06-28T22:30:53.418247-07:00"
     },
     {
       "id": "salehe",
@@ -439,7 +414,7 @@
       "color": "#F08C00",
       "dot": "amber",
       "health": "On Track",
-      "tagline": "July 4th brief written and ready. Michael needs to insert booking form URL + phone number, drop in Marl's ticket, and send to RV.",
+      "tagline": "The Lab Life x DigitsUp partnership at 8:30am checkpoint — need to review SESSION.md for current status.",
       "lastTouched": "2026-06-28",
       "tasks": [
         {
@@ -485,21 +460,7 @@
           "source": "manual"
         },
         {
-          "text": "Insert booking form URL + phone number into July 4th brief",
-          "owner": "Michael",
-          "complexity": "quick",
-          "urgent": true,
-          "source": "auto"
-        },
-        {
-          "text": "Drop completed brief into Marl's ticket",
-          "owner": "Michael",
-          "complexity": "quick",
-          "urgent": true,
-          "source": "auto"
-        },
-        {
-          "text": "Send full July 4th brief to RV",
+          "text": "Check SESSION.md to confirm current status of The Lab Life x DigitsUp partnership",
           "owner": "Michael",
           "complexity": "quick",
           "urgent": true,
@@ -520,12 +481,11 @@
           "madeOn": "2026-06-03"
         }
       ],
-      "nextMilestone": "July 4th brief delivery to RV and client",
+      "nextMilestone": "8:30am status checkpoint — The Lab Life x DigitsUp",
       "flags": [
-        "✅ Brief + copy + design brief written and ready",
-        "⚠️ Three critical handoff tasks pending Michael action"
+        "⚠️ Priority #2 task requires immediate SESSION.md review at 8:30am"
       ],
-      "autoUpdatedAt": "2026-06-28T16:30:17.787602-07:00"
+      "autoUpdatedAt": "2026-06-28T22:30:45.922843-07:00"
     },
     {
       "id": "epicure",
@@ -639,7 +599,7 @@
       "color": "#E64980",
       "dot": "amber",
       "health": "On Track",
-      "tagline": "Hiba Academy needs 'Founding vision to reality' draft before Monday for Jun 30 send. Harrison F. onboarding confirmation due by Jun 27.",
+      "tagline": "Hiba Academy needs 'Founding vision to reality' draft by June 30. Waiting on David's input.",
       "lastTouched": "2026-06-28",
       "tasks": [
         {
@@ -657,14 +617,14 @@
           "source": "manual"
         },
         {
-          "text": "Draft 'Founding vision to reality' messaging for Hiba Academy Jun 30 send",
+          "text": "Get 'Founding vision to reality' draft completed and ready for June 30 send",
           "owner": "Michael",
           "complexity": "medium",
           "urgent": true,
           "source": "auto"
         },
         {
-          "text": "Confirm Harrison F. onboarding complete for Hiba Academy",
+          "text": "Check with David on draft status for Hiba Academy June 30 deliverable",
           "owner": "Michael",
           "complexity": "quick",
           "urgent": true,
@@ -679,8 +639,8 @@
           "source": "manual"
         },
         {
-          "party": "Michael",
-          "item": "Draft messaging for Hiba Academy Jun 30 send",
+          "party": "David",
+          "item": "'Founding vision to reality' draft content/input",
           "source": "auto"
         }
       ],
@@ -691,12 +651,12 @@
           "madeOn": "2026-06-11"
         }
       ],
-      "nextMilestone": "Hiba Academy messaging send Jun 30",
+      "nextMilestone": "June 30 — 'Founding vision to reality' draft send",
       "flags": [
-        "⚠️ Draft deadline: before Monday (Jun 28 context, send Jun 30)",
-        "⚠️ Onboarding confirmation due Jun 27 — may be overdue"
+        "⚠️ June 30 deadline is in 2 days — high urgency",
+        "⚠️ Draft status unclear — needs immediate check with David"
       ],
-      "autoUpdatedAt": "2026-06-28T16:30:26.592918-07:00"
+      "autoUpdatedAt": "2026-06-28T22:30:49.918996-07:00"
     },
     {
       "id": "outersignal",
@@ -795,7 +755,7 @@
       "color": "#E8845C",
       "dot": "grey",
       "health": "Blocked",
-      "tagline": "No FRNK Boutique-specific updates identified in provided context.",
+      "tagline": "No FRNK Boutique-specific updates in current context.",
       "lastTouched": "2026-06-28",
       "tasks": [
         {
@@ -860,11 +820,11 @@
         }
       ],
       "promises": [],
-      "nextMilestone": "",
+      "nextMilestone": "Awaiting FRNK Boutique project information",
       "flags": [
-        "No FRNK Boutique data in source materials"
+        "No FRNK Boutique data found in provided context"
       ],
-      "autoUpdatedAt": "2026-06-28T16:30:21.473737-07:00"
+      "autoUpdatedAt": "2026-06-28T22:30:47.151553-07:00"
     },
     {
       "id": "sfr",
@@ -1062,7 +1022,7 @@
       "clientName": "The Lab Life",
       "text": "Confirm Month 1 completion with Travis + Ally by Jun 19",
       "complexity": "quick",
-      "deadline": "July 4",
+      "deadline": null,
       "urgent": true,
       "source": "auto"
     },
@@ -1089,28 +1049,28 @@
   ],
   "activity": [
     {
+      "ts": "2026-06-28T22:30:45.922902-07:00",
+      "text": "The Lab Life — The Lab Life x DigitsUp partnership at 8:30am checkpoint — need to review SESSION.md for current sta"
+    },
+    {
+      "ts": "2026-06-28T22:30:47.151655-07:00",
+      "text": "FRNK Boutique — No FRNK Boutique-specific updates in current context."
+    },
+    {
+      "ts": "2026-06-28T22:30:49.919095-07:00",
+      "text": "Hiba Academy — Hiba Academy needs 'Founding vision to reality' draft by June 30. Waiting on David's input."
+    },
+    {
+      "ts": "2026-06-28T22:30:53.418359-07:00",
+      "text": "Riversol — Riversol flows not started — priority review needed. Check context.md for details."
+    },
+    {
+      "ts": "2026-06-28T22:30:55.037261-07:00",
+      "text": "RVCA — RVCA winback + review automations status unclear since Jun 25 call — needs clarification on next ste"
+    },
+    {
       "ts": "2026-06-28T16:30:17.787705-07:00",
       "text": "The Lab Life — July 4th brief written and ready. Michael needs to insert booking form URL + phone number, drop in M"
-    },
-    {
-      "ts": "2026-06-28T16:30:20.244295-07:00",
-      "text": "SFR Distillery — Post-kickoff follow-up in progress. Awaiting copy intake form delivery and bi-weekly cadence launch "
-    },
-    {
-      "ts": "2026-06-28T16:30:21.473837-07:00",
-      "text": "FRNK Boutique — No FRNK Boutique-specific updates identified in provided context."
-    },
-    {
-      "ts": "2026-06-28T16:30:24.341141-07:00",
-      "text": "RVCA — Winback flow ready to build & flip live with 3-offer split test. Review automations need scoping. St"
-    },
-    {
-      "ts": "2026-06-28T16:30:26.593016-07:00",
-      "text": "Hiba Academy — Hiba Academy needs 'Founding vision to reality' draft before Monday for Jun 30 send. Harrison F. onb"
-    },
-    {
-      "ts": "2026-06-28T10:30:17.325916-07:00",
-      "text": "RVCA — Winback + Review Automations in progress. Status unclear post-1pm call—needs clarification on next s"
     }
   ]
 }
