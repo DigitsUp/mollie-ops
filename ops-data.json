@@ -1,6 +1,6 @@
 {
   "meta": {
-    "lastUpdated": "2026-06-29T07:00:36.935917-07:00",
+    "lastUpdated": "2026-06-29T10:30:26.237813-07:00",
     "updatedBy": "Mollie (auto-v4)",
     "cacheBust": "2026-06-17T21:43:00-07:00"
   },
@@ -11,8 +11,8 @@
       "color": "#3B5BDB",
       "dot": "amber",
       "health": "In Progress",
-      "tagline": "RVCA winback + review automations status unclear since Jun 25 call — needs clarification on next steps.",
-      "lastTouched": "2026-06-28",
+      "tagline": "Kieran finalizing Winback flow and launching New Post-Purchase flow today after unblocking 14-day wait step.",
+      "lastTouched": "2026-06-29",
       "tasks": [
         {
           "text": "Post-purchase flow go-live Friday Jun 20 — emails 1 & 3 built, manual mode, OuterSignal backfill done",
@@ -64,24 +64,17 @@
           "source": "manual"
         },
         {
-          "text": "Build winback flow with 3-offer split test",
-          "owner": "DigitsUp",
+          "text": "Finalize Winback flow",
+          "owner": "Kieran",
           "complexity": "medium",
           "urgent": false,
           "source": "auto"
         },
         {
-          "text": "Flip winback flow live",
-          "owner": "DigitsUp",
-          "complexity": "quick",
-          "urgent": false,
-          "source": "auto"
-        },
-        {
-          "text": "Scope review automations",
-          "owner": "Michael",
+          "text": "Launch New Post-Purchase flow",
+          "owner": "Kieran",
           "complexity": "medium",
-          "urgent": false,
+          "urgent": true,
           "source": "auto"
         }
       ],
@@ -117,11 +110,12 @@
           "madeOn": "2026-06-17"
         }
       ],
-      "nextMilestone": "Status clarification call with Michael",
+      "nextMilestone": "Winback flow finalized and New Post-Purchase flow live (2026-06-29)",
       "flags": [
-        "⚠️ Status unclear from Jun 25 call — requires follow-up"
+        "⚠️ New Post-Purchase flow was blocked by incorrect 14-day wait step — now unblocked",
+        "✅ Winback flow ready for finalization today"
       ],
-      "autoUpdatedAt": "2026-06-28T22:30:55.037157-07:00"
+      "autoUpdatedAt": "2026-06-29T10:30:19.337731-07:00"
     },
     {
       "id": "riversol",
@@ -265,8 +259,8 @@
       "color": "#2F9E44",
       "dot": "grey",
       "health": "Pivoting",
-      "tagline": "No actionable data found for Salehe Bembury in provided context.",
-      "lastTouched": "2026-06-27",
+      "tagline": "No data available for Salehe Bembury in the provided context.",
+      "lastTouched": "2026-06-29",
       "tasks": [
         {
           "text": "Add product titles to Alex Proba Figma design; send to Fardad (drop moved to July)",
@@ -395,11 +389,9 @@
           "madeOn": "2026-06-17"
         }
       ],
-      "nextMilestone": "Awaiting Salehe Bembury project context",
-      "flags": [
-        "⚠️ Source material contains only Puma/Sponge brand strategy — no Salehe Bembury-specific content"
-      ],
-      "autoUpdatedAt": "2026-06-27T05:30:23.013460-07:00"
+      "nextMilestone": "",
+      "flags": [],
+      "autoUpdatedAt": "2026-06-29T10:30:20.238144-07:00"
     },
     {
       "id": "the-lab",
@@ -748,7 +740,7 @@
       "color": "#E8845C",
       "dot": "grey",
       "health": "Blocked",
-      "tagline": "No FRNK Boutique-specific status data found in provided context.",
+      "tagline": "No FRNK Boutique data found in context. Unable to extract status.",
       "lastTouched": "2026-06-29",
       "tasks": [
         {
@@ -813,11 +805,11 @@
         }
       ],
       "promises": [],
-      "nextMilestone": "Unknown",
+      "nextMilestone": "Awaiting FRNK Boutique-specific updates",
       "flags": [
-        "⚠️ No FRNK Boutique content in source material — only DigitsUp internal standup meeting"
+        "⚠️ No FRNK Boutique information present in provided context"
       ],
-      "autoUpdatedAt": "2026-06-29T07:00:36.935013-07:00"
+      "autoUpdatedAt": "2026-06-29T10:30:26.236924-07:00"
     },
     {
       "id": "sfr",
@@ -1042,6 +1034,18 @@
   ],
   "activity": [
     {
+      "ts": "2026-06-29T10:30:19.337775-07:00",
+      "text": "RVCA — Kieran finalizing Winback flow and launching New Post-Purchase flow today after unblocking 14-day wa"
+    },
+    {
+      "ts": "2026-06-29T10:30:20.238266-07:00",
+      "text": "Salehe Bembury — No data available for Salehe Bembury in the provided context."
+    },
+    {
+      "ts": "2026-06-29T10:30:26.237024-07:00",
+      "text": "FRNK Boutique — No FRNK Boutique data found in context. Unable to extract status."
+    },
+    {
       "ts": "2026-06-29T07:00:31.402175-07:00",
       "text": "Hiba Academy — Hiba Academy needs 'Founding vision to reality' copy by June 30 draft send."
     },
@@ -1052,18 +1056,6 @@
     {
       "ts": "2026-06-29T07:00:35.274135-07:00",
       "text": "The Lab Life — The Lab Life x DigitsUp meeting scheduled for 8:30am. Review context from clients/the-lab/context.md"
-    },
-    {
-      "ts": "2026-06-29T07:00:36.935120-07:00",
-      "text": "FRNK Boutique — No FRNK Boutique-specific status data found in provided context."
-    },
-    {
-      "ts": "2026-06-29T05:30:12.732041-07:00",
-      "text": "Hiba Academy — Draft copy needed for June 30 send. 'Founding vision to reality' messaging required."
-    },
-    {
-      "ts": "2026-06-29T05:30:14.873388-07:00",
-      "text": "Riversol — Riversol flows not started — priority client requiring immediate action to move forward."
     }
   ]
 }
