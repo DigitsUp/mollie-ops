@@ -1,6 +1,6 @@
 {
   "meta": {
-    "lastUpdated": "2026-06-29T10:30:26.237813-07:00",
+    "lastUpdated": "2026-06-29T16:30:28.430172-07:00",
     "updatedBy": "Mollie (auto-v4)",
     "cacheBust": "2026-06-17T21:43:00-07:00"
   },
@@ -11,7 +11,7 @@
       "color": "#3B5BDB",
       "dot": "amber",
       "health": "In Progress",
-      "tagline": "Kieran finalizing Winback flow and launching New Post-Purchase flow today after unblocking 14-day wait step.",
+      "tagline": "Kieran finalizing Winback flow and launching New Post-Purchase flow today after unblocking 14-day wait step issue.",
       "lastTouched": "2026-06-29",
       "tasks": [
         {
@@ -110,12 +110,12 @@
           "madeOn": "2026-06-17"
         }
       ],
-      "nextMilestone": "Winback flow finalized and New Post-Purchase flow live (2026-06-29)",
+      "nextMilestone": "New Post-Purchase flow launch today (2026-06-29)",
       "flags": [
-        "⚠️ New Post-Purchase flow was blocked by incorrect 14-day wait step — now unblocked",
-        "✅ Winback flow ready for finalization today"
+        "⚠️ New Post-Purchase flow was blocked by incorrect 14-day wait step — now resolved",
+        "✅ Winback flow finalization in progress"
       ],
-      "autoUpdatedAt": "2026-06-29T10:30:19.337731-07:00"
+      "autoUpdatedAt": "2026-06-29T16:30:21.874764-07:00"
     },
     {
       "id": "riversol",
@@ -123,7 +123,7 @@
       "color": "#1098AD",
       "dot": "amber",
       "health": "Active",
-      "tagline": "Riversol flows not yet started — priority client flagged for action on NOW.md.",
+      "tagline": "Riversol flows actively in progress. Audit skill framework being refined; awaiting client confirmation on workflow.",
       "lastTouched": "2026-06-29",
       "tasks": [
         {
@@ -197,10 +197,17 @@
           "source": "manual"
         },
         {
-          "text": "Review and initiate Riversol flows project",
+          "text": "Confirm Riversol flow work status and timeline with team member actively working on flows",
           "owner": "Michael",
+          "complexity": "quick",
+          "urgent": false,
+          "source": "auto"
+        },
+        {
+          "text": "Review Riversol segment confirmation workflow once audit-skill playbook finalized",
+          "owner": "DigitsUp",
           "complexity": "medium",
-          "urgent": true,
+          "urgent": false,
           "source": "auto"
         }
       ],
@@ -224,18 +231,8 @@
           "source": "manual"
         },
         {
-          "party": "Arnaud",
-          "item": "V2 approval",
-          "source": "auto"
-        },
-        {
-          "party": "Ali",
-          "item": "Codes",
-          "source": "auto"
-        },
-        {
-          "party": "Arno + Oona",
-          "item": "Lifestyle images",
+          "party": "Riversol",
+          "item": "Confirmation on active flow work status and next steps",
           "source": "auto"
         }
       ],
@@ -246,12 +243,13 @@
           "madeOn": "2026-06-17"
         }
       ],
-      "nextMilestone": "Flow initiation kickoff",
+      "nextMilestone": "Complete audit-skill review and segment confirmation workflow for Riversol flows",
       "flags": [
-        "⚠️ Flows not started — marked as priority client",
-        "⚠️ Requires immediate attention per NOW.md"
+        "✅ Riversol flows confirmed actively in progress (not stale)",
+        "⚠️ Audit-skill playbook rework complete — ready for Riversol integration review",
+        "⚠️ Awaiting clarity on flow implementation timeline"
       ],
-      "autoUpdatedAt": "2026-06-29T07:00:33.349639-07:00"
+      "autoUpdatedAt": "2026-06-29T16:30:24.741524-07:00"
     },
     {
       "id": "salehe",
@@ -259,7 +257,7 @@
       "color": "#2F9E44",
       "dot": "grey",
       "health": "Pivoting",
-      "tagline": "No data available for Salehe Bembury in the provided context.",
+      "tagline": "No Salehe Bembury data found in provided context.",
       "lastTouched": "2026-06-29",
       "tasks": [
         {
@@ -389,9 +387,11 @@
           "madeOn": "2026-06-17"
         }
       ],
-      "nextMilestone": "",
-      "flags": [],
-      "autoUpdatedAt": "2026-06-29T10:30:20.238144-07:00"
+      "nextMilestone": "—",
+      "flags": [
+        "No updates or tasks identified for Salehe Bembury in this context"
+      ],
+      "autoUpdatedAt": "2026-06-29T16:30:19.970157-07:00"
     },
     {
       "id": "the-lab",
@@ -399,7 +399,7 @@
       "color": "#F08C00",
       "dot": "amber",
       "health": "On Track",
-      "tagline": "The Lab Life x DigitsUp meeting scheduled for 8:30am. Review context from clients/the-lab/context.md before meeting.",
+      "tagline": "July 4th email series (3 emails) in design review on Figma. Building in Constant Contact after feedback, send times finalized tomorrow.",
       "lastTouched": "2026-06-29",
       "tasks": [
         {
@@ -445,17 +445,38 @@
           "source": "manual"
         },
         {
-          "text": "Review clients/the-lab/context.md before 8:30am DigitsUp meeting",
+          "text": "Review July 4th promotion email designs on Figma and leave feedback",
+          "owner": "DigitsUp",
+          "complexity": "quick",
+          "urgent": false,
+          "source": "auto"
+        },
+        {
+          "text": "Design team finalize adjustments to 3-email series",
+          "owner": "DigitsUp",
+          "complexity": "medium",
+          "urgent": false,
+          "source": "auto"
+        },
+        {
+          "text": "Review email list and finalize send times for July 4th promotion",
           "owner": "Michael",
           "complexity": "quick",
+          "urgent": true,
+          "source": "auto"
+        },
+        {
+          "text": "Build finalized emails in Constant Contact for midday deployment",
+          "owner": "DigitsUp",
+          "complexity": "medium",
           "urgent": true,
           "source": "auto"
         }
       ],
       "waitingOn": [
         {
-          "party": "Michael",
-          "item": "Booking form URL and phone number insertion",
+          "party": "Design team",
+          "item": "Final adjustments to 3-email July 4th promotion series",
           "source": "auto"
         }
       ],
@@ -466,11 +487,13 @@
           "madeOn": "2026-06-03"
         }
       ],
-      "nextMilestone": "The Lab Life x DigitsUp meeting — 2026-06-29 at 8:30am",
+      "nextMilestone": "2026-06-30 — Finalize send times and deploy emails by midday",
       "flags": [
-        "8:30am meeting with DigitsUp — context review needed"
+        "⚠️ 3-email series still in design review phase",
+        "⚠️ Deployment target is midday tomorrow — tight timeline",
+        "✅ Figma link shared and feedback channel open"
       ],
-      "autoUpdatedAt": "2026-06-29T07:00:35.273991-07:00"
+      "autoUpdatedAt": "2026-06-29T16:30:28.429274-07:00"
     },
     {
       "id": "epicure",
@@ -740,7 +763,7 @@
       "color": "#E8845C",
       "dot": "grey",
       "health": "Blocked",
-      "tagline": "No FRNK Boutique data found in context. Unable to extract status.",
+      "tagline": "No FRNK Boutique data found in source materials. Unable to extract status.",
       "lastTouched": "2026-06-29",
       "tasks": [
         {
@@ -807,9 +830,9 @@
       "promises": [],
       "nextMilestone": "Awaiting FRNK Boutique-specific updates",
       "flags": [
-        "⚠️ No FRNK Boutique information present in provided context"
+        "⚠️ No FRNK Boutique content in provided context — only RVCA, Epicure, and Chrissy Dawn mentioned"
       ],
-      "autoUpdatedAt": "2026-06-29T10:30:26.236924-07:00"
+      "autoUpdatedAt": "2026-06-29T16:30:18.904914-07:00"
     },
     {
       "id": "sfr",
@@ -1007,7 +1030,7 @@
       "clientName": "The Lab Life",
       "text": "Confirm Month 1 completion with Travis + Ally by Jun 19",
       "complexity": "quick",
-      "deadline": "2026-06-29",
+      "deadline": "2026-06-30",
       "urgent": true,
       "source": "auto"
     },
@@ -1034,28 +1057,28 @@
   ],
   "activity": [
     {
-      "ts": "2026-06-29T10:30:19.337775-07:00",
+      "ts": "2026-06-29T16:30:18.905012-07:00",
+      "text": "FRNK Boutique — No FRNK Boutique data found in source materials. Unable to extract status."
+    },
+    {
+      "ts": "2026-06-29T16:30:19.970265-07:00",
+      "text": "Salehe Bembury — No Salehe Bembury data found in provided context."
+    },
+    {
+      "ts": "2026-06-29T16:30:21.874873-07:00",
       "text": "RVCA — Kieran finalizing Winback flow and launching New Post-Purchase flow today after unblocking 14-day wa"
     },
     {
-      "ts": "2026-06-29T10:30:20.238266-07:00",
-      "text": "Salehe Bembury — No data available for Salehe Bembury in the provided context."
+      "ts": "2026-06-29T16:30:24.741591-07:00",
+      "text": "Riversol — Riversol flows actively in progress. Audit skill framework being refined; awaiting client confirmati"
     },
     {
-      "ts": "2026-06-29T10:30:26.237024-07:00",
-      "text": "FRNK Boutique — No FRNK Boutique data found in context. Unable to extract status."
+      "ts": "2026-06-29T16:30:28.429373-07:00",
+      "text": "The Lab Life — July 4th email series (3 emails) in design review on Figma. Building in Constant Contact after feedb"
     },
     {
-      "ts": "2026-06-29T07:00:31.402175-07:00",
-      "text": "Hiba Academy — Hiba Academy needs 'Founding vision to reality' copy by June 30 draft send."
-    },
-    {
-      "ts": "2026-06-29T07:00:33.349726-07:00",
-      "text": "Riversol — Riversol flows not yet started — priority client flagged for action on NOW.md."
-    },
-    {
-      "ts": "2026-06-29T07:00:35.274135-07:00",
-      "text": "The Lab Life — The Lab Life x DigitsUp meeting scheduled for 8:30am. Review context from clients/the-lab/context.md"
+      "ts": "2026-06-29T10:30:19.337775-07:00",
+      "text": "RVCA — Kieran finalizing Winback flow and launching New Post-Purchase flow today after unblocking 14-day wa"
     }
   ]
 }
