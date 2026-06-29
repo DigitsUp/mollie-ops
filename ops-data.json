@@ -1,6 +1,6 @@
 {
   "meta": {
-    "lastUpdated": "2026-06-28T22:30:55.038077-07:00",
+    "lastUpdated": "2026-06-29T05:30:19.177805-07:00",
     "updatedBy": "Mollie (auto-v4)",
     "cacheBust": "2026-06-17T21:43:00-07:00"
   },
@@ -127,10 +127,10 @@
       "id": "riversol",
       "name": "Riversol",
       "color": "#1098AD",
-      "dot": "amber",
+      "dot": "red",
       "health": "Active",
-      "tagline": "Riversol flows not started — priority review needed. Check context.md for details.",
-      "lastTouched": "2026-06-28",
+      "tagline": "Riversol flows not started — priority client requiring immediate action to move forward.",
+      "lastTouched": "2026-06-29",
       "tasks": [
         {
           "text": "Provide Figma access to Riversol team; request header + copy feedback on replenishment mockups",
@@ -203,16 +203,9 @@
           "source": "manual"
         },
         {
-          "text": "Review Riversol context.md for flow requirements and blockers",
+          "text": "Initiate Riversol flows setup and implementation",
           "owner": "Michael",
-          "complexity": "quick",
-          "urgent": true,
-          "source": "auto"
-        },
-        {
-          "text": "Initiate Riversol flows",
-          "owner": "DigitsUp",
-          "complexity": "medium",
+          "complexity": "heavy",
           "urgent": true,
           "source": "auto"
         }
@@ -259,12 +252,12 @@
           "madeOn": "2026-06-17"
         }
       ],
-      "nextMilestone": "Flow initiation",
+      "nextMilestone": "Riversol flows initiation and kickoff",
       "flags": [
-        "⚠️ Flows not started — flagged as priority",
-        "⚠️ Requires context.md review before proceeding"
+        "⚠️ Flows not started — blocker for project progress",
+        "⚠️ Marked as priority client in NOW.md"
       ],
-      "autoUpdatedAt": "2026-06-28T22:30:53.418247-07:00"
+      "autoUpdatedAt": "2026-06-29T05:30:14.873274-07:00"
     },
     {
       "id": "salehe",
@@ -414,8 +407,8 @@
       "color": "#F08C00",
       "dot": "amber",
       "health": "On Track",
-      "tagline": "The Lab Life x DigitsUp partnership at 8:30am checkpoint — need to review SESSION.md for current status.",
-      "lastTouched": "2026-06-28",
+      "tagline": "The Lab Life x DigitsUp meeting scheduled for 8:30am. Check context in clients/the-lab/context.md before meeting.",
+      "lastTouched": "2026-06-29",
       "tasks": [
         {
           "text": "Confirm Month 1 completion with Travis + Ally by Jun 19",
@@ -460,7 +453,7 @@
           "source": "manual"
         },
         {
-          "text": "Check SESSION.md to confirm current status of The Lab Life x DigitsUp partnership",
+          "text": "Review clients/the-lab/context.md before 8:30am The Lab Life x DigitsUp meeting",
           "owner": "Michael",
           "complexity": "quick",
           "urgent": true,
@@ -481,11 +474,11 @@
           "madeOn": "2026-06-03"
         }
       ],
-      "nextMilestone": "8:30am status checkpoint — The Lab Life x DigitsUp",
+      "nextMilestone": "The Lab Life x DigitsUp meeting — 2026-06-29 at 8:30am",
       "flags": [
-        "⚠️ Priority #2 task requires immediate SESSION.md review at 8:30am"
+        "⚠️ The Lab Life x DigitsUp meeting at 8:30am — context prep required"
       ],
-      "autoUpdatedAt": "2026-06-28T22:30:45.922843-07:00"
+      "autoUpdatedAt": "2026-06-29T05:30:17.075045-07:00"
     },
     {
       "id": "epicure",
@@ -599,8 +592,8 @@
       "color": "#E64980",
       "dot": "amber",
       "health": "On Track",
-      "tagline": "Hiba Academy needs 'Founding vision to reality' draft by June 30. Waiting on David's input.",
-      "lastTouched": "2026-06-28",
+      "tagline": "Draft copy needed for June 30 send. 'Founding vision to reality' messaging required.",
+      "lastTouched": "2026-06-29",
       "tasks": [
         {
           "text": "Draft renewal proposal for Hiba Academy (contract ends June) — Veronica asked Jun 11",
@@ -617,16 +610,9 @@
           "source": "manual"
         },
         {
-          "text": "Get 'Founding vision to reality' draft completed and ready for June 30 send",
+          "text": "Write 'Founding vision to reality' copy for Hiba Academy",
           "owner": "Michael",
           "complexity": "medium",
-          "urgent": true,
-          "source": "auto"
-        },
-        {
-          "text": "Check with David on draft status for Hiba Academy June 30 deliverable",
-          "owner": "Michael",
-          "complexity": "quick",
           "urgent": true,
           "source": "auto"
         }
@@ -651,12 +637,11 @@
           "madeOn": "2026-06-11"
         }
       ],
-      "nextMilestone": "June 30 — 'Founding vision to reality' draft send",
+      "nextMilestone": "June 30 draft send",
       "flags": [
-        "⚠️ June 30 deadline is in 2 days — high urgency",
-        "⚠️ Draft status unclear — needs immediate check with David"
+        "⚠️ June 30 send deadline — copy needed immediately"
       ],
-      "autoUpdatedAt": "2026-06-28T22:30:49.918996-07:00"
+      "autoUpdatedAt": "2026-06-29T05:30:12.731912-07:00"
     },
     {
       "id": "outersignal",
@@ -755,8 +740,8 @@
       "color": "#E8845C",
       "dot": "grey",
       "health": "Blocked",
-      "tagline": "No FRNK Boutique-specific updates in current context.",
-      "lastTouched": "2026-06-28",
+      "tagline": "No FRNK Boutique-specific updates in provided context.",
+      "lastTouched": "2026-06-29",
       "tasks": [
         {
           "text": "Confirm welcome series + abandoned cart build status with team",
@@ -820,11 +805,11 @@
         }
       ],
       "promises": [],
-      "nextMilestone": "Awaiting FRNK Boutique project information",
+      "nextMilestone": "Unknown",
       "flags": [
-        "No FRNK Boutique data found in provided context"
+        "No FRNK Boutique data found in source material"
       ],
-      "autoUpdatedAt": "2026-06-28T22:30:47.151553-07:00"
+      "autoUpdatedAt": "2026-06-29T05:30:19.176775-07:00"
     },
     {
       "id": "sfr",
@@ -1022,7 +1007,7 @@
       "clientName": "The Lab Life",
       "text": "Confirm Month 1 completion with Travis + Ally by Jun 19",
       "complexity": "quick",
-      "deadline": null,
+      "deadline": "2026-06-29",
       "urgent": true,
       "source": "auto"
     },
@@ -1049,28 +1034,28 @@
   ],
   "activity": [
     {
+      "ts": "2026-06-29T05:30:12.732041-07:00",
+      "text": "Hiba Academy — Draft copy needed for June 30 send. 'Founding vision to reality' messaging required."
+    },
+    {
+      "ts": "2026-06-29T05:30:14.873388-07:00",
+      "text": "Riversol — Riversol flows not started — priority client requiring immediate action to move forward."
+    },
+    {
+      "ts": "2026-06-29T05:30:17.075150-07:00",
+      "text": "The Lab Life — The Lab Life x DigitsUp meeting scheduled for 8:30am. Check context in clients/the-lab/context.md be"
+    },
+    {
+      "ts": "2026-06-29T05:30:19.176896-07:00",
+      "text": "FRNK Boutique — No FRNK Boutique-specific updates in provided context."
+    },
+    {
       "ts": "2026-06-28T22:30:45.922902-07:00",
       "text": "The Lab Life — The Lab Life x DigitsUp partnership at 8:30am checkpoint — need to review SESSION.md for current sta"
     },
     {
       "ts": "2026-06-28T22:30:47.151655-07:00",
       "text": "FRNK Boutique — No FRNK Boutique-specific updates in current context."
-    },
-    {
-      "ts": "2026-06-28T22:30:49.919095-07:00",
-      "text": "Hiba Academy — Hiba Academy needs 'Founding vision to reality' draft by June 30. Waiting on David's input."
-    },
-    {
-      "ts": "2026-06-28T22:30:53.418359-07:00",
-      "text": "Riversol — Riversol flows not started — priority review needed. Check context.md for details."
-    },
-    {
-      "ts": "2026-06-28T22:30:55.037261-07:00",
-      "text": "RVCA — RVCA winback + review automations status unclear since Jun 25 call — needs clarification on next ste"
-    },
-    {
-      "ts": "2026-06-28T16:30:17.787705-07:00",
-      "text": "The Lab Life — July 4th brief written and ready. Michael needs to insert booking form URL + phone number, drop in M"
     }
   ]
 }
