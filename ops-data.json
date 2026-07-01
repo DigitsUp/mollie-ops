@@ -1,6 +1,6 @@
 {
   "meta": {
-    "lastUpdated": "2026-07-01T10:30:34.270391-07:00",
+    "lastUpdated": "2026-07-01T12:01:17.717432-07:00",
     "updatedBy": "Mollie (auto-v4)",
     "cacheBust": "2026-06-17T21:43:00-07:00"
   },
@@ -11,7 +11,7 @@
       "color": "#3B5BDB",
       "dot": "red",
       "health": "In Progress",
-      "tagline": "Reply to Colleen pending before 1pm DigitsUp call tomorrow. Attentive AI Grow flag needs quick response.",
+      "tagline": "Reply to Colleen pending before 1pm call tomorrow. Attentive AI Grow flag needs quick response.",
       "lastTouched": "2026-07-01",
       "tasks": [
         {
@@ -106,7 +106,7 @@
         },
         {
           "party": "Michael",
-          "item": "Reply to Colleen on Attentive AI Grow flag",
+          "item": "Reply to Colleen (DO FIRST THING TOMORROW before 1pm call)",
           "source": "auto"
         }
       ],
@@ -117,21 +117,22 @@
           "madeOn": "2026-06-17"
         }
       ],
-      "nextMilestone": "1pm RVCA x DigitsUp call (2026-07-02)",
+      "nextMilestone": "1pm call with RVCA x DigitsUp (2026-07-02)",
       "flags": [
-        "⚠️ Colleen reply PENDING — DO FIRST THING TOMORROW before 1pm call",
-        "⚠️ Attentive AI Grow flag — quick response required"
+        "⚠️ Reply to Colleen PENDING — must complete before 1pm call",
+        "⚠️ Attentive AI Grow flag — quick response needed",
+        "1pm RVCA x DigitsUp call scheduled for tomorrow"
       ],
-      "autoUpdatedAt": "2026-07-01T10:30:17.398548-07:00"
+      "autoUpdatedAt": "2026-07-01T12:00:58.060537-07:00"
     },
     {
       "id": "riversol",
       "name": "Riversol",
       "color": "#1098AD",
-      "dot": "amber",
+      "dot": "grey",
       "health": "Active",
-      "tagline": "Riversol flows actively in progress by team member; audit skill framework refined post-eyebobs analysis.",
-      "lastTouched": "2026-06-30",
+      "tagline": "No Riversol-specific data found in provided context.",
+      "lastTouched": "2026-07-01",
       "tasks": [
         {
           "text": "Provide Figma access to Riversol team; request header + copy feedback on replenishment mockups",
@@ -250,12 +251,9 @@
           "madeOn": "2026-06-17"
         }
       ],
-      "nextMilestone": "Riversol flows delivery + full client-by-client audit review",
-      "flags": [
-        "✅ Audit skill playbook updated with segment confirmation workflow",
-        "⚠️ Riversol flows status unconfirmed — verify completion before next phase"
-      ],
-      "autoUpdatedAt": "2026-06-30T17:00:27.813190-07:00"
+      "nextMilestone": "",
+      "flags": [],
+      "autoUpdatedAt": "2026-07-01T12:01:02.869593-07:00"
     },
     {
       "id": "salehe",
@@ -263,7 +261,7 @@
       "color": "#2F9E44",
       "dot": "grey",
       "health": "Pivoting",
-      "tagline": "No Salehe Bembury updates found in current context.",
+      "tagline": "No actionable data for Salehe Bembury found in provided context.",
       "lastTouched": "2026-07-01",
       "tasks": [
         {
@@ -393,17 +391,19 @@
           "madeOn": "2026-06-17"
         }
       ],
-      "nextMilestone": "",
-      "flags": [],
-      "autoUpdatedAt": "2026-07-01T07:01:42.143379-07:00"
+      "nextMilestone": "Unknown",
+      "flags": [
+        "⚠️ Source material contains only diagnostic emails from DigitsUp (mollie@digitsup.com) with no Salehe Bembury project data"
+      ],
+      "autoUpdatedAt": "2026-07-01T12:01:17.716543-07:00"
     },
     {
       "id": "the-lab",
       "name": "The Lab Life",
       "color": "#F08C00",
-      "dot": "amber",
+      "dot": "grey",
       "health": "On Track",
-      "tagline": "July 4th membership offer campaign launching June 30–July 5. Email copy finalized with $350 savings messaging; approval & deployment in progress.",
+      "tagline": "No actionable data for The Lab Life in provided context. Email attachments and Fathom meeting reference other clients/initiatives.",
       "lastTouched": "2026-07-01",
       "tasks": [
         {
@@ -510,14 +510,12 @@
           "madeOn": "2026-06-03"
         }
       ],
-      "nextMilestone": "Campaign launch (midday June 30 or upon Ally approval); final email Sunday July 5 at 3 PM ET",
+      "nextMilestone": "Awaiting The Lab Life project context",
       "flags": [
-        "✅ 489 current members segmented & exported to prevent negative experience",
-        "✅ Offer value clarified ($350 total savings) to boost perceived value",
-        "⚠️ CTAs simplified to Reply/Call—no online sign-ups supported; must ensure targeting avoids free trial cannibalization",
-        "⚠️ Final email scheduled Sunday 3 PM ET; tight deployment window through July 5"
+        "⚠️ No The Lab Life-specific content found in morning input, NOW.md, or Fathom meeting notes",
+        "⚠️ Email from mollie@digitsup.com contains diagnostic files — relevance to The Lab Life unclear"
       ],
-      "autoUpdatedAt": "2026-07-01T10:30:23.312488-07:00"
+      "autoUpdatedAt": "2026-07-01T12:01:07.069095-07:00"
     },
     {
       "id": "epicure",
@@ -525,7 +523,7 @@
       "color": "#862E9C",
       "dot": "amber",
       "health": "In Progress",
-      "tagline": "Persona report v2 emailed to Michael for Claude HTML rebuild; affiliate onboarding flow review complete with next steps assigned.",
+      "tagline": "Persona Report v2 emailed & awaiting Claude rebuild; affiliate onboarding flow ready for review with 4 key improvements identified.",
       "lastTouched": "2026-07-01",
       "tasks": [
         {
@@ -571,6 +569,13 @@
           "source": "manual"
         },
         {
+          "text": "Send Persona Report v2 Word doc to Claude for corrected HTML rebuild with updated split (Affiliate 8.5% / CoA 36.6% / DTC 55%)",
+          "owner": "Michael",
+          "complexity": "medium",
+          "urgent": true,
+          "source": "auto"
+        },
+        {
           "text": "Send invite email copy to Amelia for review",
           "owner": "Michael",
           "complexity": "quick",
@@ -592,22 +597,15 @@
           "source": "auto"
         },
         {
-          "text": "Book meeting for next week to discuss Initiatives 4, 5, 6 (affiliate win-back)",
-          "owner": "Michael",
+          "text": "Book meeting with Michael for next week to discuss Initiatives 4, 5, 6 (affiliate win-back)",
+          "owner": "DigitsUp",
           "complexity": "quick",
           "urgent": false,
           "source": "auto"
         },
         {
-          "text": "Review invite email copy and send feedback via Slack",
-          "owner": "Victoria",
-          "complexity": "quick",
-          "urgent": false,
-          "source": "auto"
-        },
-        {
-          "text": "Review epicure.com affiliate landing page and remove redundant GoAffPro link",
-          "owner": "Victoria",
+          "text": "Review affiliate landing page and remove redundant GoAffPro page link",
+          "owner": "DigitsUp",
           "complexity": "quick",
           "urgent": false,
           "source": "auto"
@@ -633,31 +631,31 @@
           "source": "manual"
         },
         {
-          "party": "Michael",
-          "item": "Send Persona Report v2 to Claude for corrected HTML rebuild",
-          "source": "auto"
-        },
-        {
           "party": "Claude",
-          "item": "Rebuild HTML report with corrected revenue split (Affiliate 8.5% / CoA 36.6% / DTC 55%)",
+          "item": "Corrected HTML report rebuild using v2 persona data with reframed affiliate/CoA/DTC split",
+          "source": "auto"
+        },
+        {
+          "party": "Amelia",
+          "item": "Feedback on invite email copy and full onboarding flow copy",
           "source": "auto"
         },
         {
           "party": "Michael",
-          "item": "Send corrected HTML back to Mollie for redeployment",
+          "item": "Corrected HTML from Claude to redeploy at https://digitsup.github.io/proposals/epicure/",
           "source": "auto"
         }
       ],
       "promises": [],
-      "nextMilestone": "Claude HTML rebuild complete + redeployed; Meeting booked for Initiatives 4-6 discussion",
+      "nextMilestone": "Claude HTML rebuild complete + redeployed; Michael sends email copy to Amelia for review",
       "flags": [
-        "✅ Persona Report v2 (Word doc) emailed to Michael — Gmail ID: 19f1b516e142feb9",
-        "✅ Affiliate onboarding flow review completed — 4 key initiatives defined",
-        "✅ HTML report v1 deployed live at https://digitsup.github.io/proposals/epicure/",
-        "⚠️ v2 HTML report needs rebuild with corrected split framing — awaiting Claude",
-        "⚠️ Affiliate page link streamlining + Klaviyo automation in progress"
+        "✅ Persona Report v2 emailed with full depth analysis (60 profiles, 7 key insights, universal SKUs)",
+        "✅ Affiliate onboarding flow reviewed; 4 improvements identified (streamline, automate bonus, enhance engagement, modernize imagery)",
+        "✅ Live v1 report deployed at proposal site",
+        "⚠️ v1 HTML report uses incorrect framing—affiliates + CoA dominate by revenue/volume, DTC is headcount only",
+        "⚠️ Awaiting Claude rebuild before Mollie redeploys corrected version"
       ],
-      "autoUpdatedAt": "2026-07-01T10:30:34.269534-07:00"
+      "autoUpdatedAt": "2026-07-01T12:01:14.908751-07:00"
     },
     {
       "id": "hiba",
@@ -665,7 +663,7 @@
       "color": "#E64980",
       "dot": "green",
       "health": "On Track",
-      "tagline": "Founding vision email sent and project closed. ✅",
+      "tagline": "Hiba Academy founding vision email sent and closed. Project complete.",
       "lastTouched": "2026-07-01",
       "tasks": [
         {
@@ -717,12 +715,12 @@
           "madeOn": "2026-06-11"
         }
       ],
-      "nextMilestone": "None currently scheduled",
+      "nextMilestone": "None — project complete",
       "flags": [
         "✅ Founding vision email sent",
         "✅ Project closed"
       ],
-      "autoUpdatedAt": "2026-07-01T10:30:24.746701-07:00"
+      "autoUpdatedAt": "2026-07-01T12:01:16.181777-07:00"
     },
     {
       "id": "outersignal",
@@ -730,7 +728,7 @@
       "color": "#5C7CFA",
       "dot": "grey",
       "health": "Waiting on Client",
-      "tagline": "No OuterSignal data found in provided context.",
+      "tagline": "No OuterSignal data found in context. All emails reference DigitsUp internal audits; Fathom meeting covers The History List and SFR Distillery only.",
       "lastTouched": "2026-07-01",
       "tasks": [
         {
@@ -810,9 +808,9 @@
       ],
       "nextMilestone": "N/A",
       "flags": [
-        "⚠️ Context contains only The History List and SFR Distillery — no OuterSignal information present"
+        "⚠️ OuterSignal not mentioned in any source material provided"
       ],
-      "autoUpdatedAt": "2026-07-01T10:30:26.280448-07:00"
+      "autoUpdatedAt": "2026-07-01T12:00:59.694546-07:00"
     },
     {
       "id": "frnk",
@@ -885,20 +883,20 @@
         }
       ],
       "promises": [],
-      "nextMilestone": "Awaiting FRNK Boutique-specific updates",
+      "nextMilestone": "Awaiting FRNK Boutique project details",
       "flags": [
-        "⚠️ No FRNK Boutique information in source material — only mentions of other clients (The History List, SFR Distillery)"
+        "⚠️ No FRNK Boutique information in source material — context contains only DigitsUp internal updates, Fathom meeting notes for other clients (The History List, SFR Distillery), and diagnostic attachments"
       ],
-      "autoUpdatedAt": "2026-07-01T10:30:27.819903-07:00"
+      "autoUpdatedAt": "2026-07-01T12:01:04.612062-07:00"
     },
     {
       "id": "sfr",
       "name": "SFR Distillery",
       "color": "#845EF7",
-      "dot": "amber",
+      "dot": "grey",
       "health": "Starting Jun 22",
-      "tagline": "Post-kickoff follow-up in progress. Awaiting copy intake form delivery and bi-weekly cadence launch on Jul 6.",
-      "lastTouched": "2026-06-28",
+      "tagline": "No actionable status data for SFR Distillery found in provided context.",
+      "lastTouched": "2026-07-01",
       "tasks": [
         {
           "text": "Prep onboarding doc + kickoff agenda for Will — Jun 22",
@@ -936,12 +934,11 @@
         }
       ],
       "promises": [],
-      "nextMilestone": "Jul 6 — First bi-weekly standing meeting",
+      "nextMilestone": "Not specified",
       "flags": [
-        "Kickoff completed Jun 25 — follow-up items tracked",
-        "Bi-weekly cadence starts Jul 6 (Mondays 2pm ET)"
+        "⚠️ Email from mollie@digitsup.com contains attachment (mollie-diag-6.txt) but no SFR Distillery-specific content extracted"
       ],
-      "autoUpdatedAt": "2026-06-28T16:30:20.244184-07:00"
+      "autoUpdatedAt": "2026-07-01T12:01:01.638452-07:00"
     }
   ],
   "pipeline": [
@@ -1082,12 +1079,12 @@
       "urgent": false
     },
     {
-      "icon": "🟡",
+      "icon": "⚪",
       "clientId": "the-lab",
       "clientName": "The Lab Life",
       "text": "Confirm Month 1 completion with Travis + Ally by Jun 19",
       "complexity": "quick",
-      "deadline": "July 5",
+      "deadline": null,
       "urgent": true,
       "source": "auto"
     },
@@ -1114,28 +1111,28 @@
   ],
   "activity": [
     {
-      "ts": "2026-07-01T10:30:17.398676-07:00",
-      "text": "RVCA — Reply to Colleen pending before 1pm DigitsUp call tomorrow. Attentive AI Grow flag needs quick respo"
+      "ts": "2026-07-01T12:00:58.060653-07:00",
+      "text": "RVCA — Reply to Colleen pending before 1pm call tomorrow. Attentive AI Grow flag needs quick response."
     },
     {
-      "ts": "2026-07-01T10:30:23.312596-07:00",
-      "text": "The Lab Life — July 4th membership offer campaign launching June 30–July 5. Email copy finalized with $350 savings "
+      "ts": "2026-07-01T12:00:59.694649-07:00",
+      "text": "OuterSignal — No OuterSignal data found in context. All emails reference DigitsUp internal audits; Fathom meeting "
     },
     {
-      "ts": "2026-07-01T10:30:24.746734-07:00",
-      "text": "Hiba Academy — Founding vision email sent and project closed. ✅"
+      "ts": "2026-07-01T12:01:01.638534-07:00",
+      "text": "SFR Distillery — No actionable status data for SFR Distillery found in provided context."
     },
     {
-      "ts": "2026-07-01T10:30:26.280523-07:00",
-      "text": "OuterSignal — No OuterSignal data found in provided context."
+      "ts": "2026-07-01T12:01:02.869751-07:00",
+      "text": "Riversol — No Riversol-specific data found in provided context."
     },
     {
-      "ts": "2026-07-01T10:30:27.820016-07:00",
+      "ts": "2026-07-01T12:01:04.612182-07:00",
       "text": "FRNK Boutique — No FRNK Boutique data found in provided context."
     },
     {
-      "ts": "2026-07-01T10:30:34.269639-07:00",
-      "text": "Epicure — Persona report v2 emailed to Michael for Claude HTML rebuild; affiliate onboarding flow review compl"
+      "ts": "2026-07-01T12:01:07.069199-07:00",
+      "text": "The Lab Life — No actionable data for The Lab Life in provided context. Email attachments and Fathom meeting refere"
     }
   ]
 }
