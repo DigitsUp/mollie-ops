@@ -1,6 +1,6 @@
 {
   "meta": {
-    "lastUpdated": "2026-06-30T16:31:13.627221-07:00",
+    "lastUpdated": "2026-06-30T17:00:40.423234-07:00",
     "updatedBy": "Mollie (auto-v4)",
     "cacheBust": "2026-06-17T21:43:00-07:00"
   },
@@ -11,7 +11,7 @@
       "color": "#3B5BDB",
       "dot": "amber",
       "health": "In Progress",
-      "tagline": "RVCA: Winback flow finalization and New Post-Purchase flow launch underway today; 14-day wait step blocker resolved.",
+      "tagline": "RVCA: Kieran launching Winback flow and New Post-Purchase flow today after unblocking 14-day wait step issue.",
       "lastTouched": "2026-06-30",
       "tasks": [
         {
@@ -64,14 +64,14 @@
           "source": "manual"
         },
         {
-          "text": "Finalize Winback flow",
+          "text": "Finalize Winback flow for RVCA",
           "owner": "Kieran",
           "complexity": "medium",
-          "urgent": false,
+          "urgent": true,
           "source": "auto"
         },
         {
-          "text": "Launch New Post-Purchase flow",
+          "text": "Launch New Post-Purchase flow for RVCA",
           "owner": "Kieran",
           "complexity": "medium",
           "urgent": true,
@@ -110,12 +110,12 @@
           "madeOn": "2026-06-17"
         }
       ],
-      "nextMilestone": "New Post-Purchase flow launch completion (2026-06-30)",
+      "nextMilestone": "Winback flow and New Post-Purchase flow launch completion — 2026-06-30",
       "flags": [
-        "✅ 14-day wait step blocker resolved",
-        "⚠️ New Post-Purchase flow launch in progress today"
+        "⚠️ Winback and Post-Purchase flows were blocked by incorrect 14-day wait step — now unblocked",
+        "✅ Kieran on track to launch both flows today"
       ],
-      "autoUpdatedAt": "2026-06-30T16:31:03.035092-07:00"
+      "autoUpdatedAt": "2026-06-30T17:00:32.635967-07:00"
     },
     {
       "id": "riversol",
@@ -123,7 +123,7 @@
       "color": "#1098AD",
       "dot": "amber",
       "health": "Active",
-      "tagline": "Riversol flows actively in progress per Michael. Focus next on full client-by-client audit review.",
+      "tagline": "Riversol flows actively in progress by team member; audit skill framework refined post-eyebobs analysis.",
       "lastTouched": "2026-06-30",
       "tasks": [
         {
@@ -197,9 +197,16 @@
           "source": "manual"
         },
         {
-          "text": "Complete full client-by-client audit review including Riversol flows",
+          "text": "Confirm Riversol flows completion status and any blockers",
+          "owner": "Michael",
+          "complexity": "quick",
+          "urgent": false,
+          "source": "auto"
+        },
+        {
+          "text": "Schedule Riversol client-by-client audit review post-Loosid assessment",
           "owner": "DigitsUp",
-          "complexity": "heavy",
+          "complexity": "medium",
           "urgent": false,
           "source": "auto"
         }
@@ -224,8 +231,8 @@
           "source": "manual"
         },
         {
-          "party": "Michael",
-          "item": "Confirmation of Riversol flows completion status and handoff details",
+          "party": "Team member",
+          "item": "Riversol flows completion and handoff",
           "source": "auto"
         }
       ],
@@ -236,12 +243,12 @@
           "madeOn": "2026-06-17"
         }
       ],
-      "nextMilestone": "Complete Riversol flows review as part of full client audit",
+      "nextMilestone": "Riversol flows delivery + full client-by-client audit review",
       "flags": [
-        "✅ Riversol flows actively being worked on (not stale)",
-        "⚠️ Awaiting full audit review as part of client-by-client assessment"
+        "✅ Audit skill playbook updated with segment confirmation workflow",
+        "⚠️ Riversol flows status unconfirmed — verify completion before next phase"
       ],
-      "autoUpdatedAt": "2026-06-30T16:31:06.311330-07:00"
+      "autoUpdatedAt": "2026-06-30T17:00:27.813190-07:00"
     },
     {
       "id": "salehe",
@@ -249,7 +256,7 @@
       "color": "#2F9E44",
       "dot": "grey",
       "health": "Pivoting",
-      "tagline": "No Salehe Bembury data found in provided context.",
+      "tagline": "No active tasks or updates found for Salehe Bembury in provided context.",
       "lastTouched": "2026-06-30",
       "tasks": [
         {
@@ -379,9 +386,11 @@
           "madeOn": "2026-06-17"
         }
       ],
-      "nextMilestone": "",
-      "flags": [],
-      "autoUpdatedAt": "2026-06-30T16:31:13.626329-07:00"
+      "nextMilestone": "Unknown",
+      "flags": [
+        "No Salehe Bembury data in context — only RVCA, Epicure, and Chrissy Dawn mentioned"
+      ],
+      "autoUpdatedAt": "2026-06-30T17:00:30.486840-07:00"
     },
     {
       "id": "the-lab",
@@ -389,7 +398,7 @@
       "color": "#F08C00",
       "dot": "amber",
       "health": "On Track",
-      "tagline": "July 4th membership offer campaign launching June 30–July 5. Email copy finalized with $350 savings messaging; awaiting approvals to deploy.",
+      "tagline": "July 4th membership offer campaign launching June 30–July 5. Email copy finalized with $350 savings messaging; pending approval & deployment.",
       "lastTouched": "2026-06-30",
       "tasks": [
         {
@@ -435,7 +444,7 @@
           "source": "manual"
         },
         {
-          "text": "Revise email copy with $350 savings and simplified CTAs ('Reply' or 'Call')",
+          "text": "Revise email copy with $350 savings ($250 fee + $100 dues) and simplify CTAs to 'Reply' or 'Call'",
           "owner": "Michael",
           "complexity": "quick",
           "urgent": true,
@@ -480,7 +489,7 @@
       "waitingOn": [
         {
           "party": "Michael",
-          "item": "Revised email copy with $350 savings and new CTAs",
+          "item": "Revised email copy with $350 savings messaging and new CTAs",
           "source": "auto"
         },
         {
@@ -490,7 +499,7 @@
         },
         {
           "party": "RV",
-          "item": "Member list upload and tagging in Constant Contact",
+          "item": "Constant Contact access granted & member list uploaded",
           "source": "auto"
         }
       ],
@@ -501,15 +510,15 @@
           "madeOn": "2026-06-03"
         }
       ],
-      "nextMilestone": "Campaign launch by midday June 30; final email deployment July 5 at 3 PM ET",
+      "nextMilestone": "Campaign launch by midday 2026-06-30 upon approval; final email send Sunday July 5 at 3 PM ET",
       "flags": [
-        "✅ Offer value clarified: $350 total savings explicitly stated",
-        "✅ 489 current members segmented to prevent negative experience",
-        "⚠️ Campaign launches TODAY (June 30) — approvals must complete immediately",
-        "⚠️ Final email scheduled Sunday 3 PM ET — timing-sensitive",
-        "ℹ️ GoHighLevel automation build to be scheduled in future meeting"
+        "✅ Offer messaging clarified: $350 total savings explicitly stated",
+        "✅ 489 current members exported & segmented to prevent negative experience",
+        "⚠️ Campaign timeline tight: June 30–July 5 with final send Sunday 3 PM ET",
+        "⚠️ Multiple approvals needed before launch; blocking deployment",
+        "📋 GoHighLevel automation build planning needed post-launch"
       ],
-      "autoUpdatedAt": "2026-06-30T16:31:12.557689-07:00"
+      "autoUpdatedAt": "2026-06-30T17:00:38.781905-07:00"
     },
     {
       "id": "epicure",
@@ -517,7 +526,7 @@
       "color": "#862E9C",
       "dot": "green",
       "health": "In Progress",
-      "tagline": "Epicure persona data pull complete & delivered. 288 unique profiles analyzed into 3 groups with full journey data.",
+      "tagline": "Epicure persona data delivered to Mike (Word doc + full dataset). Fathom meeting reviewed affiliate onboarding & post-purchase email flows for automation.",
       "lastTouched": "2026-06-30",
       "tasks": [
         {
@@ -563,8 +572,22 @@
           "source": "manual"
         },
         {
-          "text": "Document session capture rule: any live Klaviyo data pull requires client file write even in lean sessions",
+          "text": "Review Fathom meeting outcomes: streamlined affiliate onboarding (GoAffPro direct link) and automated 14-day bonus in Klaviyo",
+          "owner": "Michael",
+          "complexity": "medium",
+          "urgent": false,
+          "source": "auto"
+        },
+        {
+          "text": "Implement Klaviyo automation for first sale bonus (currently manual, freeing up Cindy's time)",
           "owner": "DigitsUp",
+          "complexity": "heavy",
+          "urgent": false,
+          "source": "auto"
+        },
+        {
+          "text": "Update epicure.com affiliate page to link directly to GoAffPro registration",
+          "owner": "Client",
           "complexity": "quick",
           "urgent": false,
           "source": "auto"
@@ -590,20 +613,20 @@
           "source": "manual"
         },
         {
-          "party": "Amelia",
-          "item": "Affiliate flows review meeting (11:30)",
+          "party": "Michael",
+          "item": "Feedback on persona data deliverable (Word doc + full dataset file)",
           "source": "auto"
         }
       ],
       "promises": [],
-      "nextMilestone": "Awaiting Michael feedback or next Epicure request",
+      "nextMilestone": "Michael review & approval of persona data; Fathom automation implementation in Klaviyo",
       "flags": [
-        "✅ Epicure persona analysis complete: 300 Placed Order events → 288 profiles classified into 3 groups",
-        "✅ Word doc delivered to mike@digitsup.com (Gmail ID: 19f1a53272f713ab)",
-        "✅ Full data stored: clients/epicure/persona-data-2026-06-30.md",
-        "⚠️ Morning 12:20am session not captured at /close — lean session protocol gap flagged for future"
+        "✅ Persona data complete: 288 unique profiles from 300 Placed Order events, 3 groups × 20 profiles with full journey data",
+        "✅ Deliverable sent to mike@digitsup.com (Word doc + markdown data file)",
+        "⚠️ Process gap: 12:20am session work not captured at close — lean sessions with live Klaviyo pulls need documentation",
+        "✅ Fathom meeting actionable outcomes: onboarding streamline + bonus automation ready for implementation"
       ],
-      "autoUpdatedAt": "2026-06-30T16:30:54.021804-07:00"
+      "autoUpdatedAt": "2026-06-30T17:00:25.191306-07:00"
     },
     {
       "id": "hiba",
@@ -676,7 +699,7 @@
       "color": "#5C7CFA",
       "dot": "grey",
       "health": "Waiting on Client",
-      "tagline": "No OuterSignal data found in source material.",
+      "tagline": "No OuterSignal data found in provided context.",
       "lastTouched": "2026-06-30",
       "tasks": [
         {
@@ -754,11 +777,9 @@
           "madeOn": "2026-06-17"
         }
       ],
-      "nextMilestone": "Awaiting OuterSignal-specific updates",
-      "flags": [
-        "⚠️ No OuterSignal information in provided context — only The History List and SFR Distillery mentioned"
-      ],
-      "autoUpdatedAt": "2026-06-30T16:30:55.558244-07:00"
+      "nextMilestone": "",
+      "flags": [],
+      "autoUpdatedAt": "2026-06-30T17:00:29.056264-07:00"
     },
     {
       "id": "frnk",
@@ -766,7 +787,7 @@
       "color": "#E8845C",
       "dot": "grey",
       "health": "Blocked",
-      "tagline": "No FRNK Boutique data found in provided context.",
+      "tagline": "No FRNK Boutique data found in context materials.",
       "lastTouched": "2026-06-30",
       "tasks": [
         {
@@ -831,12 +852,11 @@
         }
       ],
       "promises": [],
-      "nextMilestone": "Awaiting FRNK Boutique project information",
+      "nextMilestone": "No data available",
       "flags": [
-        "No FRNK Boutique mentions in source materials",
-        "Context contains only The History List, SFR Distillery, RVCA, Epicure, and Chrissy Dawn"
+        "FRNK Boutique not mentioned in provided context materials"
       ],
-      "autoUpdatedAt": "2026-06-30T16:30:57.402530-07:00"
+      "autoUpdatedAt": "2026-06-30T17:00:40.422315-07:00"
     },
     {
       "id": "sfr",
@@ -1034,7 +1054,7 @@
       "clientName": "The Lab Life",
       "text": "Confirm Month 1 completion with Travis + Ally by Jun 19",
       "complexity": "quick",
-      "deadline": "July 5",
+      "deadline": "2026-06-30",
       "urgent": true,
       "source": "auto"
     },
@@ -1061,27 +1081,27 @@
   ],
   "activity": [
     {
-      "ts": "2026-06-30T16:30:54.021848-07:00",
-      "text": "Epicure — Epicure persona data pull complete & delivered. 288 unique profiles analyzed into 3 groups with full"
+      "ts": "2026-06-30T17:00:25.191439-07:00",
+      "text": "Epicure — Epicure persona data delivered to Mike (Word doc + full dataset). Fathom meeting reviewed affiliate "
     },
     {
-      "ts": "2026-06-30T16:30:55.558345-07:00",
-      "text": "OuterSignal — No OuterSignal data found in source material."
+      "ts": "2026-06-30T17:00:27.813321-07:00",
+      "text": "Riversol — Riversol flows actively in progress by team member; audit skill framework refined post-eyebobs analy"
     },
     {
-      "ts": "2026-06-30T16:30:57.402612-07:00",
-      "text": "FRNK Boutique — No FRNK Boutique data found in provided context."
+      "ts": "2026-06-30T17:00:29.056375-07:00",
+      "text": "OuterSignal — No OuterSignal data found in provided context."
     },
     {
-      "ts": "2026-06-30T16:31:03.035201-07:00",
-      "text": "RVCA — RVCA: Winback flow finalization and New Post-Purchase flow launch underway today; 14-day wait step b"
+      "ts": "2026-06-30T17:00:30.486949-07:00",
+      "text": "Salehe Bembury — No active tasks or updates found for Salehe Bembury in provided context."
     },
     {
-      "ts": "2026-06-30T16:31:06.311433-07:00",
-      "text": "Riversol — Riversol flows actively in progress per Michael. Focus next on full client-by-client audit review."
+      "ts": "2026-06-30T17:00:32.636046-07:00",
+      "text": "RVCA — RVCA: Kieran launching Winback flow and New Post-Purchase flow today after unblocking 14-day wait st"
     },
     {
-      "ts": "2026-06-30T16:31:12.557821-07:00",
+      "ts": "2026-06-30T17:00:38.781988-07:00",
       "text": "The Lab Life — July 4th membership offer campaign launching June 30–July 5. Email copy finalized with $350 savings "
     }
   ]
