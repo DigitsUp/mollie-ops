@@ -1,6 +1,6 @@
 {
   "meta": {
-    "lastUpdated": "2026-07-02T05:30:43.957480-07:00",
+    "lastUpdated": "2026-07-02T07:00:51.160515-07:00",
     "updatedBy": "Mollie (auto-v4)",
     "cacheBust": "2026-06-17T21:43:00-07:00"
   },
@@ -11,7 +11,7 @@
       "color": "#3B5BDB",
       "dot": "amber",
       "health": "In Progress",
-      "tagline": "RVCA cost tracking active (~$87+ July 1). No budget alert configured; manual monitoring in place.",
+      "tagline": "RVCA cost tracking active (~$87+ July 1); diagnostic data received from DigitsUp. Budget alert system pending setup.",
       "lastTouched": "2026-07-02",
       "tasks": [
         {
@@ -71,7 +71,14 @@
           "source": "auto"
         },
         {
-          "text": "Set up automated budget alert threshold for RVCA account",
+          "text": "Review mollie-diag-6.txt diagnostic attachment for RVCA operational insights",
+          "owner": "Michael",
+          "complexity": "medium",
+          "urgent": false,
+          "source": "auto"
+        },
+        {
+          "text": "Set up automated budget alert threshold for RVCA (currently manual monitoring only)",
           "owner": "Michael",
           "complexity": "quick",
           "urgent": false,
@@ -98,13 +105,13 @@
           "source": "manual"
         },
         {
-          "party": "Michael",
-          "item": "v2 doc delivery to Claude for HTML correction",
+          "party": "DigitsUp",
+          "item": "Diagnostic analysis from mollie-diag-6.txt for RVCA",
           "source": "auto"
         },
         {
-          "party": "Claude",
-          "item": "HTML correction feedback on v2 doc",
+          "party": "Michael",
+          "item": "Weekly cost cron implementation from EVOLUTION.md Wave 1",
           "source": "auto"
         }
       ],
@@ -115,13 +122,14 @@
           "madeOn": "2026-06-17"
         }
       ],
-      "nextMilestone": "Weekly cost cron implementation & budget alert configuration",
+      "nextMilestone": "Implement automated weekly cost cron; establish budget alert threshold",
       "flags": [
-        "⚠️ No budget alert configured — Michael monitoring manually",
-        "⚠️ Weekly cost cron still pending from EVOLUTION.md Wave 1",
-        "Cost tracking active: ~$87+ (Callie RVCA persona + audit subagent + research session)"
+        "⚠️ No budget alert configured — relying on manual monitoring",
+        "⚠️ Weekly cost cron still pending from Wave 1 roadmap",
+        "✅ Diagnostic data received from DigitsUp (mollie-diag-6.txt)",
+        "📊 RVCA persona + audit subagent active and accumulating costs"
       ],
-      "autoUpdatedAt": "2026-07-02T05:30:40.986623-07:00"
+      "autoUpdatedAt": "2026-07-02T07:00:30.204234-07:00"
     },
     {
       "id": "riversol",
@@ -129,7 +137,7 @@
       "color": "#1098AD",
       "dot": "grey",
       "health": "Active",
-      "tagline": "No explicit Riversol status data found in provided context.",
+      "tagline": "No explicit Riversol data found in provided context. Awaiting task details.",
       "lastTouched": "2026-07-02",
       "tasks": [
         {
@@ -249,12 +257,12 @@
           "madeOn": "2026-06-17"
         }
       ],
-      "nextMilestone": "Awaiting Riversol-specific updates",
+      "nextMilestone": "Pending context update",
       "flags": [
-        "⚠️ Email from mollie@digitsup.com contains diagnostic attachment but no Riversol-specific content identified",
-        "⚠️ Insufficient context provided to extract Riversol status"
+        "⚠️ Email from mollie@digitsup.com contains diagnostic attachment but no Riversol-specific content extracted",
+        "No morning input from Michael, NOW.md priorities, or Fathom meeting notes provided for Riversol"
       ],
-      "autoUpdatedAt": "2026-07-02T05:30:30.131990-07:00"
+      "autoUpdatedAt": "2026-07-02T07:00:33.993288-07:00"
     },
     {
       "id": "salehe",
@@ -262,7 +270,7 @@
       "color": "#2F9E44",
       "dot": "grey",
       "health": "Pivoting",
-      "tagline": "No Salehe Bembury-specific data found in provided context.",
+      "tagline": "No actionable data for Salehe Bembury in provided context.",
       "lastTouched": "2026-07-02",
       "tasks": [
         {
@@ -392,11 +400,11 @@
           "madeOn": "2026-06-17"
         }
       ],
-      "nextMilestone": "",
+      "nextMilestone": "Unknown",
       "flags": [
-        "Context contains only generic email attachments from DigitsUp with no Salehe Bembury project information"
+        "No Salehe Bembury-specific content found in source material"
       ],
-      "autoUpdatedAt": "2026-07-02T05:30:24.500984-07:00"
+      "autoUpdatedAt": "2026-07-02T07:00:43.209423-07:00"
     },
     {
       "id": "the-lab",
@@ -404,7 +412,7 @@
       "color": "#F08C00",
       "dot": "grey",
       "health": "On Track",
-      "tagline": "No actionable data found for The Lab Life in provided context.",
+      "tagline": "No actionable data for The Lab Life found in provided context.",
       "lastTouched": "2026-07-02",
       "tasks": [
         {
@@ -511,11 +519,11 @@
           "madeOn": "2026-06-03"
         }
       ],
-      "nextMilestone": "Unknown",
+      "nextMilestone": "Awaiting The Lab Life-specific updates",
       "flags": [
-        "⚠️ Context contains only diagnostic emails from DigitsUp and unrelated Fathom meeting notes — no Lab Life project data"
+        "⚠️ Context contains only DigitsUp diagnostic emails and Fathom meeting notes unrelated to The Lab Life"
       ],
-      "autoUpdatedAt": "2026-07-02T05:30:43.956651-07:00"
+      "autoUpdatedAt": "2026-07-02T07:00:32.148609-07:00"
     },
     {
       "id": "epicure",
@@ -523,7 +531,7 @@
       "color": "#862E9C",
       "dot": "amber",
       "health": "In Progress",
-      "tagline": "Epicure affiliate onboarding and post-purchase flows being refined. Streamlining GoAffPro registration and automating 14-day bonus in Klaviyo.",
+      "tagline": "Epicure affiliate onboarding & post-purchase email flows being refined. Automating 14-day bonus in Klaviyo.",
       "lastTouched": "2026-07-02",
       "tasks": [
         {
@@ -576,14 +584,14 @@
           "source": "auto"
         },
         {
-          "text": "Automate first sale bonus 14-day process in Klaviyo for instant gratification",
+          "text": "Automate 14-day affiliate first sale bonus process in Klaviyo for instant gratification",
           "owner": "DigitsUp",
           "complexity": "medium",
           "urgent": false,
           "source": "auto"
         },
         {
-          "text": "Implement two-part welcome series in affiliate onboarding flow to improve delivery and engagement",
+          "text": "Implement two-part welcome series in onboarding flow to enhance affiliate engagement",
           "owner": "DigitsUp",
           "complexity": "medium",
           "urgent": false,
@@ -611,23 +619,17 @@
         },
         {
           "party": "Client",
-          "item": "GoAffPro registration page setup and affiliate page link configuration",
-          "source": "auto"
-        },
-        {
-          "party": "DigitsUp",
-          "item": "Klaviyo automation implementation for bonus process",
+          "item": "Confirmation on affiliate page linking structure and GoAffPro integration",
           "source": "auto"
         }
       ],
       "promises": [],
-      "nextMilestone": "Complete affiliate onboarding flow refinement and Klaviyo automation deployment",
+      "nextMilestone": "Complete Klaviyo automation of first sale bonus and deploy two-part welcome series",
       "flags": [
-        "⚠️ Affiliate onboarding flows in active refinement stage",
-        "✅ Manual 14-day bonus process identified for automation (frees up Cindy's time)",
-        "✅ Two-part welcome series planned to enhance engagement"
+        "⚠️ Manual 14-day bonus process currently requires Cindy's time — automation will free capacity",
+        "✅ Streamlined affiliate onboarding workflow in progress"
       ],
-      "autoUpdatedAt": "2026-07-02T05:30:38.428003-07:00"
+      "autoUpdatedAt": "2026-07-02T07:00:46.898909-07:00"
     },
     {
       "id": "hiba",
@@ -635,7 +637,7 @@
       "color": "#E64980",
       "dot": "grey",
       "health": "On Track",
-      "tagline": "No Hiba Academy data found in provided context. Email contains only Mollie attachment reference with no extractable project details.",
+      "tagline": "No explicit Hiba Academy data found in provided context.",
       "lastTouched": "2026-07-02",
       "tasks": [
         {
@@ -687,11 +689,12 @@
           "madeOn": "2026-06-11"
         }
       ],
-      "nextMilestone": "Unknown",
+      "nextMilestone": "Awaiting context data",
       "flags": [
-        "⚠️ No actionable Hiba Academy information in current context"
+        "⚠️ Email attachment (mollie-diag-6.txt) received but content not readable in extraction context",
+        "⚠️ No morning input from Michael, NOW.md priorities, Fathom meeting notes, or memory notes provided for Hiba Academy"
       ],
-      "autoUpdatedAt": "2026-07-02T05:30:33.408723-07:00"
+      "autoUpdatedAt": "2026-07-02T07:00:41.570765-07:00"
     },
     {
       "id": "outersignal",
@@ -699,7 +702,7 @@
       "color": "#5C7CFA",
       "dot": "grey",
       "health": "Waiting on Client",
-      "tagline": "No OuterSignal data found in provided context.",
+      "tagline": "No OuterSignal-specific data found in provided context.",
       "lastTouched": "2026-07-02",
       "tasks": [
         {
@@ -777,11 +780,11 @@
           "madeOn": "2026-06-17"
         }
       ],
-      "nextMilestone": "Awaiting OuterSignal-specific updates",
+      "nextMilestone": "N/A",
       "flags": [
-        "⚠️ Context contains only RVCA and system diagnostics — no OuterSignal information present"
+        "⚠️ Context contains only RVCA and Fathom meeting notes (The History List, SFR Distillery) — no OuterSignal content"
       ],
-      "autoUpdatedAt": "2026-07-02T05:30:31.668249-07:00"
+      "autoUpdatedAt": "2026-07-02T07:00:26.417398-07:00"
     },
     {
       "id": "frnk",
@@ -854,12 +857,12 @@
         }
       ],
       "promises": [],
-      "nextMilestone": "Unable to determine",
+      "nextMilestone": "N/A",
       "flags": [
-        "⚠️ No FRNK Boutique information in source material",
+        "No FRNK Boutique information in source materials",
         "Context contains data for other clients only (The History List, SFR Distillery)"
       ],
-      "autoUpdatedAt": "2026-07-02T05:30:35.149978-07:00"
+      "autoUpdatedAt": "2026-07-02T07:00:49.045434-07:00"
     },
     {
       "id": "sfr",
@@ -867,7 +870,7 @@
       "color": "#845EF7",
       "dot": "grey",
       "health": "Starting Jun 22",
-      "tagline": "No actionable status data extracted for SFR Distillery from provided context.",
+      "tagline": "No actionable data available for SFR Distillery in provided context.",
       "lastTouched": "2026-07-02",
       "tasks": [
         {
@@ -906,12 +909,13 @@
         }
       ],
       "promises": [],
-      "nextMilestone": "Awaiting context with SFR Distillery-specific information",
+      "nextMilestone": "",
       "flags": [
-        "⚠️ Email attachment (mollie-diag-6.txt) received from DigitsUp but content not provided for analysis",
-        "⚠️ No morning input from Michael, NOW.md priorities, or Fathom meeting details available for SFR Distillery"
+        "⚠️ Email from mollie@digitsup.com contains only diagnostic attachment with no SFR Distillery-specific information extracted",
+        "⚠️ No morning input from Michael provided for this date",
+        "⚠️ No NOW.md priorities referenced"
       ],
-      "autoUpdatedAt": "2026-07-02T05:30:26.626730-07:00"
+      "autoUpdatedAt": "2026-07-02T07:00:51.159743-07:00"
     }
   ],
   "pipeline": [
@@ -1084,28 +1088,28 @@
   ],
   "activity": [
     {
-      "ts": "2026-07-02T05:30:24.501100-07:00",
-      "text": "Salehe Bembury — No Salehe Bembury-specific data found in provided context."
+      "ts": "2026-07-02T07:00:26.417494-07:00",
+      "text": "OuterSignal — No OuterSignal-specific data found in provided context."
     },
     {
-      "ts": "2026-07-02T05:30:26.626840-07:00",
-      "text": "SFR Distillery — No actionable status data extracted for SFR Distillery from provided context."
+      "ts": "2026-07-02T07:00:30.204351-07:00",
+      "text": "RVCA — RVCA cost tracking active (~$87+ July 1); diagnostic data received from DigitsUp. Budget alert syste"
     },
     {
-      "ts": "2026-07-02T05:30:30.132092-07:00",
-      "text": "Riversol — No explicit Riversol status data found in provided context."
+      "ts": "2026-07-02T07:00:32.148714-07:00",
+      "text": "The Lab Life — No actionable data for The Lab Life found in provided context."
     },
     {
-      "ts": "2026-07-02T05:30:31.668332-07:00",
-      "text": "OuterSignal — No OuterSignal data found in provided context."
+      "ts": "2026-07-02T07:00:33.993392-07:00",
+      "text": "Riversol — No explicit Riversol data found in provided context. Awaiting task details."
     },
     {
-      "ts": "2026-07-02T05:30:33.408837-07:00",
-      "text": "Hiba Academy — No Hiba Academy data found in provided context. Email contains only Mollie attachment reference with"
+      "ts": "2026-07-02T07:00:41.570867-07:00",
+      "text": "Hiba Academy — No explicit Hiba Academy data found in provided context."
     },
     {
-      "ts": "2026-07-02T05:30:35.150091-07:00",
-      "text": "FRNK Boutique — No FRNK Boutique data found in provided context."
+      "ts": "2026-07-02T07:00:43.209529-07:00",
+      "text": "Salehe Bembury — No actionable data for Salehe Bembury in provided context."
     }
   ]
 }
