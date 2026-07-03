@@ -1,6 +1,6 @@
 {
   "meta": {
-    "lastUpdated": "2026-07-03T05:31:06.681140-07:00",
+    "lastUpdated": "2026-07-03T07:01:15.021787-07:00",
     "updatedBy": "Mollie (auto-v4)",
     "cacheBust": "2026-06-17T21:43:00-07:00"
   },
@@ -11,7 +11,7 @@
       "color": "#3B5BDB",
       "dot": "amber",
       "health": "In Progress",
-      "tagline": "4th of July campaign finalized; customer reviews remap blocked on Shopify Admin API token from Clay. Strategy review required before proceeding.",
+      "tagline": "Reviews remap blocked on Shopify Admin API; 4th of July campaign live; Klaviyo plan negotiation needed.",
       "lastTouched": "2026-07-03",
       "tasks": [
         {
@@ -64,21 +64,21 @@
           "source": "manual"
         },
         {
-          "text": "Conduct strategy review for customer reviews remap before execution",
-          "owner": "Michael",
-          "complexity": "medium",
-          "urgent": false,
-          "source": "auto"
-        },
-        {
-          "text": "Message Clay: request Shopify Admin API token (read_products scope) OR re-export from Shopify Admin with numeric ID column",
+          "text": "Do strategy review for customer reviews remap BEFORE proceeding with technical work",
           "owner": "Michael",
           "complexity": "quick",
           "urgent": false,
           "source": "auto"
         },
         {
-          "text": "Launch Klaviyo-based desktop pop-up test (replace underperforming Attentive pop-up)",
+          "text": "Message Clay: request Shopify Admin API token (read_products scope) OR re-export from Shopify Admin with numeric ID column for 1,425 draft/inactive products",
+          "owner": "Michael",
+          "complexity": "quick",
+          "urgent": true,
+          "source": "auto"
+        },
+        {
+          "text": "Launch Klaviyo-based desktop pop-up test to replace underperforming Attentive pop-up",
           "owner": "Michael",
           "complexity": "medium",
           "urgent": false,
@@ -88,7 +88,7 @@
           "text": "Negotiate with Klaviyo rep to optimize plan (currently 76M sends/year, over capacity)",
           "owner": "Michael",
           "complexity": "medium",
-          "urgent": false,
+          "urgent": true,
           "source": "auto"
         },
         {
@@ -127,17 +127,12 @@
         },
         {
           "party": "Clay",
-          "item": "Shopify Admin API token (read_products scope) OR CSV export with numeric product IDs for 1,425 draft/inactive products",
+          "item": "Shopify Admin API token (read_products scope) or re-export from Shopify Admin with numeric product IDs for 1,425 draft/inactive products",
           "source": "auto"
         },
         {
-          "party": "DigitsUp (Victoria)",
-          "item": "4th of July email copy and hero images updated with 'Markdowns' and 'Past Season Styles Only' callout",
-          "source": "auto"
-        },
-        {
-          "party": "DigitsUp (Clayton)",
-          "item": "Remove Caleb Ressler products from hard markdown post-4th of July weekend",
+          "party": "Klaviyo",
+          "item": "Response to plan optimization negotiation for 76M sends/year overages",
           "source": "auto"
         }
       ],
@@ -148,15 +143,15 @@
           "madeOn": "2026-06-17"
         }
       ],
-      "nextMilestone": "4th of July campaign send (Friday) + Sunday drip to non-openers; strategy review + Clay API request (immediate)",
+      "nextMilestone": "2026-07-04 — 4th of July campaign send; strategy review + Clay API request (today/tomorrow)",
       "flags": [
+        "✅ 4th of July campaign finalized: markdown sale (past-season styles only) live with drip to non-openers",
         "✅ June performance validates strategy: $740k revenue, 74% blended margin",
-        "✅ Post-purchase + winback flows live",
-        "✅ 4th of July campaign finalized (markdown sale, past season only)",
-        "⚠️ 1,425 reviews blocked on Shopify Admin API access — cannot remap draft products",
-        "⚠️ Attentive desktop pop-up underperforming — Klaviyo test required to isolate issue"
+        "✅ Post-purchase and 3-lane win-back flows now live",
+        "⚠️ 1,580 customer reviews blocked: 141 mapped, 1,425 need Shopify Admin API for draft product IDs",
+        "⚠️ Attentive desktop pop-up underperforming; Klaviyo test needed to isolate cause"
       ],
-      "autoUpdatedAt": "2026-07-03T05:30:57.463331-07:00"
+      "autoUpdatedAt": "2026-07-03T07:00:54.131621-07:00"
     },
     {
       "id": "riversol",
@@ -164,7 +159,7 @@
       "color": "#1098AD",
       "dot": "amber",
       "health": "Active",
-      "tagline": "Quiz onboarding final & ready to brief; winback sampler upgrade in progress; replenishment flows await QA.",
+      "tagline": "Skin Quiz Analyzer finalized & ready to brief Callie; replenishment flows in QA; waiting on dev to add selfie_uploaded event metric.",
       "lastTouched": "2026-07-03",
       "tasks": [
         {
@@ -238,17 +233,17 @@
           "source": "manual"
         },
         {
-          "text": "Add 'selfie_uploaded' boolean event metric to Klaviyo for quiz completion",
+          "text": "Add selfie_uploaded boolean event metric to quiz completion event in Klaviyo",
           "owner": "Michael",
           "complexity": "quick",
           "urgent": true,
           "source": "auto"
         },
         {
-          "text": "Finalize DMC & Anti-Aging Trio replenishment flows for QA handoff",
+          "text": "Brief Callie on Skin Quiz Analyzer strategy doc (v4) and onboarding build kickoff",
           "owner": "Michael",
           "complexity": "medium",
-          "urgent": false,
+          "urgent": true,
           "source": "auto"
         },
         {
@@ -259,22 +254,22 @@
           "source": "auto"
         },
         {
-          "text": "Schedule 1-hour referral program workshop with Allie for Monday",
-          "owner": "Michael",
+          "text": "QA replenishment flows (DMC & Anti-Aging Trio) for early next week go-live",
+          "owner": "DigitsUp",
+          "complexity": "medium",
+          "urgent": true,
+          "source": "auto"
+        },
+        {
+          "text": "Upgrade Winback Samplers flow offer from 20% to 30% off next week",
+          "owner": "DigitsUp",
           "complexity": "quick",
           "urgent": false,
           "source": "auto"
         },
         {
-          "text": "QA replenishment flows (DMC & Anti-Aging Trio) for early-week go-live",
-          "owner": "DigitsUp",
-          "complexity": "medium",
-          "urgent": false,
-          "source": "auto"
-        },
-        {
-          "text": "Upgrade Winback Samplers offer from 20% to 30% next week",
-          "owner": "DigitsUp",
+          "text": "Confirm with Una the date for 30% → 20% offer switch in old sample flow",
+          "owner": "Michael",
           "complexity": "quick",
           "urgent": false,
           "source": "auto"
@@ -300,13 +295,13 @@
           "source": "manual"
         },
         {
-          "party": "Michael (Dev)",
+          "party": "Michael (dev team)",
           "item": "selfie_uploaded event metric added to Klaviyo quiz completion event",
           "source": "auto"
         },
         {
           "party": "Una",
-          "item": "Attribution link & code for Amazon review email",
+          "item": "Amazon review email with attribution link and code",
           "source": "auto"
         },
         {
@@ -322,15 +317,15 @@
           "madeOn": "2026-06-17"
         }
       ],
-      "nextMilestone": "Michael delivers selfie_uploaded metric; replenishment flows go-live early next week; referral workshop Monday",
+      "nextMilestone": "Early next week: replenishment flows go-live; Monday referral program workshop",
       "flags": [
-        "⚠️ Quiz onboarding blocked on dev event metric addition — prerequisite for Callie brief",
-        "✅ Strategy doc final (v4) and ready for onboarding build",
-        "⚠️ Amazon review email still needed — awaiting Una's attribution link & code",
-        "✅ Replenishment flows built; QA underway for early-next-week launch",
-        "⚠️ Confirm offer switch timeline with Una for old sample flow"
+        "✅ Skin Quiz Analyzer strategy doc finalized (v4) & ready to present",
+        "✅ Replenishment flows (DMC & Anti-Aging Trio) built and in QA",
+        "⚠️ Blocked: Cannot brief Callie until selfie_uploaded event metric is added",
+        "⚠️ Amazon review email still needed for quiz flow",
+        "⚠️ Referral program workshop scheduled Monday — prep required"
       ],
-      "autoUpdatedAt": "2026-07-03T05:31:06.680062-07:00"
+      "autoUpdatedAt": "2026-07-03T07:01:15.020763-07:00"
     },
     {
       "id": "salehe",
@@ -338,7 +333,7 @@
       "color": "#2F9E44",
       "dot": "green",
       "health": "Pivoting",
-      "tagline": "Salehe Bembury marked active in NOW.md. No active tasks or blockers identified in current context.",
+      "tagline": "Salehe Bembury marked active in NOW.md. No specific tasks or blockers identified in current context.",
       "lastTouched": "2026-07-03",
       "tasks": [
         {
@@ -460,9 +455,9 @@
       ],
       "nextMilestone": "",
       "flags": [
-        "✅ Status: Active"
+        "✅ Status: Active (per NOW.md)"
       ],
-      "autoUpdatedAt": "2026-07-03T05:30:35.525543-07:00"
+      "autoUpdatedAt": "2026-07-03T07:00:57.510697-07:00"
     },
     {
       "id": "the-lab",
@@ -470,7 +465,7 @@
       "color": "#F08C00",
       "dot": "amber",
       "health": "On Track",
-      "tagline": "The Lab Life: GHL build month 1 underway post-May 29 signing. Workspace audit waves complete as of July 2.",
+      "tagline": "The Lab Life: GHL build month 1 underway, Klaviyo month 2 planned. Audit waves complete as of 2026-07-02.",
       "lastTouched": "2026-07-03",
       "tasks": [
         {
@@ -516,8 +511,22 @@
           "source": "manual"
         },
         {
-          "text": "Review audit findings from Wave 1 (AGENTS.md) and approve next steps",
+          "text": "Review audit findings from Wave 1 (AGENTS.md) and approve next actions",
           "owner": "Michael",
+          "complexity": "medium",
+          "urgent": false,
+          "source": "auto"
+        },
+        {
+          "text": "Continue GHL build execution for month 1",
+          "owner": "DigitsUp",
+          "complexity": "heavy",
+          "urgent": false,
+          "source": "auto"
+        },
+        {
+          "text": "Prepare Klaviyo setup for month 2 implementation",
+          "owner": "DigitsUp",
           "complexity": "medium",
           "urgent": false,
           "source": "auto"
@@ -526,7 +535,7 @@
       "waitingOn": [
         {
           "party": "Michael",
-          "item": "Approval to act on workspace optimization audit findings",
+          "item": "Approval to act on audit findings from Waves 1-3",
           "source": "auto"
         }
       ],
@@ -537,12 +546,12 @@
           "madeOn": "2026-06-03"
         }
       ],
-      "nextMilestone": "GHL build completion (month 1 in progress), Klaviyo month 2",
+      "nextMilestone": "GHL build month 1 completion; Klaviyo month 2 launch",
       "flags": [
         "✅ All three audit waves complete as of 2026-07-02",
-        "⚠️ Audit findings ready but require Michael approval before implementation"
+        "⚠️ Audit findings read-only pending Michael's approval before implementation"
       ],
-      "autoUpdatedAt": "2026-07-03T05:31:00.535136-07:00"
+      "autoUpdatedAt": "2026-07-03T07:00:46.861272-07:00"
     },
     {
       "id": "epicure",
@@ -550,7 +559,7 @@
       "color": "#862E9C",
       "dot": "amber",
       "health": "In Progress",
-      "tagline": "Copy review cycle underway; onboarding flow & affiliate initiatives queued for next week. French translations nearly complete.",
+      "tagline": "Epicure copy review in progress; three tasks due tomorrow (invite email, onboarding doc, meeting booking). French translations nearly complete.",
       "lastTouched": "2026-07-03",
       "tasks": [
         {
@@ -596,7 +605,7 @@
           "source": "manual"
         },
         {
-          "text": "Send invite email copy to Amelia via Slack (warmth pass needed, remove 'customers' language)",
+          "text": "Send invite email copy to Amelia via Slack — warmth pass needed, remove 'customers' language",
           "owner": "Michael",
           "complexity": "quick",
           "urgent": true,
@@ -605,7 +614,7 @@
         {
           "text": "Send full onboarding flow copy doc to Amelia for review",
           "owner": "Michael",
-          "complexity": "quick",
+          "complexity": "medium",
           "urgent": true,
           "source": "auto"
         },
@@ -645,7 +654,7 @@
         },
         {
           "party": "Amelia",
-          "item": "Review of invite email copy (warmth pass)",
+          "item": "Warmth pass and review of invite email copy",
           "source": "auto"
         },
         {
@@ -655,13 +664,13 @@
         }
       ],
       "promises": [],
-      "nextMilestone": "Meeting next week for affiliate win-back initiatives (4, 5, 6)",
+      "nextMilestone": "Tomorrow: deliver invite email copy, onboarding doc, and book affiliate win-back meeting for next week",
       "flags": [
-        "⚠️ Invite email flagged as too robotic—needs warmth pass",
-        "✅ Jun 30 call transcript & edits fully saved and ready for reference",
-        "⚠️ Three initiatives (4, 5, 6) pending meeting confirmation"
+        "⚠️ Three high-priority deliverables due tomorrow",
+        "⚠️ Invite email flagged as feeling robotic — needs warmth tone adjustment",
+        "✅ Transcript and email edits from Jun 30 call saved and ready for reference"
       ],
-      "autoUpdatedAt": "2026-07-03T05:30:29.815258-07:00"
+      "autoUpdatedAt": "2026-07-03T07:00:42.662663-07:00"
     },
     {
       "id": "hiba",
@@ -669,7 +678,7 @@
       "color": "#E64980",
       "dot": "amber",
       "health": "On Track",
-      "tagline": "June report live and ready to send to Homa. July email campaigns scheduled; Meta ads account ownership is a blocker.",
+      "tagline": "June report live & ready to send to Homa (overdue). July email cadence set; Meta ads account ownership is a blocker.",
       "lastTouched": "2026-07-03",
       "tasks": [
         {
@@ -694,38 +703,38 @@
           "source": "auto"
         },
         {
-          "text": "Brief Victoria on teacher spotlight welcome emails 3 + 5",
+          "text": "Brief Victoria on teacher spotlight welcome emails 3 & 5",
           "owner": "DigitsUp",
           "complexity": "quick",
           "urgent": false,
           "source": "auto"
         },
         {
-          "text": "Plan welcome series split test with Victoria (single-teacher vs. condensed formats)",
+          "text": "Plan welcome series split test (single-teacher vs. condensed formats) with Victoria",
           "owner": "Michael",
           "complexity": "medium",
           "urgent": false,
           "source": "auto"
         },
         {
-          "text": "Update July 9 & 28 email briefs with Homa's feedback",
+          "text": "Update July 9 & July 28 email briefs with Homa's feedback",
           "owner": "Victoria",
           "complexity": "medium",
           "urgent": false,
           "source": "auto"
         },
         {
-          "text": "Add Hiba newsletter dates to shared calendar",
-          "owner": "Victoria",
-          "complexity": "quick",
+          "text": "Setup Klaviyo Instagram integration sync",
+          "owner": "DigitsUp",
+          "complexity": "medium",
           "urgent": false,
           "source": "auto"
         },
         {
-          "text": "Resolve Meta ads account ownership issue with TechDo and finance team",
-          "owner": "Client",
-          "complexity": "heavy",
-          "urgent": true,
+          "text": "Define shared lead logging process for Ravenna CRM with Homa/Skye",
+          "owner": "DigitsUp",
+          "complexity": "medium",
+          "urgent": false,
           "source": "auto"
         }
       ],
@@ -738,17 +747,17 @@
         },
         {
           "party": "Homa",
-          "item": "Feedback on July 9 email copy in Figma",
+          "item": "Review updated July 9 email copy in Figma & provide feedback",
+          "source": "auto"
+        },
+        {
+          "party": "Homa",
+          "item": "Discuss Meta ads credit card payment solution with finance team",
           "source": "auto"
         },
         {
           "party": "Homa/Skye",
           "item": "Define shared lead logging process for Ravenna CRM",
-          "source": "auto"
-        },
-        {
-          "party": "Finance/Client",
-          "item": "Resolution on Meta ads credit card payment method",
           "source": "auto"
         }
       ],
@@ -759,14 +768,15 @@
           "madeOn": "2026-06-11"
         }
       ],
-      "nextMilestone": "July 9 Summer Discovery email campaign",
+      "nextMilestone": "July 9 Summer Discovery email campaign launch",
       "flags": [
-        "✅ June report deployed and live",
-        "⚠️ Meta ads account owned by TechDo — blocks direct credit card billing",
-        "⚠️ Marketing Director search paused — lacking strong candidates",
-        "📅 July email cadence locked: July 9, 28, Aug 4, 25"
+        "✅ June report live & deployed",
+        "⚠️ Meta ads account owned by TechDo (third-party) — blocks direct payment setup",
+        "⚠️ Marketing Director search paused — no strong candidates",
+        "📅 July/August email cadence locked: July 9, 28; Aug 4, 25",
+        "⚠️ Teacher spotlights are primary lead driver for Ravenna applications"
       ],
-      "autoUpdatedAt": "2026-07-03T05:30:45.072021-07:00"
+      "autoUpdatedAt": "2026-07-03T07:01:04.474505-07:00"
     },
     {
       "id": "outersignal",
@@ -774,7 +784,7 @@
       "color": "#5C7CFA",
       "dot": "grey",
       "health": "Waiting on Client",
-      "tagline": "No OuterSignal data found in provided context. All content references other clients (Mollie/DigitsUp audit, RVCA persona analysis).",
+      "tagline": "No OuterSignal-specific data found in provided context. All content relates to internal audit processes and other clients (RVCA).",
       "lastTouched": "2026-07-03",
       "tasks": [
         {
@@ -852,11 +862,12 @@
           "madeOn": "2026-06-17"
         }
       ],
-      "nextMilestone": "Awaiting OuterSignal project context",
+      "nextMilestone": "Unknown — awaiting OuterSignal-specific brief",
       "flags": [
-        "⚠️ No OuterSignal-specific information in source material"
+        "⚠️ No OuterSignal deliverables or updates in current context",
+        "⚠️ Context contains only internal audit findings and RVCA customer analysis"
       ],
-      "autoUpdatedAt": "2026-07-03T05:30:37.187903-07:00"
+      "autoUpdatedAt": "2026-07-03T07:00:38.567084-07:00"
     },
     {
       "id": "frnk",
@@ -864,7 +875,7 @@
       "color": "#E8845C",
       "dot": "amber",
       "health": "Blocked",
-      "tagline": "Giveaway campaign blocked by Facebook sync issue—Stephanie to provide credentials to unblock Klaviyo integration.",
+      "tagline": "Klaviyo Facebook sync blocker preventing giveaway launch—Stephanie to provide credentials to Michael for desktop completion.",
       "lastTouched": "2026-07-03",
       "tasks": [
         {
@@ -889,7 +900,7 @@
           "source": "manual"
         },
         {
-          "text": "Receive Facebook login credentials from Stephanie to complete Klaviyo-Facebook sync",
+          "text": "Receive Facebook login credentials from Stephanie",
           "owner": "Michael",
           "complexity": "quick",
           "urgent": true,
@@ -926,19 +937,18 @@
         },
         {
           "party": "Stephanie",
-          "item": "Facebook login credentials for business page sync",
+          "item": "Facebook login credentials for Klaviyo sync",
           "source": "auto"
         }
       ],
       "promises": [],
       "nextMilestone": "Giveaway launch week of July 6, 2026",
       "flags": [
-        "⚠️ BLOCKER: Klaviyo mobile setup synced personal Facebook profile instead of business page",
-        "Giveaway launch scheduled for week of July 6 (avoiding July 4th weekend)",
-        "Giveaway uses 'comment to enter' mechanic to drive new customer acquisition into Klaviyo flows",
-        "Welcome and abandoned cart flows now live in Klaviyo"
+        "⚠️ Blocker: Mobile setup synced personal profile instead of business page—preventing giveaway launch",
+        "✅ Klaviyo welcome and abandoned cart flows now live",
+        "⚠️ Giveaway launch delayed to week of July 6 (avoiding July 4th weekend)"
       ],
-      "autoUpdatedAt": "2026-07-03T05:30:34.115625-07:00"
+      "autoUpdatedAt": "2026-07-03T07:01:08.978773-07:00"
     },
     {
       "id": "sfr",
@@ -946,7 +956,7 @@
       "color": "#845EF7",
       "dot": "grey",
       "health": "Starting Jun 22",
-      "tagline": "SFR Distillery in audit phase. Awaiting diagnostic review from DigitsUp.",
+      "tagline": "SFR Distillery in audit phase. Limited context available from provided materials.",
       "lastTouched": "2026-07-03",
       "tasks": [
         {
@@ -985,12 +995,12 @@
         }
       ],
       "promises": [],
-      "nextMilestone": "Audit phase completion and DigitsUp diagnostic analysis",
+      "nextMilestone": "Audit phase completion",
       "flags": [
-        "Diagnostic data received from DigitsUp (2026-07-01)",
-        "Audit phase active per NOW.md"
+        "Audit phase in progress",
+        "Awaiting detailed project scope/requirements"
       ],
-      "autoUpdatedAt": "2026-07-03T05:30:39.236550-07:00"
+      "autoUpdatedAt": "2026-07-03T07:00:55.771721-07:00"
     }
   ],
   "pipeline": [
@@ -1144,7 +1154,7 @@
       "icon": "🟡",
       "clientId": "frnk",
       "clientName": "FRNK Boutique",
-      "text": "Receive Facebook login credentials from Stephanie to complete Klaviyo-Facebook sync",
+      "text": "Receive Facebook login credentials from Stephanie",
       "complexity": "quick",
       "deadline": "July 6",
       "urgent": true,
@@ -1163,28 +1173,28 @@
   ],
   "activity": [
     {
-      "ts": "2026-07-03T05:30:29.815361-07:00",
-      "text": "Epicure — Copy review cycle underway; onboarding flow & affiliate initiatives queued for next week. French tra"
+      "ts": "2026-07-03T07:00:38.567176-07:00",
+      "text": "OuterSignal — No OuterSignal-specific data found in provided context. All content relates to internal audit proces"
     },
     {
-      "ts": "2026-07-03T05:30:34.115732-07:00",
-      "text": "FRNK Boutique — Giveaway campaign blocked by Facebook sync issue—Stephanie to provide credentials to unblock Klaviyo"
+      "ts": "2026-07-03T07:00:42.662772-07:00",
+      "text": "Epicure — Epicure copy review in progress; three tasks due tomorrow (invite email, onboarding doc, meeting boo"
     },
     {
-      "ts": "2026-07-03T05:30:35.525679-07:00",
-      "text": "Salehe Bembury — Salehe Bembury marked active in NOW.md. No active tasks or blockers identified in current context."
+      "ts": "2026-07-03T07:00:46.861372-07:00",
+      "text": "The Lab Life — The Lab Life: GHL build month 1 underway, Klaviyo month 2 planned. Audit waves complete as of 2026-0"
     },
     {
-      "ts": "2026-07-03T05:30:37.188002-07:00",
-      "text": "OuterSignal — No OuterSignal data found in provided context. All content references other clients (Mollie/DigitsUp"
+      "ts": "2026-07-03T07:00:54.131734-07:00",
+      "text": "RVCA — Reviews remap blocked on Shopify Admin API; 4th of July campaign live; Klaviyo plan negotiation need"
     },
     {
-      "ts": "2026-07-03T05:30:39.236648-07:00",
-      "text": "SFR Distillery — SFR Distillery in audit phase. Awaiting diagnostic review from DigitsUp."
+      "ts": "2026-07-03T07:00:55.771817-07:00",
+      "text": "SFR Distillery — SFR Distillery in audit phase. Limited context available from provided materials."
     },
     {
-      "ts": "2026-07-03T05:30:45.072127-07:00",
-      "text": "Hiba Academy — June report live and ready to send to Homa. July email campaigns scheduled; Meta ads account ownersh"
+      "ts": "2026-07-03T07:00:57.510803-07:00",
+      "text": "Salehe Bembury — Salehe Bembury marked active in NOW.md. No specific tasks or blockers identified in current context."
     }
   ]
 }
