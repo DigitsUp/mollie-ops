@@ -1,6 +1,6 @@
 {
   "meta": {
-    "lastUpdated": "2026-07-04T05:30:44.176478-07:00",
+    "lastUpdated": "2026-07-04T10:30:38.705462-07:00",
     "updatedBy": "Mollie (auto-v4)",
     "cacheBust": "2026-06-17T21:43:00-07:00"
   },
@@ -9,9 +9,9 @@
       "id": "rvca",
       "name": "RVCA",
       "color": "#3B5BDB",
-      "dot": "amber",
+      "dot": "grey",
       "health": "In Progress",
-      "tagline": "4th of July markdown campaign finalized; June hit $740k revenue (down 16% MoM) with 74% blended margin validating strategy.",
+      "tagline": "No RVCA-specific status data found in provided context.",
       "lastTouched": "2026-07-04",
       "tasks": [
         {
@@ -122,13 +122,11 @@
           "madeOn": "2026-06-17"
         }
       ],
-      "nextMilestone": "4th of July campaign execution (drip send Sunday 2026-07-07)",
+      "nextMilestone": "Unknown",
       "flags": [
-        "✅ 4th of July campaign finalized with markdowns strategy",
-        "✅ June margin strong at 74% despite 16% revenue decline MoM",
-        "⚠️ June revenue down 16% from Memorial Day peak — monitor July trajectory"
+        "⚠️ Context contains only DigitsUp internal architecture documentation (Mollie/Michael) — no RVCA client data present"
       ],
-      "autoUpdatedAt": "2026-07-04T05:30:44.175633-07:00"
+      "autoUpdatedAt": "2026-07-04T10:30:32.149675-07:00"
     },
     {
       "id": "riversol",
@@ -136,7 +134,7 @@
       "color": "#1098AD",
       "dot": "red",
       "health": "Active",
-      "tagline": "Root cause confirmed: /new command broken post-upgrade (v2026.6.9). Native get-reply feature removed by commands.runtime change.",
+      "tagline": "Root cause confirmed: /new command routing broken post-upgrade (v2026.6.9). Native feature removed in commands.runtime line 141-145.",
       "lastTouched": "2026-07-04",
       "tasks": [
         {
@@ -210,23 +208,23 @@
           "source": "manual"
         },
         {
-          "text": "Fix commands.runtime line 141-145: restore native /new routing to get-reply (was working in v2026.3.28)",
+          "text": "Fix commands.runtime line 141-145 to restore /new routing to get-reply (pre-v2026.6.9 behavior)",
           "owner": "DigitsUp",
           "complexity": "medium",
           "urgent": true,
           "source": "auto"
         },
         {
-          "text": "Verify BARE_SESSION_RESET_PROMPT_BASE fires correctly post-fix across session flows",
-          "owner": "DigitsUp",
-          "complexity": "medium",
-          "urgent": true,
-          "source": "auto"
-        },
-        {
-          "text": "Regression test: confirm /new behavior matches pre-upgrade v2026.3.28 baseline",
+          "text": "Verify BARE_SESSION_RESET_PROMPT_BASE fires natively post-fix using session memory from 2026-04-01 and 2026-06-05 audit logs",
           "owner": "DigitsUp",
           "complexity": "quick",
+          "urgent": true,
+          "source": "auto"
+        },
+        {
+          "text": "Regression test: confirm /new works end-to-end without manual hooks after fix deployment",
+          "owner": "DigitsUp",
+          "complexity": "medium",
           "urgent": false,
           "source": "auto"
         }
@@ -263,13 +261,13 @@
           "madeOn": "2026-06-17"
         }
       ],
-      "nextMilestone": "Fix deployed and verified working for /new command flow",
+      "nextMilestone": "Deploy commands.runtime fix and validate /new routing restored",
       "flags": [
-        "⚠️ Critical: /new command broken since v2026.6.9 upgrade — blocks core user workflow",
-        "✅ Root cause fully documented in session memory with proof artifacts (2026-04-01, 2026-06-05)",
-        "⚠️ Regression: native feature removed unintentionally by runtime changes"
+        "🔴 BLOCKING: shouldContinue:false in commands.runtime prevents /new from reaching get-reply handler",
+        "✅ Root cause audit complete — evidence in 2026-04-01-notion-pipeline.md + 2026-06-05-riversol-flow-audit.md",
+        "⚠️ Pre-upgrade (v2026.3.28) vs post-upgrade (v2026.6.9) behavior mismatch confirmed"
       ],
-      "autoUpdatedAt": "2026-07-04T05:30:37.926727-07:00"
+      "autoUpdatedAt": "2026-07-04T10:30:30.614242-07:00"
     },
     {
       "id": "salehe",
@@ -277,7 +275,7 @@
       "color": "#2F9E44",
       "dot": "grey",
       "health": "Pivoting",
-      "tagline": "No data found for Salehe Bembury in provided context.",
+      "tagline": "No Salehe Bembury data found in source material. All content relates to DigitsUp workspace audit.",
       "lastTouched": "2026-07-04",
       "tasks": [
         {
@@ -399,9 +397,9 @@
       ],
       "nextMilestone": "",
       "flags": [
-        "⚠️ No Salehe Bembury information in source material — context contains only internal DigitsUp workspace audit communications"
+        "⚠️ Extraction scope: Salehe Bembury — no matching content in provided context"
       ],
-      "autoUpdatedAt": "2026-07-04T05:30:30.451193-07:00"
+      "autoUpdatedAt": "2026-07-04T10:30:25.289965-07:00"
     },
     {
       "id": "the-lab",
@@ -409,7 +407,7 @@
       "color": "#F08C00",
       "dot": "amber",
       "health": "On Track",
-      "tagline": "Design bottleneck blocking The Lab Life work. Team evaluating hiring new designer (Danny) to clear backlog.",
+      "tagline": "Design bottleneck blocking The Lab Life. Team evaluating new designer (Danny) to clear backlog.",
       "lastTouched": "2026-07-04",
       "tasks": [
         {
@@ -455,24 +453,24 @@
           "source": "manual"
         },
         {
-          "text": "Decide whether to assign design tasks to Melrick or hire new designer Danny for The Lab Life work",
+          "text": "Decide whether to assign design tasks to Melrick or hire new designer (Danny) for weekend work",
           "owner": "Michael",
           "complexity": "medium",
           "urgent": true,
           "source": "auto"
         },
         {
-          "text": "Review AUDITINTEL.md (2026-07-03) as cold session handoff before next session",
+          "text": "Evaluate Danny's test submission (6 emails completed in 24 hours for History List)",
           "owner": "Michael",
           "complexity": "quick",
-          "urgent": false,
+          "urgent": true,
           "source": "auto"
         }
       ],
       "waitingOn": [
         {
-          "party": "Team",
-          "item": "Designer assignment decision (Melrick vs. hiring Danny) to unblock The Lab Life design work",
+          "party": "Design team",
+          "item": "Resolution on design bottleneck and designer assignment for The Lab Life work",
           "source": "auto"
         }
       ],
@@ -483,13 +481,13 @@
           "madeOn": "2026-06-03"
         }
       ],
-      "nextMilestone": "Design bottleneck resolution decision required",
+      "nextMilestone": "Weekend task completion pending designer assignment decision",
       "flags": [
-        "⚠️ Design bottleneck blocking critical Lab Life work",
-        "⚠️ Designer candidate Danny available with completed test (6 emails in 24hrs)",
-        "ℹ️ Full audit documentation ready (5 files from 2026-07-03 session)"
+        "⚠️ Design bottleneck blocking critical work",
+        "⚠️ Candidate (Danny) available for weekend designer work",
+        "⚠️ Decision needed on resource allocation"
       ],
-      "autoUpdatedAt": "2026-07-04T05:30:41.103187-07:00"
+      "autoUpdatedAt": "2026-07-04T10:30:38.704606-07:00"
     },
     {
       "id": "epicure",
@@ -497,7 +495,7 @@
       "color": "#862E9C",
       "dot": "grey",
       "health": "In Progress",
-      "tagline": "Affiliate flow review transcript received from June 30 call with Amelia and Cindy. Awaiting review and next steps.",
+      "tagline": "Awaiting full transcript review from June 30 affiliate flow review call with Amelia and Cindy.",
       "lastTouched": "2026-07-04",
       "tasks": [
         {
@@ -543,7 +541,7 @@
           "source": "manual"
         },
         {
-          "text": "Review Epicure June 30 affiliate flow review call transcript from Mollie",
+          "text": "Review full word-for-word transcript from June 30 Epicure affiliate flow review call",
           "owner": "Michael",
           "complexity": "medium",
           "urgent": false,
@@ -570,17 +568,17 @@
           "source": "manual"
         },
         {
-          "party": "Michael",
-          "item": "Review and action items from Epicure affiliate flow review transcript",
+          "party": "DigitsUp",
+          "item": "Transcript analysis and action items from June 30 affiliate flow review call",
           "source": "auto"
         }
       ],
       "promises": [],
-      "nextMilestone": "Review of affiliate flow transcript and action items",
+      "nextMilestone": "Transcript review and next steps from affiliate flow meeting",
       "flags": [
-        "Affiliate flow review transcript received (59KB) from June 30 call with Amelia and Cindy"
+        "Full transcript received from Mollie (mollie@digitsup.com) on 2026-07-03"
       ],
-      "autoUpdatedAt": "2026-07-04T05:30:28.404245-07:00"
+      "autoUpdatedAt": "2026-07-04T10:30:34.299927-07:00"
     },
     {
       "id": "hiba",
@@ -666,7 +664,7 @@
       "color": "#5C7CFA",
       "dot": "grey",
       "health": "Waiting on Client",
-      "tagline": "No OuterSignal-specific data found in provided context. All materials reference internal DigitsUp workspace audits and Mollie AI documentation.",
+      "tagline": "No OuterSignal-specific data found in provided context. All referenced materials are internal DigitsUp audit/workspace documentation.",
       "lastTouched": "2026-07-04",
       "tasks": [
         {
@@ -744,12 +742,13 @@
           "madeOn": "2026-06-17"
         }
       ],
-      "nextMilestone": "Awaiting OuterSignal-specific brief or task input",
+      "nextMilestone": "",
       "flags": [
-        "⚠️ No OuterSignal content detected in source material",
-        "ℹ️ Context contains only DigitsUp internal audit findings and Mollie AI handoff documentation"
+        "⚠️ No OuterSignal content identified in source material",
+        "Context contains only DigitsUp internal audit files (AGENTS.md, SYSTEM.md, CONTEXT.md, etc.)",
+        "Unable to extract client status without OuterSignal-specific updates"
       ],
-      "autoUpdatedAt": "2026-07-04T05:30:32.192223-07:00"
+      "autoUpdatedAt": "2026-07-04T10:30:36.142830-07:00"
     },
     {
       "id": "frnk",
@@ -824,12 +823,12 @@
         }
       ],
       "promises": [],
-      "nextMilestone": "Awaiting FRNK Boutique-specific updates",
+      "nextMilestone": "Awaiting FRNK Boutique-specific briefing",
       "flags": [
-        "⚠️ FRNK Boutique not mentioned in any source materials (emails, Fathom meetings, or notes)",
-        "Context contains only DigitsUp internal communications and references to other clients (Outer Signal, Lab Life, Salehi, History List)"
+        "⚠️ No FRNK Boutique information present in source material",
+        "Context contains data for other clients only (Outer Signal, Lab Life, Salehi, History List)"
       ],
-      "autoUpdatedAt": "2026-07-04T05:30:34.241616-07:00"
+      "autoUpdatedAt": "2026-07-04T10:30:26.986888-07:00"
     },
     {
       "id": "sfr",
@@ -1053,28 +1052,28 @@
   ],
   "activity": [
     {
-      "ts": "2026-07-04T05:30:28.404347-07:00",
-      "text": "Epicure — Affiliate flow review transcript received from June 30 call with Amelia and Cindy. Awaiting review a"
+      "ts": "2026-07-04T10:30:25.290077-07:00",
+      "text": "Salehe Bembury — No Salehe Bembury data found in source material. All content relates to DigitsUp workspace audit."
     },
     {
-      "ts": "2026-07-04T05:30:30.451290-07:00",
-      "text": "Salehe Bembury — No data found for Salehe Bembury in provided context."
-    },
-    {
-      "ts": "2026-07-04T05:30:32.192325-07:00",
-      "text": "OuterSignal — No OuterSignal-specific data found in provided context. All materials reference internal DigitsUp wo"
-    },
-    {
-      "ts": "2026-07-04T05:30:34.241715-07:00",
+      "ts": "2026-07-04T10:30:26.986993-07:00",
       "text": "FRNK Boutique — No FRNK Boutique data found in provided context."
     },
     {
-      "ts": "2026-07-04T05:30:37.926831-07:00",
-      "text": "Riversol — Root cause confirmed: /new command broken post-upgrade (v2026.6.9). Native get-reply feature removed"
+      "ts": "2026-07-04T10:30:30.614348-07:00",
+      "text": "Riversol — Root cause confirmed: /new command routing broken post-upgrade (v2026.6.9). Native feature removed i"
     },
     {
-      "ts": "2026-07-04T05:30:41.103285-07:00",
-      "text": "The Lab Life — Design bottleneck blocking The Lab Life work. Team evaluating hiring new designer (Danny) to clear b"
+      "ts": "2026-07-04T10:30:32.149784-07:00",
+      "text": "RVCA — No RVCA-specific status data found in provided context."
+    },
+    {
+      "ts": "2026-07-04T10:30:34.300027-07:00",
+      "text": "Epicure — Awaiting full transcript review from June 30 affiliate flow review call with Amelia and Cindy."
+    },
+    {
+      "ts": "2026-07-04T10:30:36.142929-07:00",
+      "text": "OuterSignal — No OuterSignal-specific data found in provided context. All referenced materials are internal Digits"
     }
   ]
 }
