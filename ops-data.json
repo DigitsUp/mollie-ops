@@ -1,6 +1,6 @@
 {
   "meta": {
-    "lastUpdated": "2026-07-03T22:30:43.370084-07:00",
+    "lastUpdated": "2026-07-04T05:30:44.176478-07:00",
     "updatedBy": "Mollie (auto-v4)",
     "cacheBust": "2026-06-17T21:43:00-07:00"
   },
@@ -11,8 +11,8 @@
       "color": "#3B5BDB",
       "dot": "amber",
       "health": "In Progress",
-      "tagline": "Reviews remap parked pending strategy review; 1,580 reviews blocked until Shopify Admin API token obtained from Clay.",
-      "lastTouched": "2026-07-03",
+      "tagline": "4th of July markdown campaign finalized; June hit $740k revenue (down 16% MoM) with 74% blended margin validating strategy.",
+      "lastTouched": "2026-07-04",
       "tasks": [
         {
           "text": "Post-purchase flow go-live Friday Jun 20 — emails 1 & 3 built, manual mode, OuterSignal backfill done",
@@ -64,29 +64,22 @@
           "source": "manual"
         },
         {
-          "text": "Conduct strategy review for RVCA reviews remap before any build work",
-          "owner": "Michael",
-          "complexity": "medium",
-          "urgent": true,
-          "source": "auto"
-        },
-        {
-          "text": "Message Clay for Shopify Admin API token (read_products scope) or request proper CSV export with numeric IDs",
-          "owner": "Michael",
-          "complexity": "quick",
-          "urgent": true,
-          "source": "auto"
-        },
-        {
-          "text": "Negotiate Klaviyo plan with rep Friday — current 76M sends/year usage is over capacity",
-          "owner": "Michael",
+          "text": "Review and implement drip send to non-openers for 4th of July campaign (Sunday send)",
+          "owner": "DigitsUp",
           "complexity": "medium",
           "urgent": false,
           "source": "auto"
         },
         {
-          "text": "Test Klaviyo popup vs. Attentive desktop popup performance",
+          "text": "Ensure hero image callout clearly communicates sale applies to past-season styles only",
           "owner": "DigitsUp",
+          "complexity": "quick",
+          "urgent": false,
+          "source": "auto"
+        },
+        {
+          "text": "Monitor 4th of July campaign performance and compare against June baseline",
+          "owner": "Michael",
           "complexity": "medium",
           "urgent": false,
           "source": "auto"
@@ -129,24 +122,22 @@
           "madeOn": "2026-06-17"
         }
       ],
-      "nextMilestone": "Strategy review completion + Clay API token delivery to unblock reviews remap execution",
+      "nextMilestone": "4th of July campaign execution (drip send Sunday 2026-07-07)",
       "flags": [
-        "⚠️ 1,425 of 1,580 reviews blocked — need Admin API access to remap post-migration product IDs",
-        "⚠️ Shopify store migration (Apr 2, 2026) changed product IDs; handles stable — remap required before re-import",
-        "✅ 141 reviews remappable now with existing handle-to-ID map",
-        "✅ June revenue $740k, blended margin 74% — full price strategy validated",
-        "⚠️ 4th of July markdown campaign live (past-season styles only) — post-campaign products exiting hard markdown Jul 5+"
+        "✅ 4th of July campaign finalized with markdowns strategy",
+        "✅ June margin strong at 74% despite 16% revenue decline MoM",
+        "⚠️ June revenue down 16% from Memorial Day peak — monitor July trajectory"
       ],
-      "autoUpdatedAt": "2026-07-03T22:30:43.369189-07:00"
+      "autoUpdatedAt": "2026-07-04T05:30:44.175633-07:00"
     },
     {
       "id": "riversol",
       "name": "Riversol",
       "color": "#1098AD",
-      "dot": "amber",
+      "dot": "red",
       "health": "Active",
-      "tagline": "Quiz onboarding brief ready for Callie pending dev's selfie event metric. Amazon review attribution & Sampler Winback upgrades in progress.",
-      "lastTouched": "2026-07-03",
+      "tagline": "Root cause confirmed: /new command broken post-upgrade (v2026.6.9). Native get-reply feature removed by commands.runtime change.",
+      "lastTouched": "2026-07-04",
       "tasks": [
         {
           "text": "Provide Figma access to Riversol team; request header + copy feedback on replenishment mockups",
@@ -219,23 +210,23 @@
           "source": "manual"
         },
         {
-          "text": "Write brief for Callie on Quiz Onboarding build",
-          "owner": "Michael",
-          "complexity": "quick",
-          "urgent": false,
-          "source": "auto"
-        },
-        {
-          "text": "Get Amazon review email attribution link + code from Una",
-          "owner": "Michael",
-          "complexity": "quick",
-          "urgent": false,
-          "source": "auto"
-        },
-        {
-          "text": "Upgrade Sampler Winback Email 1 to 30% off when data window closes",
-          "owner": "Michael",
+          "text": "Fix commands.runtime line 141-145: restore native /new routing to get-reply (was working in v2026.3.28)",
+          "owner": "DigitsUp",
           "complexity": "medium",
+          "urgent": true,
+          "source": "auto"
+        },
+        {
+          "text": "Verify BARE_SESSION_RESET_PROMPT_BASE fires correctly post-fix across session flows",
+          "owner": "DigitsUp",
+          "complexity": "medium",
+          "urgent": true,
+          "source": "auto"
+        },
+        {
+          "text": "Regression test: confirm /new behavior matches pre-upgrade v2026.3.28 baseline",
+          "owner": "DigitsUp",
+          "complexity": "quick",
           "urgent": false,
           "source": "auto"
         }
@@ -260,8 +251,8 @@
           "source": "manual"
         },
         {
-          "party": "Dev",
-          "item": "Selfie event metric for Quiz Onboarding build prerequisite",
+          "party": "DigitsUp",
+          "item": "Code fix for commands.runtime shouldContinue logic on bare /new command",
           "source": "auto"
         }
       ],
@@ -272,13 +263,13 @@
           "madeOn": "2026-06-17"
         }
       ],
-      "nextMilestone": "Quiz Onboarding build kickoff with Callie (pending dev metric)",
+      "nextMilestone": "Fix deployed and verified working for /new command flow",
       "flags": [
-        "✅ Skin quiz segment analysis complete: 150 quiz-takers, 3 lanes, clean welcome flow",
-        "✅ Strategy doc finalized (v4)",
-        "⚠️ Blocked on dev selfie event metric before Callie brief can proceed"
+        "⚠️ Critical: /new command broken since v2026.6.9 upgrade — blocks core user workflow",
+        "✅ Root cause fully documented in session memory with proof artifacts (2026-04-01, 2026-06-05)",
+        "⚠️ Regression: native feature removed unintentionally by runtime changes"
       ],
-      "autoUpdatedAt": "2026-07-03T22:30:36.501858-07:00"
+      "autoUpdatedAt": "2026-07-04T05:30:37.926727-07:00"
     },
     {
       "id": "salehe",
@@ -286,8 +277,8 @@
       "color": "#2F9E44",
       "dot": "grey",
       "health": "Pivoting",
-      "tagline": "No Salehe Bembury data found in provided context. Source material contains only DigitsUp internal audit documentation.",
-      "lastTouched": "2026-07-03",
+      "tagline": "No data found for Salehe Bembury in provided context.",
+      "lastTouched": "2026-07-04",
       "tasks": [
         {
           "text": "Add product titles to Alex Proba Figma design; send to Fardad (drop moved to July)",
@@ -406,11 +397,11 @@
           "madeOn": "2026-06-17"
         }
       ],
-      "nextMilestone": "Awaiting Salehe Bembury project context",
+      "nextMilestone": "",
       "flags": [
-        "⚠️ No client-specific information available for Salehe Bembury in this extract"
+        "⚠️ No Salehe Bembury information in source material — context contains only internal DigitsUp workspace audit communications"
       ],
-      "autoUpdatedAt": "2026-07-03T22:30:33.426389-07:00"
+      "autoUpdatedAt": "2026-07-04T05:30:30.451193-07:00"
     },
     {
       "id": "the-lab",
@@ -418,8 +409,8 @@
       "color": "#F08C00",
       "dot": "amber",
       "health": "On Track",
-      "tagline": "The Lab Life: GHL build in month 1, Klaviyo in month 2. Design bottleneck identified; candidate Danny under evaluation.",
-      "lastTouched": "2026-07-03",
+      "tagline": "Design bottleneck blocking The Lab Life work. Team evaluating hiring new designer (Danny) to clear backlog.",
+      "lastTouched": "2026-07-04",
       "tasks": [
         {
           "text": "Confirm Month 1 completion with Travis + Ally by Jun 19",
@@ -464,14 +455,14 @@
           "source": "manual"
         },
         {
-          "text": "Resolve design bottleneck for The Lab Life — decide between assigning to Melrick or hiring new designer",
+          "text": "Decide whether to assign design tasks to Melrick or hire new designer Danny for The Lab Life work",
           "owner": "Michael",
           "complexity": "medium",
           "urgent": true,
           "source": "auto"
         },
         {
-          "text": "Evaluate Danny as designer candidate for The Lab Life design backlog clearing",
+          "text": "Review AUDITINTEL.md (2026-07-03) as cold session handoff before next session",
           "owner": "Michael",
           "complexity": "quick",
           "urgent": false,
@@ -480,8 +471,8 @@
       ],
       "waitingOn": [
         {
-          "party": "Design team",
-          "item": "Designer assignment decision (Melrick vs. new hire) to unblock The Lab Life work",
+          "party": "Team",
+          "item": "Designer assignment decision (Melrick vs. hiring Danny) to unblock The Lab Life design work",
           "source": "auto"
         }
       ],
@@ -492,22 +483,22 @@
           "madeOn": "2026-06-03"
         }
       ],
-      "nextMilestone": "Designer assignment decision + clear design backlog for The Lab Life",
+      "nextMilestone": "Design bottleneck resolution decision required",
       "flags": [
-        "⚠️ Design bottleneck blocking critical work for The Lab Life",
-        "⚠️ Weekend tasks pending designer resolution",
-        "GHL build month 1 on track per NOW.md"
+        "⚠️ Design bottleneck blocking critical Lab Life work",
+        "⚠️ Designer candidate Danny available with completed test (6 emails in 24hrs)",
+        "ℹ️ Full audit documentation ready (5 files from 2026-07-03 session)"
       ],
-      "autoUpdatedAt": "2026-07-03T22:30:31.763624-07:00"
+      "autoUpdatedAt": "2026-07-04T05:30:41.103187-07:00"
     },
     {
       "id": "epicure",
       "name": "Epicure",
       "color": "#862E9C",
-      "dot": "amber",
+      "dot": "grey",
       "health": "In Progress",
-      "tagline": "Affiliate flow review complete. Finalizing copy review with Amelia and booking initiative meetings.",
-      "lastTouched": "2026-07-03",
+      "tagline": "Affiliate flow review transcript received from June 30 call with Amelia and Cindy. Awaiting review and next steps.",
+      "lastTouched": "2026-07-04",
       "tasks": [
         {
           "text": "Write PP Email 2 brief (recipe refresh)",
@@ -552,28 +543,7 @@
           "source": "manual"
         },
         {
-          "text": "Send invite email copy to Amelia via Slack for warmth pass",
-          "owner": "Michael",
-          "complexity": "quick",
-          "urgent": false,
-          "source": "auto"
-        },
-        {
-          "text": "Send full onboarding flow copy doc to Amelia for review",
-          "owner": "Michael",
-          "complexity": "quick",
-          "urgent": false,
-          "source": "auto"
-        },
-        {
-          "text": "Book meeting for Initiatives 4, 5, 6 (affiliate win-back)",
-          "owner": "Michael",
-          "complexity": "medium",
-          "urgent": false,
-          "source": "auto"
-        },
-        {
-          "text": "Finalize French translations for order confirmation block",
+          "text": "Review Epicure June 30 affiliate flow review call transcript from Mollie",
           "owner": "Michael",
           "complexity": "medium",
           "urgent": false,
@@ -600,23 +570,17 @@
           "source": "manual"
         },
         {
-          "party": "Amelia",
-          "item": "Warmth pass feedback on invite email copy",
-          "source": "auto"
-        },
-        {
-          "party": "Amelia",
-          "item": "Review of full onboarding flow copy document",
+          "party": "Michael",
+          "item": "Review and action items from Epicure affiliate flow review transcript",
           "source": "auto"
         }
       ],
       "promises": [],
-      "nextMilestone": "Amelia copy review feedback + Initiative meetings booked",
+      "nextMilestone": "Review of affiliate flow transcript and action items",
       "flags": [
-        "Affiliate flow review transcript received from Mollie (Jun 30 call with Amelia & Cindy)",
-        "French translation finalization pending for order confirmation"
+        "Affiliate flow review transcript received (59KB) from June 30 call with Amelia and Cindy"
       ],
-      "autoUpdatedAt": "2026-07-03T22:30:24.190910-07:00"
+      "autoUpdatedAt": "2026-07-04T05:30:28.404245-07:00"
     },
     {
       "id": "hiba",
@@ -702,8 +666,8 @@
       "color": "#5C7CFA",
       "dot": "grey",
       "health": "Waiting on Client",
-      "tagline": "No OuterSignal-specific data found in source material. All content references DigitsUp internal audit work.",
-      "lastTouched": "2026-07-03",
+      "tagline": "No OuterSignal-specific data found in provided context. All materials reference internal DigitsUp workspace audits and Mollie AI documentation.",
+      "lastTouched": "2026-07-04",
       "tasks": [
         {
           "text": "Build Post-Purchase 2026 flow draft — due EOW Jun 20 (once assets arrive)",
@@ -780,12 +744,12 @@
           "madeOn": "2026-06-17"
         }
       ],
-      "nextMilestone": "Awaiting OuterSignal-specific project information",
+      "nextMilestone": "Awaiting OuterSignal-specific brief or task input",
       "flags": [
-        "⚠️ Source material contains only DigitsUp internal audit documentation (AGENTS.md, SYSTEM.md, etc.) — no OuterSignal project data present",
-        "No OuterSignal tasks, milestones, or deliverables identified in provided context"
+        "⚠️ No OuterSignal content detected in source material",
+        "ℹ️ Context contains only DigitsUp internal audit findings and Mollie AI handoff documentation"
       ],
-      "autoUpdatedAt": "2026-07-03T22:30:28.809399-07:00"
+      "autoUpdatedAt": "2026-07-04T05:30:32.192223-07:00"
     },
     {
       "id": "frnk",
@@ -793,8 +757,8 @@
       "color": "#E8845C",
       "dot": "grey",
       "health": "Blocked",
-      "tagline": "No FRNK Boutique data found in context. All content references other clients (Outer Signal, Lab Life, Salehi, History List).",
-      "lastTouched": "2026-07-03",
+      "tagline": "No FRNK Boutique data found in provided context.",
+      "lastTouched": "2026-07-04",
       "tasks": [
         {
           "text": "Confirm welcome series + abandoned cart build status with team",
@@ -860,11 +824,12 @@
         }
       ],
       "promises": [],
-      "nextMilestone": "Unknown",
+      "nextMilestone": "Awaiting FRNK Boutique-specific updates",
       "flags": [
-        "⚠️ No FRNK Boutique information present in provided context"
+        "⚠️ FRNK Boutique not mentioned in any source materials (emails, Fathom meetings, or notes)",
+        "Context contains only DigitsUp internal communications and references to other clients (Outer Signal, Lab Life, Salehi, History List)"
       ],
-      "autoUpdatedAt": "2026-07-03T22:30:38.551287-07:00"
+      "autoUpdatedAt": "2026-07-04T05:30:34.241616-07:00"
     },
     {
       "id": "sfr",
@@ -1088,28 +1053,28 @@
   ],
   "activity": [
     {
-      "ts": "2026-07-03T22:30:24.191007-07:00",
-      "text": "Epicure — Affiliate flow review complete. Finalizing copy review with Amelia and booking initiative meetings."
+      "ts": "2026-07-04T05:30:28.404347-07:00",
+      "text": "Epicure — Affiliate flow review transcript received from June 30 call with Amelia and Cindy. Awaiting review a"
     },
     {
-      "ts": "2026-07-03T22:30:26.861481-07:00",
-      "text": "Hiba Academy — June report live and ready to send to Homa. Teacher spotlight and email testing needed to complete w"
+      "ts": "2026-07-04T05:30:30.451290-07:00",
+      "text": "Salehe Bembury — No data found for Salehe Bembury in provided context."
     },
     {
-      "ts": "2026-07-03T22:30:28.809496-07:00",
-      "text": "OuterSignal — No OuterSignal-specific data found in source material. All content references DigitsUp internal audi"
+      "ts": "2026-07-04T05:30:32.192325-07:00",
+      "text": "OuterSignal — No OuterSignal-specific data found in provided context. All materials reference internal DigitsUp wo"
     },
     {
-      "ts": "2026-07-03T22:30:31.763732-07:00",
-      "text": "The Lab Life — The Lab Life: GHL build in month 1, Klaviyo in month 2. Design bottleneck identified; candidate Dann"
+      "ts": "2026-07-04T05:30:34.241715-07:00",
+      "text": "FRNK Boutique — No FRNK Boutique data found in provided context."
     },
     {
-      "ts": "2026-07-03T22:30:33.426491-07:00",
-      "text": "Salehe Bembury — No Salehe Bembury data found in provided context. Source material contains only DigitsUp internal au"
+      "ts": "2026-07-04T05:30:37.926831-07:00",
+      "text": "Riversol — Root cause confirmed: /new command broken post-upgrade (v2026.6.9). Native get-reply feature removed"
     },
     {
-      "ts": "2026-07-03T22:30:36.501963-07:00",
-      "text": "Riversol — Quiz onboarding brief ready for Callie pending dev's selfie event metric. Amazon review attribution "
+      "ts": "2026-07-04T05:30:41.103285-07:00",
+      "text": "The Lab Life — Design bottleneck blocking The Lab Life work. Team evaluating hiring new designer (Danny) to clear b"
     }
   ]
 }
