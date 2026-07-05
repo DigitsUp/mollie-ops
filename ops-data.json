@@ -1,6 +1,6 @@
 {
   "meta": {
-    "lastUpdated": "2026-07-05T05:30:34.551066-07:00",
+    "lastUpdated": "2026-07-05T10:30:33.456006-07:00",
     "updatedBy": "Mollie (auto-v4)",
     "cacheBust": "2026-06-17T21:43:00-07:00"
   },
@@ -122,11 +122,11 @@
           "madeOn": "2026-06-17"
         }
       ],
-      "nextMilestone": "Awaiting RVCA-specific project data",
+      "nextMilestone": "Unable to determine",
       "flags": [
-        "⚠️ No RVCA information in current context — only generic DigitsUp/Mollie framework documentation"
+        "Context contains only DigitsUp internal architecture session notes—no RVCA client data present"
       ],
-      "autoUpdatedAt": "2026-07-05T05:30:18.269762-07:00"
+      "autoUpdatedAt": "2026-07-05T10:30:28.539513-07:00"
     },
     {
       "id": "riversol",
@@ -134,7 +134,7 @@
       "color": "#1098AD",
       "dot": "red",
       "health": "Active",
-      "tagline": "Root cause confirmed: v2026.6.9 upgrade removed native /new feature. Commands.runtime returns shouldContinue:false, blocking get-reply flow.",
+      "tagline": "Root cause confirmed: v2026.6.9 upgrade removed native /new feature. Commands.runtime blocks get-reply flow.",
       "lastTouched": "2026-07-05",
       "tasks": [
         {
@@ -208,24 +208,24 @@
           "source": "manual"
         },
         {
-          "text": "Fix commands.runtime line 141-145 to restore shouldContinue:true on bare /new calls",
+          "text": "Fix commands.runtime line 141-145 to allow get-reply execution on bare /new requests",
           "owner": "DigitsUp",
           "complexity": "medium",
           "urgent": true,
           "source": "auto"
         },
         {
-          "text": "Verify native BARE_SESSION_RESET_PROMPT_BASE fires post-fix in v2026.6.9+",
-          "owner": "DigitsUp",
-          "complexity": "medium",
-          "urgent": true,
-          "source": "auto"
-        },
-        {
-          "text": "Validate session flow against 2026-04-01-notion-pipeline.md and 2026-06-05-riversol-flow-audit.md",
+          "text": "Validate fix against pre-upgrade behavior (v2026.3.28) using session memory audit trail",
           "owner": "Michael",
           "complexity": "quick",
-          "urgent": false,
+          "urgent": true,
+          "source": "auto"
+        },
+        {
+          "text": "Test /new command with shouldContinue:true path to confirm native prompt fires",
+          "owner": "DigitsUp",
+          "complexity": "medium",
+          "urgent": true,
           "source": "auto"
         }
       ],
@@ -250,7 +250,7 @@
         },
         {
           "party": "DigitsUp",
-          "item": "Fix deployment for commands.runtime shouldContinue flag",
+          "item": "Code fix for commands.runtime regression in v2026.6.9",
           "source": "auto"
         }
       ],
@@ -261,13 +261,13 @@
           "madeOn": "2026-06-17"
         }
       ],
-      "nextMilestone": "Deploy commands.runtime fix and validate Riversol session flow",
+      "nextMilestone": "Deploy fix for commands.runtime line 141-145 and validate against v2026.3.28 behavior",
       "flags": [
-        "⚠️ Critical regression: /new feature broken post v2026.6.9 upgrade",
-        "✅ Root cause confirmed with session memory proof",
-        "⚠️ Blocking get-reply native flow until commands.runtime fixed"
+        "🔴 BLOCKING: /new falls through to native handler only pre-v2026.6.9 — v2026.6.9 breaks this entirely",
+        "✅ Root cause proven via 2026-04-01 + 2026-06-05 session memory artifacts",
+        "⚠️ shouldContinue:false on bare /new prevents get-reply hooks from firing — regression confirmed"
       ],
-      "autoUpdatedAt": "2026-07-05T05:30:27.075982-07:00"
+      "autoUpdatedAt": "2026-07-05T10:30:25.467952-07:00"
     },
     {
       "id": "salehe",
@@ -395,19 +395,19 @@
           "madeOn": "2026-06-17"
         }
       ],
-      "nextMilestone": "Awaiting Salehe Bembury project context",
+      "nextMilestone": "N/A",
       "flags": [
-        "⚠️ Source material contains only DigitsUp internal architecture audit emails — no Salehe Bembury client data present"
+        "Source material contains only DigitsUp/Mollie AI documentation — no Salehe Bembury project information present"
       ],
-      "autoUpdatedAt": "2026-07-05T05:30:34.550199-07:00"
+      "autoUpdatedAt": "2026-07-05T10:30:20.143514-07:00"
     },
     {
       "id": "the-lab",
       "name": "The Lab Life",
       "color": "#F08C00",
-      "dot": "amber",
+      "dot": "grey",
       "health": "On Track",
-      "tagline": "Design bottleneck blocking critical work; team evaluating Danny as new designer candidate to clear backlog.",
+      "tagline": "No The Lab Life data found in source materials. Architecture session files referenced are for another client.",
       "lastTouched": "2026-07-05",
       "tasks": [
         {
@@ -481,13 +481,11 @@
           "madeOn": "2026-06-03"
         }
       ],
-      "nextMilestone": "Weekend design task completion (pending designer assignment decision)",
+      "nextMilestone": "Unknown — awaiting The Lab Life specific context",
       "flags": [
-        "⚠️ Design bottleneck blocking critical work for Lab Life",
-        "⚠️ Urgent: team deciding this week on designer capacity",
-        "✅ Strong candidate (Danny) available with proven 24-hour turnaround"
+        "⚠️ Source material contains only references to DigitsUp architecture work — not The Lab Life content"
       ],
-      "autoUpdatedAt": "2026-07-05T05:30:32.296836-07:00"
+      "autoUpdatedAt": "2026-07-05T10:30:27.106070-07:00"
     },
     {
       "id": "epicure",
@@ -664,7 +662,7 @@
       "color": "#5C7CFA",
       "dot": "grey",
       "health": "Waiting on Client",
-      "tagline": "No OuterSignal-specific data found in provided context. Source material contains only DigitsUp internal communications and unrelated client references.",
+      "tagline": "No OuterSignal-specific data found in provided context.",
       "lastTouched": "2026-07-05",
       "tasks": [
         {
@@ -742,12 +740,11 @@
           "madeOn": "2026-06-17"
         }
       ],
-      "nextMilestone": "None identified for OuterSignal",
+      "nextMilestone": "Awaiting OuterSignal-specific project data",
       "flags": [
-        "⚠️ No OuterSignal content extracted from source material",
-        "ℹ️ Context contains DigitsUp internal audit/architecture documents only"
+        "⚠️ No OuterSignal information in source material — all context relates to DigitsUp internal processes and other clients"
       ],
-      "autoUpdatedAt": "2026-07-05T05:30:28.612778-07:00"
+      "autoUpdatedAt": "2026-07-05T10:30:33.455081-07:00"
     },
     {
       "id": "frnk",
@@ -822,11 +819,11 @@
         }
       ],
       "promises": [],
-      "nextMilestone": "Awaiting FRNK Boutique-specific updates",
+      "nextMilestone": "Awaiting FRNK Boutique project information",
       "flags": [
-        "⚠️ No FRNK Boutique information in source materials — all content references other clients (Outer Signal, Lab Life, Salehi, History List)"
+        "⚠️ Context contains only DigitsUp internal architecture session materials — no FRNK Boutique client data present"
       ],
-      "autoUpdatedAt": "2026-07-05T05:30:19.803211-07:00"
+      "autoUpdatedAt": "2026-07-05T10:30:21.680245-07:00"
     },
     {
       "id": "sfr",
@@ -1018,7 +1015,7 @@
       "urgent": false
     },
     {
-      "icon": "🟡",
+      "icon": "⚪",
       "clientId": "the-lab",
       "clientName": "The Lab Life",
       "text": "Confirm Month 1 completion with Travis + Ally by Jun 19",
@@ -1050,28 +1047,28 @@
   ],
   "activity": [
     {
-      "ts": "2026-07-05T05:30:18.269863-07:00",
-      "text": "RVCA — No RVCA-specific status data found in provided context."
+      "ts": "2026-07-05T10:30:20.143638-07:00",
+      "text": "Salehe Bembury — No Salehe Bembury data found in provided context."
     },
     {
-      "ts": "2026-07-05T05:30:19.803314-07:00",
+      "ts": "2026-07-05T10:30:21.680348-07:00",
       "text": "FRNK Boutique — No FRNK Boutique data found in provided context."
     },
     {
-      "ts": "2026-07-05T05:30:22.672257-07:00",
-      "text": "Epicure — Affiliate flow review transcript received from June 30 call with Amelia and Cindy. Awaiting review a"
+      "ts": "2026-07-05T10:30:25.468064-07:00",
+      "text": "Riversol — Root cause confirmed: v2026.6.9 upgrade removed native /new feature. Commands.runtime blocks get-rep"
     },
     {
-      "ts": "2026-07-05T05:30:27.076087-07:00",
-      "text": "Riversol — Root cause confirmed: v2026.6.9 upgrade removed native /new feature. Commands.runtime returns should"
+      "ts": "2026-07-05T10:30:27.106181-07:00",
+      "text": "The Lab Life — No The Lab Life data found in source materials. Architecture session files referenced are for anothe"
     },
     {
-      "ts": "2026-07-05T05:30:28.612879-07:00",
-      "text": "OuterSignal — No OuterSignal-specific data found in provided context. Source material contains only DigitsUp inter"
+      "ts": "2026-07-05T10:30:28.539626-07:00",
+      "text": "RVCA — No RVCA-specific status data found in provided context."
     },
     {
-      "ts": "2026-07-05T05:30:32.296934-07:00",
-      "text": "The Lab Life — Design bottleneck blocking critical work; team evaluating Danny as new designer candidate to clear b"
+      "ts": "2026-07-05T10:30:33.455187-07:00",
+      "text": "OuterSignal — No OuterSignal-specific data found in provided context."
     }
   ]
 }
