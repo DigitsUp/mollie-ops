@@ -1,6 +1,6 @@
 {
   "meta": {
-    "lastUpdated": "2026-07-05T22:30:49.395535-07:00",
+    "lastUpdated": "2026-07-06T05:30:44.297356-07:00",
     "updatedBy": "Mollie (auto-v4)",
     "cacheBust": "2026-06-17T21:43:00-07:00"
   },
@@ -11,8 +11,8 @@
       "color": "#3B5BDB",
       "dot": "amber",
       "health": "In Progress",
-      "tagline": "Strategy review pending; abandoned suite audit underway. Blocked on Clay's Shopify Admin API token for reviews remap.",
-      "lastTouched": "2026-07-05",
+      "tagline": "Strategy review queued first; abandoned suite audit underway with pop-up testing (Attentive vs Klaviyo) in progress. Blocked on Shopify API token.",
+      "lastTouched": "2026-07-06",
       "tasks": [
         {
           "text": "Post-purchase flow go-live Friday Jun 20 — emails 1 & 3 built, manual mode, OuterSignal backfill done",
@@ -65,34 +65,34 @@
         },
         {
           "text": "Conduct strategy review for RVCA",
-          "owner": "Michael",
-          "complexity": "medium",
-          "urgent": false,
-          "source": "auto"
-        },
-        {
-          "text": "Complete reviews remap (blocked on API token)",
-          "owner": "Michael",
-          "complexity": "heavy",
-          "urgent": false,
-          "source": "auto"
-        },
-        {
-          "text": "Conduct abandoned suite audit",
           "owner": "DigitsUp",
           "complexity": "medium",
           "urgent": false,
           "source": "auto"
         },
         {
-          "text": "Test Attentive pop-up vs Klaviyo pop-up",
-          "owner": "Michael",
+          "text": "Remap reviews (pending Clay's Shopify Admin API token)",
+          "owner": "DigitsUp",
           "complexity": "medium",
           "urgent": false,
           "source": "auto"
         },
         {
-          "text": "Verify Jul 4 markdown email delivery on Monday 3pm call",
+          "text": "Complete abandoned suite audit",
+          "owner": "DigitsUp",
+          "complexity": "medium",
+          "urgent": false,
+          "source": "auto"
+        },
+        {
+          "text": "A/B test Attentive pop-up vs Klaviyo pop-up",
+          "owner": "DigitsUp",
+          "complexity": "medium",
+          "urgent": false,
+          "source": "auto"
+        },
+        {
+          "text": "Verify Jul 4 markdown email deployment on Monday 3pm call",
           "owner": "Michael",
           "complexity": "quick",
           "urgent": true,
@@ -131,12 +131,14 @@
           "madeOn": "2026-06-17"
         }
       ],
-      "nextMilestone": "Monday 3pm call — confirm Jul 4 markdown email delivery",
+      "nextMilestone": "Monday 3pm call to verify Jul 4 email and unblock reviews remap",
       "flags": [
         "⚠️ Reviews remap blocked on API token from Clay",
-        "⚠️ Verify markdown email sent Jul 4 at Monday 3pm call"
+        "⚠️ Monday 3pm call: confirm Jul 4 markdown email sent",
+        "✅ Abandoned suite audit underway",
+        "✅ Pop-up testing in progress"
       ],
-      "autoUpdatedAt": "2026-07-05T22:30:49.394620-07:00"
+      "autoUpdatedAt": "2026-07-06T05:30:41.301466-07:00"
     },
     {
       "id": "riversol",
@@ -144,8 +146,8 @@
       "color": "#1098AD",
       "dot": "red",
       "health": "Active",
-      "tagline": "Flows blocked on build status & confirmations. Root cause identified for native feature regression post-upgrade.",
-      "lastTouched": "2026-07-05",
+      "tagline": "Flows not started (🔴 priority). Replenishment flow design complete, 5-Star Review ready to launch pending confirmation.",
+      "lastTouched": "2026-07-06",
       "tasks": [
         {
           "text": "Provide Figma access to Riversol team; request header + copy feedback on replenishment mockups",
@@ -218,30 +220,30 @@
           "source": "manual"
         },
         {
-          "text": "Determine replenishment flow build status and unblock",
-          "owner": "DigitsUp",
-          "complexity": "medium",
-          "urgent": true,
-          "source": "auto"
-        },
-        {
-          "text": "Obtain confirmation to launch 5-Star Review flow",
-          "owner": "Client",
-          "complexity": "quick",
-          "urgent": true,
-          "source": "auto"
-        },
-        {
-          "text": "Start flows implementation (currently not started)",
+          "text": "Start flows implementation — currently blocked at zero progress",
           "owner": "DigitsUp",
           "complexity": "heavy",
           "urgent": true,
           "source": "auto"
         },
         {
-          "text": "Rebuild Skin Quiz",
+          "text": "Confirm 5-Star Review flow launch readiness",
+          "owner": "Client",
+          "complexity": "quick",
+          "urgent": true,
+          "source": "auto"
+        },
+        {
+          "text": "Determine Replenishment flow build status",
           "owner": "DigitsUp",
           "complexity": "medium",
+          "urgent": false,
+          "source": "auto"
+        },
+        {
+          "text": "Rebuild Skin Quiz",
+          "owner": "DigitsUp",
+          "complexity": "heavy",
           "urgent": false,
           "source": "auto"
         }
@@ -269,11 +271,6 @@
           "party": "Client",
           "item": "Confirmation to launch 5-Star Review flow",
           "source": "auto"
-        },
-        {
-          "party": "DigitsUp",
-          "item": "Replenishment flow build status confirmation",
-          "source": "auto"
         }
       ],
       "promises": [
@@ -283,14 +280,14 @@
           "madeOn": "2026-06-17"
         }
       ],
-      "nextMilestone": "Launch 5-Star Review flow (pending client confirmation)",
+      "nextMilestone": "5-Star Review flow launch (pending client confirmation)",
       "flags": [
-        "🔴 Flows not started — critical priority",
-        "✅ Root cause confirmed for native feature regression (v2026.6.9)",
-        "⚠️ 5-Star Review flow ready but awaiting launch confirmation",
-        "⚠️ Replenishment flow designed, build status TBD"
+        "⚠️ Flows not started — critical priority",
+        "✅ Replenishment flow design complete",
+        "✅ 5-Star Review flow ready to launch",
+        "⚠️ Skin Quiz rebuild needed"
       ],
-      "autoUpdatedAt": "2026-07-05T22:30:21.589611-07:00"
+      "autoUpdatedAt": "2026-07-06T05:30:14.486805-07:00"
     },
     {
       "id": "salehe",
@@ -298,8 +295,8 @@
       "color": "#2F9E44",
       "dot": "amber",
       "health": "Pivoting",
-      "tagline": "Summer Archive Sale prep underway for Aug 13; editorial newsletter draft due tomorrow. Multiple product launches queued.",
-      "lastTouched": "2026-07-05",
+      "tagline": "Summer Archive Sale planning underway; Kieran's editorial newsletter draft due today. Multiple product launches queued.",
+      "lastTouched": "2026-07-06",
       "tasks": [
         {
           "text": "Add product titles to Alex Proba Figma design; send to Fardad (drop moved to July)",
@@ -344,16 +341,16 @@
           "source": "manual"
         },
         {
-          "text": "Explore cheaper email tool options (Attentive trial?) for 80k+ list ahead of Summer Archive Sale",
+          "text": "Explore cheaper email tool options (Attentive trial?) for 80k+ list ahead of Summer Archive Sale Aug 13",
           "owner": "Michael",
           "complexity": "medium",
           "urgent": false,
           "source": "auto"
         },
         {
-          "text": "Finalize Kieran editorial newsletter draft",
+          "text": "Confirm Kieran editorial newsletter draft delivery for Jul 6",
           "owner": "Kieran",
-          "complexity": "medium",
+          "complexity": "quick",
           "urgent": true,
           "source": "auto"
         }
@@ -379,7 +376,7 @@
         },
         {
           "party": "Kieran",
-          "item": "Editorial newsletter draft completion",
+          "item": "Editorial newsletter draft (due Jul 6)",
           "source": "auto"
         }
       ],
@@ -392,12 +389,11 @@
       ],
       "nextMilestone": "Kieran editorial newsletter draft due Jul 6",
       "flags": [
-        "⚠️ Editorial newsletter draft due Jul 6 (tomorrow)",
-        "Mugs launch Jul 30",
-        "Speaker presale Aug 27",
-        "Summer Archive Sale Aug 13 requires email tool decision"
+        "Kieran newsletter draft due TODAY (Jul 6)",
+        "Summer Archive Sale email tool selection needed before Aug 13",
+        "Multiple product launches: Mugs (Jul 30), Speaker presale (Aug 27)"
       ],
-      "autoUpdatedAt": "2026-07-05T22:30:46.629341-07:00"
+      "autoUpdatedAt": "2026-07-06T05:30:19.989556-07:00"
     },
     {
       "id": "the-lab",
@@ -405,8 +401,8 @@
       "color": "#F08C00",
       "dot": "amber",
       "health": "On Track",
-      "tagline": "Jul 5 promo campaign wrapping today at 3pm ET. GHL no-show rebooking flow next. Month 2 email migration (Klaviyo + Constant Contact) not yet started.",
-      "lastTouched": "2026-07-05",
+      "tagline": "GHL no-show rebooking flow in progress; Jul 5 promo campaign expiring today at 3pm ET; Month 2 email migration (Klaviyo + Constant Contact) not yet started.",
+      "lastTouched": "2026-07-06",
       "tasks": [
         {
           "text": "Confirm Month 1 completion with Travis + Ally by Jun 19",
@@ -451,21 +447,21 @@
           "source": "manual"
         },
         {
-          "text": "Monitor Jul 5 promo campaign expiry at 3pm ET",
-          "owner": "Michael",
-          "complexity": "quick",
-          "urgent": true,
-          "source": "auto"
-        },
-        {
-          "text": "Build GHL no-show rebooking flow",
+          "text": "Complete GHL build: no-show rebooking flow",
           "owner": "DigitsUp",
           "complexity": "medium",
           "urgent": false,
           "source": "auto"
         },
         {
-          "text": "Initiate Month 2 Klaviyo + Constant Contact migration",
+          "text": "Monitor Jul 5 promo campaign expiry at 3pm ET today",
+          "owner": "Michael",
+          "complexity": "quick",
+          "urgent": true,
+          "source": "auto"
+        },
+        {
+          "text": "Plan and initiate Month 2 Klaviyo + Constant Contact migration",
           "owner": "DigitsUp",
           "complexity": "heavy",
           "urgent": false,
@@ -486,12 +482,13 @@
           "madeOn": "2026-06-03"
         }
       ],
-      "nextMilestone": "Jul 5 promo campaign expiry (3pm ET)",
+      "nextMilestone": "Jul 5 promo campaign expiry (3pm ET); Month 2 Klaviyo + Constant Contact migration start",
       "flags": [
-        "⏰ Promo campaign expires TODAY 3pm ET",
-        "⚠️ Month 2 email migration not started — prioritize kick-off"
+        "⚠️ Jul 5 promo campaign expires 3pm ET today — verify completion",
+        "⚠️ Month 2 email migration not started — requires planning",
+        "GHL no-show rebooking flow actively building"
       ],
-      "autoUpdatedAt": "2026-07-05T22:30:30.144533-07:00"
+      "autoUpdatedAt": "2026-07-06T05:30:26.235526-07:00"
     },
     {
       "id": "epicure",
@@ -499,8 +496,8 @@
       "color": "#862E9C",
       "dot": "red",
       "health": "In Progress",
-      "tagline": "Affiliate flow build underway with translation work; post-purchase email issue since Feb is a revenue leak requiring urgent attention.",
-      "lastTouched": "2026-07-05",
+      "tagline": "Affiliate flow build progressing; critical post-purchase email revenue leak unresolved since February; back-in-stock regional bug needs Klaviyo support.",
+      "lastTouched": "2026-07-06",
       "tasks": [
         {
           "text": "Write PP Email 2 brief (recipe refresh)",
@@ -559,16 +556,16 @@
           "source": "auto"
         },
         {
-          "text": "Schedule Klaviyo support call with Will to resolve back-in-stock regional bug (CA firing to US)",
+          "text": "Schedule and conduct Klaviyo support call with Will to resolve back-in-stock regional bug (CA firing to US)",
           "owner": "Michael",
           "complexity": "medium",
           "urgent": true,
           "source": "auto"
         },
         {
-          "text": "Finalize GoAffPro webhook integration for affiliate flow",
+          "text": "Complete GoAffPro webhook integration for affiliate flow",
           "owner": "DigitsUp",
-          "complexity": "medium",
+          "complexity": "heavy",
           "urgent": false,
           "source": "auto"
         }
@@ -594,24 +591,24 @@
         },
         {
           "party": "Meaghan",
-          "item": "French translations for affiliate welcome flow",
+          "item": "French translations for affiliate flow",
           "source": "auto"
         },
         {
-          "party": "Will",
-          "item": "Klaviyo support call to fix back-in-stock regional bug",
+          "party": "Klaviyo",
+          "item": "Support for back-in-stock regional bug (CA to US)",
           "source": "auto"
         }
       ],
       "promises": [],
-      "nextMilestone": "Next meeting on Initiatives 4, 5, 6 (date TBD after current blockers resolved)",
+      "nextMilestone": "Initiatives 4, 5, 6 meeting (pending schedule)",
       "flags": [
-        "⚠️ Post-purchase revenue leak live since February — critical fix needed",
-        "⚠️ Back-in-stock regional bug (CA→US) blocking proper fulfillment",
-        "🔄 Affiliate flow build in progress with multi-language support",
-        "⏸️ Initiatives 4, 5, 6 parked pending current priorities"
+        "⚠️ Post-purchase revenue leak live since February — critical priority",
+        "⚠️ Back-in-stock regional bug needs external Klaviyo support",
+        "🔄 Affiliate flow build in progress with webhook + bilingual setup",
+        "⏸️ Initiatives 4, 5, 6 parked pending next meeting"
       ],
-      "autoUpdatedAt": "2026-07-05T22:30:26.558789-07:00"
+      "autoUpdatedAt": "2026-07-06T05:30:37.909376-07:00"
     },
     {
       "id": "hiba",
@@ -619,8 +616,8 @@
       "color": "#E64980",
       "dot": "red",
       "health": "On Track",
-      "tagline": "June report ready but unsent to Homa. Website popup blocking leads, re-engagement campaign pending list validation.",
-      "lastTouched": "2026-07-05",
+      "tagline": "June report live but not yet sent to client. Website popup blocking lead capture and re-engagement campaign pending list validation.",
+      "lastTouched": "2026-07-06",
       "tasks": [
         {
           "text": "Draft renewal proposal for Hiba Academy (contract ends June) — Veronica asked Jun 11",
@@ -644,15 +641,15 @@
           "source": "auto"
         },
         {
-          "text": "Resolve website popup issue blocking lead capture (blocked on ITC)",
+          "text": "Resolve website popup issue blocking lead capture (coordinate with ITC)",
           "owner": "DigitsUp",
-          "complexity": "heavy",
+          "complexity": "medium",
           "urgent": true,
           "source": "auto"
         },
         {
-          "text": "Validate re-engagement campaign list with Skye",
-          "owner": "Kieran",
+          "text": "Launch re-engagement campaign once list validation complete",
+          "owner": "Skye",
           "complexity": "medium",
           "urgent": false,
           "source": "auto"
@@ -683,13 +680,13 @@
           "madeOn": "2026-06-11"
         }
       ],
-      "nextMilestone": "Send June report to Homa + resolve website popup",
+      "nextMilestone": "Website popup resolution and re-engagement campaign launch",
       "flags": [
-        "🔴 June report live but NOT sent to Homa yet",
-        "🔴 Website popup killing lead capture — ITC blocker",
-        "⏳ Re-engagement campaign waiting on list validation"
+        "🔴 June report not yet sent to Homa",
+        "🔴 Website popup actively killing lead capture",
+        "⚠️ Re-engagement campaign stalled pending list validation"
       ],
-      "autoUpdatedAt": "2026-07-05T22:30:40.385007-07:00"
+      "autoUpdatedAt": "2026-07-06T05:30:31.403227-07:00"
     },
     {
       "id": "outersignal",
@@ -697,8 +694,8 @@
       "color": "#5C7CFA",
       "dot": "grey",
       "health": "Waiting on Client",
-      "tagline": "Post-purchase flow scope locked with Christy Dawn logic finalized. Blocked on Klaviyo access and creative assets from JD.",
-      "lastTouched": "2026-07-05",
+      "tagline": "Post-purchase flow scope locked; awaiting Klaviyo access and creative assets from JD to proceed.",
+      "lastTouched": "2026-07-06",
       "tasks": [
         {
           "text": "Build Post-Purchase 2026 flow draft — due EOW Jun 20 (once assets arrive)",
@@ -729,7 +726,7 @@
           "source": "auto"
         },
         {
-          "text": "Obtain creative assets from JD for post-purchase flow",
+          "text": "Follow up with JD for creative assets delivery",
           "owner": "Michael",
           "complexity": "quick",
           "urgent": false,
@@ -773,23 +770,22 @@
           "madeOn": "2026-06-17"
         }
       ],
-      "nextMilestone": "Klaviyo access grant + creative asset delivery from JD",
+      "nextMilestone": "Receive Klaviyo access and creative assets from JD",
       "flags": [
         "✅ Post-purchase flow scope locked (Jun 16 kickoff)",
-        "✅ Christy Dawn flow logic locked (Jun 25)",
-        "⚠️ Dataships segment cloned but awaiting Klaviyo access",
-        "⚠️ Blocked on JD for creative assets"
+        "✅ Christy Dawn flow logic locked Jun 25 — Dataships segment cloned",
+        "⚠️ Blocked on client (JD) deliverables for progression"
       ],
-      "autoUpdatedAt": "2026-07-05T22:30:14.066437-07:00"
+      "autoUpdatedAt": "2026-07-06T05:30:17.534024-07:00"
     },
     {
       "id": "frnk",
       "name": "FRNK Boutique",
       "color": "#E8845C",
-      "dot": "amber",
+      "dot": "red",
       "health": "Blocked",
-      "tagline": "Instagram giveaway launching week of Jul 6, blocked on Steph's Facebook credentials. Email confirmed sent.",
-      "lastTouched": "2026-07-05",
+      "tagline": "Instagram giveaway launch blocked on Steph's Facebook credentials; email sent, Klaviyo sync ready to go.",
+      "lastTouched": "2026-07-06",
       "tasks": [
         {
           "text": "Confirm welcome series + abandoned cart build status with team",
@@ -813,10 +809,17 @@
           "source": "manual"
         },
         {
-          "text": "Set up Klaviyo-Instagram sync on desktop once Facebook credentials received",
+          "text": "Set up Klaviyo-Instagram sync once Facebook credentials received",
           "owner": "DigitsUp",
           "complexity": "medium",
           "urgent": false,
+          "source": "auto"
+        },
+        {
+          "text": "Launch Instagram giveaway week of Jul 6",
+          "owner": "DigitsUp",
+          "complexity": "medium",
+          "urgent": true,
           "source": "auto"
         }
       ],
@@ -829,18 +832,18 @@
         },
         {
           "party": "Steph",
-          "item": "Facebook login credentials for Instagram giveaway setup",
+          "item": "Facebook login credentials for giveaway setup",
           "source": "auto"
         }
       ],
       "promises": [],
-      "nextMilestone": "Instagram giveaway launch week of Jul 6",
+      "nextMilestone": "Instagram giveaway launch (week of Jul 6)",
       "flags": [
-        "Jul 4 email confirmed sent ✅",
-        "⚠️ Instagram giveaway blocked on credentials from Steph",
-        "Klaviyo-Instagram sync pending credential delivery"
+        "✅ Jul 4 email confirmed sent",
+        "⚠️ Instagram giveaway blocked on credentials",
+        "⚠️ Klaviyo sync waiting for desktop access post-credentials"
       ],
-      "autoUpdatedAt": "2026-07-05T22:30:17.180889-07:00"
+      "autoUpdatedAt": "2026-07-06T05:30:44.296483-07:00"
     },
     {
       "id": "sfr",
@@ -848,8 +851,8 @@
       "color": "#845EF7",
       "dot": "amber",
       "health": "Starting Jun 22",
-      "tagline": "SFR Distillery Phase 1 (abandoned suite) ready to launch. Blocked on lifestyle images from Will; Harrison following up via Victoria.",
-      "lastTouched": "2026-07-05",
+      "tagline": "SFR Distillery Phase 1 (abandoned suite) ready to launch Monday 10am. Blocked on lifestyle images from Will.",
+      "lastTouched": "2026-07-06",
       "tasks": [
         {
           "text": "Prep onboarding doc + kickoff agenda for Will — Jun 22",
@@ -859,23 +862,16 @@
           "source": "manual"
         },
         {
-          "text": "Harrison to follow up with Will via Victoria on lifestyle image delivery for Phase 1",
-          "owner": "Victoria",
+          "text": "Harrison to follow up with Will via Victoria on lifestyle images for Phase 1",
+          "owner": "Harrison Faidley",
           "complexity": "quick",
           "urgent": true,
           "source": "auto"
         },
         {
-          "text": "Prepare Phase 1 abandoned suite email sequence once lifestyle images received",
+          "text": "Conduct Monday 10am call with Harrison Faidley on Phase 1 abandoned suite implementation",
           "owner": "DigitsUp",
           "complexity": "medium",
-          "urgent": false,
-          "source": "auto"
-        },
-        {
-          "text": "Confirm Monday 10am call with Harrison Faidley",
-          "owner": "Michael",
-          "complexity": "quick",
           "urgent": false,
           "source": "auto"
         }
@@ -894,13 +890,13 @@
         }
       ],
       "promises": [],
-      "nextMilestone": "Monday 10am call with Harrison Faidley",
+      "nextMilestone": "Monday 10am call with Harrison Faidley; Phase 1 launch pending image delivery",
       "flags": [
-        "⚠️ Phase 1 blocked on lifestyle image delivery from Will",
-        "✅ Phase roadmap defined: Phase 1 (abandoned suite), Phase 2 (welcome series), Phase 3 (post-purchase + winback)",
-        "Monday 10am kickoff call scheduled"
+        "⚠️ Phase 1 blocked on lifestyle images — critical blocker for launch",
+        "📅 Monday 10am call with Harrison Faidley scheduled",
+        "🔄 3-phase plan: Phase 1 (abandoned suite) → Phase 2 (welcome series) → Phase 3 (post-purchase + winback)"
       ],
-      "autoUpdatedAt": "2026-07-05T22:30:43.352788-07:00"
+      "autoUpdatedAt": "2026-07-06T05:30:23.061190-07:00"
     }
   ],
   "pipeline": [
@@ -1041,6 +1037,16 @@
       "urgent": false
     },
     {
+      "icon": "🔴",
+      "clientId": "frnk",
+      "clientName": "FRNK Boutique",
+      "text": "Launch Instagram giveaway week of Jul 6",
+      "complexity": "medium",
+      "deadline": "Jul 6",
+      "urgent": true,
+      "source": "auto"
+    },
+    {
       "icon": "🟡",
       "clientId": "the-lab",
       "clientName": "The Lab Life",
@@ -1048,16 +1054,6 @@
       "complexity": "quick",
       "deadline": "Jul 5",
       "urgent": true,
-      "source": "auto"
-    },
-    {
-      "icon": "🟡",
-      "clientId": "frnk",
-      "clientName": "FRNK Boutique",
-      "text": "Confirm welcome series + abandoned cart build status with team",
-      "complexity": "quick",
-      "deadline": "Jul 6",
-      "urgent": false,
       "source": "auto"
     },
     {
@@ -1073,28 +1069,28 @@
   ],
   "activity": [
     {
-      "ts": "2026-07-05T22:30:14.066539-07:00",
-      "text": "OuterSignal — Post-purchase flow scope locked with Christy Dawn logic finalized. Blocked on Klaviyo access and cre"
+      "ts": "2026-07-06T05:30:14.486909-07:00",
+      "text": "Riversol — Flows not started (🔴 priority). Replenishment flow design complete, 5-Star Review ready to launch pe"
     },
     {
-      "ts": "2026-07-05T22:30:17.180991-07:00",
-      "text": "FRNK Boutique — Instagram giveaway launching week of Jul 6, blocked on Steph's Facebook credentials. Email confirmed"
+      "ts": "2026-07-06T05:30:17.534129-07:00",
+      "text": "OuterSignal — Post-purchase flow scope locked; awaiting Klaviyo access and creative assets from JD to proceed."
     },
     {
-      "ts": "2026-07-05T22:30:21.589708-07:00",
-      "text": "Riversol — Flows blocked on build status & confirmations. Root cause identified for native feature regression p"
+      "ts": "2026-07-06T05:30:19.989652-07:00",
+      "text": "Salehe Bembury — Summer Archive Sale planning underway; Kieran's editorial newsletter draft due today. Multiple produ"
     },
     {
-      "ts": "2026-07-05T22:30:26.558891-07:00",
-      "text": "Epicure — Affiliate flow build underway with translation work; post-purchase email issue since Feb is a revenu"
+      "ts": "2026-07-06T05:30:23.061286-07:00",
+      "text": "SFR Distillery — SFR Distillery Phase 1 (abandoned suite) ready to launch Monday 10am. Blocked on lifestyle images fr"
     },
     {
-      "ts": "2026-07-05T22:30:30.144633-07:00",
-      "text": "The Lab Life — Jul 5 promo campaign wrapping today at 3pm ET. GHL no-show rebooking flow next. Month 2 email migrat"
+      "ts": "2026-07-06T05:30:26.235625-07:00",
+      "text": "The Lab Life — GHL no-show rebooking flow in progress; Jul 5 promo campaign expiring today at 3pm ET; Month 2 email"
     },
     {
-      "ts": "2026-07-05T22:30:40.385112-07:00",
-      "text": "Hiba Academy — June report ready but unsent to Homa. Website popup blocking leads, re-engagement campaign pending l"
+      "ts": "2026-07-06T05:30:31.403311-07:00",
+      "text": "Hiba Academy — June report live but not yet sent to client. Website popup blocking lead capture and re-engagement c"
     }
   ]
 }
