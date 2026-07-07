@@ -1,6 +1,6 @@
 {
   "meta": {
-    "lastUpdated": "2026-07-07T05:30:25.876814-07:00",
+    "lastUpdated": "2026-07-07T07:01:13.289204-07:00",
     "updatedBy": "Mollie (auto-v4)",
     "cacheBust": "2026-06-17T21:43:00-07:00"
   },
@@ -11,7 +11,7 @@
       "color": "#3B5BDB",
       "dot": "amber",
       "health": "In Progress",
-      "tagline": "RVCA needs two campaigns prioritized for client review today to meet Wednesday send deadline. Kieran auditing SMS/email flow alignment.",
+      "tagline": "RVCA: Two campaigns prioritized for client review today to meet Wednesday send deadline. SMS flow audit underway.",
       "lastTouched": "2026-07-07",
       "tasks": [
         {
@@ -64,17 +64,17 @@
           "source": "manual"
         },
         {
-          "text": "Prioritize two campaigns for RVCA client review today",
+          "text": "Prioritize two campaigns for client review today to meet Wednesday send deadline",
           "owner": "DigitsUp",
           "complexity": "medium",
           "urgent": true,
           "source": "auto"
         },
         {
-          "text": "Audit Klaviyo vs. Attentive flows to align SMS with email automations (Post-Purchase, $2 RPR)",
+          "text": "Audit Klaviyo vs. Attentive flows to align SMS with high-performing email automations (Post-Purchase, $2 RPR)",
           "owner": "Kieran",
           "complexity": "medium",
-          "urgent": true,
+          "urgent": false,
           "source": "auto"
         }
       ],
@@ -99,7 +99,7 @@
         },
         {
           "party": "RVCA",
-          "item": "Client review feedback on two campaigns",
+          "item": "Client review and approval of two campaigns",
           "source": "auto"
         }
       ],
@@ -113,9 +113,9 @@
       "nextMilestone": "Wednesday campaign send deadline",
       "flags": [
         "⚠️ Wednesday send deadline for two campaigns",
-        "⚠️ SMS/email flow alignment audit in progress"
+        "⚠️ SMS/email flow alignment in progress"
       ],
-      "autoUpdatedAt": "2026-07-07T05:30:24.303709-07:00"
+      "autoUpdatedAt": "2026-07-07T07:01:02.740971-07:00"
     },
     {
       "id": "riversol",
@@ -277,7 +277,7 @@
       "color": "#2F9E44",
       "dot": "amber",
       "health": "Pivoting",
-      "tagline": "Pursuing $2.5k+ retainer with long-term product roadmap; Alex Proba drop (July 16) and Sponge partnership meeting (Thursday) are immediate priorities.",
+      "tagline": "Pursuing $2.5k+ retainer with long-term product roadmap; Sponge partnership meeting Thursday to unlock email account access.",
       "lastTouched": "2026-07-07",
       "tasks": [
         {
@@ -344,9 +344,16 @@
           "source": "auto"
         },
         {
-          "text": "Review editorial email and welcome series in Figma; provide new hero image",
+          "text": "Review editorial email and welcome series in Figma; provide hero image",
           "owner": "DigitsUp",
           "complexity": "medium",
+          "urgent": false,
+          "source": "auto"
+        },
+        {
+          "text": "Get Google Analytics access for Sponge website from Chris",
+          "owner": "DigitsUp",
+          "complexity": "quick",
           "urgent": false,
           "source": "auto"
         },
@@ -355,13 +362,6 @@
           "owner": "DigitsUp",
           "complexity": "quick",
           "urgent": true,
-          "source": "auto"
-        },
-        {
-          "text": "Send giveaway winner notification email",
-          "owner": "DigitsUp",
-          "complexity": "quick",
-          "urgent": false,
           "source": "auto"
         }
       ],
@@ -386,12 +386,12 @@
         },
         {
           "party": "Sponge team",
-          "item": "Google Analytics access and Klaviyo strategy discussion (Thursday meeting)",
+          "item": "GA access and Klaviyo strategy discussion (Thursday meeting)",
           "source": "auto"
         },
         {
-          "party": "Client (Chris)",
-          "item": "Google Analytics access for Sponge's website",
+          "party": "Salehe Bembury",
+          "item": "Decision on $2.5k+ retainer proposal with long-term product roadmap",
           "source": "auto"
         }
       ],
@@ -402,14 +402,14 @@
           "madeOn": "2026-06-17"
         }
       ],
-      "nextMilestone": "Alex Proba launch July 16 + Sponge partnership meeting Thursday",
+      "nextMilestone": "Sponge partnership meeting Thursday + Alex Proba drop July 16",
       "flags": [
-        "⚠️ Alex Proba drop July 16 requires flexible email cadence (24–48hr sell-out predicted)",
-        "⚠️ Sponge partnership critical to subsidize personal brand work and justify retainer",
-        "⚠️ Riversol scoped down to low-margin tune-up; focus on quiz flow email splits",
-        "✅ Long-term product roadmap strategy (evergreen apparel, home goods, collabs) drafted for retainer pitch"
+        "⚠️ Alex Proba drop July 16 — flexible email cadence needed for predicted 24-48hr sell-out",
+        "⚠️ Riversol scoped down to low-margin tune-up; design team briefing needed",
+        "✅ Sponge partnership could subsidize personal brand work if email account secured",
+        "⚠️ Multiple campaign builds in progress (Mug Drop, Proba follow-up, Riversol quiz flow)"
       ],
-      "autoUpdatedAt": "2026-07-07T05:30:22.087892-07:00"
+      "autoUpdatedAt": "2026-07-07T07:01:13.288335-07:00"
     },
     {
       "id": "the-lab",
@@ -851,11 +851,11 @@
         }
       ],
       "promises": [],
-      "nextMilestone": "Awaiting FRNK Boutique project information",
+      "nextMilestone": "Unknown",
       "flags": [
-        "No FRNK Boutique mentions in emails or meeting notes"
+        "⚠️ No FRNK Boutique updates in scope materials (emails reference DigitsUp team, RVCA, Outer Signal, OSNAP only)"
       ],
-      "autoUpdatedAt": "2026-07-07T05:30:25.875882-07:00"
+      "autoUpdatedAt": "2026-07-07T07:01:04.481711-07:00"
     },
     {
       "id": "sfr",
@@ -1088,6 +1088,18 @@
   ],
   "activity": [
     {
+      "ts": "2026-07-07T07:01:02.741069-07:00",
+      "text": "RVCA — RVCA: Two campaigns prioritized for client review today to meet Wednesday send deadline. SMS flow au"
+    },
+    {
+      "ts": "2026-07-07T07:01:04.481806-07:00",
+      "text": "FRNK Boutique — No FRNK Boutique-specific data found in provided context."
+    },
+    {
+      "ts": "2026-07-07T07:01:13.288445-07:00",
+      "text": "Salehe Bembury — Pursuing $2.5k+ retainer with long-term product roadmap; Sponge partnership meeting Thursday to unlo"
+    },
+    {
       "ts": "2026-07-07T05:30:22.087997-07:00",
       "text": "Salehe Bembury — Pursuing $2.5k+ retainer with long-term product roadmap; Alex Proba drop (July 16) and Sponge partne"
     },
@@ -1098,18 +1110,6 @@
     {
       "ts": "2026-07-07T05:30:25.875997-07:00",
       "text": "FRNK Boutique — No FRNK Boutique-specific data found in provided context."
-    },
-    {
-      "ts": "2026-07-06T22:30:26.899361-07:00",
-      "text": "SFR Distillery — SFR Distillery setup complete with kickoff held. Awaiting Klaviyo API key and GA access to begin cam"
-    },
-    {
-      "ts": "2026-07-06T22:30:28.180759-07:00",
-      "text": "FRNK Boutique — No actionable data for FRNK Boutique found in provided context."
-    },
-    {
-      "ts": "2026-07-06T22:30:34.429051-07:00",
-      "text": "Salehe Bembury — DigitsUp pursuing $2.5k+ retainer with long-term product roadmap; Sponge partnership & Alex Proba dr"
     }
   ]
 }
