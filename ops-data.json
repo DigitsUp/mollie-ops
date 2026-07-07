@@ -1,6 +1,6 @@
 {
   "meta": {
-    "lastUpdated": "2026-07-06T07:01:22.717596-07:00",
+    "lastUpdated": "2026-07-06T22:30:37.241013-07:00",
     "updatedBy": "Mollie (auto-v4)",
     "cacheBust": "2026-06-17T21:43:00-07:00"
   },
@@ -11,7 +11,7 @@
       "color": "#3B5BDB",
       "dot": "amber",
       "health": "In Progress",
-      "tagline": "Strategy review underway with multiple concurrent tests (Attentive vs Klaviyo pop-ups, abandoned suite audit). Blocked on Clay's Shopify Admin API token for reviews remap.",
+      "tagline": "RVCA: Two campaigns prioritized for client review today to meet Wednesday send deadline. Kieran auditing SMS/email flow alignment.",
       "lastTouched": "2026-07-06",
       "tasks": [
         {
@@ -64,37 +64,16 @@
           "source": "manual"
         },
         {
-          "text": "Conduct strategy review for RVCA",
-          "owner": "Michael",
-          "complexity": "medium",
-          "urgent": false,
-          "source": "auto"
-        },
-        {
-          "text": "Remap reviews (pending Clay's Shopify Admin API token)",
+          "text": "Prioritize two campaigns for RVCA client review today",
           "owner": "DigitsUp",
           "complexity": "medium",
-          "urgent": false,
+          "urgent": true,
           "source": "auto"
         },
         {
-          "text": "Complete abandoned suite audit",
-          "owner": "DigitsUp",
+          "text": "Audit Klaviyo vs. Attentive flows to align SMS with high-performing email automations (Post-Purchase, $2 RPR)",
+          "owner": "Kieran",
           "complexity": "medium",
-          "urgent": false,
-          "source": "auto"
-        },
-        {
-          "text": "Run A/B test: Attentive pop-up vs Klaviyo pop-up",
-          "owner": "DigitsUp",
-          "complexity": "medium",
-          "urgent": false,
-          "source": "auto"
-        },
-        {
-          "text": "Verify Jul 4 markdown email delivery on Monday 3pm call",
-          "owner": "Michael",
-          "complexity": "quick",
           "urgent": true,
           "source": "auto"
         }
@@ -119,8 +98,8 @@
           "source": "manual"
         },
         {
-          "party": "Clay",
-          "item": "Shopify Admin API token for reviews remap",
+          "party": "RVCA",
+          "item": "Client review and approval of two campaigns for Wednesday send",
           "source": "auto"
         }
       ],
@@ -131,14 +110,12 @@
           "madeOn": "2026-06-17"
         }
       ],
-      "nextMilestone": "Monday 3pm call to verify Jul 4 markdown email delivery",
+      "nextMilestone": "Wednesday campaign send deadline",
       "flags": [
-        "⚠️ Reviews remap blocked on Clay's API token",
-        "🔄 Attentive vs Klaviyo pop-up test in progress",
-        "📋 Abandoned suite audit underway",
-        "✅ Strategy review queued as priority"
+        "⚠️ Wednesday send deadline — campaigns must be ready for client review today",
+        "⚠️ SMS/email flow audit in progress to optimize automation performance"
       ],
-      "autoUpdatedAt": "2026-07-06T07:01:06.947367-07:00"
+      "autoUpdatedAt": "2026-07-06T22:30:37.240022-07:00"
     },
     {
       "id": "riversol",
@@ -300,7 +277,7 @@
       "color": "#2F9E44",
       "dot": "amber",
       "health": "Pivoting",
-      "tagline": "Summer Archive Sale prep underway; exploring cost-effective email tools for large list. Near-term focus on Kieran's editorial newsletter draft.",
+      "tagline": "DigitsUp pursuing $2.5k+ retainer with long-term product roadmap; Sponge partnership & Alex Proba drop (July 16) in motion.",
       "lastTouched": "2026-07-06",
       "tasks": [
         {
@@ -346,17 +323,45 @@
           "source": "manual"
         },
         {
-          "text": "Explore cheaper email tool options (Attentive trial?) for 80k+ Summer Archive Sale campaign",
+          "text": "Send test emails for editorial and Proba launch campaigns",
           "owner": "Michael",
           "complexity": "medium",
           "urgent": false,
           "source": "auto"
         },
         {
-          "text": "Review Kieran editorial newsletter draft due today (Jul 6)",
-          "owner": "Kieran",
+          "text": "Create Klaviyo segment for Riversol new vs. returning customer split",
+          "owner": "Michael",
+          "complexity": "medium",
+          "urgent": false,
+          "source": "auto"
+        },
+        {
+          "text": "Draft giveaway winner notification template",
+          "owner": "Michael",
           "complexity": "quick",
-          "urgent": true,
+          "urgent": false,
+          "source": "auto"
+        },
+        {
+          "text": "Review editorial email and welcome series in Figma; provide new hero image",
+          "owner": "DigitsUp",
+          "complexity": "medium",
+          "urgent": false,
+          "source": "auto"
+        },
+        {
+          "text": "Schedule Sponge team meeting for Thursday at 1 PM",
+          "owner": "DigitsUp",
+          "complexity": "quick",
+          "urgent": false,
+          "source": "auto"
+        },
+        {
+          "text": "Get Google Analytics access for Sponge website from Chris",
+          "owner": "DigitsUp",
+          "complexity": "quick",
+          "urgent": false,
           "source": "auto"
         }
       ],
@@ -380,8 +385,18 @@
           "source": "manual"
         },
         {
-          "party": "Kieran",
-          "item": "Editorial newsletter draft (due Jul 6)",
+          "party": "Sponge team",
+          "item": "GA access and Klaviyo strategy discussion (Thursday meeting)",
+          "source": "auto"
+        },
+        {
+          "party": "Chris",
+          "item": "Google Analytics access for Sponge website",
+          "source": "auto"
+        },
+        {
+          "party": "Design team",
+          "item": "Mug Drop email framework and Alex Proba follow-up email designs",
           "source": "auto"
         }
       ],
@@ -392,13 +407,14 @@
           "madeOn": "2026-06-17"
         }
       ],
-      "nextMilestone": "Kieran editorial newsletter draft delivery (Jul 6)",
+      "nextMilestone": "Alex Proba release July 16 + Sponge partnership meeting Thursday",
       "flags": [
-        "⚠️ Kieran newsletter draft due today — priority review needed",
-        "📧 Email tool decision required before Summer Archive Sale Aug 13",
-        "📅 Mugs launch Jul 30, Speaker presale Aug 27 approaching"
+        "⚠️ Sponge email account critical for subsidizing personal brand work",
+        "⚠️ Alex Proba drop July 16 — flexible cadence needed for 24-48hr sell-out window",
+        "✅ Retainer strategy with product roadmap (evergreen apparel, home goods, collabs) in motion",
+        "⚠️ Riversol scope reduced to quiz flow tune-up — lower margin project"
       ],
-      "autoUpdatedAt": "2026-07-06T07:01:03.465827-07:00"
+      "autoUpdatedAt": "2026-07-06T22:30:34.429015-07:00"
     },
     {
       "id": "the-lab",
@@ -792,9 +808,9 @@
       "id": "frnk",
       "name": "FRNK Boutique",
       "color": "#E8845C",
-      "dot": "red",
+      "dot": "grey",
       "health": "Blocked",
-      "tagline": "Instagram giveaway launch blocked on Steph's Facebook credentials; Jul 4 email sent. Klaviyo sync ready once creds received.",
+      "tagline": "No actionable data for FRNK Boutique found in provided context.",
       "lastTouched": "2026-07-06",
       "tasks": [
         {
@@ -840,13 +856,11 @@
         }
       ],
       "promises": [],
-      "nextMilestone": "Instagram giveaway launch (week of Jul 6)",
+      "nextMilestone": "Unknown",
       "flags": [
-        "⚠️ Instagram giveaway blocked on Steph's credentials",
-        "✅ Jul 4 confirmation email sent",
-        "⚠️ Giveaway targeting week of Jul 6 — time sensitive"
+        "No FRNK Boutique-specific updates in email or meeting notes"
       ],
-      "autoUpdatedAt": "2026-07-06T07:00:57.015304-07:00"
+      "autoUpdatedAt": "2026-07-06T22:30:28.180650-07:00"
     },
     {
       "id": "sfr",
@@ -854,7 +868,7 @@
       "color": "#845EF7",
       "dot": "amber",
       "health": "Starting Jun 22",
-      "tagline": "Phase 1 (abandoned suite) ready to launch Monday. Blocked on lifestyle images from Will — Harrison following up via Victoria.",
+      "tagline": "SFR Distillery setup complete with kickoff held. Awaiting Klaviyo API key and GA access to begin campaign execution.",
       "lastTouched": "2026-07-06",
       "tasks": [
         {
@@ -865,16 +879,16 @@
           "source": "manual"
         },
         {
-          "text": "Harrison to follow up with Will on lifestyle images via Victoria",
-          "owner": "Victoria",
+          "text": "Receive and implement Klaviyo API key for SFR Distillery in system",
+          "owner": "Michael",
           "complexity": "quick",
-          "urgent": true,
+          "urgent": false,
           "source": "auto"
         },
         {
-          "text": "Prepare for Monday 10am call with Harrison Faidley",
+          "text": "Confirm GA access provisioning for SFR Distillery",
           "owner": "DigitsUp",
-          "complexity": "medium",
+          "complexity": "quick",
           "urgent": false,
           "source": "auto"
         }
@@ -887,18 +901,26 @@
           "source": "manual"
         },
         {
-          "party": "Will",
-          "item": "Lifestyle images for Phase 1 abandoned suite campaign",
+          "party": "Michael",
+          "item": "Klaviyo API key for SFR Distillery",
+          "source": "auto"
+        },
+        {
+          "party": "Client",
+          "item": "Google Analytics access credentials",
           "source": "auto"
         }
       ],
       "promises": [],
-      "nextMilestone": "Monday 10am call with Harrison Faidley + Phase 1 launch",
+      "nextMilestone": "Month 1 campaign launch (abandoned cart suite + post-purchase) — pending API key integration",
       "flags": [
-        "⚠️ Phase 1 blocked on lifestyle images — critical blocker for Monday launch",
-        "Phase 2 (welcome series) and Phase 3 (post-purchase + winback) queued after Phase 1"
+        "✅ Kickoff completed (Jul 2) with transcript filed",
+        "✅ Klaviyo Admin & Shopify code 22967 access granted",
+        "⚠️ Klaviyo API key not yet in system — blocking campaign setup",
+        "⚠️ GA access still pending",
+        "Harrison Faidley assigned as AM"
       ],
-      "autoUpdatedAt": "2026-07-06T07:01:15.678405-07:00"
+      "autoUpdatedAt": "2026-07-06T22:30:26.899261-07:00"
     }
   ],
   "pipeline": [
@@ -1039,16 +1061,6 @@
       "urgent": false
     },
     {
-      "icon": "🔴",
-      "clientId": "frnk",
-      "clientName": "FRNK Boutique",
-      "text": "Confirm welcome series + abandoned cart build status with team",
-      "complexity": "quick",
-      "deadline": "Jul 6",
-      "urgent": false,
-      "source": "auto"
-    },
-    {
       "icon": "🟡",
       "clientId": "the-lab",
       "clientName": "The Lab Life",
@@ -1067,9 +1079,35 @@
       "deadline": null,
       "urgent": true,
       "source": "auto"
+    },
+    {
+      "icon": "⚪",
+      "clientId": "frnk",
+      "clientName": "FRNK Boutique",
+      "text": "Confirm welcome series + abandoned cart build status with team",
+      "complexity": "quick",
+      "deadline": null,
+      "urgent": false,
+      "source": "auto"
     }
   ],
   "activity": [
+    {
+      "ts": "2026-07-06T22:30:26.899361-07:00",
+      "text": "SFR Distillery — SFR Distillery setup complete with kickoff held. Awaiting Klaviyo API key and GA access to begin cam"
+    },
+    {
+      "ts": "2026-07-06T22:30:28.180759-07:00",
+      "text": "FRNK Boutique — No actionable data for FRNK Boutique found in provided context."
+    },
+    {
+      "ts": "2026-07-06T22:30:34.429051-07:00",
+      "text": "Salehe Bembury — DigitsUp pursuing $2.5k+ retainer with long-term product roadmap; Sponge partnership & Alex Proba dr"
+    },
+    {
+      "ts": "2026-07-06T22:30:37.240135-07:00",
+      "text": "RVCA — RVCA: Two campaigns prioritized for client review today to meet Wednesday send deadline. Kieran audi"
+    },
     {
       "ts": "2026-07-06T07:00:57.015400-07:00",
       "text": "FRNK Boutique — Instagram giveaway launch blocked on Steph's Facebook credentials; Jul 4 email sent. Klaviyo sync re"
@@ -1077,22 +1115,6 @@
     {
       "ts": "2026-07-06T07:01:00.803896-07:00",
       "text": "OuterSignal — Post-purchase flow scope locked; awaiting Klaviyo access & creative assets from JD to progress."
-    },
-    {
-      "ts": "2026-07-06T07:01:03.465928-07:00",
-      "text": "Salehe Bembury — Summer Archive Sale prep underway; exploring cost-effective email tools for large list. Near-term fo"
-    },
-    {
-      "ts": "2026-07-06T07:01:06.947477-07:00",
-      "text": "RVCA — Strategy review underway with multiple concurrent tests (Attentive vs Klaviyo pop-ups, abandoned sui"
-    },
-    {
-      "ts": "2026-07-06T07:01:10.737645-07:00",
-      "text": "Epicure — Affiliate flow build underway with French translations in progress. Post-purchase email revenue leak"
-    },
-    {
-      "ts": "2026-07-06T07:01:13.296151-07:00",
-      "text": "The Lab Life — GHL no-show rebooking flow in progress; Jul 5 promo campaign expiring today. Month 2 email migration"
     }
   ]
 }
