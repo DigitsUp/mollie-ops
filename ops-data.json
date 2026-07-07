@@ -1,6 +1,6 @@
 {
   "meta": {
-    "lastUpdated": "2026-07-07T07:01:13.289204-07:00",
+    "lastUpdated": "2026-07-07T10:30:24.854850-07:00",
     "updatedBy": "Mollie (auto-v4)",
     "cacheBust": "2026-06-17T21:43:00-07:00"
   },
@@ -11,7 +11,7 @@
       "color": "#3B5BDB",
       "dot": "amber",
       "health": "In Progress",
-      "tagline": "RVCA: Two campaigns prioritized for client review today to meet Wednesday send deadline. SMS flow audit underway.",
+      "tagline": "RVCA: Two campaigns prioritized for client review today to meet Wednesday send deadline. SMS/email flow audit underway.",
       "lastTouched": "2026-07-07",
       "tasks": [
         {
@@ -110,12 +110,12 @@
           "madeOn": "2026-06-17"
         }
       ],
-      "nextMilestone": "Wednesday campaign send deadline",
+      "nextMilestone": "Wednesday campaign send (post-client approval)",
       "flags": [
-        "⚠️ Wednesday send deadline for two campaigns",
-        "⚠️ SMS/email flow alignment in progress"
+        "⚠️ Wednesday send deadline — campaigns need client sign-off today",
+        "⏳ SMS/email flow alignment in progress (Kieran auditing platforms)"
       ],
-      "autoUpdatedAt": "2026-07-07T07:01:02.740971-07:00"
+      "autoUpdatedAt": "2026-07-07T10:30:17.685689-07:00"
     },
     {
       "id": "riversol",
@@ -277,7 +277,7 @@
       "color": "#2F9E44",
       "dot": "amber",
       "health": "Pivoting",
-      "tagline": "Pursuing $2.5k+ retainer with long-term product roadmap; Sponge partnership meeting Thursday to unlock email account access.",
+      "tagline": "Salehe pursuing $2.5k+ retainer with long-term product roadmap; Sponge partnership meeting Thu Jul 10 to secure email account & GA access.",
       "lastTouched": "2026-07-07",
       "tasks": [
         {
@@ -358,10 +358,10 @@
           "source": "auto"
         },
         {
-          "text": "Schedule Sponge team meeting for Thursday at 1 PM",
+          "text": "Send giveaway winner notification email",
           "owner": "DigitsUp",
           "complexity": "quick",
-          "urgent": true,
+          "urgent": false,
           "source": "auto"
         }
       ],
@@ -385,13 +385,18 @@
           "source": "manual"
         },
         {
-          "party": "Sponge team",
-          "item": "GA access and Klaviyo strategy discussion (Thursday meeting)",
+          "party": "Sponge",
+          "item": "GA access confirmation and Klaviyo strategy discussion at Thursday meeting",
           "source": "auto"
         },
         {
-          "party": "Salehe Bembury",
-          "item": "Decision on $2.5k+ retainer proposal with long-term product roadmap",
+          "party": "Sponge",
+          "item": "List cross-reference data to identify overlapping leads with Salehe list",
+          "source": "auto"
+        },
+        {
+          "party": "Fardad",
+          "item": "Confirmation of Thursday 1 PM meeting scheduling with Sponge team",
           "source": "auto"
         }
       ],
@@ -402,14 +407,14 @@
           "madeOn": "2026-06-17"
         }
       ],
-      "nextMilestone": "Sponge partnership meeting Thursday + Alex Proba drop July 16",
+      "nextMilestone": "Sponge partnership meeting — Thursday, Jul 10, 1 PM",
       "flags": [
-        "⚠️ Alex Proba drop July 16 — flexible email cadence needed for predicted 24-48hr sell-out",
-        "⚠️ Riversol scoped down to low-margin tune-up; design team briefing needed",
-        "✅ Sponge partnership could subsidize personal brand work if email account secured",
-        "⚠️ Multiple campaign builds in progress (Mug Drop, Proba follow-up, Riversol quiz flow)"
+        "✅ Sponge meeting prep email sent to Fardad covering GA access & list cross-reference agenda",
+        "⚠️ Riversol scope reduced to low-margin 'tune-up' — focus on quiz flow email splits only",
+        "⚠️ Alex Proba drop Jul 16 — flexible email cadence needed for 24–48 hour predicted sell-out",
+        "🎯 Retainer strategy: positioning long-term roadmap (apparel, home goods, collabs) to justify $2.5k+ cost"
       ],
-      "autoUpdatedAt": "2026-07-07T07:01:13.288335-07:00"
+      "autoUpdatedAt": "2026-07-07T10:30:24.853975-07:00"
     },
     {
       "id": "the-lab",
@@ -805,7 +810,7 @@
       "color": "#E8845C",
       "dot": "grey",
       "health": "Blocked",
-      "tagline": "No FRNK Boutique-specific data found in provided context.",
+      "tagline": "No FRNK Boutique data found in provided context.",
       "lastTouched": "2026-07-07",
       "tasks": [
         {
@@ -851,11 +856,11 @@
         }
       ],
       "promises": [],
-      "nextMilestone": "Unknown",
+      "nextMilestone": "N/A",
       "flags": [
-        "⚠️ No FRNK Boutique updates in scope materials (emails reference DigitsUp team, RVCA, Outer Signal, OSNAP only)"
+        "No FRNK Boutique mentions in source material"
       ],
-      "autoUpdatedAt": "2026-07-07T07:01:04.481711-07:00"
+      "autoUpdatedAt": "2026-07-07T10:30:19.014377-07:00"
     },
     {
       "id": "sfr",
@@ -1088,6 +1093,18 @@
   ],
   "activity": [
     {
+      "ts": "2026-07-07T10:30:17.685821-07:00",
+      "text": "RVCA — RVCA: Two campaigns prioritized for client review today to meet Wednesday send deadline. SMS/email f"
+    },
+    {
+      "ts": "2026-07-07T10:30:19.014476-07:00",
+      "text": "FRNK Boutique — No FRNK Boutique data found in provided context."
+    },
+    {
+      "ts": "2026-07-07T10:30:24.854087-07:00",
+      "text": "Salehe Bembury — Salehe pursuing $2.5k+ retainer with long-term product roadmap; Sponge partnership meeting Thu Jul 1"
+    },
+    {
       "ts": "2026-07-07T07:01:02.741069-07:00",
       "text": "RVCA — RVCA: Two campaigns prioritized for client review today to meet Wednesday send deadline. SMS flow au"
     },
@@ -1098,18 +1115,6 @@
     {
       "ts": "2026-07-07T07:01:13.288445-07:00",
       "text": "Salehe Bembury — Pursuing $2.5k+ retainer with long-term product roadmap; Sponge partnership meeting Thursday to unlo"
-    },
-    {
-      "ts": "2026-07-07T05:30:22.087997-07:00",
-      "text": "Salehe Bembury — Pursuing $2.5k+ retainer with long-term product roadmap; Alex Proba drop (July 16) and Sponge partne"
-    },
-    {
-      "ts": "2026-07-07T05:30:24.303822-07:00",
-      "text": "RVCA — RVCA needs two campaigns prioritized for client review today to meet Wednesday send deadline. Kieran"
-    },
-    {
-      "ts": "2026-07-07T05:30:25.875997-07:00",
-      "text": "FRNK Boutique — No FRNK Boutique-specific data found in provided context."
     }
   ]
 }
