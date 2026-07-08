@@ -1,6 +1,6 @@
 {
   "meta": {
-    "lastUpdated": "2026-07-07T22:30:43.085408-07:00",
+    "lastUpdated": "2026-07-08T05:30:39.785724-07:00",
     "updatedBy": "Mollie (auto-v4)",
     "cacheBust": "2026-06-17T21:43:00-07:00"
   },
@@ -11,8 +11,8 @@
       "color": "#3B5BDB",
       "dot": "amber",
       "health": "In Progress",
-      "tagline": "Two campaigns prioritized for client review today to meet Wednesday send deadline. Klaviyo flow audit underway to align SMS with email automations.",
-      "lastTouched": "2026-07-07",
+      "tagline": "RVCA: Two campaigns need client review today for Wednesday send deadline. SMS/email flow audit underway to optimize automations.",
+      "lastTouched": "2026-07-08",
       "tasks": [
         {
           "text": "Post-purchase flow go-live Friday Jun 20 — emails 1 & 3 built, manual mode, OuterSignal backfill done",
@@ -127,10 +127,10 @@
       "nextMilestone": "Wednesday campaign send deadline",
       "flags": [
         "⚠️ Reviews remap blocked on Clay's Shopify Admin API token",
-        "⚠️ Wednesday send deadline for two priority campaigns",
-        "✅ SMS/email flow audit in progress (Kieran)"
+        "⚠️ Two campaigns need client review today for Wednesday deadline",
+        "⚠️ SMS/email flow audit in progress to optimize automations"
       ],
-      "autoUpdatedAt": "2026-07-07T22:30:20.719439-07:00"
+      "autoUpdatedAt": "2026-07-08T05:30:25.661149-07:00"
     },
     {
       "id": "riversol",
@@ -138,8 +138,8 @@
       "color": "#1098AD",
       "dot": "amber",
       "health": "Active",
-      "tagline": "Riversol blocked on dev deliverables for quiz brief and attribution setup. Awaiting selfie event metric and codes from Una.",
-      "lastTouched": "2026-07-07",
+      "tagline": "Riversol blocked on dev deliverables for quiz onboarding and attribution setup for Amazon review campaign.",
+      "lastTouched": "2026-07-08",
       "tasks": [
         {
           "text": "Provide Figma access to Riversol team; request header + copy feedback on replenishment mockups",
@@ -212,15 +212,15 @@
           "source": "manual"
         },
         {
-          "text": "Quiz onboarding brief — waiting on selfie event metric from dev",
+          "text": "Quiz onboarding brief — awaiting selfie event metric from dev",
           "owner": "DigitsUp",
           "complexity": "medium",
           "urgent": false,
           "source": "auto"
         },
         {
-          "text": "Amazon review email — need attribution link + code from Una",
-          "owner": "Victoria",
+          "text": "Amazon review email — obtain attribution link + code from Una",
+          "owner": "Michael",
           "complexity": "quick",
           "urgent": false,
           "source": "auto"
@@ -252,7 +252,7 @@
         },
         {
           "party": "Una",
-          "item": "attribution link and code for Amazon review email",
+          "item": "attribution link and promo code for Amazon review email",
           "source": "auto"
         }
       ],
@@ -263,12 +263,12 @@
           "madeOn": "2026-06-17"
         }
       ],
-      "nextMilestone": "Quiz onboarding brief completion (pending dev metric)",
+      "nextMilestone": "Quiz onboarding brief completion",
       "flags": [
-        "⚠️ Quiz brief blocked on dev metric delivery",
-        "⚠️ Amazon email requires Una's attribution assets"
+        "⚠️ Quiz onboarding blocked on dev metrics",
+        "⚠️ Amazon campaign pending attribution setup"
       ],
-      "autoUpdatedAt": "2026-07-07T22:30:23.382332-07:00"
+      "autoUpdatedAt": "2026-07-08T05:30:22.793633-07:00"
     },
     {
       "id": "salehe",
@@ -276,8 +276,8 @@
       "color": "#2F9E44",
       "dot": "amber",
       "health": "Pivoting",
-      "tagline": "Editorial newsletter overdue; 6 items in workflow (parking lot → copy → review). Sponge partnership meeting Thu 1pm key to retainer strategy.",
-      "lastTouched": "2026-07-07",
+      "tagline": "6 campaigns in various review stages; Kieran editorial newsletter overdue. Sponge meeting Thu Jul 10 to advance retainer strategy.",
+      "lastTouched": "2026-07-08",
       "tasks": [
         {
           "text": "Add product titles to Alex Proba Figma design; send to Fardad (drop moved to July)",
@@ -322,43 +322,22 @@
           "source": "manual"
         },
         {
-          "text": "Complete Kieran editorial newsletter draft",
-          "owner": "DigitsUp",
+          "text": "Kieran editorial newsletter draft",
+          "owner": "Kieran",
           "complexity": "medium",
           "urgent": true,
           "source": "auto"
         },
         {
-          "text": "Prepare for Sponge meeting Thu Jul 10 1pm",
-          "owner": "DigitsUp",
-          "complexity": "medium",
-          "urgent": true,
-          "source": "auto"
-        },
-        {
-          "text": "Send test emails for editorial and Proba launch campaigns",
-          "owner": "Michael",
-          "complexity": "quick",
-          "urgent": false,
-          "source": "auto"
-        },
-        {
-          "text": "Create Klaviyo segment for Riversol new vs. returning customer split",
+          "text": "Sponge meeting prep",
           "owner": "Michael",
           "complexity": "medium",
           "urgent": false,
           "source": "auto"
         },
         {
-          "text": "Get Google Analytics access for Sponge website from Chris",
-          "owner": "DigitsUp",
-          "complexity": "quick",
-          "urgent": false,
-          "source": "auto"
-        },
-        {
-          "text": "Review editorial email and welcome series in Figma; provide hero image",
-          "owner": "DigitsUp",
+          "text": "Welcome Series automation review",
+          "owner": "Michael",
           "complexity": "medium",
           "urgent": false,
           "source": "auto"
@@ -385,17 +364,17 @@
         },
         {
           "party": "Client",
-          "item": "Approval on Alex Proba email campaign",
+          "item": "Review on Campaign - Email - Alex Proba",
           "source": "auto"
         },
         {
           "party": "Client",
-          "item": "Approval on Editorial Send campaign",
+          "item": "Review on Campaign - Editorial Send",
           "source": "auto"
         },
         {
-          "party": "Chris",
-          "item": "Google Analytics access for Sponge website",
+          "party": "Sponge",
+          "item": "Meeting scheduled Thu Jul 10 1pm to secure email account partnership",
           "source": "auto"
         }
       ],
@@ -406,15 +385,14 @@
           "madeOn": "2026-06-17"
         }
       ],
-      "nextMilestone": "Sponge meeting Thu Jul 10 1pm + Alex Proba launch Jul 16",
+      "nextMilestone": "Thu Jul 10 1pm — Sponge meeting to advance retainer partnership & email account access",
       "flags": [
         "⚠️ Kieran editorial newsletter OVERDUE (was Jul 6)",
-        "⚠️ 6 items active in workflow across parking lot/copy/review stages",
-        "✅ Sponge partnership strategy tied to $2.5k+ retainer goal",
-        "✅ Alex Proba drop (Jul 16) ready with flexible email cadence",
-        "⚠️ Riversol scope reduced to quiz flow tune-up focusing on customer segmentation"
+        "⚠️ 6 campaigns across parking lot, copy, internal & client review stages",
+        "✅ Retainer strategy being pursued ($2.5k+) with Sponge partnership as key lever",
+        "⚠️ Welcome Series automation assigned but not yet started"
       ],
-      "autoUpdatedAt": "2026-07-07T22:30:37.922900-07:00"
+      "autoUpdatedAt": "2026-07-08T05:30:20.336208-07:00"
     },
     {
       "id": "the-lab",
@@ -422,8 +400,8 @@
       "color": "#F08C00",
       "dot": "amber",
       "health": "On Track",
-      "tagline": "Two design tasks in progress: No Show Flow revision assigned to Melric, July 4 Promo email on pause.",
-      "lastTouched": "2026-07-07",
+      "tagline": "2 active tasks in design & email build; July 4 Promo campaign on pause pending review.",
+      "lastTouched": "2026-07-08",
       "tasks": [
         {
           "text": "Confirm Month 1 completion with Travis + Ally by Jun 19",
@@ -468,16 +446,16 @@
           "source": "manual"
         },
         {
-          "text": "No Show Flow - revision assigned to Melric",
+          "text": "Automation - No Show Flow revision - assigned to Melric",
           "owner": "DigitsUp",
           "complexity": "medium",
           "urgent": false,
           "source": "auto"
         },
         {
-          "text": "Campaign Email - July 4 Promo clarify pause status",
+          "text": "Campaign - Email - July 4 Promo - assess pause status and determine next steps",
           "owner": "DigitsUp",
-          "complexity": "quick",
+          "complexity": "medium",
           "urgent": false,
           "source": "auto"
         }
@@ -485,12 +463,12 @@
       "waitingOn": [
         {
           "party": "Melric",
-          "item": "No Show Flow revision completion",
+          "item": "Automation - No Show Flow revision completion",
           "source": "auto"
         },
         {
           "party": "DigitsUp",
-          "item": "Clarification on July 4 Promo email pause status",
+          "item": "Clarification on July 4 Promo campaign pause status",
           "source": "auto"
         }
       ],
@@ -501,12 +479,12 @@
           "madeOn": "2026-06-03"
         }
       ],
-      "nextMilestone": "No Show Flow revision completion",
+      "nextMilestone": "Completion of Automation - No Show Flow revision and resolution of July 4 Promo email build status",
       "flags": [
-        "⚠️ July 4 Promo email marked 'on pause' - requires clarification",
-        "✅ No Show Flow revision actively assigned to Melric"
+        "⚠️ July 4 Promo email campaign paused - unclear if deliberate or blocked",
+        "✅ No Show Flow revision assigned to Melric in progress"
       ],
-      "autoUpdatedAt": "2026-07-07T22:30:27.888146-07:00"
+      "autoUpdatedAt": "2026-07-08T05:30:28.323343-07:00"
     },
     {
       "id": "epicure",
@@ -514,8 +492,8 @@
       "color": "#862E9C",
       "dot": "amber",
       "health": "In Progress",
-      "tagline": "Lifecycle pull complete (4 profiles, brief sent). Need affiliate count confirmation from Michael to build segments; invite warmth pass overdue.",
-      "lastTouched": "2026-07-07",
+      "tagline": "Lifecycle pull complete with 4 profiles. Blocked on invite email warmth pass & affiliate segment confirmation before building segments.",
+      "lastTouched": "2026-07-08",
       "tasks": [
         {
           "text": "Write PP Email 2 brief (recipe refresh)",
@@ -560,36 +538,29 @@
           "source": "manual"
         },
         {
-          "text": "Confirm affiliate count from Michael → build 3 segments, pull 33 each",
+          "text": "Invite email warmth pass to Amelia",
+          "owner": "Michael",
+          "complexity": "quick",
+          "urgent": true,
+          "source": "auto"
+        },
+        {
+          "text": "Confirm affiliate count and build 3 segments, pull 33 each",
           "owner": "Michael",
           "complexity": "medium",
           "urgent": false,
           "source": "auto"
         },
         {
-          "text": "Send invite email warmth pass to Amelia",
-          "owner": "DigitsUp",
-          "complexity": "quick",
-          "urgent": true,
-          "source": "auto"
-        },
-        {
           "text": "Book Initiatives 4/5/6 meeting",
-          "owner": "DigitsUp",
+          "owner": "Michael",
           "complexity": "quick",
           "urgent": false,
           "source": "auto"
         },
         {
           "text": "Investigate Angela Mayell Order 7 stacked affiliate codes (TOMY, BINHBUITHITHANH, ANGELAMAYELL) with Geoff/Cindy",
-          "owner": "DigitsUp",
-          "complexity": "medium",
-          "urgent": false,
-          "source": "auto"
-        },
-        {
-          "text": "Explore Klaviyo ATC (YbGsW2) affiliate fields as potential signal for COA group identification",
-          "owner": "DigitsUp",
+          "owner": "Michael",
           "complexity": "medium",
           "urgent": false,
           "source": "auto"
@@ -615,21 +586,25 @@
           "source": "manual"
         },
         {
+          "party": "Amelia",
+          "item": "Invite email warmth pass review",
+          "source": "auto"
+        },
+        {
           "party": "Michael",
-          "item": "Affiliate count confirmation to proceed with 3-segment build (33 profiles per segment)",
+          "item": "Affiliate count confirmation to proceed with segmentation",
           "source": "auto"
         }
       ],
       "promises": [],
-      "nextMilestone": "Michael confirms affiliate count; Amelia receives warmth pass review",
+      "nextMilestone": "Initiatives 4/5/6 meeting (pending booking)",
       "flags": [
-        "✅ Lifecycle pull complete: 4 profiles (2 affiliate, 2 DTC) with brief emailed",
-        "✅ All 4 profiles confirmed subscribed via rv@epicure.com legacy import",
-        "⚠️ Invite email warmth pass to Amelia is overdue",
-        "⚠️ Duplicate same-day orders in Shopify sync — real order counts ~half of raw data",
-        "⚠️ Angela Order 7 anomaly: stacked affiliate codes + ref link serena1 — needs investigation"
+        "✅ Lifecycle pull completed — 4 profiles (2 affiliates: Angela Mayell, Melissa Adams; 2 DTC: Martina Pokrovac, Linda Reinhart)",
+        "⚠️ Duplicate orders in Shopify sync — real order counts ~50% of reported; brief attached",
+        "⚠️ Overdue: Invite email warmth pass to Amelia",
+        "⚠️ Unusual stacked affiliate codes on Angela's Order 7 — flagged for review"
       ],
-      "autoUpdatedAt": "2026-07-07T22:30:43.084483-07:00"
+      "autoUpdatedAt": "2026-07-08T05:30:34.160269-07:00"
     },
     {
       "id": "hiba",
@@ -810,8 +785,8 @@
       "color": "#E8845C",
       "dot": "amber",
       "health": "Blocked",
-      "tagline": "FRNK Boutique has 3 tasks in progress across strategy, copy, and design stages. Post-purchase flow and sign-up forms are priority.",
-      "lastTouched": "2026-07-07",
+      "tagline": "FRNK has 3 tasks in progress across Strategy, Copy, and Design stages. Post-purchase automation and sign-up forms are priority items due ASAP.",
+      "lastTouched": "2026-07-08",
       "tasks": [
         {
           "text": "Confirm welcome series + abandoned cart build status with team",
@@ -837,7 +812,7 @@
         {
           "text": "Automation - Post-purchase Flow",
           "owner": "Michael",
-          "complexity": "heavy",
+          "complexity": "medium",
           "urgent": true,
           "source": "auto"
         },
@@ -849,23 +824,23 @@
           "source": "auto"
         },
         {
-          "text": "Campaign - Email - Spotlight on Product (copy stage)",
+          "text": "Campaign - Email - Spotlight on Product (Copy stage)",
           "owner": "DigitsUp",
           "complexity": "medium",
           "urgent": false,
           "source": "auto"
         },
         {
-          "text": "Campaign - Email - Brand Story (copy stage)",
+          "text": "Campaign - Email - Brand Story (Copy stage)",
           "owner": "DigitsUp",
           "complexity": "medium",
           "urgent": false,
           "source": "auto"
         },
         {
-          "text": "Campaign - IG Banner - Euro Summer Giveaway (design stage)",
+          "text": "Campaign - IG Banner - Euro Summer Giveaway (Design stage)",
           "owner": "DigitsUp",
-          "complexity": "medium",
+          "complexity": "quick",
           "urgent": false,
           "source": "auto"
         }
@@ -884,14 +859,14 @@
         }
       ],
       "promises": [],
-      "nextMilestone": "Post-purchase Flow completion (ASAP)",
+      "nextMilestone": "IG Banner - Euro Summer Giveaway due 07/10",
       "flags": [
-        "⚠️ Post-purchase Flow due ASAP - critical path item",
-        "⚠️ Sign-up Forms due ASAP - assigned to Michael",
-        "Campaign copy stage: Email Spotlight overdue (due 06/18), Brand Story due 06/29",
-        "IG Banner - Euro Summer Giveaway due 07/10"
+        "⚠️ Two tasks assigned to Michael due ASAP — Post-purchase Flow and Sign-up Forms",
+        "⚠️ Email Spotlight on Product has overdue copy deadline (June 18)",
+        "Email Brand Story due June 29",
+        "IG Banner Euro Summer Giveaway due 07/10"
       ],
-      "autoUpdatedAt": "2026-07-07T22:30:31.879878-07:00"
+      "autoUpdatedAt": "2026-07-08T05:30:38.154203-07:00"
     },
     {
       "id": "sfr",
@@ -899,8 +874,8 @@
       "color": "#845EF7",
       "dot": "red",
       "health": "Starting Jun 22",
-      "tagline": "SFR Distillery blocked on lifestyle images from Will — waiting on creative assets to progress.",
-      "lastTouched": "2026-07-07",
+      "tagline": "SFR Distillery blocked on lifestyle images from Will via Victoria. Awaiting creative assets to progress.",
+      "lastTouched": "2026-07-08",
       "tasks": [
         {
           "text": "Prep onboarding doc + kickoff agenda for Will — Jun 22",
@@ -910,8 +885,8 @@
           "source": "manual"
         },
         {
-          "text": "Follow up on lifestyle images from Will via Victoria",
-          "owner": "Michael",
+          "text": "Follow up on lifestyle images from Will (via Victoria)",
+          "owner": "Victoria",
           "complexity": "quick",
           "urgent": true,
           "source": "auto"
@@ -926,16 +901,17 @@
         },
         {
           "party": "Will",
-          "item": "Lifestyle images",
+          "item": "Lifestyle images for SFR Distillery",
           "source": "auto"
         }
       ],
       "promises": [],
-      "nextMilestone": "Receive lifestyle images from Will",
+      "nextMilestone": "Receipt of lifestyle images from Will",
       "flags": [
-        "⚠️ Blocked on creative assets (lifestyle images) — blocking AM progress"
+        "⚠️ Blocked on creative assets from Will",
+        "⚠️ Harrison AM needs lifestyle images to proceed"
       ],
-      "autoUpdatedAt": "2026-07-07T22:30:25.121645-07:00"
+      "autoUpdatedAt": "2026-07-08T05:30:39.784857-07:00"
     }
   ],
   "pipeline": [
@@ -1081,7 +1057,7 @@
       "clientName": "The Lab Life",
       "text": "Confirm Month 1 completion with Travis + Ally by Jun 19",
       "complexity": "quick",
-      "deadline": null,
+      "deadline": "July 4",
       "urgent": true,
       "source": "auto"
     },
@@ -1090,7 +1066,7 @@
       "clientId": "frnk",
       "clientName": "FRNK Boutique",
       "text": "Automation - Post-purchase Flow",
-      "complexity": "heavy",
+      "complexity": "medium",
       "deadline": null,
       "urgent": true,
       "source": "auto"
@@ -1108,28 +1084,28 @@
   ],
   "activity": [
     {
-      "ts": "2026-07-07T22:30:20.719543-07:00",
-      "text": "RVCA — Two campaigns prioritized for client review today to meet Wednesday send deadline. Klaviyo flow audi"
+      "ts": "2026-07-08T05:30:20.336293-07:00",
+      "text": "Salehe Bembury — 6 campaigns in various review stages; Kieran editorial newsletter overdue. Sponge meeting Thu Jul 10"
     },
     {
-      "ts": "2026-07-07T22:30:23.382431-07:00",
-      "text": "Riversol — Riversol blocked on dev deliverables for quiz brief and attribution setup. Awaiting selfie event met"
+      "ts": "2026-07-08T05:30:22.793737-07:00",
+      "text": "Riversol — Riversol blocked on dev deliverables for quiz onboarding and attribution setup for Amazon review cam"
     },
     {
-      "ts": "2026-07-07T22:30:25.121736-07:00",
-      "text": "SFR Distillery — SFR Distillery blocked on lifestyle images from Will — waiting on creative assets to progress."
+      "ts": "2026-07-08T05:30:25.661271-07:00",
+      "text": "RVCA — RVCA: Two campaigns need client review today for Wednesday send deadline. SMS/email flow audit under"
     },
     {
-      "ts": "2026-07-07T22:30:27.888255-07:00",
-      "text": "The Lab Life — Two design tasks in progress: No Show Flow revision assigned to Melric, July 4 Promo email on pause."
+      "ts": "2026-07-08T05:30:28.323449-07:00",
+      "text": "The Lab Life — 2 active tasks in design & email build; July 4 Promo campaign on pause pending review."
     },
     {
-      "ts": "2026-07-07T22:30:31.879978-07:00",
-      "text": "FRNK Boutique — FRNK Boutique has 3 tasks in progress across strategy, copy, and design stages. Post-purchase flow a"
+      "ts": "2026-07-08T05:30:34.160375-07:00",
+      "text": "Epicure — Lifecycle pull complete with 4 profiles. Blocked on invite email warmth pass & affiliate segment con"
     },
     {
-      "ts": "2026-07-07T22:30:37.923017-07:00",
-      "text": "Salehe Bembury — Editorial newsletter overdue; 6 items in workflow (parking lot → copy → review). Sponge partnership "
+      "ts": "2026-07-08T05:30:38.154309-07:00",
+      "text": "FRNK Boutique — FRNK has 3 tasks in progress across Strategy, Copy, and Design stages. Post-purchase automation and "
     }
   ]
 }
