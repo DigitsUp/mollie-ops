@@ -1,6 +1,6 @@
 {
   "meta": {
-    "lastUpdated": "2026-07-09T07:08:58.379780-07:00",
+    "lastUpdated": "2026-07-09T07:13:08.055084-07:00",
     "updatedBy": "Mollie (auto-v4)",
     "cacheBust": "2026-06-17T21:43:00-07:00"
   },
@@ -11,7 +11,7 @@
       "color": "#3B5BDB",
       "dot": "amber",
       "health": "In Progress",
-      "tagline": "Two new monthly campaigns approved; review import unblocked. Shifting to 2x weekly sends with new Asana-based workflow.",
+      "tagline": "Two new monthly campaigns approved and ready to schedule; review import unblocked. Campaign cadence shifting to 2x/week sends.",
       "lastTouched": "2026-07-09",
       "tasks": [
         {
@@ -71,14 +71,7 @@
           "source": "auto"
         },
         {
-          "text": "Reviews remap — awaiting Clay's Shopify Admin API token",
-          "owner": "DigitsUp",
-          "complexity": "medium",
-          "urgent": false,
-          "source": "auto"
-        },
-        {
-          "text": "Analyze 90-day send data to identify optimal days/times",
+          "text": "Analyze 90-day send data to identify optimal send days/times",
           "owner": "DigitsUp",
           "complexity": "medium",
           "urgent": false,
@@ -102,6 +95,13 @@
           "text": "Migrate all email planning and approvals to Asana",
           "owner": "DigitsUp",
           "complexity": "medium",
+          "urgent": false,
+          "source": "auto"
+        },
+        {
+          "text": "Run small test import to validate review import process before full migration",
+          "owner": "RV",
+          "complexity": "quick",
           "urgent": false,
           "source": "auto"
         }
@@ -132,12 +132,12 @@
         },
         {
           "party": "Clay",
-          "item": "Updated email subject line and preview text (Caleb Ressler)",
+          "item": "Update Caleb Ressler email subject line and preview text",
           "source": "auto"
         },
         {
-          "party": "Rajath",
-          "item": "Historical product review import validation and full migration",
+          "party": "Clay",
+          "item": "Shopify Admin API token (for reviews remap)",
           "source": "auto"
         }
       ],
@@ -150,12 +150,12 @@
       ],
       "nextMilestone": "New monthly campaigns scheduled and Attentive Post-Purchase flow built",
       "flags": [
-        "✅ Review import unblocked — Shopify Product IDs provided",
+        "✅ Review import unblocked — Shopify export with Product IDs received",
         "✅ Two new monthly campaigns approved for launch",
-        "⚠️ Campaign cadence shifting from low-performing inactive drips to 2x weekly sends",
-        "⚠️ All workflows moving to Asana for centralized management"
+        "⚠️ Reviews remap blocked on API token",
+        "⚠️ Campaign migration to Asana not yet started"
       ],
-      "autoUpdatedAt": "2026-07-09T07:08:47.351951-07:00"
+      "autoUpdatedAt": "2026-07-09T07:13:00.692315-07:00"
     },
     {
       "id": "riversol",
@@ -163,7 +163,7 @@
       "color": "#1098AD",
       "dot": "amber",
       "health": "Active",
-      "tagline": "Pop-up strategy shift underway to reverse email growth decline; replenishment flow redesign testing 60 vs 90-day intervals.",
+      "tagline": "Pop-up strategy shift underway to reverse email list growth decline; multiple flows & channels being tested. Awaiting dev metrics & attribution details.",
       "lastTouched": "2026-07-09",
       "tasks": [
         {
@@ -244,7 +244,7 @@
           "source": "auto"
         },
         {
-          "text": "Send narrative-driven report to the team",
+          "text": "Send narrative-driven report to team",
           "owner": "Michael",
           "complexity": "medium",
           "urgent": false,
@@ -253,12 +253,12 @@
         {
           "text": "Draft Q2 (April–July) performance report",
           "owner": "Michael",
-          "complexity": "medium",
+          "complexity": "heavy",
           "urgent": false,
           "source": "auto"
         },
         {
-          "text": "Review replenishment flow, focusing on Email #4 logic and TRIO timing",
+          "text": "Review replenishment flow Email #4 logic and TRIO timing",
           "owner": "DigitsUp",
           "complexity": "medium",
           "urgent": false,
@@ -267,13 +267,13 @@
         {
           "text": "Prepare custom Shopify pop-up for testing",
           "owner": "DigitsUp",
-          "complexity": "heavy",
+          "complexity": "medium",
           "urgent": false,
           "source": "auto"
         },
         {
-          "text": "Quiz onboarding brief — waiting on selfie event metric from dev",
-          "owner": "Client",
+          "text": "Align team on specific offer and creative for new pop-up",
+          "owner": "DigitsUp",
           "complexity": "quick",
           "urgent": false,
           "source": "auto"
@@ -299,18 +299,13 @@
           "source": "manual"
         },
         {
-          "party": "Dev team",
+          "party": "Dev",
           "item": "Selfie event metric for quiz onboarding brief",
           "source": "auto"
         },
         {
           "party": "Una",
-          "item": "Attribution link + code for Amazon review email",
-          "source": "auto"
-        },
-        {
-          "party": "Team",
-          "item": "Alignment on specific offer and creative for new pop-up",
+          "item": "Attribution link and code for Amazon review email",
           "source": "auto"
         }
       ],
@@ -321,14 +316,14 @@
           "madeOn": "2026-06-17"
         }
       ],
-      "nextMilestone": "Replenishment flow review completion (Friday 2026-07-11)",
+      "nextMilestone": "Friday — Michael submits replenishment flow to Una for review",
       "flags": [
-        "⚠️ Email list growth down ~50% YoY — pop-up strategy shift critical",
-        "⚠️ Replenishment flow due Friday for review",
-        "✅ SMS campaign test launching for NCO and Win-Back segments",
-        "⚠️ Custom Shopify pop-up needed to fix Klaviyo targeting issue"
+        "⚠️ ~50% YoY drop in email list growth — pop-up strategy shift in progress to reverse",
+        "⚠️ Replenishment flow due Friday for Una review",
+        "✅ SMS campaign test launching for NCO & Win-Back segments",
+        "⚠️ Custom Shopify pop-up needed to fix Klaviyo targeting issues with existing customers"
       ],
-      "autoUpdatedAt": "2026-07-09T07:08:37.608995-07:00"
+      "autoUpdatedAt": "2026-07-09T07:12:37.269795-07:00"
     },
     {
       "id": "salehe",
@@ -336,7 +331,7 @@
       "color": "#2F9E44",
       "dot": "amber",
       "health": "Pivoting",
-      "tagline": "6 items in workflow across parking, copy, internal & client review. Sponge campaign parked; Kieran editorial & giveaway winner send progressing.",
+      "tagline": "6 items in workflow across parking lot, copy, internal review, and client review. Kieran editorial newsletter and Sponge meeting prep due soon.",
       "lastTouched": "2026-07-09",
       "tasks": [
         {
@@ -384,7 +379,7 @@
         {
           "text": "Ship Kieran editorial newsletter",
           "owner": "Michael",
-          "complexity": "medium",
+          "complexity": "quick",
           "urgent": true,
           "source": "auto"
         },
@@ -396,14 +391,14 @@
           "source": "auto"
         },
         {
-          "text": "Internal review: Welcome Series automation",
+          "text": "Review Welcome Series automation",
           "owner": "Michael",
           "complexity": "medium",
           "urgent": false,
           "source": "auto"
         },
         {
-          "text": "Internal review: Welcome email 2 automation",
+          "text": "Finalize Welcome email 2 automation",
           "owner": "DigitsUp",
           "complexity": "medium",
           "urgent": false,
@@ -431,7 +426,7 @@
         },
         {
           "party": "Client",
-          "item": "Approval on Alex Proba email campaign",
+          "item": "Approval on Alex Proba campaign email",
           "source": "auto"
         },
         {
@@ -441,7 +436,7 @@
         },
         {
           "party": "DigitsUp",
-          "item": "Sponge campaign (2 colorways: Jolof & Akebi) to move from parking lot",
+          "item": "Sponge campaign (2 colorways: Jolof & Akebi) parked for review",
           "source": "auto"
         }
       ],
@@ -452,14 +447,14 @@
           "madeOn": "2026-06-17"
         }
       ],
-      "nextMilestone": "Sponge meeting Jul 10 1pm",
+      "nextMilestone": "Jul 10 — Sponge meeting (1pm) + Editorial newsletter ship",
       "flags": [
-        "⚠️ Sponge campaign parked pending review",
-        "⚠️ Sponge meeting Jul 10 1pm — requires prep",
+        "⚠️ 2 items awaiting client approval (Alex Proba, Editorial Send)",
+        "⚠️ Sponge campaign parked pending internal review",
         "✅ Giveaway Winner Send in copy stage",
-        "⚠️ 2 items awaiting client approval"
+        "⏰ Sponge meeting Jul 10 at 1pm"
       ],
-      "autoUpdatedAt": "2026-07-09T07:08:22.968778-07:00"
+      "autoUpdatedAt": "2026-07-09T07:13:08.054084-07:00"
     },
     {
       "id": "the-lab",
@@ -467,7 +462,7 @@
       "color": "#F08C00",
       "dot": "amber",
       "health": "On Track",
-      "tagline": "The Lab Life has 2 items in progress: No Show Flow revision and July 4 Promo email on pause. Awaiting design and build clarity.",
+      "tagline": "2 tasks in progress: No Show Flow revision assigned to Melric, July 4 Promo campaign on pause pending review.",
       "lastTouched": "2026-07-09",
       "tasks": [
         {
@@ -513,29 +508,24 @@
           "source": "manual"
         },
         {
-          "text": "No Show Flow - revision assigned to Melric, in design phase",
+          "text": "No Show Flow - Automation revision",
           "owner": "DigitsUp",
           "complexity": "medium",
           "urgent": false,
           "source": "auto"
         },
         {
-          "text": "July 4 Promo email campaign - clarify pause status and resume timeline",
+          "text": "July 4 Promo campaign email build - clarify pause status and next steps",
           "owner": "DigitsUp",
-          "complexity": "quick",
+          "complexity": "medium",
           "urgent": false,
           "source": "auto"
         }
       ],
       "waitingOn": [
         {
-          "party": "Melric",
-          "item": "No Show Flow revision completion",
-          "source": "auto"
-        },
-        {
           "party": "DigitsUp",
-          "item": "Clarity on July 4 Promo email pause status",
+          "item": "Clarification on July 4 Promo campaign pause reason and timeline to resume",
           "source": "auto"
         }
       ],
@@ -546,12 +536,12 @@
           "madeOn": "2026-06-03"
         }
       ],
-      "nextMilestone": "No Show Flow revision completion and July 4 Promo email build resumption",
+      "nextMilestone": "No Show Flow revision completion and July 4 Promo campaign resolution",
       "flags": [
-        "⚠️ July 4 Promo email build on pause — needs status clarification",
-        "No Show Flow revision in progress with Melric"
+        "⚠️ July 4 Promo email build on pause — unclear if awaiting approval or blocked",
+        "⚠️ No Show Flow revision assigned but no completion date provided"
       ],
-      "autoUpdatedAt": "2026-07-09T07:08:14.577893-07:00"
+      "autoUpdatedAt": "2026-07-09T07:12:51.320057-07:00"
     },
     {
       "id": "epicure",
@@ -559,7 +549,7 @@
       "color": "#862E9C",
       "dot": "amber",
       "health": "In Progress",
-      "tagline": "Epicure data has duplicate orders from Shopify sync; affiliate count confirmation needed to build segments. Stacked affiliate codes flagged for review.",
+      "tagline": "Epicure data has duplicate orders from Shopify sync; real counts ~50%. Affiliate segment build pending confirmation, stacked codes flagged.",
       "lastTouched": "2026-07-09",
       "tasks": [
         {
@@ -619,7 +609,7 @@
           "source": "auto"
         },
         {
-          "text": "Review Angela's Order 7 stacked affiliate codes (TOMY, BINHBUITHITHANH, ANGELAMAYELL) with Geoff/Cindy",
+          "text": "Review Angela Mayell Order 7 stacked affiliate codes (TOMY, BINHBUITHITHANH, ANGELAMAYELL) with Geoff/Cindy",
           "owner": "DigitsUp",
           "complexity": "medium",
           "urgent": false,
@@ -647,18 +637,18 @@
         },
         {
           "party": "Michael",
-          "item": "Affiliate count confirmation to proceed with segmentation",
+          "item": "Affiliate count confirmation to proceed with 3-segment build",
           "source": "auto"
         }
       ],
       "promises": [],
-      "nextMilestone": "Initiatives 4/5/6 meeting (date TBD)",
+      "nextMilestone": "Affiliate count confirmation + Initiatives 4/5/6 meeting booking",
       "flags": [
-        "⚠️ Duplicate orders in Shopify sync — real order counts ~50% of reported data",
-        "⚠️ Stacked affiliate codes on Angela's Order 7 — unusual pattern requires investigation",
-        "✅ Lifecycle brief received (2026-07-07) with 4 DTC + affiliate contacts identified"
+        "⚠️ Duplicate orders in Shopify sync — actual order counts ~50% of displayed totals",
+        "⚠️ Angela Mayell Order 7 has stacked affiliate codes — potential data quality issue",
+        "✅ Lifecycle brief received (2026-07-07) — 2 affiliates + 2 DTC identified"
       ],
-      "autoUpdatedAt": "2026-07-09T07:08:09.427462-07:00"
+      "autoUpdatedAt": "2026-07-09T07:12:32.646644-07:00"
     },
     {
       "id": "hiba",
@@ -839,7 +829,7 @@
       "color": "#E8845C",
       "dot": "amber",
       "health": "Blocked",
-      "tagline": "FRNK Boutique has 3 tasks in progress across automation, email, and design stages. Post-purchase flow and sign-up forms are due asap.",
+      "tagline": "FRNK Boutique has 3 active tasks in progress across strategy, copy, and design stages. Post-purchase flow is due ASAP.",
       "lastTouched": "2026-07-09",
       "tasks": [
         {
@@ -864,38 +854,38 @@
           "source": "manual"
         },
         {
-          "text": "Automation - Post-purchase Flow",
+          "text": "Post-purchase Flow automation",
           "owner": "Michael",
           "complexity": "medium",
           "urgent": true,
           "source": "auto"
         },
         {
-          "text": "Automation - Sign-up Forms - in design stage",
+          "text": "Sign-up Forms automation design",
           "owner": "Michael",
           "complexity": "medium",
           "urgent": true,
           "source": "auto"
         },
         {
-          "text": "Campaign - Email - Spotlight on Product - copy stage",
+          "text": "Spotlight on Product email campaign copy",
           "owner": "DigitsUp",
           "complexity": "medium",
           "urgent": false,
           "source": "auto"
         },
         {
-          "text": "Campaign - Email - Brand Story - copy stage",
+          "text": "Brand Story email campaign copy",
           "owner": "DigitsUp",
           "complexity": "medium",
           "urgent": false,
           "source": "auto"
         },
         {
-          "text": "Campaign - IG Banner - Euro Summer Giveaway - in design",
+          "text": "Euro Summer Giveaway IG Banner design",
           "owner": "DigitsUp",
-          "complexity": "medium",
-          "urgent": false,
+          "complexity": "quick",
+          "urgent": true,
           "source": "auto"
         }
       ],
@@ -918,21 +908,22 @@
         }
       ],
       "promises": [],
-      "nextMilestone": "IG Banner - Euro Summer Giveaway design due 07/10",
+      "nextMilestone": "07/10 — Euro Summer Giveaway IG Banner due",
       "flags": [
-        "⚠️ Post-purchase flow due asap — assigned to Michael",
-        "⚠️ Sign-up forms automation due asap — assigned to Michael",
-        "IG Banner - Euro Summer Giveaway due 07/10"
+        "⚠️ Post-purchase Flow due ASAP — blocking progress",
+        "⚠️ Sign-up Forms automation due ASAP — Michael assigned",
+        "⚠️ IG Banner (Euro Summer Giveaway) due 07/10 — urgent deadline",
+        "✅ Copy stage: Spotlight & Brand Story campaigns assigned to Meg"
       ],
-      "autoUpdatedAt": "2026-07-09T07:08:28.368236-07:00"
+      "autoUpdatedAt": "2026-07-09T07:12:42.373968-07:00"
     },
     {
       "id": "sfr",
       "name": "SFR Distillery",
       "color": "#845EF7",
-      "dot": "red",
+      "dot": "grey",
       "health": "Starting Jun 22",
-      "tagline": "Blocked on lifestyle images from Will via Victoria. Identity and memory documentation has stale references and inconsistencies.",
+      "tagline": "SFR Distillery blocked on lifestyle images from Will (via Victoria). Awaiting assets to proceed with content work.",
       "lastTouched": "2026-07-09",
       "tasks": [
         {
@@ -943,31 +934,10 @@
           "source": "manual"
         },
         {
-          "text": "Obtain lifestyle images from Will (via Victoria)",
-          "owner": "Victoria",
+          "text": "Follow up with Victoria on Will's lifestyle images delivery timeline",
+          "owner": "Michael",
           "complexity": "quick",
           "urgent": true,
-          "source": "auto"
-        },
-        {
-          "text": "Fix duplicate persona block in IDENTITY.md (two # Mollie sections)",
-          "owner": "DigitsUp",
-          "complexity": "quick",
-          "urgent": false,
-          "source": "auto"
-        },
-        {
-          "text": "Update MEMORY.md header reference from SESSION.md to SESSION-STATE.md",
-          "owner": "DigitsUp",
-          "complexity": "quick",
-          "urgent": false,
-          "source": "auto"
-        },
-        {
-          "text": "Verify TOOLS.md Klaviyo account for SFR Distillery (pk_Td7upd) is current in MEMORY.md Integrations",
-          "owner": "DigitsUp",
-          "complexity": "quick",
-          "urgent": false,
           "source": "auto"
         }
       ],
@@ -980,19 +950,16 @@
         },
         {
           "party": "Will",
-          "item": "Lifestyle images",
+          "item": "Lifestyle images for SFR Distillery",
           "source": "auto"
         }
       ],
       "promises": [],
-      "nextMilestone": "Receive lifestyle images from Will to unblock SFR Distillery project",
+      "nextMilestone": "Receipt of lifestyle images from Will",
       "flags": [
-        "⚠️ Blocked on lifestyle image assets",
-        "⚠️ IDENTITY.md has duplicate persona block",
-        "⚠️ MEMORY.md references non-existent SESSION.md file",
-        "⚠️ Klaviyo account (pk_Td7upd) integration tracking needs verification"
+        "⚠️ Blocked on lifestyle images from Will — blocking AM work"
       ],
-      "autoUpdatedAt": "2026-07-09T07:08:58.378619-07:00"
+      "autoUpdatedAt": "2026-07-09T07:12:45.054890-07:00"
     }
   ],
   "pipeline": [
@@ -1146,7 +1113,7 @@
       "icon": "🟡",
       "clientId": "frnk",
       "clientName": "FRNK Boutique",
-      "text": "Automation - Post-purchase Flow",
+      "text": "Post-purchase Flow automation",
       "complexity": "medium",
       "deadline": null,
       "urgent": true,
@@ -1165,28 +1132,28 @@
   ],
   "activity": [
     {
-      "ts": "2026-07-09T07:08:09.427568-07:00",
-      "text": "Epicure — Epicure data has duplicate orders from Shopify sync; affiliate count confirmation needed to build se"
+      "ts": "2026-07-09T07:12:32.646762-07:00",
+      "text": "Epicure — Epicure data has duplicate orders from Shopify sync; real counts ~50%. Affiliate segment build pendi"
     },
     {
-      "ts": "2026-07-09T07:08:14.578006-07:00",
-      "text": "The Lab Life — The Lab Life has 2 items in progress: No Show Flow revision and July 4 Promo email on pause. Awaitin"
+      "ts": "2026-07-09T07:12:37.269907-07:00",
+      "text": "Riversol — Pop-up strategy shift underway to reverse email list growth decline; multiple flows & channels being"
     },
     {
-      "ts": "2026-07-09T07:08:22.968854-07:00",
-      "text": "Salehe Bembury — 6 items in workflow across parking, copy, internal & client review. Sponge campaign parked; Kieran e"
+      "ts": "2026-07-09T07:12:42.374076-07:00",
+      "text": "FRNK Boutique — FRNK Boutique has 3 active tasks in progress across strategy, copy, and design stages. Post-purchase"
     },
     {
-      "ts": "2026-07-09T07:08:28.368352-07:00",
-      "text": "FRNK Boutique — FRNK Boutique has 3 tasks in progress across automation, email, and design stages. Post-purchase flo"
+      "ts": "2026-07-09T07:12:45.055001-07:00",
+      "text": "SFR Distillery — SFR Distillery blocked on lifestyle images from Will (via Victoria). Awaiting assets to proceed with"
     },
     {
-      "ts": "2026-07-09T07:08:37.609111-07:00",
-      "text": "Riversol — Pop-up strategy shift underway to reverse email growth decline; replenishment flow redesign testing "
+      "ts": "2026-07-09T07:12:51.320166-07:00",
+      "text": "The Lab Life — 2 tasks in progress: No Show Flow revision assigned to Melric, July 4 Promo campaign on pause pendin"
     },
     {
-      "ts": "2026-07-09T07:08:47.351981-07:00",
-      "text": "RVCA — Two new monthly campaigns approved; review import unblocked. Shifting to 2x weekly sends with new As"
+      "ts": "2026-07-09T07:13:00.692453-07:00",
+      "text": "RVCA — Two new monthly campaigns approved and ready to schedule; review import unblocked. Campaign cadence "
     }
   ]
 }
