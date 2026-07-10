@@ -1,6 +1,6 @@
 {
   "meta": {
-    "lastUpdated": "2026-07-09T17:10:23.144748-07:00",
+    "lastUpdated": "2026-07-09T17:13:28.988076-07:00",
     "updatedBy": "Mollie (auto-v4)",
     "cacheBust": "2026-06-17T21:43:00-07:00"
   },
@@ -11,7 +11,7 @@
       "color": "#3B5BDB",
       "dot": "amber",
       "health": "In Progress",
-      "tagline": "Two new monthly campaigns approved; campaign cadence shifting to 2x weekly sends. Review import unblocked pending Shopify data validation.",
+      "tagline": "Two new monthly campaigns approved; campaign cadence shifting to 2x weekly sends. Review import unblocked pending final setup.",
       "lastTouched": "2026-07-09",
       "tasks": [
         {
@@ -71,8 +71,8 @@
           "source": "auto"
         },
         {
-          "text": "Reviews remap — validate process with test import before full migration",
-          "owner": "Rajath",
+          "text": "Reviews remap — awaiting Clay's Shopify Admin API token",
+          "owner": "DigitsUp",
           "complexity": "medium",
           "urgent": false,
           "source": "auto"
@@ -85,7 +85,7 @@
           "source": "auto"
         },
         {
-          "text": "Schedule new monthly campaigns (New Customer Reminder, Inactive Backfill 3-way split)",
+          "text": "Schedule new monthly campaigns (New Customer Reminder, Inactive Backfill)",
           "owner": "DigitsUp",
           "complexity": "medium",
           "urgent": false,
@@ -99,7 +99,7 @@
           "source": "auto"
         },
         {
-          "text": "Migrate all email planning and approvals to Asana",
+          "text": "Import historical product reviews using Shopify export with test validation",
           "owner": "DigitsUp",
           "complexity": "medium",
           "urgent": false,
@@ -132,7 +132,12 @@
         },
         {
           "party": "Clayton",
-          "item": "Updated email subject line and preview text for Caleb Ressler campaign",
+          "item": "Updated Caleb Ressler email subject line and preview text",
+          "source": "auto"
+        },
+        {
+          "party": "Clay",
+          "item": "Shopify Admin API token for reviews remap",
           "source": "auto"
         }
       ],
@@ -143,14 +148,15 @@
           "madeOn": "2026-06-17"
         }
       ],
-      "nextMilestone": "Complete 90-day send analysis and schedule new monthly campaigns",
+      "nextMilestone": "New monthly campaigns launched; Attentive Post-Purchase flow built",
       "flags": [
         "✅ Review import unblocked — Shopify export with Product IDs received",
-        "✅ Two new monthly campaigns approved for re-engagement segments",
-        "⚠️ Campaign cadence shift to 2x weekly sends requires Asana workflow migration",
-        "⚠️ Awaiting blocklist and email copy approvals from client to proceed"
+        "✅ Two new monthly campaigns approved for re-engagement",
+        "⚠️ Campaign cadence shifting from low-performing drips to 2x weekly sends",
+        "⚠️ All campaign planning/approvals must migrate to Asana",
+        "⚠️ Awaiting blocklist and email copy updates from Clayton"
       ],
-      "autoUpdatedAt": "2026-07-09T17:10:03.126528-07:00"
+      "autoUpdatedAt": "2026-07-09T17:13:06.194677-07:00"
     },
     {
       "id": "riversol",
@@ -158,7 +164,7 @@
       "color": "#1098AD",
       "dot": "amber",
       "health": "Active",
-      "tagline": "Pop-up strategy shift underway to reverse email list growth decline. Replenishment flow redesign in review; SMS testing launching.",
+      "tagline": "Pop-up strategy shift underway to reverse email list growth decline; replenishment flow redesign + SMS testing launching.",
       "lastTouched": "2026-07-09",
       "tasks": [
         {
@@ -239,7 +245,7 @@
           "source": "auto"
         },
         {
-          "text": "Send narrative-driven report to the team",
+          "text": "Send narrative-driven report to team",
           "owner": "Michael",
           "complexity": "medium",
           "urgent": false,
@@ -248,7 +254,7 @@
         {
           "text": "Draft Q2 (April–July) performance report",
           "owner": "Michael",
-          "complexity": "medium",
+          "complexity": "heavy",
           "urgent": false,
           "source": "auto"
         },
@@ -256,7 +262,7 @@
           "text": "Review replenishment flow, focusing on Email #4 logic and TRIO timing",
           "owner": "DigitsUp",
           "complexity": "medium",
-          "urgent": true,
+          "urgent": false,
           "source": "auto"
         },
         {
@@ -267,9 +273,9 @@
           "source": "auto"
         },
         {
-          "text": "Align on specific offer and creative for new pop-up",
+          "text": "Quiz onboarding brief — waiting on selfie event metric from dev",
           "owner": "DigitsUp",
-          "complexity": "medium",
+          "complexity": "quick",
           "urgent": false,
           "source": "auto"
         }
@@ -294,13 +300,13 @@
           "source": "manual"
         },
         {
-          "party": "Dev",
-          "item": "Selfie event metric for quiz onboarding brief",
+          "party": "dev",
+          "item": "selfie event metric for quiz onboarding brief",
           "source": "auto"
         },
         {
           "party": "Una",
-          "item": "Attribution link + code for Amazon review email",
+          "item": "attribution link + code for Amazon review email",
           "source": "auto"
         }
       ],
@@ -311,14 +317,14 @@
           "madeOn": "2026-06-17"
         }
       ],
-      "nextMilestone": "Replenishment flow review completion (Friday 2026-07-11)",
+      "nextMilestone": "Replenishment flow review due Friday; align on offer and creative for new pop-up",
       "flags": [
         "⚠️ ~50% YoY drop in email list growth driving pop-up strategy pivot",
-        "⚠️ Klaviyo targeting limitation requires custom Shopify pop-up solution",
-        "✅ SMS campaigns launching for NCO and Win-Back segments to test viability",
-        "⚠️ Replenishment flow review due Friday—critical for Email #4 personalization logic"
+        "⚠️ Klaviyo targeting gap: offers showing to existing customers; custom Shopify pop-up being tested as solution",
+        "✅ SMS campaigns launching for NCO and Win-Back segments to test channel viability",
+        "✅ Replenishment flow redesign testing 60 vs. 90-day intervals with enhanced Email #4 logic"
       ],
-      "autoUpdatedAt": "2026-07-09T17:10:19.291897-07:00"
+      "autoUpdatedAt": "2026-07-09T17:13:13.271740-07:00"
     },
     {
       "id": "salehe",
@@ -326,7 +332,7 @@
       "color": "#2F9E44",
       "dot": "amber",
       "health": "Pivoting",
-      "tagline": "Alex Proba drop launching Jul 16 with Field Notes editorial on Jul 14. Sponge meeting scheduled Jul 10. Multiple assets pending from Fardad.",
+      "tagline": "Alex Proba drop (July 16) in motion with editorial tease on July 14. Sponge meeting prep needed for tomorrow 1pm.",
       "lastTouched": "2026-07-09",
       "tasks": [
         {
@@ -375,11 +381,11 @@
           "text": "Ship Kieran editorial newsletter",
           "owner": "Michael",
           "complexity": "quick",
-          "urgent": false,
+          "urgent": true,
           "source": "auto"
         },
         {
-          "text": "Prep for Sponge meeting on Jul 10 at 1pm",
+          "text": "Prepare for Sponge meeting (Jul 10 1pm)",
           "owner": "Michael",
           "complexity": "medium",
           "urgent": true,
@@ -400,7 +406,7 @@
           "source": "auto"
         },
         {
-          "text": "Draft Field Notes editorial email for Fardad's review",
+          "text": "Draft 'Field Notes' editorial email for Fardad's review",
           "owner": "Michael",
           "complexity": "medium",
           "urgent": false,
@@ -440,12 +446,12 @@
         },
         {
           "party": "Fardad",
-          "item": "Content finalization for Field Notes editorial email",
+          "item": "Field Notes editorial email content finalization",
           "source": "auto"
         },
         {
           "party": "Fardad",
-          "item": "Product photos and info for Vellum 2 giveaway",
+          "item": "Vellum 2 giveaway product photos and info",
           "source": "auto"
         }
       ],
@@ -456,15 +462,15 @@
           "madeOn": "2026-06-17"
         }
       ],
-      "nextMilestone": "Jul 10 — Sponge meeting at 1pm; Jul 14 — Field Notes editorial email; Jul 16 — Alex Proba Soft Imprints drop",
+      "nextMilestone": "Jul 10 — Sponge meeting (1pm); Jul 14 — Field Notes editorial email; Jul 16 — Alex Proba Soft Imprints drop",
       "flags": [
-        "⚠️ Soft Imprints collection launches Jul 16 — timeline is tight",
-        "✅ Evergreen product calendar strategy in motion post-August",
-        "⚠️ Field Notes editorial tease email needed by Jul 14",
-        "✅ Vellum 2 giveaway targeting 20k+ lead acquisition",
-        "⚠️ Sponge meeting prep required for Jul 10 1pm"
+        "⚠️ Kieran editorial newsletter flagged as ship-it priority in NOW.md",
+        "⚠️ Sponge meeting prep due tomorrow (Jul 10 1pm)",
+        "✅ Evergreen product calendar strategy approved, launches post-August",
+        "ℹ️ Next giveaway: 2–3 pairs rare pink Vellum 2 shoes, targeting 20k+ leads",
+        "ℹ️ List management: no Klaviyo sunset yet; re-engagement plain-text send planned before August suppression"
       ],
-      "autoUpdatedAt": "2026-07-09T17:09:47.018177-07:00"
+      "autoUpdatedAt": "2026-07-09T17:12:45.365688-07:00"
     },
     {
       "id": "the-lab",
@@ -472,7 +478,7 @@
       "color": "#F08C00",
       "dot": "grey",
       "health": "On Track",
-      "tagline": "No explicit Lab Life tasks or updates found in provided context.",
+      "tagline": "No actionable data for The Lab Life in provided context.",
       "lastTouched": "2026-07-09",
       "tasks": [
         {
@@ -546,12 +552,11 @@
           "madeOn": "2026-06-03"
         }
       ],
-      "nextMilestone": "Pending Lab Life project information",
+      "nextMilestone": "",
       "flags": [
-        "⚠️ Context contains only RVCA and Riversol project details — no Lab Life-specific information",
-        "ℹ️ Awaiting Lab Life-specific updates or task assignments"
+        "⚠️ Source material contains only RVCA and Riversol campaign data — no The Lab Life content found"
       ],
-      "autoUpdatedAt": "2026-07-09T17:10:23.144151-07:00"
+      "autoUpdatedAt": "2026-07-09T17:12:58.670637-07:00"
     },
     {
       "id": "epicure",
@@ -559,7 +564,7 @@
       "color": "#862E9C",
       "dot": "amber",
       "health": "In Progress",
-      "tagline": "Epicure flow optimization planned (1 in July, 2 in August). Need to confirm affiliate count and book Initiatives meeting.",
+      "tagline": "Epicure flow optimization in progress: targeting 1 July flow + 2 August flows. Awaiting affiliate segment confirmation.",
       "lastTouched": "2026-07-09",
       "tasks": [
         {
@@ -619,10 +624,10 @@
           "source": "auto"
         },
         {
-          "text": "Execute 1 flow in July (winback automation + affiliate)",
-          "owner": "DigitsUp",
+          "text": "Plan July flow (winback automation + affiliate) and August flows (big POS)",
+          "owner": "Michael",
           "complexity": "heavy",
-          "urgent": true,
+          "urgent": false,
           "source": "auto"
         }
       ],
@@ -646,19 +651,18 @@
           "source": "manual"
         },
         {
-          "party": "Geoff Henshaw",
-          "item": "SOW thread clarification on flow optimization scope",
+          "party": "Geoff Henshaw (epicure.com)",
+          "item": "Confirmation on flow optimization strategy and SOW alignment",
           "source": "auto"
         }
       ],
       "promises": [],
-      "nextMilestone": "Execute first flow (July 2026)",
+      "nextMilestone": "Confirm affiliate count and finalize flow schedule for July launch",
       "flags": [
-        "Flow roadmap: 1 July, 2 August (Michael pushing for 2 in July)",
-        "Big POS campaign planned for August",
-        "Geoff Henshaw SOW thread requires review"
+        "⚠️ Flow strategy in negotiation: Michael pushing for 2 July flows; current plan is 1 July + 2 August",
+        "⚠️ Affiliate segment counts needed before building 3 segments"
       ],
-      "autoUpdatedAt": "2026-07-09T17:09:41.901031-07:00"
+      "autoUpdatedAt": "2026-07-09T17:13:18.735012-07:00"
     },
     {
       "id": "hiba",
@@ -666,7 +670,7 @@
       "color": "#E64980",
       "dot": "amber",
       "health": "On Track",
-      "tagline": "Welcome Series flow bottleneck identified and fix underway. August 1st deadline for evergreen content finalization before mid-August app launch.",
+      "tagline": "Welcome Series flow bottleneck identified and fix underway. August 1st evergreen content deadline critical for mid-August app launch.",
       "lastTouched": "2026-07-09",
       "tasks": [
         {
@@ -684,7 +688,7 @@
           "source": "manual"
         },
         {
-          "text": "Investigate long-term fix with Ravenna support for `attended event` property missing from Klaviyo-only registrants",
+          "text": "Investigate long-term fix with Ravenna support for `attended event` property missing on Klaviyo-only registrants",
           "owner": "Client",
           "complexity": "heavy",
           "urgent": false,
@@ -707,22 +711,17 @@
         },
         {
           "party": "DigitsUp",
-          "item": "Manual addition of `attended event` property to Klaviyo-only event attendees to unblock Welcome Series flow",
+          "item": "Manually add `attended event` property to Klaviyo-only event attendees to unblock Welcome Series flow",
           "source": "auto"
         },
         {
           "party": "DigitsUp",
-          "item": "Update Miro board with correct Ravenna flow screenshot and add 'Meet the Team' email as Email #3",
+          "item": "Add 'Meet the Team' email as Email #3 in Welcome Series",
           "source": "auto"
         },
         {
           "party": "Homa",
-          "item": "Evergreen copy for 'Long-Term Nurture for Events' email and Miro board comments on content updates",
-          "source": "auto"
-        },
-        {
-          "party": "Ravenna Support",
-          "item": "Guidance on creating 'lead' accounts for Klaviyo-only registrants (Skye to follow up with Dottie)",
+          "item": "Provide evergreen copy for 'Long-Term Nurture for Events' email",
           "source": "auto"
         }
       ],
@@ -733,14 +732,13 @@
           "madeOn": "2026-06-11"
         }
       ],
-      "nextMilestone": "August 1st — All evergreen content finalized for mid-August application launch",
+      "nextMilestone": "August 1st — all evergreen content finalized; mid-August application launch",
       "flags": [
-        "⚠️ Critical flow bottleneck: Welcome Series sends all leads to Event Flow due to missing `attended event` property",
-        "✅ 'Meet the Team' email identified as high-performing and will be added to Welcome Series",
-        "⚠️ August 1st deadline is hard stop for evergreen content finalization before app launch",
-        "⚠️ Immediate manual fix required while long-term solution is investigated"
+        "⚠️ Critical flow bottleneck: Welcome Series sending all leads to Event Flow due to missing `attended event` property for Klaviyo-only registrants",
+        "⚠️ August 1st hard deadline for all evergreen content finalization",
+        "✅ 'Meet the Team' email identified as high-performing — adding to Welcome Series will boost engagement"
       ],
-      "autoUpdatedAt": "2026-07-09T17:10:09.905791-07:00"
+      "autoUpdatedAt": "2026-07-09T17:12:50.914680-07:00"
     },
     {
       "id": "outersignal",
@@ -838,7 +836,7 @@
       "color": "#E8845C",
       "dot": "grey",
       "health": "Blocked",
-      "tagline": "No FRNK Boutique data found in provided context. All content references other clients (DigitsUp, Riversol, Epicure).",
+      "tagline": "No FRNK Boutique-specific data found in provided context.",
       "lastTouched": "2026-07-09",
       "tasks": [
         {
@@ -917,19 +915,19 @@
         }
       ],
       "promises": [],
-      "nextMilestone": "Awaiting FRNK Boutique project data",
+      "nextMilestone": "N/A",
       "flags": [
-        "⚠️ No FRNK Boutique-specific information in source materials"
+        "No FRNK Boutique tasks identified in source materials"
       ],
-      "autoUpdatedAt": "2026-07-09T17:09:50.473921-07:00"
+      "autoUpdatedAt": "2026-07-09T17:13:22.253268-07:00"
     },
     {
       "id": "sfr",
       "name": "SFR Distillery",
       "color": "#845EF7",
-      "dot": "red",
+      "dot": "grey",
       "health": "Starting Jun 22",
-      "tagline": "SFR Distillery blocked on lifestyle images from Will (via Victoria). Unblocking required for AM progress.",
+      "tagline": "SFR Distillery blocked on lifestyle images from Will via Victoria — awaiting AM delivery to proceed.",
       "lastTouched": "2026-07-09",
       "tasks": [
         {
@@ -940,10 +938,17 @@
           "source": "manual"
         },
         {
-          "text": "Follow up with Victoria on Will's lifestyle images delivery status",
+          "text": "Follow up on lifestyle images from Will (via Victoria) — needed to unblock project",
           "owner": "Michael",
           "complexity": "quick",
           "urgent": true,
+          "source": "auto"
+        },
+        {
+          "text": "Verify Klaviyo account credentials in TOOLS.md match MEMORY.md integrations list for SFR Distillery (pk_Td7upd)",
+          "owner": "DigitsUp",
+          "complexity": "quick",
+          "urgent": false,
           "source": "auto"
         }
       ],
@@ -955,18 +960,18 @@
           "source": "manual"
         },
         {
-          "party": "Will",
+          "party": "Will (via Victoria)",
           "item": "Lifestyle images for SFR Distillery",
           "source": "auto"
         }
       ],
       "promises": [],
-      "nextMilestone": "Lifestyle images delivery from Will",
+      "nextMilestone": "Lifestyle images received and approved",
       "flags": [
-        "🚫 Blocked on lifestyle images from Will — blocking AM work",
-        "⚠️ Images required via Victoria as intermediary"
+        "⚠️ Blocked on external asset delivery (lifestyle images)",
+        "⚠️ Klaviyo account in system tools — verify integration sync"
       ],
-      "autoUpdatedAt": "2026-07-09T17:09:54.720975-07:00"
+      "autoUpdatedAt": "2026-07-09T17:13:28.987138-07:00"
     }
   ],
   "pipeline": [
@@ -1139,28 +1144,28 @@
   ],
   "activity": [
     {
-      "ts": "2026-07-09T17:09:41.901119-07:00",
-      "text": "Epicure — Epicure flow optimization planned (1 in July, 2 in August). Need to confirm affiliate count and book"
+      "ts": "2026-07-09T17:12:45.365793-07:00",
+      "text": "Salehe Bembury — Alex Proba drop (July 16) in motion with editorial tease on July 14. Sponge meeting prep needed for "
     },
     {
-      "ts": "2026-07-09T17:09:47.018295-07:00",
-      "text": "Salehe Bembury — Alex Proba drop launching Jul 16 with Field Notes editorial on Jul 14. Sponge meeting scheduled Jul "
+      "ts": "2026-07-09T17:12:50.914790-07:00",
+      "text": "Hiba Academy — Welcome Series flow bottleneck identified and fix underway. August 1st evergreen content deadline cr"
     },
     {
-      "ts": "2026-07-09T17:09:50.474023-07:00",
-      "text": "FRNK Boutique — No FRNK Boutique data found in provided context. All content references other clients (DigitsUp, Riv"
+      "ts": "2026-07-09T17:12:58.670721-07:00",
+      "text": "The Lab Life — No actionable data for The Lab Life in provided context."
     },
     {
-      "ts": "2026-07-09T17:09:54.721079-07:00",
-      "text": "SFR Distillery — SFR Distillery blocked on lifestyle images from Will (via Victoria). Unblocking required for AM prog"
-    },
-    {
-      "ts": "2026-07-09T17:10:03.126657-07:00",
+      "ts": "2026-07-09T17:13:06.194793-07:00",
       "text": "RVCA — Two new monthly campaigns approved; campaign cadence shifting to 2x weekly sends. Review import unbl"
     },
     {
-      "ts": "2026-07-09T17:10:09.905895-07:00",
-      "text": "Hiba Academy — Welcome Series flow bottleneck identified and fix underway. August 1st deadline for evergreen conten"
+      "ts": "2026-07-09T17:13:13.271845-07:00",
+      "text": "Riversol — Pop-up strategy shift underway to reverse email list growth decline; replenishment flow redesign + S"
+    },
+    {
+      "ts": "2026-07-09T17:13:18.735124-07:00",
+      "text": "Epicure — Epicure flow optimization in progress: targeting 1 July flow + 2 August flows. Awaiting affiliate se"
     }
   ]
 }
